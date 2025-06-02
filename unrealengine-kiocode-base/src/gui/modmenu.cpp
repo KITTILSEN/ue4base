@@ -110,7 +110,7 @@ void ModMenu::Window() {
 					if (ImGui::IsItemHovered()) ImGui::SetTooltip("Toggle rainbow color on the not visible target");
 				}
 
-				//{ // Charms
+				//{ // Chams
 				//	ImGui::Checkbox("Targets Chams", &Config::PlayerChams);
 				//	if (ImGui::IsItemHovered()) ImGui::SetTooltip("Enable Chams");
 				//	ImGui::SameLine();
@@ -309,7 +309,7 @@ void ModMenu::Window() {
 					ImGui::Spacing();
 
 					if (ImGui::Button("Dump scene actors")) {
-						Dumper::DumpUObjects();
+						Dumper::DumpUActors();
 					}
 
 					ImGui::SameLine();

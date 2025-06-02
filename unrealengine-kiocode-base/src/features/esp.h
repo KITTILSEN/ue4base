@@ -10,10 +10,10 @@ public:
 		return instance;
 	}
 
-	void RenderSkeleton(SDK::ACharacter* pawn, ImColor color);
+	//void RenderSkeleton(SDK::ABP_KytBadGuy_C* pawn, ImColor color);
 	void RenderSnapline(SDK::ACharacter* pawn, ImColor color);
-	void RenderBox(SDK::ACharacter* pawn, ImColor color);
-	void Render3DBox(SDK::ACharacter* pawn, ImColor color);
+//	void RenderBox(SDK::ABP_KytBadGuy_C* pawn, ImColor color);
+//	void Render3DBox(SDK::ABP_KytBadGuy_C* pawn, ImColor color);
 
 private:
 

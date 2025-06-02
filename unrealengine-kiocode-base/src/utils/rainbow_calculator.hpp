@@ -26,8 +26,7 @@ namespace RainbowCalculator
 
 			Config::m_v4Rainbow = ImVec4(isRed, isGreen, isBlue, 1.0f);
 			Config::m_v4Rainbow = ImColor(Config::m_v4Rainbow.x, Config::m_v4Rainbow.y, Config::m_v4Rainbow.z);
-
-			Sleep(20);
+			Sleep(1);
 		}
 	}
 

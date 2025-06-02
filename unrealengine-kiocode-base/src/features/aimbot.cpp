@@ -3,6 +3,7 @@
 #include "../config.h"
 #include "../utils/general.h"
 
+
 void Aimbot::RegularAimbot(SDK::ACharacter* pawn) 
 {
 	if (!pawn || !Config::m_pMyController || Config::m_BonePairs.empty())

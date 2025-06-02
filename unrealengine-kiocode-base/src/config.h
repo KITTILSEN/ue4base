@@ -2,7 +2,7 @@
 
 #include "includes.h"
 
-#define RAINBOW_BORDERS TRUE;
+#define RAINBOW_BORDERS TRUE
 
 class Config 
 {
@@ -15,7 +15,7 @@ public:
 		inline static constexpr const char* m_cAuthor = "@kiocode";
 
 		inline static bool m_bInit = false;
-		inline static bool m_bUpdateTargetsInDifferentThread = false; // some game is freezing if true
+		inline static bool m_bUpdateTargetsInDifferentThread = true; // some game is freezing if true
 		inline static bool m_bUpdateTargets = false;
 
 		inline static POINT m_MousePos = { 0, 0 };
@@ -50,7 +50,7 @@ public:
 		TAB_DEV
 	};
 
-	inline static int m_nTargetFetch = 2;
+	inline static int m_nTargetFetch = 0;
 	
 	inline static SDK::UEngine* m_pEngine;
 	inline static SDK::UWorld* m_pWorld;
@@ -58,15 +58,45 @@ public:
 	inline static SDK::APawn* m_pMyPawn;
 	inline static SDK::ACharacter* m_pMyCharacter;
 
-	//inline static std::vector<SDK::AActor*> TargetsList{};
 	inline static std::vector<SDK::ACharacter*> m_TargetsList{};
-	inline static SDK::AActor* m_pCurrentTarget;
+	//inline static std::vector<SDK::ABP_KytBadGuy_C*> m_TargetsList{};
+	//inline static SDK::AActor* m_pCurrentTarget;
 
 	inline static ImColor m_TargetPlayerColor = ImColor(255, 0, 0);
-
-	// dumped with Dumper::DumpUBones() 
-	// OHD
 	inline static std::vector<std::pair<int, int>> m_BonePairs = {
+
+		// Spine/Torso
+		{1, 2},   // Pelvis -> spine_01
+		{2, 3},   // spine_01 -> spine_02
+		{3, 4},   // spine_02 -> spine_03
+		{4, 47},  // spine_03 -> neck_01
+		{47, 48}, // neck_01 -> Head
+
+		// Left Arm Chain
+		{4, 5},   // spine_03 -> clavicle_l
+		{5, 6},   // clavicle_l -> upperarm_l
+		{6, 7},   // upperarm_l -> lowerarm_l
+		{7, 8},   // lowerarm_l -> hand_l
+
+		// Right Arm Chain
+		{4, 26},  // spine_03 -> clavicle_r
+		{26, 27}, // clavicle_r -> upperarm_r
+		{27, 28}, // upperarm_r -> lowerarm_r
+		{28, 29}, // lowerarm_r -> hand_r
+
+		// Left Leg Chain
+		{1, 49},  // Pelvis -> thigh_l
+		{49, 50}, // thigh_l -> calf_l
+		{50, 52}, // calf_l -> foot_l
+		{52, 53}, // foot_l -> ball_l
+
+		// Right Leg Chain
+		{1, 55},  // Pelvis -> thigh_r
+		{55, 56}, // thigh_r -> calf_r
+		{56, 58}, // calf_r -> foot_r
+		{58, 59}, // foot_r -> ball_r
+	};
+		/*
 		// Spine
 		{1, 2},  // pelvis -> spine_01
 		{2, 3},  // spine_01 -> spine_02
@@ -128,6 +158,7 @@ public:
 		{56, 58}, // calf_r -> Foot_R
 		{58, 59}  // Foot_R -> ball_r
 	};
+	*/
 
 // Global rainbow color
 	inline static ImVec4 m_v4Rainbow = ImVec4(0.0f, 0.0f, 0.0f, 0.0f); 

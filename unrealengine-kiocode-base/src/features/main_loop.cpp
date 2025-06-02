@@ -5,7 +5,8 @@
 #include "../utils/general.h"
 #include "../utils/imgui/imgui_helper.h"
 #include "esp.h"
-#include "aimbot.h"
+#include <thread>
+//#include "aimbot.h"
 
 void MainLoop::DrawCrosshair() 
 {
@@ -22,7 +23,36 @@ void MainLoop::DrawCrosshair()
 	}
 }
 
-void MainLoop::FetchFromObjects(std::vector<SDK::ACharacter*>* list)
+//void MainLoop::FetchFromObjects(std::vector<SDK::ACharacter*>* list) {
+//	list->clear();
+//
+//	// Add some basic limits to prevent infinite loops
+//	int maxObjects = SDK::UObject::GObjects->Num();
+//	if (maxObjects > 50000) maxObjects = 50000; // Safety limit
+//
+//	for (int i = 0; i < maxObjects; i++) {
+//		// Yield control occasionally to prevent freezing
+//		if (i % 1000 == 0) {
+//			std::this_thread::sleep_for(std::chrono::microseconds(1));
+//		}
+//
+//		SDK::UObject* obj = SDK::UObject::GObjects->GetByIndex(i);
+//		if (!obj || obj->IsDefaultObject())
+//			continue;
+//
+//		if (!obj->IsA(SDK::ABP_KytBadGuy_C::StaticClass()))
+//			continue;
+//
+//		SDK::ABP_KytBadGuy_C* enemies = static_cast<SDK::ABP_KytBadGuy_C*>(obj);
+//
+//		if (enemies->Health <= 0)
+//			continue;
+//
+//		list->push_back(enemies);
+	
+
+
+void MainLoop::FetchFromObjects(std::vector<SDK::ACharacter*>* list) // has to match up with config(::m_TargetsList(61), ESP & newTargets vector) or throws no overload
 {
 
 	list->clear();
@@ -33,7 +63,17 @@ void MainLoop::FetchFromObjects(std::vector<SDK::ACharacter*>* list)
 
 		if (!obj || obj->IsDefaultObject())
 			continue;
-				
+		
+		// ground branch
+		if (!obj->IsA(SDK::ABP_KytBadGuy_C::StaticClass())) // changeable
+			continue;
+		SDK::ABP_KytBadGuy_C* enemies = static_cast<SDK::ABP_KytBadGuy_C*>(obj);
+		
+		if (!enemies || Validity::IsBadPoint(enemies) || enemies->Health <= 0)
+			continue;
+
+		list->push_back(enemies);
+
 		// THIS PART CAN BE VARIABLE BELOW
 
 		// Crabs Champions
@@ -55,63 +95,63 @@ void MainLoop::FetchFromObjects(std::vector<SDK::ACharacter*>* list)
 
 		//if(Config::m_bKillAll) npc->TakeDamage(999, npc);
 
-		//list->push_back(npc);
+		
 
 	}
 }
 
-/*void MainLoop::FetchFromActors(std::vector<SDK::AActor*>* list)
-{
+//void MainLoop::FetchFromActors(std::vector<SDK::AActor*>* list)
+//{
+//
+//	if (Config::World->Levels.Num() == 0)
+//		return;
+//
+//	SDK::ULevel* currLevel = Config::World->Levels[0];
+//	if (!currLevel)
+//		return;
+//
+//	list->clear();
+//
+//	for (int j = 0; j < currLevel->Actors.Num(); j++)
+//	{
+//		SDK::AActor* currActor = currLevel->Actors[j];
+//
+//		if (!currActor)
+//			continue;
+//		if (!currActor->RootComponent)
+//			continue;
+//
+//		//const auto location = currActor->K2_GetActorLocation();
+//		//if (location.X == 0.f || location.Y == 0.f || location.Z == 0.f) continue;
+//
+//		//if (currActor->GetFullName().find("YOUR_NPC") != std::string::npos)
+//		if (currActor->GetFullName().find("Kyt") != std::string::npos)
+//		{
+//			list->push_back(currActor);
+//		}
+//
+//	}
+//}
 
-	if (Config::World->Levels.Num() == 0)
-		return;
-
-	SDK::ULevel* currLevel = Config::World->Levels[0];
-	if (!currLevel)
-		return;
-
-	list->clear();
-
-	for (int j = 0; j < currLevel->Actors.Num(); j++)
-	{
-		SDK::AActor* currActor = currLevel->Actors[j];
-
-		if (!currActor)
-			continue;
-		if (!currActor->RootComponent)
-			continue;
-
-		//const auto location = currActor->K2_GetActorLocation();
-		//if (location.X == 0.f || location.Y == 0.f || location.Z == 0.f) continue;
-
-		//if (currActor->GetFullName().find("YOUR_NPC") != std::string::npos)
-		if (currActor->GetFullName().find("BP_Enemy") != std::string::npos)
-		{
-			list->push_back(currActor);
-		}
-
-	}
-}*/
-
-void MainLoop::FetchFromPlayers(std::vector<SDK::ACharacter*>* list)
-{
-	list->clear();
-
-	SDK::TSubclassOf<SDK::ACharacter> PlayerBaseCharacterReference = SDK::ACharacter::StaticClass();
-	SDK::TArray<SDK::AActor*> PlayerCharacters;
-	SDK::UGameplayStatics::GetAllActorsOfClass(Config::m_pWorld, PlayerBaseCharacterReference, &PlayerCharacters);
-
-	for (SDK::AActor* actor : PlayerCharacters)
-	{
-		if (!actor || Validity::IsBadPoint(actor) || !actor->IsA(PlayerBaseCharacterReference)) continue;
-
-		SDK::ACharacter* PlayerCharacter = reinterpret_cast<SDK::ACharacter*>(actor);
-		if (!PlayerCharacter || !PlayerCharacter->PlayerState || !PlayerCharacter->PlayerState->GetPlayerName() || !PlayerCharacter->PlayerState->GetPlayerName().IsValid())
-			continue;
-
-		list->push_back(PlayerCharacter);
-	}
-}
+//void MainLoop::FetchFromPlayers(std::vector<SDK::ACharacter*>* list)
+//{
+//	list->clear();
+//
+//	SDK::TSubclassOf<SDK::ACharacter> PlayerBaseCharacterReference = SDK::ACharacter::StaticClass();
+//	SDK::TArray<SDK::AActor*> PlayerCharacters;
+//	SDK::UGameplayStatics::GetAllActorsOfClass(Config::m_pWorld, PlayerBaseCharacterReference, &PlayerCharacters);
+//
+//	for (SDK::AActor* actor : PlayerCharacters)
+//	{
+//		if (!actor || Validity::IsBadPoint(actor) || !actor->IsA(PlayerBaseCharacterReference)) continue;
+//
+//		SDK::ACharacter* PlayerCharacter = reinterpret_cast<SDK::ACharacter*>(actor);
+//		if (!PlayerCharacter || !PlayerCharacter->PlayerState || !PlayerCharacter->PlayerState->GetPlayerName() || !PlayerCharacter->PlayerState->GetPlayerName().IsValid())
+//			continue;
+//
+//		list->push_back(PlayerCharacter);
+//	}
+//}
 
 void MainLoop::FetchEntities()
 {
@@ -178,7 +218,7 @@ void MainLoop::FetchEntities()
 				break;
 
 			case 2:
-				FetchFromPlayers(&newTargets);
+				//FetchFromPlayers(&newTargets);
 				break;
 		}
 
@@ -189,7 +229,13 @@ void MainLoop::FetchEntities()
 
 		if (Config::System::m_bUpdateTargetsInDifferentThread)
 		{
+			// Sleep to prevent high CPU usage in the thread
 			Sleep(10);
+		} 
+		else 
+		{
+			// If not in a thread, break the loop after one update
+			break;
 		}
 
 	// if its in a thread run it continuously
@@ -249,7 +295,7 @@ bool MainLoop::UpdateSDK(bool log)
 	if (log) {
 		std::cout << "MyPawn address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::m_pMyPawn) << std::dec << std::endl;
 	}
-
+	
 	Config::m_pMyCharacter = Config::m_pMyController->Character;
 	if (Config::m_pMyCharacter == nullptr)
 	{
@@ -266,6 +312,7 @@ bool MainLoop::UpdateSDK(bool log)
 
 void MainLoop::Update(DWORD tick) 
 {
+	static DWORD lastFetch = 0;
 	// important update of the sdk, bc if we inject the dll in the menu for example, 
 	// after in game we will not have the access to some obejct or the player controller
 	if (!UpdateSDK(false)) return;
@@ -274,7 +321,11 @@ void MainLoop::Update(DWORD tick)
 	// it must be in the main loop to avoid game freezing (like in OHD)
 	if (!Config::System::m_bUpdateTargetsInDifferentThread)
 	{
-		FetchEntities();
+		if (Config::System::m_bUpdateTargets && GetTickCount64() - lastFetch > 250)
+		{
+			FetchEntities();
+			lastFetch = GetTickCount64();
+		}
 	}
 	
 	#pragma region EXPLOIT CHEATS
@@ -366,13 +417,13 @@ void MainLoop::Update(DWORD tick)
 			continue;
 
 		// raycast to check if targets are behind walls
-		bool isVisible = Config::m_pMyController->LineOfSightTo(currTarget, Config::m_pMyController->PlayerCameraManager->CameraCachePrivate.POV.Location, false);
+		/*bool isVisible = Config::m_pMyController->LineOfSightTo(currTarget, Config::m_pMyController->PlayerCameraManager->CameraCachePrivate.POV.Location, false);
 
 		if (Config::m_bPlayerChams && Config::m_pChamsMaterial) 
 		{
 			SDK::ASkeletalMeshActor* mesh = reinterpret_cast<SDK::ASkeletalMeshActor*>(currTarget);
 			Utility::ApplyChams(mesh->SkeletalMeshComponent, true);
-		}
+		}*/
 
 		ImColor color = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
 
@@ -383,102 +434,105 @@ void MainLoop::Update(DWORD tick)
 		if (Config::m_bPlayersSnapline)
 		{
 
-			if (currTarget == Config::m_pCurrentTarget)
-			{
-				color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
-			}
-			else
-			{
+			//if (currTarget == Config::m_pCurrentTarget)
+			//{
+			//	color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
+			//}
+			//
+			//else
+			//{
 
-				if (isVisible)
-				{
-					color = Config::m_bRainbowPlayersSnapline ? Config::m_cRainbow : Config::m_cPlayersSnaplineColor;
-				}
-				else
-				{
-					color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
-				}
+			//	if (isVisible)
+			//	{
+			//		color = Config::m_bRainbowPlayersSnapline ? Config::m_cRainbow : Config::m_cPlayersSnaplineColor;
+			//	}
+			//	else
+			//	{
+			//		color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
+			//	}
 
-			}
-
+			//}
+			//else
+			ImColor color = ImColor(255, 0, 0);
 			ESP::GetInstance().RenderSnapline(currTarget, color);
 		}
 
-		if (Config::m_bPlayerSkeleton)
-		{
+		//if (Config::m_bPlayerSkeleton)
+		//{
 
-			if (currTarget == Config::m_pCurrentTarget)
-			{
-				color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
-			}
-			else
-			{
+		//	if (currTarget == Config::m_pCurrentTarget)
+		//	{
+		//		color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
+		//	}
+		//	else
+		//	/*{
 
-				if (isVisible)
-				{
-					color = Config::m_bRainbowPlayerSkeleton ? Config::m_cRainbow : Config::m_cPlayerSkeletonColor;
-				}
-				else
-				{
-					color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
-				}
+		//		if (isVisible)
+		//		{
+		//			color = Config::m_bRainbowPlayerSkeleton ? Config::m_cRainbow : Config::m_cPlayerSkeletonColor;
+		//		}
+		//		else
+		//		{
+		//			color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
+		//		}
 
-			}
+		//	}*/
 
-			ESP::GetInstance().RenderSkeleton(currTarget, color);
-		}
+		//	ESP::GetInstance().RenderSkeleton(currTarget, color);
+		//}
 
-		if (Config::m_bPlayersBox)
-		{
+		//if (Config::m_bPlayersBox)
+		//{
 
-			if (currTarget == Config::m_pCurrentTarget)
-			{
-				color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
-			}
-			else
-			{
+		//	if (currTarget == Config::m_pCurrentTarget)
+		//	{
+		//		color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
+		//	}
+		//	else
+		//	/*{
 
-				if (isVisible)
-				{
-					color = Config::m_bRainbowPlayersBox ? Config::m_cRainbow : Config::m_cPlayersBoxColor;
-				}
-				else
-				{
-					color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
-				}
-			}
+		//		if (isVisible)
+		//		{
+		//			color = Config::m_bRainbowPlayersBox ? Config::m_cRainbow : Config::m_cPlayersBoxColor;
+		//		}
+		//		else
+		//		{
+		//			color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
+		//		}
+		//	}*/
 
-			ESP::GetInstance().RenderBox(currTarget, color);
-		}
+		//	ESP::GetInstance().RenderBox(currTarget, color);
+		//}
 
-		if (Config::m_bPlayersBox3D)
-		{
+		//if (Config::m_bPlayersBox3D)
+		//{
 
-			if (currTarget == Config::m_pCurrentTarget)
-			{
-				color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
-			}
-			else
-			{
+		//	if (currTarget == Config::m_pCurrentTarget)
+		//	{
+		//		color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
+		//	}
+		//	else
+		//	/*{
 
-				if (isVisible)
-				{
-					color = Config::m_bRainbowPlayersBox ? Config::m_cRainbow : Config::m_cPlayersBoxColor;
-				}
-				else
-				{
-					color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
-				}
-			}
+		//		if (isVisible)
+		//		{
+		//			color = Config::m_bRainbowPlayersBox ? Config::m_cRainbow : Config::m_cPlayersBoxColor;
+		//		}
+		//		else
+		//		{
+		//			color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
+		//		}
+		//	}*/
 
-			ESP::GetInstance().Render3DBox(currTarget, color);
-		}
+		//	ESP::GetInstance().Render3DBox(currTarget, color);
+		//}
 
-		if (Config::m_bEnableAimbot && isVisible)
+		/*if (Config::m_bEnableAimbot && isVisible)
 		{
 			Aimbot::GetInstance().RegularAimbot(currTarget);
-		}
+		}*/
 
 		#pragma endregion
+	
 	}
 }

@@ -203,6 +203,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -225,20 +226,19 @@
     <ClCompile Include="libs\kiero\minhook\src\hook.c" />
     <ClCompile Include="libs\kiero\minhook\src\trampoline.c" />
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="src\features\aimbot.cpp" />
     <ClCompile Include="src\features\core.cpp" />
     <ClCompile Include="src\features\esp.cpp" />
     <ClCompile Include="src\features\main_loop.cpp" />
     <ClCompile Include="src\gui\core\gui.cpp" />
     <ClCompile Include="src\gui\core\gui.h" />
     <ClCompile Include="src\gui\modmenu.cpp" />
-    <ClCompile Include="src\sdk\one_armed_robber\SDK\Basic.cpp" />
-    <ClCompile Include="src\sdk\one_armed_robber\SDK\CoreUObject_functions.cpp" />
-    <ClCompile Include="src\sdk\one_armed_robber\SDK\Engine_functions.cpp" />
-    <ClCompile Include="src\sdk\one_armed_robber\SDK\NPCBase_functions.cpp" />
-    <ClCompile Include="src\sdk\operation_harsh_doorstop\SDK\Basic.cpp" />
-    <ClCompile Include="src\sdk\operation_harsh_doorstop\SDK\CoreUObject_functions.cpp" />
-    <ClCompile Include="src\sdk\operation_harsh_doorstop\SDK\Engine_functions.cpp" />
+    <ClCompile Include="src\sdk\groundbranch\SDK\Basic.cpp" />
+    <ClCompile Include="src\sdk\groundbranch\SDK\BP_Character_functions.cpp" />
+    <ClCompile Include="src\sdk\groundbranch\SDK\BP_KytBadGuy_functions.cpp" />
+    <ClCompile Include="src\sdk\groundbranch\SDK\BP_KytBase_functions.cpp" />
+    <ClCompile Include="src\sdk\groundbranch\SDK\CoreUObject_functions.cpp" />
+    <ClCompile Include="src\sdk\groundbranch\SDK\Engine_functions.cpp" />
+    <ClCompile Include="src\sdk\groundbranch\SDK\GroundBranch_functions.cpp" />
     <ClCompile Include="tests\main_test.cpp" />
     <ClCompile Include="src\utils\dumper.cpp" />
     <ClCompile Include="src\utils\general.cpp" />
@@ -260,7 +260,6 @@
     <ClInclude Include="libs\imgui\imstb_textedit.h" />
     <ClInclude Include="libs\imgui\imstb_truetype.h" />
     <ClInclude Include="src\config.h" />
-    <ClInclude Include="src\features\aimbot.h" />
     <ClInclude Include="src\features\core.h" />
     <ClInclude Include="src\features\esp.h" />
     <ClInclude Include="src\features\main_loop.h" />
@@ -276,9 +275,24 @@
     <ClInclude Include="libs\kiero\minhook\src\hde\table32.h" />
     <ClInclude Include="libs\kiero\minhook\src\hde\table64.h" />
     <ClInclude Include="libs\kiero\minhook\src\trampoline.h" />
+    <ClInclude Include="src\sdk\groundbranch\SDK.hpp" />
+    <ClInclude Include="src\sdk\groundbranch\SDK\Basic.hpp" />
+    <ClInclude Include="src\sdk\groundbranch\SDK\BP_Character_classes.hpp" />
+    <ClInclude Include="src\sdk\groundbranch\SDK\BP_Character_parameters.hpp" />
+    <ClInclude Include="src\sdk\groundbranch\SDK\BP_KytBadGuy_classes.hpp" />
+    <ClInclude Include="src\sdk\groundbranch\SDK\BP_KytBadGuy_parameters.hpp" />
+    <ClInclude Include="src\sdk\groundbranch\SDK\BP_KytBase_classes.hpp" />
+    <ClInclude Include="src\sdk\groundbranch\SDK\BP_KytBase_parameters.hpp" />
+    <ClInclude Include="src\sdk\groundbranch\SDK\CoreUObject_classes.hpp" />
+    <ClInclude Include="src\sdk\groundbranch\SDK\CoreUObject_parameters.hpp" />
+    <ClInclude Include="src\sdk\groundbranch\SDK\CoreUObject_structs.hpp" />
+    <ClInclude Include="src\sdk\groundbranch\SDK\Engine_classes.hpp" />
+    <ClInclude Include="src\sdk\groundbranch\SDK\Engine_parameters.hpp" />
+    <ClInclude Include="src\sdk\groundbranch\SDK\Engine_structs.hpp" />
+    <ClInclude Include="src\sdk\groundbranch\SDK\GroundBranch_classes.hpp" />
+    <ClInclude Include="src\sdk\groundbranch\SDK\GroundBranch_parameters.hpp" />
+    <ClInclude Include="src\sdk\groundbranch\SDK\GroundBranch_structs.hpp" />
     <ClInclude Include="src\sdk\marvel_rivals\SDK.hpp" />
-    <ClInclude Include="src\sdk\one_armed_robber\SDK.hpp" />
-    <ClInclude Include="src\sdk\operation_harsh_doorstop\SDK.hpp" />
     <ClInclude Include="src\utils\dumper.h" />
     <ClInclude Include="src\utils\dump.h" />
     <ClInclude Include="src\utils\general.h" />
