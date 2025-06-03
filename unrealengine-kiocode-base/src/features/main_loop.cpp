@@ -5,6 +5,7 @@
 #include "../utils/general.h"
 #include "../utils/imgui/imgui_helper.h"
 #include "esp.h"
+#include <chrono>
 #include <thread>
 //#include "aimbot.h"
 
@@ -51,8 +52,8 @@ void MainLoop::DrawCrosshair()
 //		list->push_back(enemies);
 	
 
-
-void MainLoop::FetchFromObjects(std::vector<SDK::ACharacter*>* list) // has to match up with config(::m_TargetsList(61), ESP & newTargets vector) or throws no overload
+												//vvv has to match up with config(::m_TargetsList(61), ESP & newTargets vector) or throws no overload
+void MainLoop::FetchFromObjects(std::vector<SDK::ACharacter*>* list)
 {
 
 	list->clear();
@@ -155,6 +156,8 @@ void MainLoop::FetchFromObjects(std::vector<SDK::ACharacter*>* list) // has to m
 
 void MainLoop::FetchEntities()
 {
+	auto lastUpdateTime = std::chrono::steady_clock::now();
+
 	do {
 		if (!Config::System::m_bUpdateTargets)
 		{
@@ -166,7 +169,7 @@ void MainLoop::FetchEntities()
 
 			if (Config::System::m_bUpdateTargetsInDifferentThread)
 			{
-				Sleep(500);
+				// Yield control without blocking
 				continue;
 			}
 			else
@@ -175,6 +178,16 @@ void MainLoop::FetchEntities()
 			}
 		}
 
+		auto currentTime = std::chrono::steady_clock::now();
+		auto elapsedTime = std::chrono::duration_cast<std::chrono::milliseconds>(currentTime - lastUpdateTime);
+
+		if (elapsedTime.count() < 10) // Update every 10ms
+		{
+			continue;
+		}
+
+		lastUpdateTime = currentTime;
+
 		if (!Config::m_pWorld || Validity::IsBadPoint(Config::m_pWorld) ||
 			!Config::m_pEngine || Validity::IsBadPoint(Config::m_pEngine) ||
 			!Config::m_pMyController || Validity::IsBadPoint(Config::m_pMyController) ||
@@ -182,7 +195,6 @@ void MainLoop::FetchEntities()
 		{
 			if (Config::System::m_bUpdateTargetsInDifferentThread)
 			{
-				Sleep(500);
 				continue;
 			}
 			else
@@ -196,7 +208,6 @@ void MainLoop::FetchEntities()
 		{
 			if (Config::System::m_bUpdateTargetsInDifferentThread)
 			{
-				Sleep(500);
 				continue;
 			}
 			else
@@ -209,17 +220,17 @@ void MainLoop::FetchEntities()
 
 		switch (Config::m_nTargetFetch)
 		{
-			case 0:
-				FetchFromObjects(&newTargets);
-				break;
+		case 0:
+			FetchFromObjects(&newTargets);
+			break;
 
-			case 1:
-				//FetchFromActors(&newTargets);
-				break;
+		case 1:
+			//FetchFromActors(&newTargets);
+			break;
 
-			case 2:
-				//FetchFromPlayers(&newTargets);
-				break;
+		case 2:
+			//FetchFromPlayers(&newTargets);
+			break;
 		}
 
 		{
@@ -227,20 +238,9 @@ void MainLoop::FetchEntities()
 			Config::m_TargetsList = std::move(newTargets);
 		}
 
-		if (Config::System::m_bUpdateTargetsInDifferentThread)
-		{
-			// Sleep to prevent high CPU usage in the thread
-			Sleep(10);
-		} 
-		else 
-		{
-			// If not in a thread, break the loop after one update
-			break;
-		}
-
-	// if its in a thread run it continuously
 	} while (Config::System::m_bUpdateTargetsInDifferentThread);
 }
+
 
 bool MainLoop::UpdateSDK(bool log) 
 {
@@ -252,6 +252,7 @@ bool MainLoop::UpdateSDK(bool log)
 	}
 	if (log) {
 		std::cout << "World address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::m_pWorld) << std::dec << std::endl;
+		std::cout << "253 World name: " << Config::m_pWorld->GetName() << std::endl;
 	}
 
 	Config::m_pEngine = SDK::UEngine::GetEngine();
@@ -262,6 +263,7 @@ bool MainLoop::UpdateSDK(bool log)
 	}
 	if (log) {
 		std::cout << "Engine address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::m_pEngine) << std::dec << std::endl;
+		std::cout << "263 Engine name: " << Config::m_pEngine->GetName() << std::endl;
 	}
 
 	// Init PlayerController
@@ -283,6 +285,7 @@ bool MainLoop::UpdateSDK(bool log)
 	}
 	if (log) {
 		std::cout << "PlayerController address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::m_pMyController) << std::dec << std::endl;
+		std::cout << "284 PlayerController name: " << Config::m_pMyController->GetName() << std::endl;
 	}
 
 	// Init Pawn
@@ -294,6 +297,7 @@ bool MainLoop::UpdateSDK(bool log)
 	}	
 	if (log) {
 		std::cout << "MyPawn address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::m_pMyPawn) << std::dec << std::endl;
+		std::cout << "296 MyPawn name: " << Config::m_pMyPawn->GetName() << std::endl;
 	}
 	
 	Config::m_pMyCharacter = Config::m_pMyController->Character;
@@ -312,7 +316,7 @@ bool MainLoop::UpdateSDK(bool log)
 
 void MainLoop::Update(DWORD tick) 
 {
-	static DWORD lastFetch = 0;
+	//static DWORD lastFetch = 0;
 	// important update of the sdk, bc if we inject the dll in the menu for example, 
 	// after in game we will not have the access to some obejct or the player controller
 	if (!UpdateSDK(false)) return;
@@ -320,12 +324,12 @@ void MainLoop::Update(DWORD tick)
 	// thats a check because we can start that in a thread to avoid lag, but in some game
 	// it must be in the main loop to avoid game freezing (like in OHD)
 	if (!Config::System::m_bUpdateTargetsInDifferentThread)
-	{
-		if (Config::System::m_bUpdateTargets && GetTickCount64() - lastFetch > 250)
+	/*{
+		if (Config::System::m_bUpdateTargets && GetTickCount64() - lastFetch > 250)*/
 		{
 			FetchEntities();
-			lastFetch = GetTickCount64();
-		}
+		/*	lastFetch = GetTickCount64();
+		}*/
 	}
 	
 	#pragma region EXPLOIT CHEATS
@@ -441,7 +445,7 @@ void MainLoop::Update(DWORD tick)
 			//
 			//else
 			//{
-
+			//
 			//	if (isVisible)
 			//	{
 			//		color = Config::m_bRainbowPlayersSnapline ? Config::m_cRainbow : Config::m_cPlayersSnaplineColor;
@@ -450,10 +454,10 @@ void MainLoop::Update(DWORD tick)
 			//	{
 			//		color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
 			//	}
-
+			//
 			//}
 			//else
-			ImColor color = ImColor(255, 0, 0);
+			ImColor color = ImColor(100,100,100);
 			ESP::GetInstance().RenderSnapline(currTarget, color);
 		}
 

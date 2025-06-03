@@ -119,17 +119,27 @@ namespace {
 	SDK::FVector GetSafeActorLocation(SDK::AActor* pawn) {
 		if (!pawn || Validity::IsBadPoint(pawn))
 			return SDK::FVector{};
-		try {
 
+		// Check if the pawn's controller is null
+		if (auto* pawnAsPawn = static_cast<SDK::APawn*>(pawn)) {
+			if (!pawnAsPawn->Controller) {
+				std::cerr << "Pawn's controller is null. Likely being destroyed." << std::endl;
+				return SDK::FVector{};
+			}
+		}
+
+		try {
 			SDK::FVector pawnLoc = pawn->K2_GetActorLocation();
 			if (pawnLoc.X == 0.0f && pawnLoc.Y == 0.0f && pawnLoc.Z == 0.0f)
 				return SDK::FVector{};
-			return pawnLoc;	
+			return pawnLoc;
 		}
 		catch (...) {
+			std::cerr << "Exception occurred while getting actor location." << std::endl;
 			return SDK::FVector{};
 		}
 	}
+
 }
 
 //void ESP::RenderSkeleton(SDK::ABP_KytBadGuy_C* pawn, ImColor color) // change back to KytBadGuy

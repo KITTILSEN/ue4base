@@ -60,7 +60,7 @@ public:
 
 	inline static std::vector<SDK::ACharacter*> m_TargetsList{};
 	//inline static std::vector<SDK::ABP_KytBadGuy_C*> m_TargetsList{};
-	//inline static SDK::AActor* m_pCurrentTarget;
+	inline static SDK::AActor* m_pCurrentTarget;
 
 	inline static ImColor m_TargetPlayerColor = ImColor(255, 0, 0);
 	inline static std::vector<std::pair<int, int>> m_BonePairs = {

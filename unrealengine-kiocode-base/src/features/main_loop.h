@@ -16,7 +16,7 @@ public:
 
 	void DrawCrosshair();
 	void FetchEntities();
-	void FetchFromObjects(std::vector<SDK::AActor*>* list);
+	//void FetchFromObjects(std::vector<SDK::AActor*>* list);
 	void FetchFromObjects(std::vector<SDK::ACharacter*>* list);
 	//void FetchFromActors(std::vector<SDK::AActor*>* list);
 	//void FetchFromPlayers(std::vector<SDK::AActor*>* list);
