@@ -481,7 +481,7 @@ void MainLoop::Update(DWORD tick)
 		
 			}
 
-				ESP::GetInstance().RenderSkeleton(currTarget, color);
+			ESP::GetInstance().RenderSkeleton(currTarget, color);
 		}
 		
 		//if (Config::m_bPlayersBox)

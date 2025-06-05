@@ -23,7 +23,7 @@ namespace {
 	//		return false;
 
 	//	return true;
-	
+
 	bool IsValidPawn(SDK::ACharacter* pawn) {
 		if (!pawn || Validity::IsBadPoint(pawn))
 			return false;
@@ -35,7 +35,7 @@ namespace {
 		if (pawn->Mesh->bHasValidBodies==0())
 			return false;
 		if (pawn->Mesh->IsPendingKill())
-				return false;*/
+			return false;*/
 		return true;
 	}
 
