@@ -2,6 +2,7 @@
 
 #include "../config.h"
 #include "../utils/validity.h"
+#include <chrono>
 
 namespace {
 
@@ -26,65 +27,50 @@ namespace {
 	bool IsValidPawn(SDK::ACharacter* pawn) {
 		if (!pawn || Validity::IsBadPoint(pawn))
 			return false;
-
-
 		if (!pawn->Mesh || Validity::IsBadPoint(pawn->Mesh))
 			return false;
-
 		// Same checks for the mesh
-	/*	if (pawn->Mesh->bHasValidBodies==0(SDK::EObjectFlags::BeginDestroyed | SDK::EObjectFlags::FinishDestroyed))
+		/*if (pawn->Mesh->bHasValidBodies==0(SDK::EObjectFlags::BeginDestroyed | SDK::EObjectFlags::FinishDestroyed))
 			return false;
-
 		if (pawn->Mesh->bHasValidBodies==0())
-			return false;*/
-
-		/*if (pawn->Mesh->IsPendingKill())
+			return false;
+		if (pawn->Mesh->IsPendingKill())
 				return false;*/
-
 		return true;
 	}
 
-	//bool IsValidMesh(SDK::USkeletalMeshComponent* mesh) {
-	//	if (!mesh || Validity::IsBadPoint(mesh))
-	//		return false;
+	bool IsValidMesh(SDK::USkeletalMeshComponent* mesh) {
+		if (!mesh || Validity::IsBadPoint(mesh))
+			return false;
+		if (mesh->bHasValidBodies==0(SDK::EObjectFlags::BeginDestroyed | SDK::EObjectFlags::FinishDestroyed))
+			return false;
+		return true;
+	/*}
+	bool IsValidBone(SDK::USkeletalMeshComponent* mesh, int boneIndex) {
+		if (!IsValidMesh(mesh))
+			return false;
+		int numBones = 0;
+		try {
+			numBones = mesh->GetNumBones();
+		}
+		catch (...) {
+			return false; 
+		}
+		return boneIndex >= 0 && boneIndex < numBones;
+	}
 
-
-	//	if (mesh->bHasValidBodies==0(SDK::EObjectFlags::BeginDestroyed | SDK::EObjectFlags::FinishDestroyed))
-	//		return false;
-
-	//	return true;
-
-	//}
-
-	//bool IsValidBone(SDK::USkeletalMeshComponent* mesh, int boneIndex) {
-	//	if (!IsValidMesh(mesh))
-	//		return false;
-
-	//	int numBones = 0;
-	//	try {
-	//		numBones = mesh->GetNumBones();
-	//	}
-	//	catch (...) {
-	//		return false; 
-	//	}
-
-	//	return boneIndex >= 0 && boneIndex < numBones;
-	//}
-
-	//SDK::FVector GetSafeBoneLocation(SDK::USkeletalMeshComponent* mesh, int boneIndex) {
-	//	if (!IsValidBone(mesh, boneIndex))
-	//		return SDK::FVector{};
-
-	//	try {
-	//		SDK::FName boneName = mesh->GetBoneName(boneIndex);
-	//		if (Validity::IsBadPoint(&boneName)) return SDK::FVector{};
-
-	//		return mesh->GetSocketLocation(boneName);
-	//	}
-	//	catch (...) {
-	//		return SDK::FVector{};
-	//	}
-	//}
+	SDK::FVector GetSafeBoneLocation(SDK::USkeletalMeshComponent* mesh, int boneIndex) {
+		if (!IsValidBone(mesh, boneIndex))
+			return SDK::FVector{};
+		try {
+			SDK::FName boneName = mesh->GetBoneName(boneIndex);
+			if (Validity::IsBadPoint(&boneName)) return SDK::FVector{};
+			return mesh->GetSocketLocation(boneName);
+		}
+		catch (...) {
+			return SDK::FVector{};
+		}*/
+	}
 
 	
 
@@ -116,10 +102,10 @@ namespace {
 		// class ABP_KytBadGuy_C -> class ABP_KytBase_C -> class ABP_Character_C -> class AGBCharacter -> class ACharacter -> class APawn -> class AActor
 		// ABP_KytBadGuy_C = enemy
 		// ABP_Character_Blufor_C = friendly
+
 	SDK::FVector GetSafeActorLocation(SDK::AActor* pawn) {
 		if (!pawn || Validity::IsBadPoint(pawn))
 			return SDK::FVector{};
-
 		// Check if the pawn's controller is null
 		if (auto* pawnAsPawn = static_cast<SDK::APawn*>(pawn)) {
 			if (!pawnAsPawn->Controller) {
@@ -127,7 +113,6 @@ namespace {
 				return SDK::FVector{};
 			}
 		}
-
 		try {
 			SDK::FVector pawnLoc = pawn->K2_GetActorLocation();
 			if (pawnLoc.X == 0.0f && pawnLoc.Y == 0.0f && pawnLoc.Z == 0.0f)
@@ -139,46 +124,81 @@ namespace {
 			return SDK::FVector{};
 		}
 	}
+}
+// main_loop.cpp:486
+void ESP::RenderSkeleton(SDK::ACharacter* pawn, ImColor color) {
+	//static auto lastLogTime = std::chrono::steady_clock::now(); // Track last log time
+	//const auto logInterval = std::chrono::milliseconds(10000);  // Log every 10 seconds
 
+	if (!pawn || !Config::m_pMyController || Validity::IsBadPoint(Config::m_pMyController) || Config::m_BonePairs.empty())
+		return;
+
+	SDK::USkeletalMeshComponent* mesh = pawn->Mesh;
+	if (!mesh || !IsValidMesh(mesh))
+		return;
+
+	//for (const std::pair<int, int>& pair : Config::m_BonePairs) {
+	//		const int bone1Index = pair.first;
+	//		const int bone2Index = pair.second;
+	//		// Get bone names
+	//		SDK::FName boneName1 = pawn->Mesh->GetBoneName(bone1Index);
+	//		SDK::FName boneName2 = pawn->Mesh->GetBoneName(bone2Index);
+	//		// Get bone locations
+	//		const SDK::FVector boneLoc1 = pawn->Mesh->GetSocketLocation(boneName1);
+	//		const SDK::FVector boneLoc2 = pawn->Mesh->GetSocketLocation(boneName2);
+	//		// Log bone names and locations if debug logging is enabled
+	//		auto now = std::chrono::steady_clock::now();
+	//		if (config::debugLogging && now - lastLogTime >= logInterval)
+	//		{
+	//			std::cout << "Bone1 Name: " << boneName1.ToString() << ", Bone2 Name: " << boneName2.ToString() << std::endl;
+	//			std::cout << "Bone1 Location: X=" << boneLoc1.X << ", Y=" << boneLoc1.Y << ", Z=" << boneLoc1.Z << std::endl;
+	//			std::cout << "Bone2 Location: X=" << boneLoc2.X << ", Y=" << boneLoc2.Y << ", Z=" << boneLoc2.Z << std::endl;
+	//			lastLogTime = now; // Update last log time
+	//		}
+	//		// Check if bone names are valid and output
+	//		if (boneName1.ToString().empty() || boneName2.ToString().empty()) {
+	//			std::cerr << "Invalid bone names for indices: " << bone1Index << ", " << bone2Index << std::endl;
+	//			continue;
+	//		}
+	//}
+
+	// Continue with rendering logic...
+
+	for (const std::pair<int, int>& pair : Config::m_BonePairs)
+	{
+		if (!IsValidMesh(mesh))
+			return;
+		const int bone1Index = pair.first;
+		const int bone2Index = pair.second;
+		/*const SDK::FVector boneLoc1 = GetSafeBoneLocation(mesh, bone1Index);
+		const SDK::FVector boneLoc2 = GetSafeBoneLocation(mesh, bone2Index);*/
+		const SDK::FVector boneLoc1 = pawn->Mesh->GetSocketLocation(pawn->Mesh->GetBoneName(bone1Index));
+		const SDK::FVector boneLoc2 = pawn->Mesh->GetSocketLocation(pawn->Mesh->GetBoneName(bone2Index));
+
+		if (boneLoc1.IsZero() || boneLoc2.IsZero())
+			{
+			std::cerr << "Invalid bone locations for indices: " << bone1Index << ", " << bone2Index << std::endl;
+			continue;
+			}
+		
+
+		SDK::FVector2D boneScreen;
+		SDK::FVector2D prevBoneScreen;
+
+		if (!Config::m_pMyController->ProjectWorldLocationToScreen(boneLoc1, &boneScreen, false) ||
+			!Config::m_pMyController->ProjectWorldLocationToScreen(boneLoc2, &prevBoneScreen, false))
+			{
+			std::cerr << "Projection failed for bones." << std::endl;
+			continue;
+		}
+
+		if (pawn == Config::m_pCurrentTarget) color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
+
+		ImGui::GetForegroundDrawList()->AddLine(ImVec2(boneScreen.X, boneScreen.Y), ImVec2(prevBoneScreen.X, prevBoneScreen.Y), color, 1.0f);
+	}
 }
 
-//void ESP::RenderSkeleton(SDK::ABP_KytBadGuy_C* pawn, ImColor color) // change back to KytBadGuy
-//{
-//	if (!pawn || !Config::m_pMyController || Validity::IsBadPoint(Config::m_pMyController) || Config::m_BonePairs.empty())
-//		return;
-//
-//	SDK::USkeletalMeshComponent* mesh = pawn->Mesh;
-//	if (!mesh)
-//		return;
-//
-//	for (const std::pair<int, int>& pair : Config::m_BonePairs)
-//	{
-//		const int bone1Index = pair.first;
-//		const int bone2Index = pair.second;
-//
-//		const SDK::FVector boneLoc1 = pawn->Mesh->GetSocketLocation(pawn->Mesh->GetBoneName(bone1Index));
-//		const SDK::FVector boneLoc2 = pawn->Mesh->GetSocketLocation(pawn->Mesh->GetBoneName(bone2Index));
-//
-//		SDK::FVector2D boneScreen;
-//		SDK::FVector2D prevBoneScreen;
-//
-//		if (
-//			!Config::m_pMyController->ProjectWorldLocationToScreen(boneLoc1, &boneScreen, false) ||
-//			!Config::m_pMyController->ProjectWorldLocationToScreen(boneLoc2, &prevBoneScreen, false)
-//			) continue;
-//
-//		if (pawn == Config::m_pCurrentTarget) color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
-//
-//		ImGui::GetForegroundDrawList()->AddLine(
-//			ImVec2(boneScreen.X, boneScreen.Y),
-//			ImVec2(prevBoneScreen.X, prevBoneScreen.Y),
-//			color,
-//			1.0f
-//		);
-//	}
-//}
-
-//void ESP::RenderSkeleton(SDK::ABP_KytBadGuy_C* pawn, ImColor color) {
+//void ESP::RenderSkeleton(SDK::ACharacter* pawn, ImColor color) {
 //	if (!IsValidPawn(pawn) || !Config::m_pMyController ||
 //		Validity::IsBadPoint(Config::m_pMyController) || Config::m_BonePairs.empty())
 //		return;
@@ -242,7 +262,7 @@ namespace {
 //	}
 //}
 
-void ESP::RenderSnapline(SDK::ACharacter* pawn, ImColor color) {
+void ESP::RenderSnapline(SDK::ACharacter * pawn, ImColor color) { // double check main_loop bool isn't commented out&aactor cast is correct
 	if (!IsValidPawn(pawn) || !Config::m_pMyController || Validity::IsBadPoint(Config::m_pMyController))
 		return;
 

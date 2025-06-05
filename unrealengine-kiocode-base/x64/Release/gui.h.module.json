@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Release\\gui.h.obj",
+            "outputs": [
+                "C:\\Users\\kittilsen\\source\\repos\\ue4base\\unrealengine-kiocode-base\\x64\\Release\\vc143.pdb",
+                "x64\\Release\\",
+                "C:\\Users\\kittilsen\\source\\repos\\ue4base\\unrealengine-kiocode-base\\x64\\Release\\gui.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "src\\gui\\core\\gui.h",
+                    "source-path": "c:\\users\\kittilsen\\source\\repos\\ue4base\\unrealengine-kiocode-base\\src\\gui\\core\\gui.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

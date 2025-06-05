@@ -4,7 +4,12 @@
 
 #define RAINBOW_BORDERS TRUE
 
-class Config 
+namespace config {
+	inline bool debugLogging = false; // std::cout << "stuff" << std::endl; (can be used in any file)
+									 // turn false to disable log outputs of esp stuff, main_loop logging will stay active	
+}
+
+class Config
 {
 public:
 

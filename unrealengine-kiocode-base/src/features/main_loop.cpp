@@ -252,7 +252,7 @@ bool MainLoop::UpdateSDK(bool log)
 	}
 	if (log) {
 		std::cout << "World address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::m_pWorld) << std::dec << std::endl;
-		std::cout << "253 World name: " << Config::m_pWorld->GetName() << std::endl;
+		std::cout << "^^^ World name: " << Config::m_pWorld->GetName() << std::endl;
 	}
 
 	Config::m_pEngine = SDK::UEngine::GetEngine();
@@ -263,7 +263,7 @@ bool MainLoop::UpdateSDK(bool log)
 	}
 	if (log) {
 		std::cout << "Engine address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::m_pEngine) << std::dec << std::endl;
-		std::cout << "263 Engine name: " << Config::m_pEngine->GetName() << std::endl;
+		std::cout << "^^^ Engine name: " << Config::m_pEngine->GetName() << std::endl;
 	}
 
 	// Init PlayerController
@@ -285,7 +285,7 @@ bool MainLoop::UpdateSDK(bool log)
 	}
 	if (log) {
 		std::cout << "PlayerController address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::m_pMyController) << std::dec << std::endl;
-		std::cout << "284 PlayerController name: " << Config::m_pMyController->GetName() << std::endl;
+		std::cout << "^^^ PlayerController name: " << Config::m_pMyController->GetName() << std::endl;
 	}
 
 	// Init Pawn
@@ -297,7 +297,7 @@ bool MainLoop::UpdateSDK(bool log)
 	}	
 	if (log) {
 		std::cout << "MyPawn address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::m_pMyPawn) << std::dec << std::endl;
-		std::cout << "296 MyPawn name: " << Config::m_pMyPawn->GetName() << std::endl;
+		std::cout << "^^^ MyPawn name: " << Config::m_pMyPawn->GetName() << std::endl;
 	}
 	
 	Config::m_pMyCharacter = Config::m_pMyController->Character;
@@ -308,6 +308,7 @@ bool MainLoop::UpdateSDK(bool log)
 	}
 	if (log) {
 		std::cout << "MyCharacter address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::m_pMyCharacter) << std::dec << std::endl;
+		std::cout << "^^^ MyCharacter name: " << Config::m_pMyCharacter->GetName() << std::endl;
 	}
 
 	return true;
@@ -421,14 +422,13 @@ void MainLoop::Update(DWORD tick)
 			continue;
 
 		// raycast to check if targets are behind walls
-		/*bool isVisible = Config::m_pMyController->LineOfSightTo(currTarget, Config::m_pMyController->PlayerCameraManager->CameraCachePrivate.POV.Location, false);
-
-		if (Config::m_bPlayerChams && Config::m_pChamsMaterial) 
+		bool isVisible = Config::m_pMyController->LineOfSightTo(currTarget, Config::m_pMyController->PlayerCameraManager->CameraCachePrivate.POV.Location, false);
+		if (Config::m_bPlayerChams && Config::m_pChamsMaterial)
 		{
 			SDK::ASkeletalMeshActor* mesh = reinterpret_cast<SDK::ASkeletalMeshActor*>(currTarget);
 			Utility::ApplyChams(mesh->SkeletalMeshComponent, true);
-		}*/
-
+		}
+		
 		ImColor color = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
 
 		#pragma region CHEATS FOR TARGETS
@@ -438,63 +438,62 @@ void MainLoop::Update(DWORD tick)
 		if (Config::m_bPlayersSnapline)
 		{
 
-			//if (currTarget == Config::m_pCurrentTarget)
-			//{
-			//	color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
-			//}
-			//
-			//else
-			//{
-			//
-			//	if (isVisible)
-			//	{
-			//		color = Config::m_bRainbowPlayersSnapline ? Config::m_cRainbow : Config::m_cPlayersSnaplineColor;
-			//	}
-			//	else
-			//	{
-			//		color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
-			//	}
-			//
-			//}
-			//else
-			ImColor color = ImColor(100,100,100);
+			if (currTarget == Config::m_pCurrentTarget)
+			{
+				color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
+			}
+			
+			else
+			{
+			
+				if (isVisible)
+				{
+					color = Config::m_bRainbowPlayersSnapline ? Config::m_cRainbow : Config::m_cPlayersSnaplineColor;
+				}
+				else
+				{
+					color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
+				}
+			
+			}
+
 			ESP::GetInstance().RenderSnapline(currTarget, color);
 		}
 
-		//if (Config::m_bPlayerSkeleton)
-		//{
+		if (Config::m_bPlayerSkeleton)
+		{
+		
+			if (currTarget == Config::m_pCurrentTarget)
+			{
+				color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
+			}
+			else
+			{
+		
+				if (isVisible)
+				{
+					color = Config::m_bRainbowPlayerSkeleton ? Config::m_cRainbow : Config::m_cPlayerSkeletonColor;
+				}
+				else
+				{
+					color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
+				}
+		
+			}
 
-		//	if (currTarget == Config::m_pCurrentTarget)
-		//	{
-		//		color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
-		//	}
-		//	else
-		//	/*{
-
-		//		if (isVisible)
-		//		{
-		//			color = Config::m_bRainbowPlayerSkeleton ? Config::m_cRainbow : Config::m_cPlayerSkeletonColor;
-		//		}
-		//		else
-		//		{
-		//			color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
-		//		}
-
-		//	}*/
-
-		//	ESP::GetInstance().RenderSkeleton(currTarget, color);
-		//}
-
+				ESP::GetInstance().RenderSkeleton(currTarget, color);
+		}
+		
 		//if (Config::m_bPlayersBox)
 		//{
-
+		//
 		//	if (currTarget == Config::m_pCurrentTarget)
 		//	{
 		//		color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
 		//	}
 		//	else
 		//	/*{
-
+		//
 		//		if (isVisible)
 		//		{
 		//			color = Config::m_bRainbowPlayersBox ? Config::m_cRainbow : Config::m_cPlayersBoxColor;
@@ -504,20 +503,20 @@ void MainLoop::Update(DWORD tick)
 		//			color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
 		//		}
 		//	}*/
-
+		//
 		//	ESP::GetInstance().RenderBox(currTarget, color);
 		//}
-
+		
 		//if (Config::m_bPlayersBox3D)
 		//{
-
+		//
 		//	if (currTarget == Config::m_pCurrentTarget)
 		//	{
 		//		color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
 		//	}
 		//	else
 		//	/*{
-
+		//
 		//		if (isVisible)
 		//		{
 		//			color = Config::m_bRainbowPlayersBox ? Config::m_cRainbow : Config::m_cPlayersBoxColor;
@@ -527,14 +526,14 @@ void MainLoop::Update(DWORD tick)
 		//			color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
 		//		}
 		//	}*/
-
+		//
 		//	ESP::GetInstance().Render3DBox(currTarget, color);
 		//}
-
-		/*if (Config::m_bEnableAimbot && isVisible)
-		{
-			Aimbot::GetInstance().RegularAimbot(currTarget);
-		}*/
+		
+		//if (Config::m_bEnableAimbot && isVisible)
+		//{
+		//	Aimbot::GetInstance().RegularAimbot(currTarget);
+		//}
 
 		#pragma endregion
 	
