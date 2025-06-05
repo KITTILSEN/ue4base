@@ -44,6 +44,8 @@ namespace {
 			return false;
 		if (mesh->bHasValidBodies==0(SDK::EObjectFlags::BeginDestroyed | SDK::EObjectFlags::FinishDestroyed))
 			return false;
+		if (!IsValidMesh(mesh))
+			return false;
 		return true;
 	/*}
 	bool IsValidBone(SDK::USkeletalMeshComponent* mesh, int boneIndex) {
