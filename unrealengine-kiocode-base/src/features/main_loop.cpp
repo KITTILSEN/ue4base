@@ -66,7 +66,7 @@ void MainLoop::FetchFromObjects(std::vector<SDK::ACharacter*>* list)
 			continue;
 		
 		// ground branch
-		if (!obj->IsA(SDK::ABP_KytBadGuy_C::StaticClass())) // changeable
+		if (!obj->IsA(SDK::ABP_KytBadGuy_C::StaticClass())) // filters out pointers / pushes only pointers for this obj. -changeable-
 			continue;
 		SDK::ABP_KytBadGuy_C* enemies = static_cast<SDK::ABP_KytBadGuy_C*>(obj);
 		
