@@ -37,10 +37,22 @@ namespace {
 
 	bool IsValidMesh(SDK::USkeletalMeshComponent* mesh) {
 		if (!mesh || Validity::IsBadPoint(mesh))
+			std::cerr << "Error: Mesh is null or invalid!" << std::endl;
 			return false;
 		if (mesh->bHasValidBodies == 0)
+			std::cerr << "Warning: Mesh has no valid bodies!" << std::endl;
 			return false;
 		if (mesh->Flags & (SDK::EObjectFlags::BeginDestroyed | SDK::EObjectFlags::FinishDestroyed))
+			std::cerr << "Warning: Mesh is being destroyed!" << std::endl;
+			return false;
+		if (!mesh->bIsActive)
+			std::cerr << "Warning: Mesh is not active!1" << std::endl;
+			return false;
+		if (!mesh->IsActive())
+			std::cerr << "Warning: Mesh is not active!2" << std::endl;
+			return false;
+		if (mesh->IsBeingDestroyed())
+			std::cerr << "Warning: Mesh is being destroyed!" << std::endl;
 			return false;
 		return true;
 	}
@@ -48,14 +60,17 @@ namespace {
 	bool IsValidBone(SDK::USkeletalMeshComponent* mesh, int boneIndex) {
 		if (!IsValidMesh(mesh))
 			return false;
+		if (boneIndex < 0)
+			return false;
 		int numBones = 0;
 		try {
 			numBones = mesh->GetNumBones();
 		}
 		catch (...) {
+			std::cerr << "Error: Exception occurred while getting number of bones." << std::endl;
 			return false;
 		}
-		return boneIndex >= 0 && boneIndex < numBones;
+		return boneIndex < numBones;
 	}
 	bool GetSafeBoneLocation(SDK::USkeletalMeshComponent* mesh, int boneIndex, SDK::FVector& outLocation) {
 		if (!mesh || Validity::IsBadPoint(mesh) || !IsValidBone(mesh, boneIndex))
@@ -72,12 +87,14 @@ namespace {
 			// Allow (0,0,0) as it might be legitimate
 			if (std::isnan(outLocation.X) || std::isnan(outLocation.Y) || std::isnan(outLocation.Z) ||
 				std::isinf(outLocation.X) || std::isinf(outLocation.Y) || std::isinf(outLocation.Z)) {
+				std::cerr << "Error: Invalid bone location retrieved!" << std::endl;
 				return false;
 			}
 
 			return true;
 		}
 		catch (...) {
+			std::cerr << "Exception occurred while getting bone location." << std::endl;
 			return false;
 		}
 	}

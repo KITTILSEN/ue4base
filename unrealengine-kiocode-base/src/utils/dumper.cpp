@@ -120,7 +120,9 @@ namespace Dumper {
             if (!player || Validity::IsBadPoint(player)) continue;
 
             SDK::ACharacter* PlayerCharacter = reinterpret_cast<SDK::ACharacter*>(player);
-            if (!PlayerCharacter || !PlayerCharacter->PlayerState || !PlayerCharacter->PlayerState->GetPlayerName() || !PlayerCharacter->PlayerState->GetPlayerName().IsValid())
+            if (!PlayerCharacter || !PlayerCharacter->PlayerState ||
+                !PlayerCharacter->PlayerState->GetPlayerName() ||
+                !PlayerCharacter->PlayerState->GetPlayerName().IsValid())
                 continue;
 
             std::cout << PlayerCharacter->PlayerState->GetPlayerName().ToString() << "\n";

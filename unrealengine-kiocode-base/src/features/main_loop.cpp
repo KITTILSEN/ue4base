@@ -52,7 +52,7 @@ void MainLoop::DrawCrosshair()
 //		list->push_back(enemies);
 	
 
-												//vvv has to match up with config(::m_TargetsList(61), ESP & newTargets vector) or throws no overload
+												//vvv match with config(::m_TargetsList(61), ESP's & newTargets vector)->!overload
 void MainLoop::FetchFromObjects(std::vector<SDK::ACharacter*>* list)
 {
 
@@ -411,7 +411,7 @@ void MainLoop::Update(DWORD tick)
 	}
 
 	// looping our targets (in online games it will be prob a ACharacter vector, in offline games for npc can be AActor vector)
-	for (auto* currTarget : *currentTargets) 
+	for (auto* currTarget : *currentTargets)
 	{
 
 		if (!currTarget || Validity::IsBadPoint(currTarget))
@@ -473,6 +473,7 @@ void MainLoop::Update(DWORD tick)
 				if (isVisible)
 				{
 					color = Config::m_bRainbowPlayerSkeleton ? Config::m_cRainbow : Config::m_cPlayerSkeletonColor;
+					std::cout << "Rendering skeleton for: " << currTarget->GetName() << std::endl;
 				}
 				else
 				{
