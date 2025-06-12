@@ -1,7 +1,8 @@
 #ifndef TEST_MODE
 
 #include <thread>
-
+//#include <windows.h>
+//#include <iostream>
 #include "src/includes.h"
 #include "src/gui/core/gui.h"
 #include "src/utils/rainbow_calculator.hpp"
@@ -32,6 +33,41 @@ void InitialSetup()
 
 	StartBackgroundThreads();
 }
+
+//LONG WINAPI MyUnhandledExceptionFilter(EXCEPTION_POINTERS* ExceptionInfo) {
+//	std::cerr << "Unhandled exception caught! Press Enter to exit..." << std::endl;
+//	std::cin.get();
+//	return EXCEPTION_EXECUTE_HANDLER;
+//}
+
+// ... (rest of your includes)
+
+//DWORD WINAPI MainThread(LPVOID lpReserved)
+//{
+//	__try
+//	{
+//		bool mainHkInitialized = false;
+//		do
+//		{
+//			if (kiero::init(kiero::RenderType::D3D11) == kiero::Status::Success)
+//			{
+//				InitialSetup();
+//				mainHkInitialized = true;
+//			}
+//			else
+//			{
+//				MessageBoxA(NULL, "Kiero initialization failed", "Debug", MB_OK);
+//			}
+//		} while (!mainHkInitialized);
+//		return TRUE;
+//	}
+//	__except (EXCEPTION_EXECUTE_HANDLER)
+//	{
+//		std::cerr << "A fatal exception occurred. Press Enter to close the console..." << std::endl;
+//		std::cin.get();
+//		return FALSE;
+//	}
+//}
 
 DWORD WINAPI MainThread(LPVOID lpReserved)
 {

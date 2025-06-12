@@ -20,83 +20,147 @@ namespace {
 	//	return true;
 	//}
 
-	bool IsValidPawn(SDK::ACharacter* pawn) {
+	bool IsValidPawn(SDK::ACharacter* pawn)
+	{
 		if (!pawn || Validity::IsBadPoint(pawn))
+		{
+			std::cerr << "Error: Pawn is null or invalid!" << std::endl;
 			return false;
+		}
+		if (pawn->Flags & (SDK::EObjectFlags::BeginDestroyed | SDK::EObjectFlags::FinishDestroyed))
+		{
+			std::cerr << "Error: Pawn is being destroyed!" << std::endl;
+			return false;
+		}
 		if (!pawn->Mesh || Validity::IsBadPoint(pawn->Mesh))
+		{
+			std::cerr << "Error: Pawn mesh is null or invalid!" << std::endl;
 			return false;
-		// Same checks for the mesh
-		/*if (pawn->Mesh->bHasValidBodies==0(SDK::EObjectFlags::BeginDestroyed | SDK::EObjectFlags::FinishDestroyed))
+		}
+		if (pawn->Mesh->Flags & (SDK::EObjectFlags::BeginDestroyed | SDK::EObjectFlags::FinishDestroyed))
+		{
+			std::cerr << "Warning: Pawn mesh has flag->begindestroyed!" << std::endl;
 			return false;
-		if (pawn->Mesh->bHasValidBodies==0())
+		}
+		if (pawn->Mesh->bHasValidBodies == 0)
+		{
+			std::cerr << "Warning: Pawn mesh has no valid bodies!" << std::endl;
 			return false;
-		if (pawn->Mesh->IsPendingKill())
-			return false;*/
+		}
 		return true;
 	}
 
-	bool IsValidMesh(SDK::USkeletalMeshComponent* mesh) {
+	bool IsValidMesh(SDK::USkeletalMeshComponent* mesh)
+	{
 		if (!mesh || Validity::IsBadPoint(mesh))
+		{
 			std::cerr << "Error: Mesh is null or invalid!" << std::endl;
 			return false;
+		}
 		if (mesh->bHasValidBodies == 0)
+		{
 			std::cerr << "Warning: Mesh has no valid bodies!" << std::endl;
 			return false;
+		}
 		if (mesh->Flags & (SDK::EObjectFlags::BeginDestroyed | SDK::EObjectFlags::FinishDestroyed))
-			std::cerr << "Warning: Mesh is being destroyed!" << std::endl;
+		{
+			std::cerr << "Warning: Mesh has flag->begindestroyed !" << std::endl;
 			return false;
+		}
 		if (!mesh->bIsActive)
-			std::cerr << "Warning: Mesh is not active!1" << std::endl;
+		{
+			std::cerr << "Warning: Mesh bool is not active!1" << std::endl;
 			return false;
+		}
 		if (!mesh->IsActive())
-			std::cerr << "Warning: Mesh is not active!2" << std::endl;
+		{
+			std::cerr << "Warning: Mesh classbool is not active!2" << std::endl;
 			return false;
+		}
 		if (mesh->IsBeingDestroyed())
+		{
 			std::cerr << "Warning: Mesh is being destroyed!" << std::endl;
 			return false;
+		}
 		return true;
 	}
 
-	bool IsValidBone(SDK::USkeletalMeshComponent* mesh, int boneIndex) {
+	bool IsValidBone(SDK::USkeletalMeshComponent* mesh, int boneIndex)
+	{
 		if (!IsValidMesh(mesh))
+		{
 			return false;
+		}
 		if (boneIndex < 0)
+		{
+			std::cerr << "Error: Invalid bone index: " << boneIndex << std::endl;
 			return false;
+		}
+		static auto lastValidationPrint = std::chrono::steady_clock::now();
+		auto now2 = std::chrono::steady_clock::now();
+		if (std::chrono::duration_cast<std::chrono::seconds>(now2 - lastValidationPrint).count() >= 5)
+		{
+			std::cout << "Validating bone index: " << boneIndex << std::endl;
+			lastValidationPrint = now2;
+		}
 		int numBones = 0;
 		try {
 			numBones = mesh->GetNumBones();
+
+			static auto lastValidationPrint = std::chrono::steady_clock::now();
+			auto now = std::chrono::steady_clock::now();
+			if (std::chrono::duration_cast<std::chrono::seconds>(now - lastValidationPrint).count() >= 5)
+			{
+				std::cout << "mesh: " << mesh << " numbones: " << numBones << std::endl;
+				lastValidationPrint = now;
+			}
 		}
 		catch (...) {
 			std::cerr << "Error: Exception occurred while getting number of bones." << std::endl;
 			return false;
 		}
+		//std::cout << "Valid bone index: " << boneIndex << " in mesh with " << numBones << " bones." << std::endl;
 		return boneIndex < numBones;
 	}
 	bool GetSafeBoneLocation(SDK::USkeletalMeshComponent* mesh, int boneIndex, SDK::FVector& outLocation) {
-		if (!mesh || Validity::IsBadPoint(mesh) || !IsValidBone(mesh, boneIndex))
+		if (!IsValidBone(mesh, boneIndex))
+		{
 			return false;
-
+		}
 		try {
 			// Get bone name - no need to check if FName is valid since it's a value type
 			SDK::FName boneName = mesh->GetBoneName(boneIndex);
 
 			// Get socket location
 			outLocation = mesh->GetSocketLocation(boneName);
+			//std::cout << "nonerr: Bone Name: " << boneName.GetRawString() << std::endl;
 
 			// Instead of checking IsZero(), check for obviously invalid values
 			// Allow (0,0,0) as it might be legitimate
 			if (std::isnan(outLocation.X) || std::isnan(outLocation.Y) || std::isnan(outLocation.Z) ||
 				std::isinf(outLocation.X) || std::isinf(outLocation.Y) || std::isinf(outLocation.Z)) {
-				std::cerr << "Error: Invalid bone location retrieved!" << std::endl;
+				std::cerr << "Error: Invalid bone location retrieved!" << boneIndex
+						  << "(name: " << boneName.ToString() << ")" << std::endl;
 				return false;
 			}
 
 			return true;
 		}
 		catch (...) {
-			std::cerr << "Exception occurred while getting bone location." << std::endl;
+			// Log the bone index and name if possible
+			try {
+				SDK::FName boneName = mesh->GetBoneName(boneIndex);
+				std::cerr << "Exception occurred while getting bone location for bone index "
+						  << boneIndex << " (name: " << boneName.ToString() << ")" << std::endl;
+			}
+			catch (...) {
+				std::cerr << "Exception occurred while getting bone location for bone index "
+						  << boneIndex << " (name: <unknown>)" << std::endl;
+			}
 			return false;
 		}
+		
+		
 	}
 	//bool GetSafeBoneLocation(SDK::USkeletalMeshComponent* mesh, int boneIndex, SDK::FVector& outLocation) {
 	//	if (!mesh || Validity::IsBadPoint(mesh) || !IsValidBone(mesh, boneIndex))
@@ -143,7 +207,9 @@ namespace {
 
 	SDK::FVector GetSafeActorLocation(SDK::ACharacter* pawn) {
 		if (!pawn || Validity::IsBadPoint(pawn))
+		{
 			return SDK::FVector{};
+		}
 		// Check if the pawn's controller is null
 		if (auto* pawnAsPawn = static_cast<SDK::APawn*>(pawn)) {
 			if (!pawnAsPawn->Controller) {
@@ -151,29 +217,35 @@ namespace {
 				return SDK::FVector{};
 			}
 		}
-
 		try {
 			SDK::FVector pawnLoc = pawn->K2_GetActorLocation();
 			if (pawnLoc.X == 0.0f && pawnLoc.Y == 0.0f && pawnLoc.Z == 0.0f)
+			{
 				return SDK::FVector{};
+			}
 			return pawnLoc;
 		}
-
 		catch (...) {
 			std::cerr << "Exception occurred while getting actor location." << std::endl;
 			return SDK::FVector{};
 		}
 	}
 }
-// skeleton init-main_loop.cpp:486
 
+
+
+// skeleton init-main_loop.cpp:486
 void ESP::RenderSkeleton(SDK::ACharacter* pawn, ImColor color) {
 	if (!pawn || !Config::m_pMyController || Validity::IsBadPoint(Config::m_pMyController) || Config::m_BonePairs.empty())
+	{
 		return;
+	}
 
 	SDK::USkeletalMeshComponent* mesh = pawn->Mesh;
 	if (!mesh || !IsValidMesh(mesh))
+	{
 		return;
+	}
 
 	for (const std::pair<int, int>& pair : Config::m_BonePairs) {
 		SDK::FVector boneLoc1, boneLoc2;
@@ -378,16 +450,30 @@ void ESP::RenderSkeleton(SDK::ACharacter* pawn, ImColor color) {
 
 void ESP::RenderSnapline(SDK::ACharacter* pawn, ImColor color) { // double check main_loop bool isn't commented out&aactor cast is correct
 	if (!IsValidPawn(pawn) || !Config::m_pMyController || Validity::IsBadPoint(Config::m_pMyController))
+	{
 		return;
+	}
 
 	// Use safe wrapper instead of direct call
 	SDK::FVector pawnLoc = GetSafeActorLocation(pawn);
+	static auto lastPawnLocPrint = std::chrono::steady_clock::now();
+	auto now3 = std::chrono::steady_clock::now();
+		if (std::chrono::duration_cast<std::chrono::seconds>(now3 - lastPawnLocPrint).count() >= 5) {
+			std::cout << "Pawn location: " << pawnLoc.X << ", " << pawnLoc.Y << ", " << pawnLoc.Z << std::endl;
+			lastPawnLocPrint = now3;
+		}
 	if (pawnLoc.IsZero()) // Check if location is valid
+	{
+		std::cerr << "Error: zero pawn location!" << pawn << std::endl;
 		return;
+	}
 
 	SDK::FVector2D pawnScreen;
 	if (!Config::m_pMyController->ProjectWorldLocationToScreen(pawnLoc, &pawnScreen, false))
+	{
+		std::cerr << "pawn projection failed: " << pawn << std::endl;
 		return;
+	}
 
 	ImVec2 origin;
 	switch (Config::m_nPlayersSnaplineType) {

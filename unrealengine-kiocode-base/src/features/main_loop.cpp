@@ -473,7 +473,13 @@ void MainLoop::Update(DWORD tick)
 				if (isVisible)
 				{
 					color = Config::m_bRainbowPlayerSkeleton ? Config::m_cRainbow : Config::m_cPlayerSkeletonColor;
-					std::cout << "Rendering skeleton for: " << currTarget->GetName() << std::endl;
+					static auto now4 = std::chrono::steady_clock::now();
+					auto lastSkeleVis = std::chrono::steady_clock::now();
+					if (std::chrono::duration_cast<std::chrono::seconds>(now4 - lastSkeleVis).count() >= 5)
+					{
+						std::cout << "Skeleton visible: " << currTarget->GetName() << std::endl;
+						lastSkeleVis = now4;
+					}
 				}
 				else
 				{

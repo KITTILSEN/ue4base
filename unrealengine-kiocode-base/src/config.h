@@ -214,7 +214,7 @@ public:
 
 	inline static bool m_bPlayerSkeleton = false;
 	inline static bool m_bRainbowPlayerSkeleton = false;
-	inline static ImColor m_cPlayerSkeletonColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
+	inline static ImColor m_cPlayerSkeletonColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255, 0.75f);
 
 	inline static bool m_bPlayersBox = false;
 	inline static bool m_bRainbowPlayersBox = false;
@@ -226,7 +226,7 @@ public:
 	inline static bool m_bRainbowAimbotTargetColor = false;
 	inline static ImColor m_cAimbotTargetColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
 
-	inline static ImColor m_cTargetNotVisibleColor = ImColor(210.0f / 210, 210.0f / 210, 210.0f / 200);
+	inline static ImColor m_cTargetNotVisibleColor = ImColor(128.0f / 255, 128.0f / 255, 128.0f / 255, 0.75f);
 	inline static bool m_bRainbowTargetNotVisibleColor = false;
 	
 	inline static bool m_bPlayersBox3D = false;
