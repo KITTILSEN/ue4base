@@ -57,14 +57,14 @@ public:
 	float                                         NewMarkerScale;                                    // 0x0328(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage(int32 EntryPoint);
-	void ResizeAllWidgets(float NewScale);
-	void RedisplayMapMarkers();
-	void SpawnMapWidget(const struct FGBMapMarker& MapMarkerInfo, int32 WidgetIndex);
-	void Construct();
-	void OnLoaded_408F25D74633A288D4801486CE2497E2(class UObject* Loaded);
-	void GetMissionTitleFromSoftRef(TSoftObjectPtr<class AGBMissionObjective> MissionObjectiveSoftRef, class FString* MissionObjectiveTitle, bool* bPrimaryObjective);
 	void GetActorNameWithoutSuffix(const class FString& InActorName, class FString* NameWithoutSuffix);
+	void GetMissionTitleFromSoftRef(TSoftObjectPtr<class AGBMissionObjective> MissionObjectiveSoftRef, class FString* MissionObjectiveTitle, bool* bPrimaryObjective);
+	void OnLoaded_408F25D74633A288D4801486CE2497E2(class UObject* Loaded);
+	void Construct();
+	void SpawnMapWidget(const struct FGBMapMarker& MapMarkerInfo, int32 WidgetIndex);
+	void RedisplayMapMarkers();
+	void ResizeAllWidgets(float NewScale);
+	void ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

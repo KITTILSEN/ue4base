@@ -20,6 +20,65 @@
 namespace SDK::Params
 {
 
+// Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.SetTeamRole
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_Mission_PlayerList_C_SetTeamRole final
+{
+public:
+	class FName                                   Role;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x0010(0x0018)()
+	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0030(0x0018)()
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_Mission_PlayerList_C_SetTeamRole) == 0x000008, "Wrong alignment on WBP_Mission_PlayerList_C_SetTeamRole");
+static_assert(sizeof(WBP_Mission_PlayerList_C_SetTeamRole) == 0x000050, "Wrong size on WBP_Mission_PlayerList_C_SetTeamRole");
+static_assert(offsetof(WBP_Mission_PlayerList_C_SetTeamRole, Role) == 0x000000, "Member 'WBP_Mission_PlayerList_C_SetTeamRole::Role' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_PlayerList_C_SetTeamRole, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000008, "Member 'WBP_Mission_PlayerList_C_SetTeamRole::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_PlayerList_C_SetTeamRole, CallFunc_Conv_NameToText_ReturnValue) == 0x000010, "Member 'WBP_Mission_PlayerList_C_SetTeamRole::CallFunc_Conv_NameToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_PlayerList_C_SetTeamRole, CallFunc_TextIsEmpty_ReturnValue) == 0x000028, "Member 'WBP_Mission_PlayerList_C_SetTeamRole::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_PlayerList_C_SetTeamRole, CallFunc_BooleanOR_ReturnValue) == 0x000029, "Member 'WBP_Mission_PlayerList_C_SetTeamRole::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_PlayerList_C_SetTeamRole, CallFunc_TextToUpper_ReturnValue) == 0x000030, "Member 'WBP_Mission_PlayerList_C_SetTeamRole::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_PlayerList_C_SetTeamRole, CallFunc_Not_PreBool_ReturnValue) == 0x000048, "Member 'WBP_Mission_PlayerList_C_SetTeamRole::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+
+// Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.GetTotalTeamBoxVis
+// 0x000C (0x000C - 0x0000)
+struct WBP_Mission_PlayerList_C_GetTotalTeamBoxVis final
+{
+public:
+	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis) == 0x000004, "Wrong alignment on WBP_Mission_PlayerList_C_GetTotalTeamBoxVis");
+static_assert(sizeof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis) == 0x00000C, "Wrong size on WBP_Mission_PlayerList_C_GetTotalTeamBoxVis");
+static_assert(offsetof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis, ReturnValue) == 0x000000, "Member 'WBP_Mission_PlayerList_C_GetTotalTeamBoxVis::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis, Temp_bool_Variable) == 0x000001, "Member 'WBP_Mission_PlayerList_C_GetTotalTeamBoxVis::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis, Temp_byte_Variable) == 0x000002, "Member 'WBP_Mission_PlayerList_C_GetTotalTeamBoxVis::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_Mission_PlayerList_C_GetTotalTeamBoxVis::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis, CallFunc_GetChildrenCount_ReturnValue) == 0x000004, "Member 'WBP_Mission_PlayerList_C_GetTotalTeamBoxVis::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis, CallFunc_Greater_IntInt_ReturnValue) == 0x000008, "Member 'WBP_Mission_PlayerList_C_GetTotalTeamBoxVis::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis, K2Node_Select_Default) == 0x000009, "Member 'WBP_Mission_PlayerList_C_GetTotalTeamBoxVis::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.AddPlayerListEntry
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Mission_PlayerList_C_AddPlayerListEntry final
+{
+public:
+	class AGBPlayerState*                         PlayerState;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Mission_PlayerList_C_AddPlayerListEntry) == 0x000008, "Wrong alignment on WBP_Mission_PlayerList_C_AddPlayerListEntry");
+static_assert(sizeof(WBP_Mission_PlayerList_C_AddPlayerListEntry) == 0x000008, "Wrong size on WBP_Mission_PlayerList_C_AddPlayerListEntry");
+static_assert(offsetof(WBP_Mission_PlayerList_C_AddPlayerListEntry, PlayerState) == 0x000000, "Member 'WBP_Mission_PlayerList_C_AddPlayerListEntry::PlayerState' has a wrong offset!");
+
 // Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.ExecuteUbergraph_WBP_Mission_PlayerList
 // 0x0320 (0x0320 - 0x0000)
 struct WBP_Mission_PlayerList_C_ExecuteUbergraph_WBP_Mission_PlayerList final
@@ -191,65 +250,6 @@ static_assert(offsetof(WBP_Mission_PlayerList_C_ExecuteUbergraph_WBP_Mission_Pla
 static_assert(offsetof(WBP_Mission_PlayerList_C_ExecuteUbergraph_WBP_Mission_PlayerList, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0002E5, "Member 'WBP_Mission_PlayerList_C_ExecuteUbergraph_WBP_Mission_PlayerList::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Mission_PlayerList_C_ExecuteUbergraph_WBP_Mission_PlayerList, K2Node_Select_Default_2) == 0x0002E8, "Member 'WBP_Mission_PlayerList_C_ExecuteUbergraph_WBP_Mission_PlayerList::K2Node_Select_Default_2' has a wrong offset!");
 static_assert(offsetof(WBP_Mission_PlayerList_C_ExecuteUbergraph_WBP_Mission_PlayerList, K2Node_MakeStruct_SlateColor) == 0x0002F8, "Member 'WBP_Mission_PlayerList_C_ExecuteUbergraph_WBP_Mission_PlayerList::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-
-// Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.AddPlayerListEntry
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Mission_PlayerList_C_AddPlayerListEntry final
-{
-public:
-	class AGBPlayerState*                         PlayerState;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Mission_PlayerList_C_AddPlayerListEntry) == 0x000008, "Wrong alignment on WBP_Mission_PlayerList_C_AddPlayerListEntry");
-static_assert(sizeof(WBP_Mission_PlayerList_C_AddPlayerListEntry) == 0x000008, "Wrong size on WBP_Mission_PlayerList_C_AddPlayerListEntry");
-static_assert(offsetof(WBP_Mission_PlayerList_C_AddPlayerListEntry, PlayerState) == 0x000000, "Member 'WBP_Mission_PlayerList_C_AddPlayerListEntry::PlayerState' has a wrong offset!");
-
-// Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.GetTotalTeamBoxVis
-// 0x000C (0x000C - 0x0000)
-struct WBP_Mission_PlayerList_C_GetTotalTeamBoxVis final
-{
-public:
-	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis) == 0x000004, "Wrong alignment on WBP_Mission_PlayerList_C_GetTotalTeamBoxVis");
-static_assert(sizeof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis) == 0x00000C, "Wrong size on WBP_Mission_PlayerList_C_GetTotalTeamBoxVis");
-static_assert(offsetof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis, ReturnValue) == 0x000000, "Member 'WBP_Mission_PlayerList_C_GetTotalTeamBoxVis::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis, Temp_bool_Variable) == 0x000001, "Member 'WBP_Mission_PlayerList_C_GetTotalTeamBoxVis::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis, Temp_byte_Variable) == 0x000002, "Member 'WBP_Mission_PlayerList_C_GetTotalTeamBoxVis::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_Mission_PlayerList_C_GetTotalTeamBoxVis::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis, CallFunc_GetChildrenCount_ReturnValue) == 0x000004, "Member 'WBP_Mission_PlayerList_C_GetTotalTeamBoxVis::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis, CallFunc_Greater_IntInt_ReturnValue) == 0x000008, "Member 'WBP_Mission_PlayerList_C_GetTotalTeamBoxVis::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_PlayerList_C_GetTotalTeamBoxVis, K2Node_Select_Default) == 0x000009, "Member 'WBP_Mission_PlayerList_C_GetTotalTeamBoxVis::K2Node_Select_Default' has a wrong offset!");
-
-// Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.SetTeamRole
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_Mission_PlayerList_C_SetTeamRole final
-{
-public:
-	class FName                                   Role;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x0010(0x0018)()
-	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0030(0x0018)()
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_Mission_PlayerList_C_SetTeamRole) == 0x000008, "Wrong alignment on WBP_Mission_PlayerList_C_SetTeamRole");
-static_assert(sizeof(WBP_Mission_PlayerList_C_SetTeamRole) == 0x000050, "Wrong size on WBP_Mission_PlayerList_C_SetTeamRole");
-static_assert(offsetof(WBP_Mission_PlayerList_C_SetTeamRole, Role) == 0x000000, "Member 'WBP_Mission_PlayerList_C_SetTeamRole::Role' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_PlayerList_C_SetTeamRole, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000008, "Member 'WBP_Mission_PlayerList_C_SetTeamRole::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_PlayerList_C_SetTeamRole, CallFunc_Conv_NameToText_ReturnValue) == 0x000010, "Member 'WBP_Mission_PlayerList_C_SetTeamRole::CallFunc_Conv_NameToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_PlayerList_C_SetTeamRole, CallFunc_TextIsEmpty_ReturnValue) == 0x000028, "Member 'WBP_Mission_PlayerList_C_SetTeamRole::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_PlayerList_C_SetTeamRole, CallFunc_BooleanOR_ReturnValue) == 0x000029, "Member 'WBP_Mission_PlayerList_C_SetTeamRole::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_PlayerList_C_SetTeamRole, CallFunc_TextToUpper_ReturnValue) == 0x000030, "Member 'WBP_Mission_PlayerList_C_SetTeamRole::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_PlayerList_C_SetTeamRole, CallFunc_Not_PreBool_ReturnValue) == 0x000048, "Member 'WBP_Mission_PlayerList_C_SetTeamRole::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 }
 

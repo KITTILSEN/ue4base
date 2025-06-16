@@ -17,71 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_Mission_MatchSummaryPVE.WBP_Mission_MatchSummaryPVE_C.ExecuteUbergraph_WBP_Mission_MatchSummaryPVE
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Mission_MatchSummaryPVE.WBP_Mission_MatchSummaryPVE_C.SetTeamRole
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             TeamRole                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Mission_MatchSummaryPVE_C::ExecuteUbergraph_WBP_Mission_MatchSummaryPVE(int32 EntryPoint)
+void UWBP_Mission_MatchSummaryPVE_C::SetTeamRole(class FName TeamRole)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_MatchSummaryPVE_C", "ExecuteUbergraph_WBP_Mission_MatchSummaryPVE");
+		Func = Class->GetFunction("WBP_Mission_MatchSummaryPVE_C", "SetTeamRole");
 
-	Params::WBP_Mission_MatchSummaryPVE_C_ExecuteUbergraph_WBP_Mission_MatchSummaryPVE Parms{};
+	Params::WBP_Mission_MatchSummaryPVE_C_SetTeamRole Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.TeamRole = TeamRole;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Mission_MatchSummaryPVE.WBP_Mission_MatchSummaryPVE_C.OnMatchStatsUpdated
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AGBGameState*                     GameState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Mission_MatchSummaryPVE_C::OnMatchStatsUpdated(class AGBGameState* GameState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_MatchSummaryPVE_C", "OnMatchStatsUpdated");
-
-	Params::WBP_Mission_MatchSummaryPVE_C_OnMatchStatsUpdated Parms{};
-
-	Parms.GameState = GameState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Mission_MatchSummaryPVE.WBP_Mission_MatchSummaryPVE_C.BindMatchStats
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Mission_MatchSummaryPVE_C::BindMatchStats()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_MatchSummaryPVE_C", "BindMatchStats");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Mission_MatchSummaryPVE.WBP_Mission_MatchSummaryPVE_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Mission_MatchSummaryPVE_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_MatchSummaryPVE_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -105,21 +57,69 @@ ESlateVisibility UWBP_Mission_MatchSummaryPVE_C::GetTotalTeamBoxVis()
 }
 
 
-// Function WBP_Mission_MatchSummaryPVE.WBP_Mission_MatchSummaryPVE_C.SetTeamRole
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             TeamRole                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Mission_MatchSummaryPVE.WBP_Mission_MatchSummaryPVE_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Mission_MatchSummaryPVE_C::SetTeamRole(class FName TeamRole)
+void UWBP_Mission_MatchSummaryPVE_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_MatchSummaryPVE_C", "SetTeamRole");
+		Func = Class->GetFunction("WBP_Mission_MatchSummaryPVE_C", "Construct");
 
-	Params::WBP_Mission_MatchSummaryPVE_C_SetTeamRole Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.TeamRole = TeamRole;
+
+// Function WBP_Mission_MatchSummaryPVE.WBP_Mission_MatchSummaryPVE_C.BindMatchStats
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Mission_MatchSummaryPVE_C::BindMatchStats()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Mission_MatchSummaryPVE_C", "BindMatchStats");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Mission_MatchSummaryPVE.WBP_Mission_MatchSummaryPVE_C.OnMatchStatsUpdated
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AGBGameState*                     GameState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Mission_MatchSummaryPVE_C::OnMatchStatsUpdated(class AGBGameState* GameState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Mission_MatchSummaryPVE_C", "OnMatchStatsUpdated");
+
+	Params::WBP_Mission_MatchSummaryPVE_C_OnMatchStatsUpdated Parms{};
+
+	Parms.GameState = GameState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Mission_MatchSummaryPVE.WBP_Mission_MatchSummaryPVE_C.ExecuteUbergraph_WBP_Mission_MatchSummaryPVE
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Mission_MatchSummaryPVE_C::ExecuteUbergraph_WBP_Mission_MatchSummaryPVE(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Mission_MatchSummaryPVE_C", "ExecuteUbergraph_WBP_Mission_MatchSummaryPVE");
+
+	Params::WBP_Mission_MatchSummaryPVE_C_ExecuteUbergraph_WBP_Mission_MatchSummaryPVE Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

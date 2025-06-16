@@ -16,6 +16,28 @@
 namespace SDK::Params
 {
 
+// Function WBP_Mission_PlayerListEntry.WBP_Mission_PlayerListEntry_C.OnReplicatedPlayerStatsUpdated_Event_0
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Mission_PlayerListEntry_C_OnReplicatedPlayerStatsUpdated_Event_0 final
+{
+public:
+	class AGBPlayerState*                         PlayerState_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Mission_PlayerListEntry_C_OnReplicatedPlayerStatsUpdated_Event_0) == 0x000008, "Wrong alignment on WBP_Mission_PlayerListEntry_C_OnReplicatedPlayerStatsUpdated_Event_0");
+static_assert(sizeof(WBP_Mission_PlayerListEntry_C_OnReplicatedPlayerStatsUpdated_Event_0) == 0x000008, "Wrong size on WBP_Mission_PlayerListEntry_C_OnReplicatedPlayerStatsUpdated_Event_0");
+static_assert(offsetof(WBP_Mission_PlayerListEntry_C_OnReplicatedPlayerStatsUpdated_Event_0, PlayerState_0) == 0x000000, "Member 'WBP_Mission_PlayerListEntry_C_OnReplicatedPlayerStatsUpdated_Event_0::PlayerState_0' has a wrong offset!");
+
+// Function WBP_Mission_PlayerListEntry.WBP_Mission_PlayerListEntry_C.UpdateStatus
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Mission_PlayerListEntry_C_UpdateStatus final
+{
+public:
+	class FString                                 StatusKey;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Mission_PlayerListEntry_C_UpdateStatus) == 0x000008, "Wrong alignment on WBP_Mission_PlayerListEntry_C_UpdateStatus");
+static_assert(sizeof(WBP_Mission_PlayerListEntry_C_UpdateStatus) == 0x000010, "Wrong size on WBP_Mission_PlayerListEntry_C_UpdateStatus");
+static_assert(offsetof(WBP_Mission_PlayerListEntry_C_UpdateStatus, StatusKey) == 0x000000, "Member 'WBP_Mission_PlayerListEntry_C_UpdateStatus::StatusKey' has a wrong offset!");
+
 // Function WBP_Mission_PlayerListEntry.WBP_Mission_PlayerListEntry_C.ExecuteUbergraph_WBP_Mission_PlayerListEntry
 // 0x01B0 (0x01B0 - 0x0000)
 struct WBP_Mission_PlayerListEntry_C_ExecuteUbergraph_WBP_Mission_PlayerListEntry final
@@ -99,28 +121,6 @@ static_assert(offsetof(WBP_Mission_PlayerListEntry_C_ExecuteUbergraph_WBP_Missio
 static_assert(offsetof(WBP_Mission_PlayerListEntry_C_ExecuteUbergraph_WBP_Mission_PlayerListEntry, Temp_text_Variable) == 0x000178, "Member 'WBP_Mission_PlayerListEntry_C_ExecuteUbergraph_WBP_Mission_PlayerListEntry::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_Mission_PlayerListEntry_C_ExecuteUbergraph_WBP_Mission_PlayerListEntry, Temp_bool_Variable) == 0x000190, "Member 'WBP_Mission_PlayerListEntry_C_ExecuteUbergraph_WBP_Mission_PlayerListEntry::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_Mission_PlayerListEntry_C_ExecuteUbergraph_WBP_Mission_PlayerListEntry, K2Node_Select_Default) == 0x000198, "Member 'WBP_Mission_PlayerListEntry_C_ExecuteUbergraph_WBP_Mission_PlayerListEntry::K2Node_Select_Default' has a wrong offset!");
-
-// Function WBP_Mission_PlayerListEntry.WBP_Mission_PlayerListEntry_C.UpdateStatus
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Mission_PlayerListEntry_C_UpdateStatus final
-{
-public:
-	class FString                                 StatusKey;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Mission_PlayerListEntry_C_UpdateStatus) == 0x000008, "Wrong alignment on WBP_Mission_PlayerListEntry_C_UpdateStatus");
-static_assert(sizeof(WBP_Mission_PlayerListEntry_C_UpdateStatus) == 0x000010, "Wrong size on WBP_Mission_PlayerListEntry_C_UpdateStatus");
-static_assert(offsetof(WBP_Mission_PlayerListEntry_C_UpdateStatus, StatusKey) == 0x000000, "Member 'WBP_Mission_PlayerListEntry_C_UpdateStatus::StatusKey' has a wrong offset!");
-
-// Function WBP_Mission_PlayerListEntry.WBP_Mission_PlayerListEntry_C.OnReplicatedPlayerStatsUpdated_Event_0
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Mission_PlayerListEntry_C_OnReplicatedPlayerStatsUpdated_Event_0 final
-{
-public:
-	class AGBPlayerState*                         PlayerState_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Mission_PlayerListEntry_C_OnReplicatedPlayerStatsUpdated_Event_0) == 0x000008, "Wrong alignment on WBP_Mission_PlayerListEntry_C_OnReplicatedPlayerStatsUpdated_Event_0");
-static_assert(sizeof(WBP_Mission_PlayerListEntry_C_OnReplicatedPlayerStatsUpdated_Event_0) == 0x000008, "Wrong size on WBP_Mission_PlayerListEntry_C_OnReplicatedPlayerStatsUpdated_Event_0");
-static_assert(offsetof(WBP_Mission_PlayerListEntry_C_OnReplicatedPlayerStatsUpdated_Event_0, PlayerState_0) == 0x000000, "Member 'WBP_Mission_PlayerListEntry_C_OnReplicatedPlayerStatsUpdated_Event_0::PlayerState_0' has a wrong offset!");
 
 }
 

@@ -5953,6 +5953,39 @@ float AGBCharacter::GetMinLightLevel(const class FName& Type)
 }
 
 
+// Function GroundBranch.GBCharacter.GetPrevEquipped
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class AGBInvItem**                      OutPrevEquippedLeft                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AGBInvItem**                      OutPrevEquippedRight                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool AGBCharacter::GetPrevEquipped(class AGBInvItem** OutPrevEquippedLeft, class AGBInvItem** OutPrevEquippedRight)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GBCharacter", "GetPrevEquipped");
+
+	Params::GBCharacter_GetPrevEquipped Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutPrevEquippedLeft != nullptr)
+		*OutPrevEquippedLeft = Parms.OutPrevEquippedLeft;
+
+	if (OutPrevEquippedRight != nullptr)
+		*OutPrevEquippedRight = Parms.OutPrevEquippedRight;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function GroundBranch.GBCharacter.IncrementBulletIndex
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -9005,34 +9038,6 @@ class FName AGBCharacter::GetPelvisBone() const
 		Func = Class->GetFunction("GBCharacter", "GetPelvisBone");
 
 	Params::GBCharacter_GetPelvisBone Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function GroundBranch.GBCharacter.GetPrevEquipped
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EHand                                   TargetHand                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AGBInvItem*                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class AGBInvItem* AGBCharacter::GetPrevEquipped(EHand TargetHand) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GBCharacter", "GetPrevEquipped");
-
-	Params::GBCharacter_GetPrevEquipped Parms{};
-
-	Parms.TargetHand = TargetHand;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

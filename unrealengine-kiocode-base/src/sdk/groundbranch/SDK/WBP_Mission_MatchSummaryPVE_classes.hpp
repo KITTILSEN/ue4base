@@ -41,12 +41,12 @@ public:
 	struct FLinearColor                           TextColourOverride;                                // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Mission_MatchSummaryPVE(int32 EntryPoint);
-	void OnMatchStatsUpdated(class AGBGameState* GameState);
-	void BindMatchStats();
-	void Construct();
-	ESlateVisibility GetTotalTeamBoxVis();
 	void SetTeamRole(class FName TeamRole);
+	ESlateVisibility GetTotalTeamBoxVis();
+	void Construct();
+	void BindMatchStats();
+	void OnMatchStatsUpdated(class AGBGameState* GameState);
+	void ExecuteUbergraph_WBP_Mission_MatchSummaryPVE(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

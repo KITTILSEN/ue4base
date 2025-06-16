@@ -36,9 +36,9 @@ public:
 	int32                                         MissionSequenceNumber;                             // 0x02C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Tooltip_WorldMap(int32 EntryPoint);
-	void Construct();
 	void PreConstruct(bool IsDesignTime);
+	void Construct();
+	void ExecuteUbergraph_WBP_Tooltip_WorldMap(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

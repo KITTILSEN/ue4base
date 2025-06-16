@@ -18,6 +18,157 @@
 namespace SDK::Params
 {
 
+// Function WBP_DeathOverlay.WBP_DeathOverlay_C.OnMouseButtonUp
+// 0x03B8 (0x03B8 - 0x0000)
+struct WBP_DeathOverlay_C_OnMouseButtonUp final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x0168(0x0018)(HasGetValueTypeHash)
+	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HandleCommunicationKey_ReturnValue;       // 0x018A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_18B[0x5];                                      // 0x018B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0190(0x00B8)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0248(0x00B8)()
+	struct FEventReply                            K2Node_Select_Default;                             // 0x0300(0x00B8)()
+};
+static_assert(alignof(WBP_DeathOverlay_C_OnMouseButtonUp) == 0x000008, "Wrong alignment on WBP_DeathOverlay_C_OnMouseButtonUp");
+static_assert(sizeof(WBP_DeathOverlay_C_OnMouseButtonUp) == 0x0003B8, "Wrong size on WBP_DeathOverlay_C_OnMouseButtonUp");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, MyGeometry) == 0x000000, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, MouseEvent) == 0x000038, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::MouseEvent' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, ReturnValue) == 0x0000A8, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, CallFunc_GetOwningPlayer_ReturnValue) == 0x000160, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000168, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000180, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, K2Node_DynamicCast_bSuccess) == 0x000188, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, Temp_bool_Variable) == 0x000189, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, CallFunc_HandleCommunicationKey_ReturnValue) == 0x00018A, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::CallFunc_HandleCommunicationKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, CallFunc_Handled_ReturnValue) == 0x000190, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, CallFunc_Unhandled_ReturnValue) == 0x000248, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, K2Node_Select_Default) == 0x000300, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_DeathOverlay.WBP_DeathOverlay_C.OnMouseButtonDown
+// 0x03B8 (0x03B8 - 0x0000)
+struct WBP_DeathOverlay_C_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x0168(0x0018)(HasGetValueTypeHash)
+	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HandleCommunicationKey_ReturnValue;       // 0x018A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_18B[0x5];                                      // 0x018B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0190(0x00B8)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0248(0x00B8)()
+	struct FEventReply                            K2Node_Select_Default;                             // 0x0300(0x00B8)()
+};
+static_assert(alignof(WBP_DeathOverlay_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on WBP_DeathOverlay_C_OnMouseButtonDown");
+static_assert(sizeof(WBP_DeathOverlay_C_OnMouseButtonDown) == 0x0003B8, "Wrong size on WBP_DeathOverlay_C_OnMouseButtonDown");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, ReturnValue) == 0x0000A8, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, CallFunc_GetOwningPlayer_ReturnValue) == 0x000160, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000168, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000180, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, K2Node_DynamicCast_bSuccess) == 0x000188, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, Temp_bool_Variable) == 0x000189, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, CallFunc_HandleCommunicationKey_ReturnValue) == 0x00018A, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::CallFunc_HandleCommunicationKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, CallFunc_Handled_ReturnValue) == 0x000190, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, CallFunc_Unhandled_ReturnValue) == 0x000248, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, K2Node_Select_Default) == 0x000300, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_DeathOverlay.WBP_DeathOverlay_C.OnKeyUp
+// 0x0398 (0x0398 - 0x0000)
+struct WBP_DeathOverlay_C_OnKeyUp final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FKey                                   LocalKey;                                          // 0x0128(0x0018)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0148(0x0018)(HasGetValueTypeHash)
+	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HandleCommunicationKey_ReturnValue;       // 0x016A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_16B[0x5];                                      // 0x016B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0170(0x00B8)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0228(0x00B8)()
+	struct FEventReply                            K2Node_Select_Default;                             // 0x02E0(0x00B8)()
+};
+static_assert(alignof(WBP_DeathOverlay_C_OnKeyUp) == 0x000008, "Wrong alignment on WBP_DeathOverlay_C_OnKeyUp");
+static_assert(sizeof(WBP_DeathOverlay_C_OnKeyUp) == 0x000398, "Wrong size on WBP_DeathOverlay_C_OnKeyUp");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, MyGeometry) == 0x000000, "Member 'WBP_DeathOverlay_C_OnKeyUp::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, InKeyEvent) == 0x000038, "Member 'WBP_DeathOverlay_C_OnKeyUp::InKeyEvent' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, ReturnValue) == 0x000070, "Member 'WBP_DeathOverlay_C_OnKeyUp::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, LocalKey) == 0x000128, "Member 'WBP_DeathOverlay_C_OnKeyUp::LocalKey' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, CallFunc_GetOwningPlayer_ReturnValue) == 0x000140, "Member 'WBP_DeathOverlay_C_OnKeyUp::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, CallFunc_GetKey_ReturnValue) == 0x000148, "Member 'WBP_DeathOverlay_C_OnKeyUp::CallFunc_GetKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000160, "Member 'WBP_DeathOverlay_C_OnKeyUp::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, K2Node_DynamicCast_bSuccess) == 0x000168, "Member 'WBP_DeathOverlay_C_OnKeyUp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, Temp_bool_Variable) == 0x000169, "Member 'WBP_DeathOverlay_C_OnKeyUp::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, CallFunc_HandleCommunicationKey_ReturnValue) == 0x00016A, "Member 'WBP_DeathOverlay_C_OnKeyUp::CallFunc_HandleCommunicationKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, CallFunc_Handled_ReturnValue) == 0x000170, "Member 'WBP_DeathOverlay_C_OnKeyUp::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, CallFunc_Unhandled_ReturnValue) == 0x000228, "Member 'WBP_DeathOverlay_C_OnKeyUp::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, K2Node_Select_Default) == 0x0002E0, "Member 'WBP_DeathOverlay_C_OnKeyUp::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_DeathOverlay.WBP_DeathOverlay_C.OnKeyDown
+// 0x0398 (0x0398 - 0x0000)
+struct WBP_DeathOverlay_C_OnKeyDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FKey                                   LocalKey;                                          // 0x0128(0x0018)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0148(0x0018)(HasGetValueTypeHash)
+	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HandleCommunicationKey_ReturnValue;       // 0x016A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_16B[0x5];                                      // 0x016B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0170(0x00B8)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0228(0x00B8)()
+	struct FEventReply                            K2Node_Select_Default;                             // 0x02E0(0x00B8)()
+};
+static_assert(alignof(WBP_DeathOverlay_C_OnKeyDown) == 0x000008, "Wrong alignment on WBP_DeathOverlay_C_OnKeyDown");
+static_assert(sizeof(WBP_DeathOverlay_C_OnKeyDown) == 0x000398, "Wrong size on WBP_DeathOverlay_C_OnKeyDown");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, MyGeometry) == 0x000000, "Member 'WBP_DeathOverlay_C_OnKeyDown::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, InKeyEvent) == 0x000038, "Member 'WBP_DeathOverlay_C_OnKeyDown::InKeyEvent' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, ReturnValue) == 0x000070, "Member 'WBP_DeathOverlay_C_OnKeyDown::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, LocalKey) == 0x000128, "Member 'WBP_DeathOverlay_C_OnKeyDown::LocalKey' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, CallFunc_GetOwningPlayer_ReturnValue) == 0x000140, "Member 'WBP_DeathOverlay_C_OnKeyDown::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, CallFunc_GetKey_ReturnValue) == 0x000148, "Member 'WBP_DeathOverlay_C_OnKeyDown::CallFunc_GetKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000160, "Member 'WBP_DeathOverlay_C_OnKeyDown::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, K2Node_DynamicCast_bSuccess) == 0x000168, "Member 'WBP_DeathOverlay_C_OnKeyDown::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, Temp_bool_Variable) == 0x000169, "Member 'WBP_DeathOverlay_C_OnKeyDown::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, CallFunc_HandleCommunicationKey_ReturnValue) == 0x00016A, "Member 'WBP_DeathOverlay_C_OnKeyDown::CallFunc_HandleCommunicationKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, CallFunc_Handled_ReturnValue) == 0x000170, "Member 'WBP_DeathOverlay_C_OnKeyDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, CallFunc_Unhandled_ReturnValue) == 0x000228, "Member 'WBP_DeathOverlay_C_OnKeyDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, K2Node_Select_Default) == 0x0002E0, "Member 'WBP_DeathOverlay_C_OnKeyDown::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_DeathOverlay.WBP_DeathOverlay_C.OnShowTransitionScreen_Event_0
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_DeathOverlay_C_OnShowTransitionScreen_Event_0 final
+{
+public:
+	class AGBPlayerController*                    PlayerController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_DeathOverlay_C_OnShowTransitionScreen_Event_0) == 0x000008, "Wrong alignment on WBP_DeathOverlay_C_OnShowTransitionScreen_Event_0");
+static_assert(sizeof(WBP_DeathOverlay_C_OnShowTransitionScreen_Event_0) == 0x000008, "Wrong size on WBP_DeathOverlay_C_OnShowTransitionScreen_Event_0");
+static_assert(offsetof(WBP_DeathOverlay_C_OnShowTransitionScreen_Event_0, PlayerController) == 0x000000, "Member 'WBP_DeathOverlay_C_OnShowTransitionScreen_Event_0::PlayerController' has a wrong offset!");
+
 // Function WBP_DeathOverlay.WBP_DeathOverlay_C.ExecuteUbergraph_WBP_DeathOverlay
 // 0x00C0 (0x00C0 - 0x0000)
 struct WBP_DeathOverlay_C_ExecuteUbergraph_WBP_DeathOverlay final
@@ -81,157 +232,6 @@ static_assert(offsetof(WBP_DeathOverlay_C_ExecuteUbergraph_WBP_DeathOverlay, K2N
 static_assert(offsetof(WBP_DeathOverlay_C_ExecuteUbergraph_WBP_DeathOverlay, K2Node_DynamicCast_bSuccess_3) == 0x0000A0, "Member 'WBP_DeathOverlay_C_ExecuteUbergraph_WBP_DeathOverlay::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
 static_assert(offsetof(WBP_DeathOverlay_C_ExecuteUbergraph_WBP_DeathOverlay, K2Node_CreateDelegate_OutputDelegate) == 0x0000A4, "Member 'WBP_DeathOverlay_C_ExecuteUbergraph_WBP_DeathOverlay::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(WBP_DeathOverlay_C_ExecuteUbergraph_WBP_DeathOverlay, K2Node_CustomEvent_PlayerController) == 0x0000B8, "Member 'WBP_DeathOverlay_C_ExecuteUbergraph_WBP_DeathOverlay::K2Node_CustomEvent_PlayerController' has a wrong offset!");
-
-// Function WBP_DeathOverlay.WBP_DeathOverlay_C.OnShowTransitionScreen_Event_0
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_DeathOverlay_C_OnShowTransitionScreen_Event_0 final
-{
-public:
-	class AGBPlayerController*                    PlayerController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_DeathOverlay_C_OnShowTransitionScreen_Event_0) == 0x000008, "Wrong alignment on WBP_DeathOverlay_C_OnShowTransitionScreen_Event_0");
-static_assert(sizeof(WBP_DeathOverlay_C_OnShowTransitionScreen_Event_0) == 0x000008, "Wrong size on WBP_DeathOverlay_C_OnShowTransitionScreen_Event_0");
-static_assert(offsetof(WBP_DeathOverlay_C_OnShowTransitionScreen_Event_0, PlayerController) == 0x000000, "Member 'WBP_DeathOverlay_C_OnShowTransitionScreen_Event_0::PlayerController' has a wrong offset!");
-
-// Function WBP_DeathOverlay.WBP_DeathOverlay_C.OnKeyDown
-// 0x0398 (0x0398 - 0x0000)
-struct WBP_DeathOverlay_C_OnKeyDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
-	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FKey                                   LocalKey;                                          // 0x0128(0x0018)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0148(0x0018)(HasGetValueTypeHash)
-	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HandleCommunicationKey_ReturnValue;       // 0x016A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_16B[0x5];                                      // 0x016B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0170(0x00B8)()
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0228(0x00B8)()
-	struct FEventReply                            K2Node_Select_Default;                             // 0x02E0(0x00B8)()
-};
-static_assert(alignof(WBP_DeathOverlay_C_OnKeyDown) == 0x000008, "Wrong alignment on WBP_DeathOverlay_C_OnKeyDown");
-static_assert(sizeof(WBP_DeathOverlay_C_OnKeyDown) == 0x000398, "Wrong size on WBP_DeathOverlay_C_OnKeyDown");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, MyGeometry) == 0x000000, "Member 'WBP_DeathOverlay_C_OnKeyDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, InKeyEvent) == 0x000038, "Member 'WBP_DeathOverlay_C_OnKeyDown::InKeyEvent' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, ReturnValue) == 0x000070, "Member 'WBP_DeathOverlay_C_OnKeyDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, LocalKey) == 0x000128, "Member 'WBP_DeathOverlay_C_OnKeyDown::LocalKey' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, CallFunc_GetOwningPlayer_ReturnValue) == 0x000140, "Member 'WBP_DeathOverlay_C_OnKeyDown::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, CallFunc_GetKey_ReturnValue) == 0x000148, "Member 'WBP_DeathOverlay_C_OnKeyDown::CallFunc_GetKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000160, "Member 'WBP_DeathOverlay_C_OnKeyDown::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, K2Node_DynamicCast_bSuccess) == 0x000168, "Member 'WBP_DeathOverlay_C_OnKeyDown::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, Temp_bool_Variable) == 0x000169, "Member 'WBP_DeathOverlay_C_OnKeyDown::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, CallFunc_HandleCommunicationKey_ReturnValue) == 0x00016A, "Member 'WBP_DeathOverlay_C_OnKeyDown::CallFunc_HandleCommunicationKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, CallFunc_Handled_ReturnValue) == 0x000170, "Member 'WBP_DeathOverlay_C_OnKeyDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, CallFunc_Unhandled_ReturnValue) == 0x000228, "Member 'WBP_DeathOverlay_C_OnKeyDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyDown, K2Node_Select_Default) == 0x0002E0, "Member 'WBP_DeathOverlay_C_OnKeyDown::K2Node_Select_Default' has a wrong offset!");
-
-// Function WBP_DeathOverlay.WBP_DeathOverlay_C.OnKeyUp
-// 0x0398 (0x0398 - 0x0000)
-struct WBP_DeathOverlay_C_OnKeyUp final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
-	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FKey                                   LocalKey;                                          // 0x0128(0x0018)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0148(0x0018)(HasGetValueTypeHash)
-	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HandleCommunicationKey_ReturnValue;       // 0x016A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_16B[0x5];                                      // 0x016B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0170(0x00B8)()
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0228(0x00B8)()
-	struct FEventReply                            K2Node_Select_Default;                             // 0x02E0(0x00B8)()
-};
-static_assert(alignof(WBP_DeathOverlay_C_OnKeyUp) == 0x000008, "Wrong alignment on WBP_DeathOverlay_C_OnKeyUp");
-static_assert(sizeof(WBP_DeathOverlay_C_OnKeyUp) == 0x000398, "Wrong size on WBP_DeathOverlay_C_OnKeyUp");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, MyGeometry) == 0x000000, "Member 'WBP_DeathOverlay_C_OnKeyUp::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, InKeyEvent) == 0x000038, "Member 'WBP_DeathOverlay_C_OnKeyUp::InKeyEvent' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, ReturnValue) == 0x000070, "Member 'WBP_DeathOverlay_C_OnKeyUp::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, LocalKey) == 0x000128, "Member 'WBP_DeathOverlay_C_OnKeyUp::LocalKey' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, CallFunc_GetOwningPlayer_ReturnValue) == 0x000140, "Member 'WBP_DeathOverlay_C_OnKeyUp::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, CallFunc_GetKey_ReturnValue) == 0x000148, "Member 'WBP_DeathOverlay_C_OnKeyUp::CallFunc_GetKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000160, "Member 'WBP_DeathOverlay_C_OnKeyUp::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, K2Node_DynamicCast_bSuccess) == 0x000168, "Member 'WBP_DeathOverlay_C_OnKeyUp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, Temp_bool_Variable) == 0x000169, "Member 'WBP_DeathOverlay_C_OnKeyUp::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, CallFunc_HandleCommunicationKey_ReturnValue) == 0x00016A, "Member 'WBP_DeathOverlay_C_OnKeyUp::CallFunc_HandleCommunicationKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, CallFunc_Handled_ReturnValue) == 0x000170, "Member 'WBP_DeathOverlay_C_OnKeyUp::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, CallFunc_Unhandled_ReturnValue) == 0x000228, "Member 'WBP_DeathOverlay_C_OnKeyUp::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnKeyUp, K2Node_Select_Default) == 0x0002E0, "Member 'WBP_DeathOverlay_C_OnKeyUp::K2Node_Select_Default' has a wrong offset!");
-
-// Function WBP_DeathOverlay.WBP_DeathOverlay_C.OnMouseButtonDown
-// 0x03B8 (0x03B8 - 0x0000)
-struct WBP_DeathOverlay_C_OnMouseButtonDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x0168(0x0018)(HasGetValueTypeHash)
-	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HandleCommunicationKey_ReturnValue;       // 0x018A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_18B[0x5];                                      // 0x018B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0190(0x00B8)()
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0248(0x00B8)()
-	struct FEventReply                            K2Node_Select_Default;                             // 0x0300(0x00B8)()
-};
-static_assert(alignof(WBP_DeathOverlay_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on WBP_DeathOverlay_C_OnMouseButtonDown");
-static_assert(sizeof(WBP_DeathOverlay_C_OnMouseButtonDown) == 0x0003B8, "Wrong size on WBP_DeathOverlay_C_OnMouseButtonDown");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, ReturnValue) == 0x0000A8, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, CallFunc_GetOwningPlayer_ReturnValue) == 0x000160, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000168, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000180, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, K2Node_DynamicCast_bSuccess) == 0x000188, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, Temp_bool_Variable) == 0x000189, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, CallFunc_HandleCommunicationKey_ReturnValue) == 0x00018A, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::CallFunc_HandleCommunicationKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, CallFunc_Handled_ReturnValue) == 0x000190, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, CallFunc_Unhandled_ReturnValue) == 0x000248, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonDown, K2Node_Select_Default) == 0x000300, "Member 'WBP_DeathOverlay_C_OnMouseButtonDown::K2Node_Select_Default' has a wrong offset!");
-
-// Function WBP_DeathOverlay.WBP_DeathOverlay_C.OnMouseButtonUp
-// 0x03B8 (0x03B8 - 0x0000)
-struct WBP_DeathOverlay_C_OnMouseButtonUp final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x0168(0x0018)(HasGetValueTypeHash)
-	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HandleCommunicationKey_ReturnValue;       // 0x018A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_18B[0x5];                                      // 0x018B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0190(0x00B8)()
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0248(0x00B8)()
-	struct FEventReply                            K2Node_Select_Default;                             // 0x0300(0x00B8)()
-};
-static_assert(alignof(WBP_DeathOverlay_C_OnMouseButtonUp) == 0x000008, "Wrong alignment on WBP_DeathOverlay_C_OnMouseButtonUp");
-static_assert(sizeof(WBP_DeathOverlay_C_OnMouseButtonUp) == 0x0003B8, "Wrong size on WBP_DeathOverlay_C_OnMouseButtonUp");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, MyGeometry) == 0x000000, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, MouseEvent) == 0x000038, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, ReturnValue) == 0x0000A8, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, CallFunc_GetOwningPlayer_ReturnValue) == 0x000160, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000168, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000180, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, K2Node_DynamicCast_bSuccess) == 0x000188, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, Temp_bool_Variable) == 0x000189, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, CallFunc_HandleCommunicationKey_ReturnValue) == 0x00018A, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::CallFunc_HandleCommunicationKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, CallFunc_Handled_ReturnValue) == 0x000190, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, CallFunc_Unhandled_ReturnValue) == 0x000248, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOverlay_C_OnMouseButtonUp, K2Node_Select_Default) == 0x000300, "Member 'WBP_DeathOverlay_C_OnMouseButtonUp::K2Node_Select_Default' has a wrong offset!");
 
 }
 

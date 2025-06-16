@@ -17,23 +17,51 @@
 namespace SDK
 {
 
-// Function WBP_Mission_PlayerScoreList.WBP_Mission_PlayerScoreList_C.ExecuteUbergraph_WBP_Mission_PlayerScoreList
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Mission_PlayerScoreList.WBP_Mission_PlayerScoreList_C.GetTotalTeamBoxVis
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESlateVisibility                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Mission_PlayerScoreList_C::ExecuteUbergraph_WBP_Mission_PlayerScoreList(int32 EntryPoint)
+ESlateVisibility UWBP_Mission_PlayerScoreList_C::GetTotalTeamBoxVis()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_PlayerScoreList_C", "ExecuteUbergraph_WBP_Mission_PlayerScoreList");
+		Func = Class->GetFunction("WBP_Mission_PlayerScoreList_C", "GetTotalTeamBoxVis");
 
-	Params::WBP_Mission_PlayerScoreList_C_ExecuteUbergraph_WBP_Mission_PlayerScoreList Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::WBP_Mission_PlayerScoreList_C_GetTotalTeamBoxVis Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_Mission_PlayerScoreList.WBP_Mission_PlayerScoreList_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Mission_PlayerScoreList_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Mission_PlayerScoreList_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Mission_PlayerScoreList.WBP_Mission_PlayerScoreList_C.BindPlayerScores
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Mission_PlayerScoreList_C::BindPlayerScores()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Mission_PlayerScoreList_C", "BindPlayerScores");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,51 +85,23 @@ void UWBP_Mission_PlayerScoreList_C::OnPlayerScoresUpdated(class AGBPlayerState*
 }
 
 
-// Function WBP_Mission_PlayerScoreList.WBP_Mission_PlayerScoreList_C.BindPlayerScores
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Mission_PlayerScoreList_C::BindPlayerScores()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_PlayerScoreList_C", "BindPlayerScores");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Mission_PlayerScoreList.WBP_Mission_PlayerScoreList_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Mission_PlayerScoreList_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_PlayerScoreList_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Mission_PlayerScoreList.WBP_Mission_PlayerScoreList_C.GetTotalTeamBoxVis
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_Mission_PlayerScoreList.WBP_Mission_PlayerScoreList_C.ExecuteUbergraph_WBP_Mission_PlayerScoreList
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// ESlateVisibility                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-ESlateVisibility UWBP_Mission_PlayerScoreList_C::GetTotalTeamBoxVis()
+void UWBP_Mission_PlayerScoreList_C::ExecuteUbergraph_WBP_Mission_PlayerScoreList(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_PlayerScoreList_C", "GetTotalTeamBoxVis");
+		Func = Class->GetFunction("WBP_Mission_PlayerScoreList_C", "ExecuteUbergraph_WBP_Mission_PlayerScoreList");
 
-	Params::WBP_Mission_PlayerScoreList_C_GetTotalTeamBoxVis Parms{};
+	Params::WBP_Mission_PlayerScoreList_C_ExecuteUbergraph_WBP_Mission_PlayerScoreList Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 }

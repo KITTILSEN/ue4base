@@ -275,6 +275,31 @@ void ABP_KytBase_C::OnNotifyEnd_57DFBDB84A18F4C71465C2BF15ACDA23(class FName Not
 }
 
 
+// Function BP_KytBase.BP_KytBase_C.IsAnimationSupported
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    AnimationName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class UKytBlackboard*             AnimationParameters                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool ABP_KytBase_C::IsAnimationSupported(const class FString& AnimationName, const class UKytBlackboard* AnimationParameters)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_KytBase_C", "IsAnimationSupported");
+
+	Params::BP_KytBase_C_IsAnimationSupported Parms{};
+
+	Parms.AnimationName = std::move(AnimationName);
+	Parms.AnimationParameters = AnimationParameters;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function BP_KytBase.BP_KytBase_C.CheckUseDoor
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -356,31 +381,6 @@ void ABP_KytBase_C::MoveDown()
 		Func = Class->GetFunction("BP_KytBase_C", "MoveDown");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_KytBase.BP_KytBase_C.IsAnimationSupported
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    AnimationName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// const class UKytBlackboard*             AnimationParameters                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
-bool ABP_KytBase_C::IsAnimationSupported(const class FString& AnimationName, const class UKytBlackboard* AnimationParameters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_KytBase_C", "IsAnimationSupported");
-
-	Params::BP_KytBase_C_IsAnimationSupported Parms{};
-
-	Parms.AnimationName = std::move(AnimationName);
-	Parms.AnimationParameters = AnimationParameters;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 }

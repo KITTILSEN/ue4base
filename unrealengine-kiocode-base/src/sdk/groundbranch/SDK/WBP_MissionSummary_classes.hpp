@@ -98,41 +98,41 @@ public:
 	class FName                                   MissionDetailsTableId;                             // 0x0590(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_MissionSummary(int32 EntryPoint);
-	void BndEvt__WBP_MissionSummary_Button_Accept_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature();
-	void CheckIfBestResult();
-	void OnSaveProgressAndSelectMission(class UWBP_DialogueBox_C* Dialogue);
-	void OpenCampaignMenu();
-	void OnQuitToMainMenu(class UWBP_DialogueBox_C* Dialogue);
-	void BndEvt__WBP_MissionSummary_Button_MainMenu_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__WBP_MissionSummary_Button_SelectNextMission_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__WBP_MissionSummary_Button_RetryMission_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
-	void SetupButtons();
-	void OnSelected_Event_0(int32 Index_0);
-	void SetupTabs();
-	void PrepForLoadingScreen();
-	void UnbindGameState();
-	void BindToPlayerState();
-	void OnPlayerReadyRoomStatusChanged_Event_0(class AGBPlayerState* PlayerState);
-	void OnInitialized();
-	void Close();
-	void MatchEnded();
-	void OnGameStatsUpdated_Event_0(class AGBGameState* GameState);
-	void BindGameStats();
-	void Construct();
-	void BndEvt__Button_Respawn_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	void SetMissionTime(float Seconds);
-	struct FEventReply OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
-	struct FEventReply OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
-	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void UpdateMissionResult(class AGBGameState* InGBGameState, const class FString& InResult);
-	void CreateDeathmatchStyleEntries();
-	void CreateCoopEntries();
-	void CreateTeamEntries();
-	bool Get_Button_SelectNextMission_bIsEnabled_0();
-	class FText Get_TextBlock_2_Text_0();
 	bool Get_TextBlock_2_bIsEnabled_0();
+	class FText Get_TextBlock_2_Text_0();
+	bool Get_Button_SelectNextMission_bIsEnabled_0();
+	void CreateTeamEntries();
+	void CreateCoopEntries();
+	void CreateDeathmatchStyleEntries();
+	void UpdateMissionResult(class AGBGameState* InGBGameState, const class FString& InResult);
+	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	struct FEventReply OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	struct FEventReply OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	void SetMissionTime(float Seconds);
+	void BndEvt__Button_Respawn_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void Construct();
+	void BindGameStats();
+	void OnGameStatsUpdated_Event_0(class AGBGameState* GameState);
+	void MatchEnded();
+	void Close();
+	void OnInitialized();
+	void OnPlayerReadyRoomStatusChanged_Event_0(class AGBPlayerState* PlayerState);
+	void BindToPlayerState();
+	void UnbindGameState();
+	void PrepForLoadingScreen();
+	void SetupTabs();
+	void OnSelected_Event_0(int32 Index_0);
+	void SetupButtons();
+	void BndEvt__WBP_MissionSummary_Button_RetryMission_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__WBP_MissionSummary_Button_SelectNextMission_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__WBP_MissionSummary_Button_MainMenu_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature();
+	void OnQuitToMainMenu(class UWBP_DialogueBox_C* Dialogue);
+	void OpenCampaignMenu();
+	void OnSaveProgressAndSelectMission(class UWBP_DialogueBox_C* Dialogue);
+	void CheckIfBestResult();
+	void BndEvt__WBP_MissionSummary_Button_Accept_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature();
+	void ExecuteUbergraph_WBP_MissionSummary(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

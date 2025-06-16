@@ -32,8 +32,8 @@ public:
 	struct FGBObjectiveData                       ObjectiveData;                                     // 0x0288(0x0020)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
-	void ExecuteUbergraph_WBP_CampaignMissionDetails_Wide(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_CampaignMissionDetails_Wide(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

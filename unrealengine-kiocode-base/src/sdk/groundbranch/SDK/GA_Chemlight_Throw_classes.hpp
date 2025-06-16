@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "GA_Grenade_Throw_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -26,8 +26,8 @@ public:
 
 public:
 	void ExecuteUbergraph_GA_Chemlight_Throw(int32 EntryPoint);
-	void ActivateShared();
 	void EventReceived_26F8B4649CAC44DABDA5DBB270258AE4(const struct FGameplayEventData& Payload);
+	void ActivateShared();
 
 	void GetLaunchVelocity(struct FVector* OutVelocity) const;
 	void GetDesiredSpawnLocation(struct FVector* OutDesiredSpawnLocation) const;

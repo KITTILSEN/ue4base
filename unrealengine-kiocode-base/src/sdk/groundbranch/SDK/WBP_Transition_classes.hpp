@@ -35,11 +35,11 @@ public:
 	float                                         StartTime;                                         // 0x02E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Transition(int32 EntryPoint);
-	void SetMessageText(const class FText& InText);
-	void Hide();
-	void ClearTransitions();
 	void Construct();
+	void ClearTransitions();
+	void Hide();
+	void SetMessageText(const class FText& InText);
+	void ExecuteUbergraph_WBP_Transition(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

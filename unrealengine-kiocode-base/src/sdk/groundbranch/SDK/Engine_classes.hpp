@@ -1585,7 +1585,7 @@ static_assert(offsetof(ATriggerBase, CollisionComponent) == 0x000220, "Member 'A
 
 // Class Engine.TriggerBox
 // 0x0000 (0x0228 - 0x0228)
-class ATriggerBox final : public ATriggerBase
+class ATriggerBox : public ATriggerBase
 {
 public:
 	static class UClass* StaticClass()

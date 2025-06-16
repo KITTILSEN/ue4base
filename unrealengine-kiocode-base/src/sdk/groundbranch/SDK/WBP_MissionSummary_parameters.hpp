@@ -22,6 +22,627 @@
 namespace SDK::Params
 {
 
+// Function WBP_MissionSummary.WBP_MissionSummary_C.Get_TextBlock_2_bIsEnabled_0
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_MissionSummary_C_Get_TextBlock_2_bIsEnabled_0 final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_MissionSummary_C_Get_TextBlock_2_bIsEnabled_0) == 0x000001, "Wrong alignment on WBP_MissionSummary_C_Get_TextBlock_2_bIsEnabled_0");
+static_assert(sizeof(WBP_MissionSummary_C_Get_TextBlock_2_bIsEnabled_0) == 0x000001, "Wrong size on WBP_MissionSummary_C_Get_TextBlock_2_bIsEnabled_0");
+static_assert(offsetof(WBP_MissionSummary_C_Get_TextBlock_2_bIsEnabled_0, ReturnValue) == 0x000000, "Member 'WBP_MissionSummary_C_Get_TextBlock_2_bIsEnabled_0::ReturnValue' has a wrong offset!");
+
+// Function WBP_MissionSummary.WBP_MissionSummary_C.Get_TextBlock_2_Text_0
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_MissionSummary_C_Get_TextBlock_2_Text_0 final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
+	bool                                          Temp_bool_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_1;                              // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x0020(0x0018)()
+	class FText                                   K2Node_Select_Default_1;                           // 0x0038(0x0018)()
+};
+static_assert(alignof(WBP_MissionSummary_C_Get_TextBlock_2_Text_0) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_Get_TextBlock_2_Text_0");
+static_assert(sizeof(WBP_MissionSummary_C_Get_TextBlock_2_Text_0) == 0x000050, "Wrong size on WBP_MissionSummary_C_Get_TextBlock_2_Text_0");
+static_assert(offsetof(WBP_MissionSummary_C_Get_TextBlock_2_Text_0, ReturnValue) == 0x000000, "Member 'WBP_MissionSummary_C_Get_TextBlock_2_Text_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_Get_TextBlock_2_Text_0, Temp_bool_Variable) == 0x000018, "Member 'WBP_MissionSummary_C_Get_TextBlock_2_Text_0::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_Get_TextBlock_2_Text_0, Temp_bool_Variable_1) == 0x000019, "Member 'WBP_MissionSummary_C_Get_TextBlock_2_Text_0::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_Get_TextBlock_2_Text_0, CallFunc_BooleanAND_ReturnValue) == 0x00001A, "Member 'WBP_MissionSummary_C_Get_TextBlock_2_Text_0::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_Get_TextBlock_2_Text_0, K2Node_Select_Default) == 0x000020, "Member 'WBP_MissionSummary_C_Get_TextBlock_2_Text_0::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_Get_TextBlock_2_Text_0, K2Node_Select_Default_1) == 0x000038, "Member 'WBP_MissionSummary_C_Get_TextBlock_2_Text_0::K2Node_Select_Default_1' has a wrong offset!");
+
+// Function WBP_MissionSummary.WBP_MissionSummary_C.Get_Button_SelectNextMission_bIsEnabled_0
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0 final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0) == 0x000001, "Wrong alignment on WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0");
+static_assert(sizeof(WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0) == 0x000002, "Wrong size on WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0");
+static_assert(offsetof(WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0, ReturnValue) == 0x000000, "Member 'WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0, CallFunc_BooleanAND_ReturnValue) == 0x000001, "Member 'WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+
+// Function WBP_MissionSummary.WBP_MissionSummary_C.CreateTeamEntries
+// 0x0150 (0x0150 - 0x0000)
+struct WBP_MissionSummary_C_CreateTeamEntries final
+{
+public:
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Mission_MatchSummaryPVP_C*         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBPlayerState*                         K2Node_DynamicCast_AsGBPlayer_State;               // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBGameState*                           K2Node_DynamicCast_AsGBGame_State;                 // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Mission_PlayerScoreList_C*         CallFunc_Create_ReturnValue_1;                     // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ArePlayerScoresInitialised_ReturnValue;   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_2;                     // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot;         // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_3;                     // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue_1;           // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue_1;               // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBGameState*                           K2Node_DynamicCast_AsGBGame_State_1;               // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_1;                   // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_AreTeamScoresInitialised_ReturnValue;     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetChildrenCount_ReturnValue_2;           // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Mission_PlayerList_C*              CallFunc_Create_ReturnValue_4;                     // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_5;                     // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_2;                   // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_3;                   // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Mission_PlayerList_C*              CallFunc_Create_ReturnValue_6;                     // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue_3;           // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Mission_TeamScoreList_C*           CallFunc_Create_ReturnValue_7;                     // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Mission_TeamScoreList_C*           CallFunc_Create_ReturnValue_8;                     // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_MissionSummary_SplitContainer_C*   CallFunc_Create_ReturnValue_9;                     // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_4;                   // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot_1;       // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_10;                    // 0x0108(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_5;                   // 0x0110(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_MissionSummary_SplitContainer_C*   CallFunc_Create_ReturnValue_11;                    // 0x0118(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_6;                   // 0x0120(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot_2;       // 0x0128(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_7;                   // 0x0138(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot_3;       // 0x0140(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_MissionSummary_C_CreateTeamEntries) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_CreateTeamEntries");
+static_assert(sizeof(WBP_MissionSummary_C_CreateTeamEntries) == 0x000150, "Wrong size on WBP_MissionSummary_C_CreateTeamEntries");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_AsGBPlayer_State) == 0x000010, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_AsGBPlayer_State' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_GetGameState_ReturnValue) == 0x000020, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_GetChildrenCount_ReturnValue) == 0x000028, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_AsGBGame_State) == 0x000030, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_AsGBGame_State' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_1) == 0x000040, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_ArePlayerScoresInitialised_ReturnValue) == 0x000048, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_ArePlayerScoresInitialised_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AddChild_ReturnValue) == 0x000050, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AddChild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_2) == 0x000058, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot) == 0x000060, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_bSuccess_2) == 0x000068, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_3) == 0x000070, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_GetChildrenCount_ReturnValue_1) == 0x000078, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_GetChildrenCount_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_GetGameState_ReturnValue_1) == 0x000080, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_GetGameState_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_AsGBGame_State_1) == 0x000088, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_AsGBGame_State_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_bSuccess_3) == 0x000090, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AddChild_ReturnValue_1) == 0x000098, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AreTeamScoresInitialised_ReturnValue) == 0x0000A0, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AreTeamScoresInitialised_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_GetChildrenCount_ReturnValue_2) == 0x0000A4, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_GetChildrenCount_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_4) == 0x0000A8, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_5) == 0x0000B0, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AddChild_ReturnValue_2) == 0x0000B8, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AddChild_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AddChild_ReturnValue_3) == 0x0000C0, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AddChild_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_6) == 0x0000C8, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_GetChildrenCount_ReturnValue_3) == 0x0000D0, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_GetChildrenCount_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_7) == 0x0000D8, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_8) == 0x0000E0, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_9) == 0x0000E8, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AddChild_ReturnValue_4) == 0x0000F0, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AddChild_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot_1) == 0x0000F8, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_bSuccess_4) == 0x000100, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_10) == 0x000108, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AddChild_ReturnValue_5) == 0x000110, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AddChild_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_11) == 0x000118, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_11' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AddChild_ReturnValue_6) == 0x000120, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AddChild_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot_2) == 0x000128, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_bSuccess_5) == 0x000130, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AddChild_ReturnValue_7) == 0x000138, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AddChild_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot_3) == 0x000140, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot_3' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_bSuccess_6) == 0x000148, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
+
+// Function WBP_MissionSummary.WBP_MissionSummary_C.CreateCoopEntries
+// 0x0128 (0x0128 - 0x0000)
+struct WBP_MissionSummary_C_CreateCoopEntries final
+{
+public:
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Mission_PlayerScoreList_C*         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBPlayerState*                         K2Node_DynamicCast_AsGBPlayer_State;               // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Mission_PlayerList_C*              CallFunc_Create_ReturnValue_1;                     // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot;         // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBGameState*                           K2Node_DynamicCast_AsGBGame_State;                 // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_ArePlayerScoresInitialised_ReturnValue;   // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_52[0x2];                                       // 0x0052(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetChildrenCount_ReturnValue_1;           // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue_1;               // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Mission_Objectives_C*              CallFunc_Create_ReturnValue_2;                     // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBGameState*                           K2Node_DynamicCast_AsGBGame_State_1;               // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_AreTeamScoresInitialised_ReturnValue;     // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_72[0x6];                                       // 0x0072(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Mission_MatchSummaryPVE_C*         CallFunc_Create_ReturnValue_3;                     // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue_2;           // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_1;                   // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_4;                     // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot_1;       // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_2;                   // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_MissionSummary_SplitContainer_C*   CallFunc_Create_ReturnValue_5;                     // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue_3;           // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Mission_TeamScoreList_C*           CallFunc_Create_ReturnValue_6;                     // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_3;                   // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot_2;       // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_7;                     // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_4;                   // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_8;                     // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_5;                   // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_9;                     // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_6;                   // 0x0108(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot_3;       // 0x0110(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_7;                   // 0x0120(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_MissionSummary_C_CreateCoopEntries) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_CreateCoopEntries");
+static_assert(sizeof(WBP_MissionSummary_C_CreateCoopEntries) == 0x000128, "Wrong size on WBP_MissionSummary_C_CreateCoopEntries");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_AsGBPlayer_State) == 0x000010, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_AsGBPlayer_State' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_1) == 0x000020, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AddChild_ReturnValue) == 0x000028, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AddChild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot) == 0x000030, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_GetChildrenCount_ReturnValue) == 0x00003C, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_GetGameState_ReturnValue) == 0x000040, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_AsGBGame_State) == 0x000048, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_AsGBGame_State' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_bSuccess_2) == 0x000050, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_ArePlayerScoresInitialised_ReturnValue) == 0x000051, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_ArePlayerScoresInitialised_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_GetChildrenCount_ReturnValue_1) == 0x000054, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_GetChildrenCount_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_GetGameState_ReturnValue_1) == 0x000058, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_GetGameState_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_2) == 0x000060, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_AsGBGame_State_1) == 0x000068, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_AsGBGame_State_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_bSuccess_3) == 0x000070, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AreTeamScoresInitialised_ReturnValue) == 0x000071, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AreTeamScoresInitialised_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_3) == 0x000078, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_GetChildrenCount_ReturnValue_2) == 0x000080, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_GetChildrenCount_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AddChild_ReturnValue_1) == 0x000088, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_4) == 0x000090, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot_1) == 0x000098, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_bSuccess_4) == 0x0000A0, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AddChild_ReturnValue_2) == 0x0000A8, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AddChild_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_5) == 0x0000B0, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_GetChildrenCount_ReturnValue_3) == 0x0000B8, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_GetChildrenCount_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_6) == 0x0000C0, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AddChild_ReturnValue_3) == 0x0000C8, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AddChild_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot_2) == 0x0000D0, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_bSuccess_5) == 0x0000D8, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_7) == 0x0000E0, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AddChild_ReturnValue_4) == 0x0000E8, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AddChild_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_8) == 0x0000F0, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AddChild_ReturnValue_5) == 0x0000F8, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AddChild_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_9) == 0x000100, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AddChild_ReturnValue_6) == 0x000108, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AddChild_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot_3) == 0x000110, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot_3' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_bSuccess_6) == 0x000118, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AddChild_ReturnValue_7) == 0x000120, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AddChild_ReturnValue_7' has a wrong offset!");
+
+// Function WBP_MissionSummary.WBP_MissionSummary_C.CreateDeathmatchStyleEntries
+// 0x00B8 (0x00B8 - 0x0000)
+struct WBP_MissionSummary_C_CreateDeathmatchStyleEntries final
+{
+public:
+	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Mission_Objectives_C*              CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBGameState*                           K2Node_DynamicCast_AsGBGame_State;                 // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ArePlayerScoresInitialised_ReturnValue;   // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBPlayerState*                         K2Node_DynamicCast_AsGBPlayer_State;               // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Mission_PlayerScoreList_C*         CallFunc_Create_ReturnValue_1;                     // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot;         // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_2;                     // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Mission_PlayerList_C*              CallFunc_Create_ReturnValue_3;                     // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue_1;           // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_1;                   // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_MissionSummary_SplitContainer_C*   CallFunc_Create_ReturnValue_4;                     // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_2;                   // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot_1;       // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_5;                     // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_3;                   // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_CreateDeathmatchStyleEntries");
+static_assert(sizeof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries) == 0x0000B8, "Wrong size on WBP_MissionSummary_C_CreateDeathmatchStyleEntries");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_GetChildrenCount_ReturnValue) == 0x000000, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_GetGameState_ReturnValue) == 0x000008, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_Create_ReturnValue) == 0x000010, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, K2Node_DynamicCast_AsGBGame_State) == 0x000018, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::K2Node_DynamicCast_AsGBGame_State' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_GetOwningPlayer_ReturnValue) == 0x000028, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_ArePlayerScoresInitialised_ReturnValue) == 0x000030, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_ArePlayerScoresInitialised_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, K2Node_DynamicCast_AsGBPlayer_State) == 0x000038, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::K2Node_DynamicCast_AsGBPlayer_State' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_Create_ReturnValue_1) == 0x000048, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_Create_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_AddChild_ReturnValue) == 0x000050, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_AddChild_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot) == 0x000058, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, K2Node_DynamicCast_bSuccess_2) == 0x000060, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_Create_ReturnValue_2) == 0x000068, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_Create_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_Create_ReturnValue_3) == 0x000070, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_Create_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_GetChildrenCount_ReturnValue_1) == 0x000078, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_GetChildrenCount_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_AddChild_ReturnValue_1) == 0x000080, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_Create_ReturnValue_4) == 0x000088, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_Create_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_AddChild_ReturnValue_2) == 0x000090, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_AddChild_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot_1) == 0x000098, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, K2Node_DynamicCast_bSuccess_3) == 0x0000A0, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_Create_ReturnValue_5) == 0x0000A8, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_Create_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_AddChild_ReturnValue_3) == 0x0000B0, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_AddChild_ReturnValue_3' has a wrong offset!");
+
+// Function WBP_MissionSummary.WBP_MissionSummary_C.UpdateMissionResult
+// 0x0150 (0x0150 - 0x0000)
+struct WBP_MissionSummary_C_UpdateMissionResult final
+{
+public:
+	class AGBGameState*                           InGBGameState;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 InResult;                                          // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_StriStri_ReturnValue;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_RightChop_ReturnValue;                    // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FUInt64                                CallFunc_GetGameModeModID_ReturnValue;             // 0x0030(0x0008)(NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_StringToInt_ReturnValue;             // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUInt64                                CallFunc_GetGameModeModID_ReturnValue_1;           // 0x0040(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FUInt64                                CallFunc_GetGameModeModID_ReturnValue_2;           // 0x0048(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_StartsWith_ReturnValue;                   // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalisedGameText_ReturnValue;         // 0x0058(0x0018)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0070(0x0028)()
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetGenericTeamId_ReturnValue;             // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalisedGameText_ReturnValue_1;       // 0x00B0(0x0018)()
+	class FString                                 K2Node_Select_Default;                             // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x00D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalisedGameText_ReturnValue_2;       // 0x00E8(0x0018)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0100(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_2;                    // 0x0128(0x0028)()
+};
+static_assert(alignof(WBP_MissionSummary_C_UpdateMissionResult) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_UpdateMissionResult");
+static_assert(sizeof(WBP_MissionSummary_C_UpdateMissionResult) == 0x000150, "Wrong size on WBP_MissionSummary_C_UpdateMissionResult");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, InGBGameState) == 0x000000, "Member 'WBP_MissionSummary_C_UpdateMissionResult::InGBGameState' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, InResult) == 0x000008, "Member 'WBP_MissionSummary_C_UpdateMissionResult::InResult' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_EqualEqual_StriStri_ReturnValue) == 0x000018, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_EqualEqual_StriStri_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, Temp_bool_Variable) == 0x000019, "Member 'WBP_MissionSummary_C_UpdateMissionResult::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_RightChop_ReturnValue) == 0x000020, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_RightChop_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_GetGameModeModID_ReturnValue) == 0x000030, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_GetGameModeModID_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_Conv_StringToInt_ReturnValue) == 0x000038, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_Conv_StringToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_GetGameModeModID_ReturnValue_1) == 0x000040, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_GetGameModeModID_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_GetGameModeModID_ReturnValue_2) == 0x000048, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_GetGameModeModID_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_StartsWith_ReturnValue) == 0x000050, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_StartsWith_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_GetLocalisedGameText_ReturnValue) == 0x000058, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_GetLocalisedGameText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, K2Node_MakeStruct_SlateColor) == 0x000070, "Member 'WBP_MissionSummary_C_UpdateMissionResult::K2Node_MakeStruct_SlateColor' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_GetOwningPlayer_ReturnValue) == 0x000098, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_GetGenericTeamId_ReturnValue) == 0x0000A0, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_GetGenericTeamId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0000A4, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000A8, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_GetLocalisedGameText_ReturnValue_1) == 0x0000B0, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_GetLocalisedGameText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, K2Node_Select_Default) == 0x0000C8, "Member 'WBP_MissionSummary_C_UpdateMissionResult::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_SelectColor_ReturnValue) == 0x0000D8, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_SelectColor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_GetLocalisedGameText_ReturnValue_2) == 0x0000E8, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_GetLocalisedGameText_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, K2Node_MakeStruct_SlateColor_1) == 0x000100, "Member 'WBP_MissionSummary_C_UpdateMissionResult::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, K2Node_MakeStruct_SlateColor_2) == 0x000128, "Member 'WBP_MissionSummary_C_UpdateMissionResult::K2Node_MakeStruct_SlateColor_2' has a wrong offset!");
+
+// Function WBP_MissionSummary.WBP_MissionSummary_C.OnMouseButtonUp
+// 0x03B8 (0x03B8 - 0x0000)
+struct WBP_MissionSummary_C_OnMouseButtonUp final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x0168(0x0018)(HasGetValueTypeHash)
+	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HandleCommunicationKey_ReturnValue;       // 0x018A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_18B[0x5];                                      // 0x018B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0190(0x00B8)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0248(0x00B8)()
+	struct FEventReply                            K2Node_Select_Default;                             // 0x0300(0x00B8)()
+};
+static_assert(alignof(WBP_MissionSummary_C_OnMouseButtonUp) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_OnMouseButtonUp");
+static_assert(sizeof(WBP_MissionSummary_C_OnMouseButtonUp) == 0x0003B8, "Wrong size on WBP_MissionSummary_C_OnMouseButtonUp");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, MyGeometry) == 0x000000, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, MouseEvent) == 0x000038, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::MouseEvent' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, ReturnValue) == 0x0000A8, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, CallFunc_GetOwningPlayer_ReturnValue) == 0x000160, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000168, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000180, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, K2Node_DynamicCast_bSuccess) == 0x000188, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, Temp_bool_Variable) == 0x000189, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, CallFunc_HandleCommunicationKey_ReturnValue) == 0x00018A, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::CallFunc_HandleCommunicationKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, CallFunc_Handled_ReturnValue) == 0x000190, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, CallFunc_Unhandled_ReturnValue) == 0x000248, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, K2Node_Select_Default) == 0x000300, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_MissionSummary.WBP_MissionSummary_C.OnMouseButtonDown
+// 0x03B8 (0x03B8 - 0x0000)
+struct WBP_MissionSummary_C_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x0168(0x0018)(HasGetValueTypeHash)
+	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HandleCommunicationKey_ReturnValue;       // 0x018A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_18B[0x5];                                      // 0x018B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0190(0x00B8)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0248(0x00B8)()
+	struct FEventReply                            K2Node_Select_Default;                             // 0x0300(0x00B8)()
+};
+static_assert(alignof(WBP_MissionSummary_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_OnMouseButtonDown");
+static_assert(sizeof(WBP_MissionSummary_C_OnMouseButtonDown) == 0x0003B8, "Wrong size on WBP_MissionSummary_C_OnMouseButtonDown");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, ReturnValue) == 0x0000A8, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, CallFunc_GetOwningPlayer_ReturnValue) == 0x000160, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000168, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000180, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, K2Node_DynamicCast_bSuccess) == 0x000188, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, Temp_bool_Variable) == 0x000189, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, CallFunc_HandleCommunicationKey_ReturnValue) == 0x00018A, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::CallFunc_HandleCommunicationKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, CallFunc_Handled_ReturnValue) == 0x000190, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, CallFunc_Unhandled_ReturnValue) == 0x000248, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, K2Node_Select_Default) == 0x000300, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_MissionSummary.WBP_MissionSummary_C.OnKeyUp
+// 0x0380 (0x0380 - 0x0000)
+struct WBP_MissionSummary_C_OnKeyUp final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0130(0x0018)(HasGetValueTypeHash)
+	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HandleCommunicationKey_ReturnValue;       // 0x0152(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_153[0x5];                                      // 0x0153(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0158(0x00B8)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0210(0x00B8)()
+	struct FEventReply                            K2Node_Select_Default;                             // 0x02C8(0x00B8)()
+};
+static_assert(alignof(WBP_MissionSummary_C_OnKeyUp) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_OnKeyUp");
+static_assert(sizeof(WBP_MissionSummary_C_OnKeyUp) == 0x000380, "Wrong size on WBP_MissionSummary_C_OnKeyUp");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, MyGeometry) == 0x000000, "Member 'WBP_MissionSummary_C_OnKeyUp::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, InKeyEvent) == 0x000038, "Member 'WBP_MissionSummary_C_OnKeyUp::InKeyEvent' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, ReturnValue) == 0x000070, "Member 'WBP_MissionSummary_C_OnKeyUp::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, CallFunc_GetOwningPlayer_ReturnValue) == 0x000128, "Member 'WBP_MissionSummary_C_OnKeyUp::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, CallFunc_GetKey_ReturnValue) == 0x000130, "Member 'WBP_MissionSummary_C_OnKeyUp::CallFunc_GetKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000148, "Member 'WBP_MissionSummary_C_OnKeyUp::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, K2Node_DynamicCast_bSuccess) == 0x000150, "Member 'WBP_MissionSummary_C_OnKeyUp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, Temp_bool_Variable) == 0x000151, "Member 'WBP_MissionSummary_C_OnKeyUp::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, CallFunc_HandleCommunicationKey_ReturnValue) == 0x000152, "Member 'WBP_MissionSummary_C_OnKeyUp::CallFunc_HandleCommunicationKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, CallFunc_Handled_ReturnValue) == 0x000158, "Member 'WBP_MissionSummary_C_OnKeyUp::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, CallFunc_Unhandled_ReturnValue) == 0x000210, "Member 'WBP_MissionSummary_C_OnKeyUp::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, K2Node_Select_Default) == 0x0002C8, "Member 'WBP_MissionSummary_C_OnKeyUp::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_MissionSummary.WBP_MissionSummary_C.OnKeyDown
+// 0x0388 (0x0388 - 0x0000)
+struct WBP_MissionSummary_C_OnKeyDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0130(0x0018)(HasGetValueTypeHash)
+	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HandleCommunicationKey_ReturnValue;       // 0x0152(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_153[0x5];                                      // 0x0153(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0158(0x00B8)()
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0218(0x00B8)()
+	struct FEventReply                            K2Node_Select_Default;                             // 0x02D0(0x00B8)()
+};
+static_assert(alignof(WBP_MissionSummary_C_OnKeyDown) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_OnKeyDown");
+static_assert(sizeof(WBP_MissionSummary_C_OnKeyDown) == 0x000388, "Wrong size on WBP_MissionSummary_C_OnKeyDown");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, MyGeometry) == 0x000000, "Member 'WBP_MissionSummary_C_OnKeyDown::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, InKeyEvent) == 0x000038, "Member 'WBP_MissionSummary_C_OnKeyDown::InKeyEvent' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, ReturnValue) == 0x000070, "Member 'WBP_MissionSummary_C_OnKeyDown::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, CallFunc_GetOwningPlayer_ReturnValue) == 0x000128, "Member 'WBP_MissionSummary_C_OnKeyDown::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, CallFunc_GetKey_ReturnValue) == 0x000130, "Member 'WBP_MissionSummary_C_OnKeyDown::CallFunc_GetKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000148, "Member 'WBP_MissionSummary_C_OnKeyDown::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, K2Node_DynamicCast_bSuccess) == 0x000150, "Member 'WBP_MissionSummary_C_OnKeyDown::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, Temp_bool_Variable) == 0x000151, "Member 'WBP_MissionSummary_C_OnKeyDown::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, CallFunc_HandleCommunicationKey_ReturnValue) == 0x000152, "Member 'WBP_MissionSummary_C_OnKeyDown::CallFunc_HandleCommunicationKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, CallFunc_Handled_ReturnValue) == 0x000158, "Member 'WBP_MissionSummary_C_OnKeyDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, CallFunc_Array_Contains_ReturnValue) == 0x000210, "Member 'WBP_MissionSummary_C_OnKeyDown::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, CallFunc_Unhandled_ReturnValue) == 0x000218, "Member 'WBP_MissionSummary_C_OnKeyDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, K2Node_Select_Default) == 0x0002D0, "Member 'WBP_MissionSummary_C_OnKeyDown::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_MissionSummary.WBP_MissionSummary_C.SetMissionTime
+// 0x0230 (0x0230 - 0x0000)
+struct WBP_MissionSummary_C_SetMissionTime final
+{
+public:
+	float                                         Seconds;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimespan                              CallFunc_FromSeconds_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakTimespan_Days;                       // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakTimespan_Hours;                      // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakTimespan_Minutes;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakTimespan_Seconds;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakTimespan_Milliseconds;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0028(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0040(0x0040)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0080(0x0018)()
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_2;             // 0x0098(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00B0(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x00F0(0x0040)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_3;             // 0x0130(0x0018)()
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_4;             // 0x0148(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x0160(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_4;            // 0x01A0(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01E0(0x0010)(ReferenceParm)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x01F0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0200(0x0018)()
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0218(0x0018)()
+};
+static_assert(alignof(WBP_MissionSummary_C_SetMissionTime) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_SetMissionTime");
+static_assert(sizeof(WBP_MissionSummary_C_SetMissionTime) == 0x000230, "Wrong size on WBP_MissionSummary_C_SetMissionTime");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, Seconds) == 0x000000, "Member 'WBP_MissionSummary_C_SetMissionTime::Seconds' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_FromSeconds_ReturnValue) == 0x000008, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_FromSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_BreakTimespan_Days) == 0x000010, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_BreakTimespan_Days' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_BreakTimespan_Hours) == 0x000014, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_BreakTimespan_Hours' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_BreakTimespan_Minutes) == 0x000018, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_BreakTimespan_Minutes' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_BreakTimespan_Seconds) == 0x00001C, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_BreakTimespan_Seconds' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_BreakTimespan_Milliseconds) == 0x000020, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_BreakTimespan_Milliseconds' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_Greater_IntInt_ReturnValue) == 0x000024, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_Conv_IntToText_ReturnValue) == 0x000028, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, K2Node_MakeStruct_FormatArgumentData) == 0x000040, "Member 'WBP_MissionSummary_C_SetMissionTime::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_Conv_IntToText_ReturnValue_1) == 0x000080, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_Conv_IntToText_ReturnValue_2) == 0x000098, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_Conv_IntToText_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000B0, "Member 'WBP_MissionSummary_C_SetMissionTime::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, K2Node_MakeStruct_FormatArgumentData_2) == 0x0000F0, "Member 'WBP_MissionSummary_C_SetMissionTime::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_Conv_IntToText_ReturnValue_3) == 0x000130, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_Conv_IntToText_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_Conv_IntToText_ReturnValue_4) == 0x000148, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_Conv_IntToText_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, K2Node_MakeStruct_FormatArgumentData_3) == 0x000160, "Member 'WBP_MissionSummary_C_SetMissionTime::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, K2Node_MakeStruct_FormatArgumentData_4) == 0x0001A0, "Member 'WBP_MissionSummary_C_SetMissionTime::K2Node_MakeStruct_FormatArgumentData_4' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, K2Node_MakeArray_Array) == 0x0001E0, "Member 'WBP_MissionSummary_C_SetMissionTime::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, K2Node_MakeArray_Array_1) == 0x0001F0, "Member 'WBP_MissionSummary_C_SetMissionTime::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_Format_ReturnValue) == 0x000200, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_Format_ReturnValue_1) == 0x000218, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+
+// Function WBP_MissionSummary.WBP_MissionSummary_C.OnGameStatsUpdated_Event_0
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MissionSummary_C_OnGameStatsUpdated_Event_0 final
+{
+public:
+	class AGBGameState*                           GameState;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_MissionSummary_C_OnGameStatsUpdated_Event_0) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_OnGameStatsUpdated_Event_0");
+static_assert(sizeof(WBP_MissionSummary_C_OnGameStatsUpdated_Event_0) == 0x000008, "Wrong size on WBP_MissionSummary_C_OnGameStatsUpdated_Event_0");
+static_assert(offsetof(WBP_MissionSummary_C_OnGameStatsUpdated_Event_0, GameState) == 0x000000, "Member 'WBP_MissionSummary_C_OnGameStatsUpdated_Event_0::GameState' has a wrong offset!");
+
+// Function WBP_MissionSummary.WBP_MissionSummary_C.OnPlayerReadyRoomStatusChanged_Event_0
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MissionSummary_C_OnPlayerReadyRoomStatusChanged_Event_0 final
+{
+public:
+	class AGBPlayerState*                         PlayerState;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_MissionSummary_C_OnPlayerReadyRoomStatusChanged_Event_0) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_OnPlayerReadyRoomStatusChanged_Event_0");
+static_assert(sizeof(WBP_MissionSummary_C_OnPlayerReadyRoomStatusChanged_Event_0) == 0x000008, "Wrong size on WBP_MissionSummary_C_OnPlayerReadyRoomStatusChanged_Event_0");
+static_assert(offsetof(WBP_MissionSummary_C_OnPlayerReadyRoomStatusChanged_Event_0, PlayerState) == 0x000000, "Member 'WBP_MissionSummary_C_OnPlayerReadyRoomStatusChanged_Event_0::PlayerState' has a wrong offset!");
+
+// Function WBP_MissionSummary.WBP_MissionSummary_C.OnSelected_Event_0
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_MissionSummary_C_OnSelected_Event_0 final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_MissionSummary_C_OnSelected_Event_0) == 0x000004, "Wrong alignment on WBP_MissionSummary_C_OnSelected_Event_0");
+static_assert(sizeof(WBP_MissionSummary_C_OnSelected_Event_0) == 0x000004, "Wrong size on WBP_MissionSummary_C_OnSelected_Event_0");
+static_assert(offsetof(WBP_MissionSummary_C_OnSelected_Event_0, Index_0) == 0x000000, "Member 'WBP_MissionSummary_C_OnSelected_Event_0::Index_0' has a wrong offset!");
+
+// Function WBP_MissionSummary.WBP_MissionSummary_C.OnQuitToMainMenu
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MissionSummary_C_OnQuitToMainMenu final
+{
+public:
+	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_MissionSummary_C_OnQuitToMainMenu) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_OnQuitToMainMenu");
+static_assert(sizeof(WBP_MissionSummary_C_OnQuitToMainMenu) == 0x000008, "Wrong size on WBP_MissionSummary_C_OnQuitToMainMenu");
+static_assert(offsetof(WBP_MissionSummary_C_OnQuitToMainMenu, Dialogue) == 0x000000, "Member 'WBP_MissionSummary_C_OnQuitToMainMenu::Dialogue' has a wrong offset!");
+
+// Function WBP_MissionSummary.WBP_MissionSummary_C.OnSaveProgressAndSelectMission
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MissionSummary_C_OnSaveProgressAndSelectMission final
+{
+public:
+	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_MissionSummary_C_OnSaveProgressAndSelectMission) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_OnSaveProgressAndSelectMission");
+static_assert(sizeof(WBP_MissionSummary_C_OnSaveProgressAndSelectMission) == 0x000008, "Wrong size on WBP_MissionSummary_C_OnSaveProgressAndSelectMission");
+static_assert(offsetof(WBP_MissionSummary_C_OnSaveProgressAndSelectMission, Dialogue) == 0x000000, "Member 'WBP_MissionSummary_C_OnSaveProgressAndSelectMission::Dialogue' has a wrong offset!");
+
 // Function WBP_MissionSummary.WBP_MissionSummary_C.ExecuteUbergraph_WBP_MissionSummary
 // 0x0830 (0x0830 - 0x0000)
 struct WBP_MissionSummary_C_ExecuteUbergraph_WBP_MissionSummary final
@@ -514,627 +1135,6 @@ static_assert(offsetof(WBP_MissionSummary_C_ExecuteUbergraph_WBP_MissionSummary,
 static_assert(offsetof(WBP_MissionSummary_C_ExecuteUbergraph_WBP_MissionSummary, CallFunc_GetStringTableEntryOrDisplayString_ReturnValue) == 0x0007E8, "Member 'WBP_MissionSummary_C_ExecuteUbergraph_WBP_MissionSummary::CallFunc_GetStringTableEntryOrDisplayString_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_MissionSummary_C_ExecuteUbergraph_WBP_MissionSummary, K2Node_Select_Default_5) == 0x000800, "Member 'WBP_MissionSummary_C_ExecuteUbergraph_WBP_MissionSummary::K2Node_Select_Default_5' has a wrong offset!");
 static_assert(offsetof(WBP_MissionSummary_C_ExecuteUbergraph_WBP_MissionSummary, CallFunc_TextToUpper_ReturnValue_1) == 0x000818, "Member 'WBP_MissionSummary_C_ExecuteUbergraph_WBP_MissionSummary::CallFunc_TextToUpper_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.OnSaveProgressAndSelectMission
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MissionSummary_C_OnSaveProgressAndSelectMission final
-{
-public:
-	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_MissionSummary_C_OnSaveProgressAndSelectMission) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_OnSaveProgressAndSelectMission");
-static_assert(sizeof(WBP_MissionSummary_C_OnSaveProgressAndSelectMission) == 0x000008, "Wrong size on WBP_MissionSummary_C_OnSaveProgressAndSelectMission");
-static_assert(offsetof(WBP_MissionSummary_C_OnSaveProgressAndSelectMission, Dialogue) == 0x000000, "Member 'WBP_MissionSummary_C_OnSaveProgressAndSelectMission::Dialogue' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.OnQuitToMainMenu
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MissionSummary_C_OnQuitToMainMenu final
-{
-public:
-	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_MissionSummary_C_OnQuitToMainMenu) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_OnQuitToMainMenu");
-static_assert(sizeof(WBP_MissionSummary_C_OnQuitToMainMenu) == 0x000008, "Wrong size on WBP_MissionSummary_C_OnQuitToMainMenu");
-static_assert(offsetof(WBP_MissionSummary_C_OnQuitToMainMenu, Dialogue) == 0x000000, "Member 'WBP_MissionSummary_C_OnQuitToMainMenu::Dialogue' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.OnSelected_Event_0
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_MissionSummary_C_OnSelected_Event_0 final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_MissionSummary_C_OnSelected_Event_0) == 0x000004, "Wrong alignment on WBP_MissionSummary_C_OnSelected_Event_0");
-static_assert(sizeof(WBP_MissionSummary_C_OnSelected_Event_0) == 0x000004, "Wrong size on WBP_MissionSummary_C_OnSelected_Event_0");
-static_assert(offsetof(WBP_MissionSummary_C_OnSelected_Event_0, Index_0) == 0x000000, "Member 'WBP_MissionSummary_C_OnSelected_Event_0::Index_0' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.OnPlayerReadyRoomStatusChanged_Event_0
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MissionSummary_C_OnPlayerReadyRoomStatusChanged_Event_0 final
-{
-public:
-	class AGBPlayerState*                         PlayerState;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_MissionSummary_C_OnPlayerReadyRoomStatusChanged_Event_0) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_OnPlayerReadyRoomStatusChanged_Event_0");
-static_assert(sizeof(WBP_MissionSummary_C_OnPlayerReadyRoomStatusChanged_Event_0) == 0x000008, "Wrong size on WBP_MissionSummary_C_OnPlayerReadyRoomStatusChanged_Event_0");
-static_assert(offsetof(WBP_MissionSummary_C_OnPlayerReadyRoomStatusChanged_Event_0, PlayerState) == 0x000000, "Member 'WBP_MissionSummary_C_OnPlayerReadyRoomStatusChanged_Event_0::PlayerState' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.OnGameStatsUpdated_Event_0
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MissionSummary_C_OnGameStatsUpdated_Event_0 final
-{
-public:
-	class AGBGameState*                           GameState;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_MissionSummary_C_OnGameStatsUpdated_Event_0) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_OnGameStatsUpdated_Event_0");
-static_assert(sizeof(WBP_MissionSummary_C_OnGameStatsUpdated_Event_0) == 0x000008, "Wrong size on WBP_MissionSummary_C_OnGameStatsUpdated_Event_0");
-static_assert(offsetof(WBP_MissionSummary_C_OnGameStatsUpdated_Event_0, GameState) == 0x000000, "Member 'WBP_MissionSummary_C_OnGameStatsUpdated_Event_0::GameState' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.SetMissionTime
-// 0x0230 (0x0230 - 0x0000)
-struct WBP_MissionSummary_C_SetMissionTime final
-{
-public:
-	float                                         Seconds;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimespan                              CallFunc_FromSeconds_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakTimespan_Days;                       // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakTimespan_Hours;                      // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakTimespan_Minutes;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakTimespan_Seconds;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakTimespan_Milliseconds;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0028(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0040(0x0040)(HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0080(0x0018)()
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_2;             // 0x0098(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00B0(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x00F0(0x0040)(HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_3;             // 0x0130(0x0018)()
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_4;             // 0x0148(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x0160(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_4;            // 0x01A0(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01E0(0x0010)(ReferenceParm)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x01F0(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0200(0x0018)()
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0218(0x0018)()
-};
-static_assert(alignof(WBP_MissionSummary_C_SetMissionTime) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_SetMissionTime");
-static_assert(sizeof(WBP_MissionSummary_C_SetMissionTime) == 0x000230, "Wrong size on WBP_MissionSummary_C_SetMissionTime");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, Seconds) == 0x000000, "Member 'WBP_MissionSummary_C_SetMissionTime::Seconds' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_FromSeconds_ReturnValue) == 0x000008, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_FromSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_BreakTimespan_Days) == 0x000010, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_BreakTimespan_Days' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_BreakTimespan_Hours) == 0x000014, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_BreakTimespan_Hours' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_BreakTimespan_Minutes) == 0x000018, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_BreakTimespan_Minutes' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_BreakTimespan_Seconds) == 0x00001C, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_BreakTimespan_Seconds' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_BreakTimespan_Milliseconds) == 0x000020, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_BreakTimespan_Milliseconds' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_Greater_IntInt_ReturnValue) == 0x000024, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_Conv_IntToText_ReturnValue) == 0x000028, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, K2Node_MakeStruct_FormatArgumentData) == 0x000040, "Member 'WBP_MissionSummary_C_SetMissionTime::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_Conv_IntToText_ReturnValue_1) == 0x000080, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_Conv_IntToText_ReturnValue_2) == 0x000098, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_Conv_IntToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000B0, "Member 'WBP_MissionSummary_C_SetMissionTime::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, K2Node_MakeStruct_FormatArgumentData_2) == 0x0000F0, "Member 'WBP_MissionSummary_C_SetMissionTime::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_Conv_IntToText_ReturnValue_3) == 0x000130, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_Conv_IntToText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_Conv_IntToText_ReturnValue_4) == 0x000148, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_Conv_IntToText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, K2Node_MakeStruct_FormatArgumentData_3) == 0x000160, "Member 'WBP_MissionSummary_C_SetMissionTime::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, K2Node_MakeStruct_FormatArgumentData_4) == 0x0001A0, "Member 'WBP_MissionSummary_C_SetMissionTime::K2Node_MakeStruct_FormatArgumentData_4' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, K2Node_MakeArray_Array) == 0x0001E0, "Member 'WBP_MissionSummary_C_SetMissionTime::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, K2Node_MakeArray_Array_1) == 0x0001F0, "Member 'WBP_MissionSummary_C_SetMissionTime::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_Format_ReturnValue) == 0x000200, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_SetMissionTime, CallFunc_Format_ReturnValue_1) == 0x000218, "Member 'WBP_MissionSummary_C_SetMissionTime::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.OnKeyDown
-// 0x0388 (0x0388 - 0x0000)
-struct WBP_MissionSummary_C_OnKeyDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
-	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0130(0x0018)(HasGetValueTypeHash)
-	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HandleCommunicationKey_ReturnValue;       // 0x0152(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_153[0x5];                                      // 0x0153(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0158(0x00B8)()
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0218(0x00B8)()
-	struct FEventReply                            K2Node_Select_Default;                             // 0x02D0(0x00B8)()
-};
-static_assert(alignof(WBP_MissionSummary_C_OnKeyDown) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_OnKeyDown");
-static_assert(sizeof(WBP_MissionSummary_C_OnKeyDown) == 0x000388, "Wrong size on WBP_MissionSummary_C_OnKeyDown");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, MyGeometry) == 0x000000, "Member 'WBP_MissionSummary_C_OnKeyDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, InKeyEvent) == 0x000038, "Member 'WBP_MissionSummary_C_OnKeyDown::InKeyEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, ReturnValue) == 0x000070, "Member 'WBP_MissionSummary_C_OnKeyDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, CallFunc_GetOwningPlayer_ReturnValue) == 0x000128, "Member 'WBP_MissionSummary_C_OnKeyDown::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, CallFunc_GetKey_ReturnValue) == 0x000130, "Member 'WBP_MissionSummary_C_OnKeyDown::CallFunc_GetKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000148, "Member 'WBP_MissionSummary_C_OnKeyDown::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, K2Node_DynamicCast_bSuccess) == 0x000150, "Member 'WBP_MissionSummary_C_OnKeyDown::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, Temp_bool_Variable) == 0x000151, "Member 'WBP_MissionSummary_C_OnKeyDown::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, CallFunc_HandleCommunicationKey_ReturnValue) == 0x000152, "Member 'WBP_MissionSummary_C_OnKeyDown::CallFunc_HandleCommunicationKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, CallFunc_Handled_ReturnValue) == 0x000158, "Member 'WBP_MissionSummary_C_OnKeyDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, CallFunc_Array_Contains_ReturnValue) == 0x000210, "Member 'WBP_MissionSummary_C_OnKeyDown::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, CallFunc_Unhandled_ReturnValue) == 0x000218, "Member 'WBP_MissionSummary_C_OnKeyDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyDown, K2Node_Select_Default) == 0x0002D0, "Member 'WBP_MissionSummary_C_OnKeyDown::K2Node_Select_Default' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.OnKeyUp
-// 0x0380 (0x0380 - 0x0000)
-struct WBP_MissionSummary_C_OnKeyUp final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
-	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0130(0x0018)(HasGetValueTypeHash)
-	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HandleCommunicationKey_ReturnValue;       // 0x0152(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_153[0x5];                                      // 0x0153(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0158(0x00B8)()
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0210(0x00B8)()
-	struct FEventReply                            K2Node_Select_Default;                             // 0x02C8(0x00B8)()
-};
-static_assert(alignof(WBP_MissionSummary_C_OnKeyUp) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_OnKeyUp");
-static_assert(sizeof(WBP_MissionSummary_C_OnKeyUp) == 0x000380, "Wrong size on WBP_MissionSummary_C_OnKeyUp");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, MyGeometry) == 0x000000, "Member 'WBP_MissionSummary_C_OnKeyUp::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, InKeyEvent) == 0x000038, "Member 'WBP_MissionSummary_C_OnKeyUp::InKeyEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, ReturnValue) == 0x000070, "Member 'WBP_MissionSummary_C_OnKeyUp::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, CallFunc_GetOwningPlayer_ReturnValue) == 0x000128, "Member 'WBP_MissionSummary_C_OnKeyUp::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, CallFunc_GetKey_ReturnValue) == 0x000130, "Member 'WBP_MissionSummary_C_OnKeyUp::CallFunc_GetKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000148, "Member 'WBP_MissionSummary_C_OnKeyUp::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, K2Node_DynamicCast_bSuccess) == 0x000150, "Member 'WBP_MissionSummary_C_OnKeyUp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, Temp_bool_Variable) == 0x000151, "Member 'WBP_MissionSummary_C_OnKeyUp::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, CallFunc_HandleCommunicationKey_ReturnValue) == 0x000152, "Member 'WBP_MissionSummary_C_OnKeyUp::CallFunc_HandleCommunicationKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, CallFunc_Handled_ReturnValue) == 0x000158, "Member 'WBP_MissionSummary_C_OnKeyUp::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, CallFunc_Unhandled_ReturnValue) == 0x000210, "Member 'WBP_MissionSummary_C_OnKeyUp::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnKeyUp, K2Node_Select_Default) == 0x0002C8, "Member 'WBP_MissionSummary_C_OnKeyUp::K2Node_Select_Default' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.OnMouseButtonDown
-// 0x03B8 (0x03B8 - 0x0000)
-struct WBP_MissionSummary_C_OnMouseButtonDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x0168(0x0018)(HasGetValueTypeHash)
-	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HandleCommunicationKey_ReturnValue;       // 0x018A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_18B[0x5];                                      // 0x018B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0190(0x00B8)()
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0248(0x00B8)()
-	struct FEventReply                            K2Node_Select_Default;                             // 0x0300(0x00B8)()
-};
-static_assert(alignof(WBP_MissionSummary_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_OnMouseButtonDown");
-static_assert(sizeof(WBP_MissionSummary_C_OnMouseButtonDown) == 0x0003B8, "Wrong size on WBP_MissionSummary_C_OnMouseButtonDown");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, ReturnValue) == 0x0000A8, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, CallFunc_GetOwningPlayer_ReturnValue) == 0x000160, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000168, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000180, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, K2Node_DynamicCast_bSuccess) == 0x000188, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, Temp_bool_Variable) == 0x000189, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, CallFunc_HandleCommunicationKey_ReturnValue) == 0x00018A, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::CallFunc_HandleCommunicationKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, CallFunc_Handled_ReturnValue) == 0x000190, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, CallFunc_Unhandled_ReturnValue) == 0x000248, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonDown, K2Node_Select_Default) == 0x000300, "Member 'WBP_MissionSummary_C_OnMouseButtonDown::K2Node_Select_Default' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.OnMouseButtonUp
-// 0x03B8 (0x03B8 - 0x0000)
-struct WBP_MissionSummary_C_OnMouseButtonUp final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   CallFunc_PointerEvent_GetEffectingButton_ReturnValue; // 0x0168(0x0018)(HasGetValueTypeHash)
-	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HandleCommunicationKey_ReturnValue;       // 0x018A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_18B[0x5];                                      // 0x018B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0190(0x00B8)()
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0248(0x00B8)()
-	struct FEventReply                            K2Node_Select_Default;                             // 0x0300(0x00B8)()
-};
-static_assert(alignof(WBP_MissionSummary_C_OnMouseButtonUp) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_OnMouseButtonUp");
-static_assert(sizeof(WBP_MissionSummary_C_OnMouseButtonUp) == 0x0003B8, "Wrong size on WBP_MissionSummary_C_OnMouseButtonUp");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, MyGeometry) == 0x000000, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, MouseEvent) == 0x000038, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, ReturnValue) == 0x0000A8, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, CallFunc_GetOwningPlayer_ReturnValue) == 0x000160, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000168, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000180, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, K2Node_DynamicCast_bSuccess) == 0x000188, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, Temp_bool_Variable) == 0x000189, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, CallFunc_HandleCommunicationKey_ReturnValue) == 0x00018A, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::CallFunc_HandleCommunicationKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, CallFunc_Handled_ReturnValue) == 0x000190, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, CallFunc_Unhandled_ReturnValue) == 0x000248, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_OnMouseButtonUp, K2Node_Select_Default) == 0x000300, "Member 'WBP_MissionSummary_C_OnMouseButtonUp::K2Node_Select_Default' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.UpdateMissionResult
-// 0x0150 (0x0150 - 0x0000)
-struct WBP_MissionSummary_C_UpdateMissionResult final
-{
-public:
-	class AGBGameState*                           InGBGameState;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 InResult;                                          // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_StriStri_ReturnValue;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_RightChop_ReturnValue;                    // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FUInt64                                CallFunc_GetGameModeModID_ReturnValue;             // 0x0030(0x0008)(NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_StringToInt_ReturnValue;             // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUInt64                                CallFunc_GetGameModeModID_ReturnValue_1;           // 0x0040(0x0008)(NoDestructor, HasGetValueTypeHash)
-	struct FUInt64                                CallFunc_GetGameModeModID_ReturnValue_2;           // 0x0048(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_StartsWith_ReturnValue;                   // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalisedGameText_ReturnValue;         // 0x0058(0x0018)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0070(0x0028)()
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetGenericTeamId_ReturnValue;             // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalisedGameText_ReturnValue_1;       // 0x00B0(0x0018)()
-	class FString                                 K2Node_Select_Default;                             // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x00D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetLocalisedGameText_ReturnValue_2;       // 0x00E8(0x0018)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0100(0x0028)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_2;                    // 0x0128(0x0028)()
-};
-static_assert(alignof(WBP_MissionSummary_C_UpdateMissionResult) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_UpdateMissionResult");
-static_assert(sizeof(WBP_MissionSummary_C_UpdateMissionResult) == 0x000150, "Wrong size on WBP_MissionSummary_C_UpdateMissionResult");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, InGBGameState) == 0x000000, "Member 'WBP_MissionSummary_C_UpdateMissionResult::InGBGameState' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, InResult) == 0x000008, "Member 'WBP_MissionSummary_C_UpdateMissionResult::InResult' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_EqualEqual_StriStri_ReturnValue) == 0x000018, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_EqualEqual_StriStri_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, Temp_bool_Variable) == 0x000019, "Member 'WBP_MissionSummary_C_UpdateMissionResult::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_RightChop_ReturnValue) == 0x000020, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_RightChop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_GetGameModeModID_ReturnValue) == 0x000030, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_GetGameModeModID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_Conv_StringToInt_ReturnValue) == 0x000038, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_Conv_StringToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_GetGameModeModID_ReturnValue_1) == 0x000040, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_GetGameModeModID_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_GetGameModeModID_ReturnValue_2) == 0x000048, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_GetGameModeModID_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_StartsWith_ReturnValue) == 0x000050, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_StartsWith_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_GetLocalisedGameText_ReturnValue) == 0x000058, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_GetLocalisedGameText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, K2Node_MakeStruct_SlateColor) == 0x000070, "Member 'WBP_MissionSummary_C_UpdateMissionResult::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_GetOwningPlayer_ReturnValue) == 0x000098, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_GetGenericTeamId_ReturnValue) == 0x0000A0, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_GetGenericTeamId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_Conv_ByteToInt_ReturnValue) == 0x0000A4, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000A8, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_GetLocalisedGameText_ReturnValue_1) == 0x0000B0, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_GetLocalisedGameText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, K2Node_Select_Default) == 0x0000C8, "Member 'WBP_MissionSummary_C_UpdateMissionResult::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_SelectColor_ReturnValue) == 0x0000D8, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_SelectColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, CallFunc_GetLocalisedGameText_ReturnValue_2) == 0x0000E8, "Member 'WBP_MissionSummary_C_UpdateMissionResult::CallFunc_GetLocalisedGameText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, K2Node_MakeStruct_SlateColor_1) == 0x000100, "Member 'WBP_MissionSummary_C_UpdateMissionResult::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_UpdateMissionResult, K2Node_MakeStruct_SlateColor_2) == 0x000128, "Member 'WBP_MissionSummary_C_UpdateMissionResult::K2Node_MakeStruct_SlateColor_2' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.CreateDeathmatchStyleEntries
-// 0x00B8 (0x00B8 - 0x0000)
-struct WBP_MissionSummary_C_CreateDeathmatchStyleEntries final
-{
-public:
-	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Mission_Objectives_C*              CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBGameState*                           K2Node_DynamicCast_AsGBGame_State;                 // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ArePlayerScoresInitialised_ReturnValue;   // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGBPlayerState*                         K2Node_DynamicCast_AsGBPlayer_State;               // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Mission_PlayerScoreList_C*         CallFunc_Create_ReturnValue_1;                     // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot;         // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_2;                     // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Mission_PlayerList_C*              CallFunc_Create_ReturnValue_3;                     // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildrenCount_ReturnValue_1;           // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_1;                   // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_MissionSummary_SplitContainer_C*   CallFunc_Create_ReturnValue_4;                     // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_2;                   // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot_1;       // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_5;                     // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_3;                   // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_CreateDeathmatchStyleEntries");
-static_assert(sizeof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries) == 0x0000B8, "Wrong size on WBP_MissionSummary_C_CreateDeathmatchStyleEntries");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_GetChildrenCount_ReturnValue) == 0x000000, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_GetGameState_ReturnValue) == 0x000008, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_Create_ReturnValue) == 0x000010, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, K2Node_DynamicCast_AsGBGame_State) == 0x000018, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::K2Node_DynamicCast_AsGBGame_State' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_GetOwningPlayer_ReturnValue) == 0x000028, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_ArePlayerScoresInitialised_ReturnValue) == 0x000030, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_ArePlayerScoresInitialised_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, K2Node_DynamicCast_AsGBPlayer_State) == 0x000038, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::K2Node_DynamicCast_AsGBPlayer_State' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_Create_ReturnValue_1) == 0x000048, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_AddChild_ReturnValue) == 0x000050, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot) == 0x000058, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, K2Node_DynamicCast_bSuccess_2) == 0x000060, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_Create_ReturnValue_2) == 0x000068, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_Create_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_Create_ReturnValue_3) == 0x000070, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_Create_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_GetChildrenCount_ReturnValue_1) == 0x000078, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_GetChildrenCount_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_AddChild_ReturnValue_1) == 0x000080, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_Create_ReturnValue_4) == 0x000088, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_Create_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_AddChild_ReturnValue_2) == 0x000090, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_AddChild_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot_1) == 0x000098, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, K2Node_DynamicCast_bSuccess_3) == 0x0000A0, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_Create_ReturnValue_5) == 0x0000A8, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_Create_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateDeathmatchStyleEntries, CallFunc_AddChild_ReturnValue_3) == 0x0000B0, "Member 'WBP_MissionSummary_C_CreateDeathmatchStyleEntries::CallFunc_AddChild_ReturnValue_3' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.CreateCoopEntries
-// 0x0128 (0x0128 - 0x0000)
-struct WBP_MissionSummary_C_CreateCoopEntries final
-{
-public:
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Mission_PlayerScoreList_C*         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBPlayerState*                         K2Node_DynamicCast_AsGBPlayer_State;               // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Mission_PlayerList_C*              CallFunc_Create_ReturnValue_1;                     // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot;         // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBGameState*                           K2Node_DynamicCast_AsGBGame_State;                 // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_ArePlayerScoresInitialised_ReturnValue;   // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_52[0x2];                                       // 0x0052(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetChildrenCount_ReturnValue_1;           // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue_1;               // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Mission_Objectives_C*              CallFunc_Create_ReturnValue_2;                     // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBGameState*                           K2Node_DynamicCast_AsGBGame_State_1;               // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_AreTeamScoresInitialised_ReturnValue;     // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_72[0x6];                                       // 0x0072(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Mission_MatchSummaryPVE_C*         CallFunc_Create_ReturnValue_3;                     // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildrenCount_ReturnValue_2;           // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_1;                   // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_4;                     // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot_1;       // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_2;                   // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_MissionSummary_SplitContainer_C*   CallFunc_Create_ReturnValue_5;                     // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildrenCount_ReturnValue_3;           // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Mission_TeamScoreList_C*           CallFunc_Create_ReturnValue_6;                     // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_3;                   // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot_2;       // 0x00D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_7;                     // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_4;                   // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_8;                     // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_5;                   // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_9;                     // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_6;                   // 0x0108(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot_3;       // 0x0110(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_7;                   // 0x0120(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_MissionSummary_C_CreateCoopEntries) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_CreateCoopEntries");
-static_assert(sizeof(WBP_MissionSummary_C_CreateCoopEntries) == 0x000128, "Wrong size on WBP_MissionSummary_C_CreateCoopEntries");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_AsGBPlayer_State) == 0x000010, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_AsGBPlayer_State' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_1) == 0x000020, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AddChild_ReturnValue) == 0x000028, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot) == 0x000030, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_GetChildrenCount_ReturnValue) == 0x00003C, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_GetGameState_ReturnValue) == 0x000040, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_AsGBGame_State) == 0x000048, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_AsGBGame_State' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_bSuccess_2) == 0x000050, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_ArePlayerScoresInitialised_ReturnValue) == 0x000051, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_ArePlayerScoresInitialised_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_GetChildrenCount_ReturnValue_1) == 0x000054, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_GetChildrenCount_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_GetGameState_ReturnValue_1) == 0x000058, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_GetGameState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_2) == 0x000060, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_AsGBGame_State_1) == 0x000068, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_AsGBGame_State_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_bSuccess_3) == 0x000070, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AreTeamScoresInitialised_ReturnValue) == 0x000071, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AreTeamScoresInitialised_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_3) == 0x000078, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_GetChildrenCount_ReturnValue_2) == 0x000080, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_GetChildrenCount_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AddChild_ReturnValue_1) == 0x000088, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_4) == 0x000090, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot_1) == 0x000098, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_bSuccess_4) == 0x0000A0, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AddChild_ReturnValue_2) == 0x0000A8, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AddChild_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_5) == 0x0000B0, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_GetChildrenCount_ReturnValue_3) == 0x0000B8, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_GetChildrenCount_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_6) == 0x0000C0, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AddChild_ReturnValue_3) == 0x0000C8, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AddChild_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot_2) == 0x0000D0, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_bSuccess_5) == 0x0000D8, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_7) == 0x0000E0, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AddChild_ReturnValue_4) == 0x0000E8, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AddChild_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_8) == 0x0000F0, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AddChild_ReturnValue_5) == 0x0000F8, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AddChild_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_Create_ReturnValue_9) == 0x000100, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_Create_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AddChild_ReturnValue_6) == 0x000108, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AddChild_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot_3) == 0x000110, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot_3' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, K2Node_DynamicCast_bSuccess_6) == 0x000118, "Member 'WBP_MissionSummary_C_CreateCoopEntries::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateCoopEntries, CallFunc_AddChild_ReturnValue_7) == 0x000120, "Member 'WBP_MissionSummary_C_CreateCoopEntries::CallFunc_AddChild_ReturnValue_7' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.CreateTeamEntries
-// 0x0150 (0x0150 - 0x0000)
-struct WBP_MissionSummary_C_CreateTeamEntries final
-{
-public:
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Mission_MatchSummaryPVP_C*         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBPlayerState*                         K2Node_DynamicCast_AsGBPlayer_State;               // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGBGameState*                           K2Node_DynamicCast_AsGBGame_State;                 // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Mission_PlayerScoreList_C*         CallFunc_Create_ReturnValue_1;                     // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ArePlayerScoresInitialised_ReturnValue;   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_2;                     // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot;         // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_3;                     // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildrenCount_ReturnValue_1;           // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue_1;               // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBGameState*                           K2Node_DynamicCast_AsGBGame_State_1;               // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_1;                   // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_AreTeamScoresInitialised_ReturnValue;     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetChildrenCount_ReturnValue_2;           // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Mission_PlayerList_C*              CallFunc_Create_ReturnValue_4;                     // 0x00A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_5;                     // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_2;                   // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_3;                   // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Mission_PlayerList_C*              CallFunc_Create_ReturnValue_6;                     // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildrenCount_ReturnValue_3;           // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Mission_TeamScoreList_C*           CallFunc_Create_ReturnValue_7;                     // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Mission_TeamScoreList_C*           CallFunc_Create_ReturnValue_8;                     // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_MissionSummary_SplitContainer_C*   CallFunc_Create_ReturnValue_9;                     // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_4;                   // 0x00F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot_1;       // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_MissionSummary_Tab_C*              CallFunc_Create_ReturnValue_10;                    // 0x0108(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_5;                   // 0x0110(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_MissionSummary_SplitContainer_C*   CallFunc_Create_ReturnValue_11;                    // 0x0118(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_6;                   // 0x0120(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot_2;       // 0x0128(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_7;                   // 0x0138(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidgetSwitcherSlot*                    K2Node_DynamicCast_AsWidget_Switcher_Slot_3;       // 0x0140(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_MissionSummary_C_CreateTeamEntries) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_CreateTeamEntries");
-static_assert(sizeof(WBP_MissionSummary_C_CreateTeamEntries) == 0x000150, "Wrong size on WBP_MissionSummary_C_CreateTeamEntries");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_AsGBPlayer_State) == 0x000010, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_AsGBPlayer_State' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_GetGameState_ReturnValue) == 0x000020, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_GetChildrenCount_ReturnValue) == 0x000028, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_AsGBGame_State) == 0x000030, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_AsGBGame_State' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_1) == 0x000040, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_ArePlayerScoresInitialised_ReturnValue) == 0x000048, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_ArePlayerScoresInitialised_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AddChild_ReturnValue) == 0x000050, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_2) == 0x000058, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot) == 0x000060, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_bSuccess_2) == 0x000068, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_3) == 0x000070, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_GetChildrenCount_ReturnValue_1) == 0x000078, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_GetChildrenCount_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_GetGameState_ReturnValue_1) == 0x000080, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_GetGameState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_AsGBGame_State_1) == 0x000088, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_AsGBGame_State_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_bSuccess_3) == 0x000090, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AddChild_ReturnValue_1) == 0x000098, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AreTeamScoresInitialised_ReturnValue) == 0x0000A0, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AreTeamScoresInitialised_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_GetChildrenCount_ReturnValue_2) == 0x0000A4, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_GetChildrenCount_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_4) == 0x0000A8, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_5) == 0x0000B0, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AddChild_ReturnValue_2) == 0x0000B8, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AddChild_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AddChild_ReturnValue_3) == 0x0000C0, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AddChild_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_6) == 0x0000C8, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_GetChildrenCount_ReturnValue_3) == 0x0000D0, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_GetChildrenCount_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_7) == 0x0000D8, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_8) == 0x0000E0, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_9) == 0x0000E8, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AddChild_ReturnValue_4) == 0x0000F0, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AddChild_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot_1) == 0x0000F8, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_bSuccess_4) == 0x000100, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_10) == 0x000108, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AddChild_ReturnValue_5) == 0x000110, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AddChild_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_Create_ReturnValue_11) == 0x000118, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_Create_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AddChild_ReturnValue_6) == 0x000120, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AddChild_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot_2) == 0x000128, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot_2' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_bSuccess_5) == 0x000130, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, CallFunc_AddChild_ReturnValue_7) == 0x000138, "Member 'WBP_MissionSummary_C_CreateTeamEntries::CallFunc_AddChild_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_AsWidget_Switcher_Slot_3) == 0x000140, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_AsWidget_Switcher_Slot_3' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_CreateTeamEntries, K2Node_DynamicCast_bSuccess_6) == 0x000148, "Member 'WBP_MissionSummary_C_CreateTeamEntries::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.Get_Button_SelectNextMission_bIsEnabled_0
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0 final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0) == 0x000001, "Wrong alignment on WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0");
-static_assert(sizeof(WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0) == 0x000002, "Wrong size on WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0");
-static_assert(offsetof(WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0, ReturnValue) == 0x000000, "Member 'WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0, CallFunc_BooleanAND_ReturnValue) == 0x000001, "Member 'WBP_MissionSummary_C_Get_Button_SelectNextMission_bIsEnabled_0::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.Get_TextBlock_2_Text_0
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_MissionSummary_C_Get_TextBlock_2_Text_0 final
-{
-public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
-	bool                                          Temp_bool_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_1;                              // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x0020(0x0018)()
-	class FText                                   K2Node_Select_Default_1;                           // 0x0038(0x0018)()
-};
-static_assert(alignof(WBP_MissionSummary_C_Get_TextBlock_2_Text_0) == 0x000008, "Wrong alignment on WBP_MissionSummary_C_Get_TextBlock_2_Text_0");
-static_assert(sizeof(WBP_MissionSummary_C_Get_TextBlock_2_Text_0) == 0x000050, "Wrong size on WBP_MissionSummary_C_Get_TextBlock_2_Text_0");
-static_assert(offsetof(WBP_MissionSummary_C_Get_TextBlock_2_Text_0, ReturnValue) == 0x000000, "Member 'WBP_MissionSummary_C_Get_TextBlock_2_Text_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_Get_TextBlock_2_Text_0, Temp_bool_Variable) == 0x000018, "Member 'WBP_MissionSummary_C_Get_TextBlock_2_Text_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_Get_TextBlock_2_Text_0, Temp_bool_Variable_1) == 0x000019, "Member 'WBP_MissionSummary_C_Get_TextBlock_2_Text_0::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_Get_TextBlock_2_Text_0, CallFunc_BooleanAND_ReturnValue) == 0x00001A, "Member 'WBP_MissionSummary_C_Get_TextBlock_2_Text_0::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_Get_TextBlock_2_Text_0, K2Node_Select_Default) == 0x000020, "Member 'WBP_MissionSummary_C_Get_TextBlock_2_Text_0::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_C_Get_TextBlock_2_Text_0, K2Node_Select_Default_1) == 0x000038, "Member 'WBP_MissionSummary_C_Get_TextBlock_2_Text_0::K2Node_Select_Default_1' has a wrong offset!");
-
-// Function WBP_MissionSummary.WBP_MissionSummary_C.Get_TextBlock_2_bIsEnabled_0
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_MissionSummary_C_Get_TextBlock_2_bIsEnabled_0 final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_MissionSummary_C_Get_TextBlock_2_bIsEnabled_0) == 0x000001, "Wrong alignment on WBP_MissionSummary_C_Get_TextBlock_2_bIsEnabled_0");
-static_assert(sizeof(WBP_MissionSummary_C_Get_TextBlock_2_bIsEnabled_0) == 0x000001, "Wrong size on WBP_MissionSummary_C_Get_TextBlock_2_bIsEnabled_0");
-static_assert(offsetof(WBP_MissionSummary_C_Get_TextBlock_2_bIsEnabled_0, ReturnValue) == 0x000000, "Member 'WBP_MissionSummary_C_Get_TextBlock_2_bIsEnabled_0::ReturnValue' has a wrong offset!");
 
 }
 

@@ -16,6 +16,39 @@
 namespace SDK::Params
 {
 
+// Function WBP_HotspotListEntry.WBP_HotspotListEntry_C.Get_CheckBox_WholeItem_ToolTipWidget_0
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_HotspotListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_HotspotListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_HotspotListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0");
+static_assert(sizeof(WBP_HotspotListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0) == 0x000008, "Wrong size on WBP_HotspotListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0");
+static_assert(offsetof(WBP_HotspotListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_HotspotListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+
+// Function WBP_HotspotListEntry.WBP_HotspotListEntry_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_HotspotListEntry_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_HotspotListEntry_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_HotspotListEntry_C_PreConstruct");
+static_assert(sizeof(WBP_HotspotListEntry_C_PreConstruct) == 0x000001, "Wrong size on WBP_HotspotListEntry_C_PreConstruct");
+static_assert(offsetof(WBP_HotspotListEntry_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_HotspotListEntry_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
+// Function WBP_HotspotListEntry.WBP_HotspotListEntry_C.BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_HotspotListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature final
+{
+public:
+	bool                                          bIsChecked;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_HotspotListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong alignment on WBP_HotspotListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature");
+static_assert(sizeof(WBP_HotspotListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong size on WBP_HotspotListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature");
+static_assert(offsetof(WBP_HotspotListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature, bIsChecked) == 0x000000, "Member 'WBP_HotspotListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature::bIsChecked' has a wrong offset!");
+
 // Function WBP_HotspotListEntry.WBP_HotspotListEntry_C.ExecuteUbergraph_WBP_HotspotListEntry
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_HotspotListEntry_C_ExecuteUbergraph_WBP_HotspotListEntry final
@@ -49,39 +82,6 @@ static_assert(offsetof(WBP_HotspotListEntry_C_ExecuteUbergraph_WBP_HotspotListEn
 static_assert(offsetof(WBP_HotspotListEntry_C_ExecuteUbergraph_WBP_HotspotListEntry, CallFunc_GetTimeSeconds_ReturnValue_1) == 0x000014, "Member 'WBP_HotspotListEntry_C_ExecuteUbergraph_WBP_HotspotListEntry::CallFunc_GetTimeSeconds_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_HotspotListEntry_C_ExecuteUbergraph_WBP_HotspotListEntry, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000018, "Member 'WBP_HotspotListEntry_C_ExecuteUbergraph_WBP_HotspotListEntry::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_HotspotListEntry_C_ExecuteUbergraph_WBP_HotspotListEntry, CallFunc_Greater_FloatFloat_ReturnValue) == 0x00001C, "Member 'WBP_HotspotListEntry_C_ExecuteUbergraph_WBP_HotspotListEntry::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-
-// Function WBP_HotspotListEntry.WBP_HotspotListEntry_C.BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_HotspotListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature final
-{
-public:
-	bool                                          bIsChecked;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_HotspotListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong alignment on WBP_HotspotListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature");
-static_assert(sizeof(WBP_HotspotListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong size on WBP_HotspotListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature");
-static_assert(offsetof(WBP_HotspotListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature, bIsChecked) == 0x000000, "Member 'WBP_HotspotListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature::bIsChecked' has a wrong offset!");
-
-// Function WBP_HotspotListEntry.WBP_HotspotListEntry_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_HotspotListEntry_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_HotspotListEntry_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_HotspotListEntry_C_PreConstruct");
-static_assert(sizeof(WBP_HotspotListEntry_C_PreConstruct) == 0x000001, "Wrong size on WBP_HotspotListEntry_C_PreConstruct");
-static_assert(offsetof(WBP_HotspotListEntry_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_HotspotListEntry_C_PreConstruct::IsDesignTime' has a wrong offset!");
-
-// Function WBP_HotspotListEntry.WBP_HotspotListEntry_C.Get_CheckBox_WholeItem_ToolTipWidget_0
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_HotspotListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_HotspotListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_HotspotListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0");
-static_assert(sizeof(WBP_HotspotListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0) == 0x000008, "Wrong size on WBP_HotspotListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0");
-static_assert(offsetof(WBP_HotspotListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_HotspotListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0::ReturnValue' has a wrong offset!");
 
 }
 

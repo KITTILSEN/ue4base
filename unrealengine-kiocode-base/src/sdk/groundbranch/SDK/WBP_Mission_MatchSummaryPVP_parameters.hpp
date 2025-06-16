@@ -21,6 +21,188 @@
 namespace SDK::Params
 {
 
+// Function WBP_Mission_MatchSummaryPVP.WBP_Mission_MatchSummaryPVP_C.GetTeamName
+// 0x00A0 (0x00A0 - 0x0000)
+struct WBP_Mission_MatchSummaryPVP_C_GetTeamName final
+{
+public:
+	uint8                                         TeamId;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   TeamName;                                          // 0x0008(0x0018)(Parm, OutParm)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x0040)(HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0070(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0080(0x0018)()
+	bool                                          CallFunc_Greater_ByteByte_ReturnValue;             // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_ByteByte_ReturnValue;                // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_Mission_MatchSummaryPVP_C_GetTeamName) == 0x000008, "Wrong alignment on WBP_Mission_MatchSummaryPVP_C_GetTeamName");
+static_assert(sizeof(WBP_Mission_MatchSummaryPVP_C_GetTeamName) == 0x0000A0, "Wrong size on WBP_Mission_MatchSummaryPVP_C_GetTeamName");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, TeamId) == 0x000000, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::TeamId' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, TeamName) == 0x000008, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::TeamName' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000020, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, K2Node_MakeStruct_FormatArgumentData) == 0x000028, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000068, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, K2Node_MakeArray_Array) == 0x000070, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, CallFunc_Format_ReturnValue) == 0x000080, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, CallFunc_Greater_ByteByte_ReturnValue) == 0x000098, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::CallFunc_Greater_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, CallFunc_Less_ByteByte_ReturnValue) == 0x000099, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::CallFunc_Less_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, CallFunc_BooleanOR_ReturnValue) == 0x00009A, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+
+// Function WBP_Mission_MatchSummaryPVP.WBP_Mission_MatchSummaryPVP_C.UpdateNormalMatchStats
+// 0x0260 (0x0260 - 0x0000)
+struct WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats final
+{
+public:
+	class AGBGameState*                           InGameState;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0010(0x0018)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0028(0x0018)()
+	bool                                          Temp_bool_Variable_1;                              // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_2;                              // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0058(0x0018)()
+	int32                                         CallFunc_GetRoundNumber_ReturnValue;               // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0078(0x0040)(HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   K2Node_Select_Default;                             // 0x00C0(0x0018)()
+	int32                                         CallFunc_Abs_Int_ReturnValue;                      // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00E0(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0120(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0160(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0178(0x0018)()
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default_1;                           // 0x0198(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x01B0(0x0040)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x01F0(0x0018)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_2;                          // 0x0208(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x0218(0x0018)()
+	class FText                                   K2Node_Select_Default_2;                           // 0x0230(0x0018)()
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0248(0x0018)()
+};
+static_assert(alignof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats) == 0x000008, "Wrong alignment on WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats");
+static_assert(sizeof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats) == 0x000260, "Wrong size on WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, InGameState) == 0x000000, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::InGameState' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, Temp_bool_Variable) == 0x000008, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, Temp_text_Variable) == 0x000010, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, Temp_text_Variable_1) == 0x000028, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::Temp_text_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, Temp_bool_Variable_1) == 0x000040, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, Temp_bool_Variable_2) == 0x000041, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_MakeArray_Array) == 0x000048, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Format_ReturnValue) == 0x000058, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_GetRoundNumber_ReturnValue) == 0x000070, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_GetRoundNumber_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_MakeStruct_FormatArgumentData) == 0x000078, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0000B8, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000BC, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_Select_Default) == 0x0000C0, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Abs_Int_ReturnValue) == 0x0000D8, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Abs_Int_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000E0, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_MakeStruct_FormatArgumentData_2) == 0x000120, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_MakeArray_Array_1) == 0x000160, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Greater_IntInt_ReturnValue) == 0x000170, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Format_ReturnValue_1) == 0x000178, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000190, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_Select_Default_1) == 0x000198, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_MakeStruct_FormatArgumentData_3) == 0x0001B0, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Conv_IntToText_ReturnValue) == 0x0001F0, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_MakeArray_Array_2) == 0x000208, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_MakeArray_Array_2' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Format_ReturnValue_2) == 0x000218, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Format_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_Select_Default_2) == 0x000230, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Conv_IntToText_ReturnValue_1) == 0x000248, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
+
+// Function WBP_Mission_MatchSummaryPVP.WBP_Mission_MatchSummaryPVP_C.SetTeamRolesVisibility
+// 0x00B8 (0x00B8 - 0x0000)
+struct WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility final
+{
+public:
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBGameState*                           K2Node_DynamicCast_AsGBGame_State;                 // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue_1;               // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBGameState*                           K2Node_DynamicCast_AsGBGame_State_1;               // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGBTeamInfo                            CallFunc_GetPlayerTeamInfo_ReturnValue;            // 0x0044(0x0018)(NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x0060(0x0018)()
+	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGBTeamInfo                            CallFunc_GetPlayerTeamInfo_ReturnValue_1;          // 0x007C(0x0018)(NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_1;        // 0x0096(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_97[0x1];                                       // 0x0097(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_NameToText_ReturnValue_1;            // 0x0098(0x0018)()
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_TextIsEmpty_ReturnValue_1;                // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x00B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility) == 0x000008, "Wrong alignment on WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility");
+static_assert(sizeof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility) == 0x0000B8, "Wrong size on WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, Temp_bool_Variable) == 0x000000, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, Temp_byte_Variable) == 0x000001, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, Temp_byte_Variable_1) == 0x000002, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_GetGameState_ReturnValue) == 0x000008, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, Temp_bool_Variable_1) == 0x000010, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, K2Node_DynamicCast_AsGBGame_State) == 0x000018, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::K2Node_DynamicCast_AsGBGame_State' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_GetGameState_ReturnValue_1) == 0x000028, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_GetGameState_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, Temp_byte_Variable_2) == 0x000030, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, K2Node_DynamicCast_AsGBGame_State_1) == 0x000038, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::K2Node_DynamicCast_AsGBGame_State_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, Temp_byte_Variable_3) == 0x000041, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_GetPlayerTeamInfo_ReturnValue) == 0x000044, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_GetPlayerTeamInfo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_EqualEqual_NameName_ReturnValue) == 0x00005C, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_Conv_NameToText_ReturnValue) == 0x000060, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_Conv_NameToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_TextIsEmpty_ReturnValue) == 0x000078, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_GetPlayerTeamInfo_ReturnValue_1) == 0x00007C, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_GetPlayerTeamInfo_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_BooleanOR_ReturnValue) == 0x000094, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_Not_PreBool_ReturnValue) == 0x000095, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_EqualEqual_NameName_ReturnValue_1) == 0x000096, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_EqualEqual_NameName_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_Conv_NameToText_ReturnValue_1) == 0x000098, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_Conv_NameToText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, K2Node_Select_Default) == 0x0000B0, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_TextIsEmpty_ReturnValue_1) == 0x0000B1, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_TextIsEmpty_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_BooleanOR_ReturnValue_1) == 0x0000B2, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_Not_PreBool_ReturnValue_1) == 0x0000B3, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, K2Node_Select_Default_1) == 0x0000B4, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::K2Node_Select_Default_1' has a wrong offset!");
+
+// Function WBP_Mission_MatchSummaryPVP.WBP_Mission_MatchSummaryPVP_C.OnMatchStatsUpdated
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Mission_MatchSummaryPVP_C_OnMatchStatsUpdated final
+{
+public:
+	class AGBGameState*                           GameState;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Mission_MatchSummaryPVP_C_OnMatchStatsUpdated) == 0x000008, "Wrong alignment on WBP_Mission_MatchSummaryPVP_C_OnMatchStatsUpdated");
+static_assert(sizeof(WBP_Mission_MatchSummaryPVP_C_OnMatchStatsUpdated) == 0x000008, "Wrong size on WBP_Mission_MatchSummaryPVP_C_OnMatchStatsUpdated");
+static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_OnMatchStatsUpdated, GameState) == 0x000000, "Member 'WBP_Mission_MatchSummaryPVP_C_OnMatchStatsUpdated::GameState' has a wrong offset!");
+
 // Function WBP_Mission_MatchSummaryPVP.WBP_Mission_MatchSummaryPVP_C.ExecuteUbergraph_WBP_Mission_MatchSummaryPVP
 // 0x0578 (0x0578 - 0x0000)
 struct WBP_Mission_MatchSummaryPVP_C_ExecuteUbergraph_WBP_Mission_MatchSummaryPVP final
@@ -240,188 +422,6 @@ static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_ExecuteUbergraph_WBP_Missio
 static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_ExecuteUbergraph_WBP_Mission_MatchSummaryPVP, Temp_byte_Variable_5) == 0x00056E, "Member 'WBP_Mission_MatchSummaryPVP_C_ExecuteUbergraph_WBP_Mission_MatchSummaryPVP::Temp_byte_Variable_5' has a wrong offset!");
 static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_ExecuteUbergraph_WBP_Mission_MatchSummaryPVP, K2Node_Select_Default_5) == 0x00056F, "Member 'WBP_Mission_MatchSummaryPVP_C_ExecuteUbergraph_WBP_Mission_MatchSummaryPVP::K2Node_Select_Default_5' has a wrong offset!");
 static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_ExecuteUbergraph_WBP_Mission_MatchSummaryPVP, K2Node_Select_Default_6) == 0x000570, "Member 'WBP_Mission_MatchSummaryPVP_C_ExecuteUbergraph_WBP_Mission_MatchSummaryPVP::K2Node_Select_Default_6' has a wrong offset!");
-
-// Function WBP_Mission_MatchSummaryPVP.WBP_Mission_MatchSummaryPVP_C.OnMatchStatsUpdated
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Mission_MatchSummaryPVP_C_OnMatchStatsUpdated final
-{
-public:
-	class AGBGameState*                           GameState;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Mission_MatchSummaryPVP_C_OnMatchStatsUpdated) == 0x000008, "Wrong alignment on WBP_Mission_MatchSummaryPVP_C_OnMatchStatsUpdated");
-static_assert(sizeof(WBP_Mission_MatchSummaryPVP_C_OnMatchStatsUpdated) == 0x000008, "Wrong size on WBP_Mission_MatchSummaryPVP_C_OnMatchStatsUpdated");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_OnMatchStatsUpdated, GameState) == 0x000000, "Member 'WBP_Mission_MatchSummaryPVP_C_OnMatchStatsUpdated::GameState' has a wrong offset!");
-
-// Function WBP_Mission_MatchSummaryPVP.WBP_Mission_MatchSummaryPVP_C.SetTeamRolesVisibility
-// 0x00B8 (0x00B8 - 0x0000)
-struct WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility final
-{
-public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGBGameState*                           K2Node_DynamicCast_AsGBGame_State;                 // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue_1;               // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGBGameState*                           K2Node_DynamicCast_AsGBGame_State_1;               // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGBTeamInfo                            CallFunc_GetPlayerTeamInfo_ReturnValue;            // 0x0044(0x0018)(NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x0060(0x0018)()
-	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGBTeamInfo                            CallFunc_GetPlayerTeamInfo_ReturnValue_1;          // 0x007C(0x0018)(NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_1;        // 0x0096(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_97[0x1];                                       // 0x0097(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_NameToText_ReturnValue_1;            // 0x0098(0x0018)()
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_TextIsEmpty_ReturnValue_1;                // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x00B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility) == 0x000008, "Wrong alignment on WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility");
-static_assert(sizeof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility) == 0x0000B8, "Wrong size on WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, Temp_bool_Variable) == 0x000000, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, Temp_byte_Variable) == 0x000001, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, Temp_byte_Variable_1) == 0x000002, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_GetGameState_ReturnValue) == 0x000008, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, Temp_bool_Variable_1) == 0x000010, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, K2Node_DynamicCast_AsGBGame_State) == 0x000018, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::K2Node_DynamicCast_AsGBGame_State' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_GetGameState_ReturnValue_1) == 0x000028, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_GetGameState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, Temp_byte_Variable_2) == 0x000030, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, K2Node_DynamicCast_AsGBGame_State_1) == 0x000038, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::K2Node_DynamicCast_AsGBGame_State_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, Temp_byte_Variable_3) == 0x000041, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_GetPlayerTeamInfo_ReturnValue) == 0x000044, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_GetPlayerTeamInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_EqualEqual_NameName_ReturnValue) == 0x00005C, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_Conv_NameToText_ReturnValue) == 0x000060, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_Conv_NameToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_TextIsEmpty_ReturnValue) == 0x000078, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_GetPlayerTeamInfo_ReturnValue_1) == 0x00007C, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_GetPlayerTeamInfo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_BooleanOR_ReturnValue) == 0x000094, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_Not_PreBool_ReturnValue) == 0x000095, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_EqualEqual_NameName_ReturnValue_1) == 0x000096, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_EqualEqual_NameName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_Conv_NameToText_ReturnValue_1) == 0x000098, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_Conv_NameToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, K2Node_Select_Default) == 0x0000B0, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_TextIsEmpty_ReturnValue_1) == 0x0000B1, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_TextIsEmpty_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_BooleanOR_ReturnValue_1) == 0x0000B2, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, CallFunc_Not_PreBool_ReturnValue_1) == 0x0000B3, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility, K2Node_Select_Default_1) == 0x0000B4, "Member 'WBP_Mission_MatchSummaryPVP_C_SetTeamRolesVisibility::K2Node_Select_Default_1' has a wrong offset!");
-
-// Function WBP_Mission_MatchSummaryPVP.WBP_Mission_MatchSummaryPVP_C.UpdateNormalMatchStats
-// 0x0260 (0x0260 - 0x0000)
-struct WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats final
-{
-public:
-	class AGBGameState*                           InGameState;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0010(0x0018)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0028(0x0018)()
-	bool                                          Temp_bool_Variable_1;                              // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_2;                              // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0058(0x0018)()
-	int32                                         CallFunc_GetRoundNumber_ReturnValue;               // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0078(0x0040)(HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   K2Node_Select_Default;                             // 0x00C0(0x0018)()
-	int32                                         CallFunc_Abs_Int_ReturnValue;                      // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00E0(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0120(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0160(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0178(0x0018)()
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default_1;                           // 0x0198(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x01B0(0x0040)(HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x01F0(0x0018)()
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_2;                          // 0x0208(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x0218(0x0018)()
-	class FText                                   K2Node_Select_Default_2;                           // 0x0230(0x0018)()
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0248(0x0018)()
-};
-static_assert(alignof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats) == 0x000008, "Wrong alignment on WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats");
-static_assert(sizeof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats) == 0x000260, "Wrong size on WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, InGameState) == 0x000000, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::InGameState' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, Temp_bool_Variable) == 0x000008, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, Temp_text_Variable) == 0x000010, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, Temp_text_Variable_1) == 0x000028, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, Temp_bool_Variable_1) == 0x000040, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, Temp_bool_Variable_2) == 0x000041, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_MakeArray_Array) == 0x000048, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Format_ReturnValue) == 0x000058, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_GetRoundNumber_ReturnValue) == 0x000070, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_GetRoundNumber_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_MakeStruct_FormatArgumentData) == 0x000078, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0000B8, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000BC, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_Select_Default) == 0x0000C0, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Abs_Int_ReturnValue) == 0x0000D8, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Abs_Int_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000E0, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_MakeStruct_FormatArgumentData_2) == 0x000120, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_MakeArray_Array_1) == 0x000160, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Greater_IntInt_ReturnValue) == 0x000170, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Format_ReturnValue_1) == 0x000178, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000190, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_Select_Default_1) == 0x000198, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_MakeStruct_FormatArgumentData_3) == 0x0001B0, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Conv_IntToText_ReturnValue) == 0x0001F0, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_MakeArray_Array_2) == 0x000208, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Format_ReturnValue_2) == 0x000218, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Format_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, K2Node_Select_Default_2) == 0x000230, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats, CallFunc_Conv_IntToText_ReturnValue_1) == 0x000248, "Member 'WBP_Mission_MatchSummaryPVP_C_UpdateNormalMatchStats::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_Mission_MatchSummaryPVP.WBP_Mission_MatchSummaryPVP_C.GetTeamName
-// 0x00A0 (0x00A0 - 0x0000)
-struct WBP_Mission_MatchSummaryPVP_C_GetTeamName final
-{
-public:
-	uint8                                         TeamId;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   TeamName;                                          // 0x0008(0x0018)(Parm, OutParm)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x0040)(HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0070(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0080(0x0018)()
-	bool                                          CallFunc_Greater_ByteByte_ReturnValue;             // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_ByteByte_ReturnValue;                // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_Mission_MatchSummaryPVP_C_GetTeamName) == 0x000008, "Wrong alignment on WBP_Mission_MatchSummaryPVP_C_GetTeamName");
-static_assert(sizeof(WBP_Mission_MatchSummaryPVP_C_GetTeamName) == 0x0000A0, "Wrong size on WBP_Mission_MatchSummaryPVP_C_GetTeamName");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, TeamId) == 0x000000, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::TeamId' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, TeamName) == 0x000008, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::TeamName' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000020, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, K2Node_MakeStruct_FormatArgumentData) == 0x000028, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000068, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, K2Node_MakeArray_Array) == 0x000070, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, CallFunc_Format_ReturnValue) == 0x000080, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, CallFunc_Greater_ByteByte_ReturnValue) == 0x000098, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::CallFunc_Greater_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, CallFunc_Less_ByteByte_ReturnValue) == 0x000099, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::CallFunc_Less_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_MatchSummaryPVP_C_GetTeamName, CallFunc_BooleanOR_ReturnValue) == 0x00009A, "Member 'WBP_Mission_MatchSummaryPVP_C_GetTeamName::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 }
 

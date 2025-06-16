@@ -40,13 +40,13 @@ public:
 	float                                         LastClickTime;                                     // 0x02F4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_HotspotMapIcon(int32 EntryPoint);
-	void HoverTimer();
-	void UserIsHoveringOnIcon();
-	void BndEvt__WBP_HotspotMapIcon_Button_SelectHotspot_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	void Construct();
-	void PreConstruct(bool IsDesignTime);
 	class UWidget* Get_SizeBox_Global_ToolTipWidget_0();
+	void PreConstruct(bool IsDesignTime);
+	void Construct();
+	void BndEvt__WBP_HotspotMapIcon_Button_SelectHotspot_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void UserIsHoveringOnIcon();
+	void HoverTimer();
+	void ExecuteUbergraph_WBP_HotspotMapIcon(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -20,111 +20,113 @@ namespace SDK::Params
 {
 
 // Function GA_Grenade_Throw.GA_Grenade_Throw_C.ExecuteUbergraph_GA_Grenade_Throw
-// 0x0780 (0x0780 - 0x0000)
+// 0x0790 (0x0790 - 0x0000)
 struct GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0014(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0024(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0034(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x0044(0x0010)(ZeroConstructor, NoDestructor)
-	float                                         K2Node_CustomEvent_TimeHeld;                       // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(float TimeHeld)>               K2Node_CreateDelegate_OutputDelegate_5;            // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
-	float                                         Temp_float_Variable;                               // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAbilityTask_WaitInputRelease*          CallFunc_WaitInputRelease_ReturnValue;             // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x007C(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_7;            // 0x008C(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_8;            // 0x009C(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_9;            // 0x00AC(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_10;           // 0x00BC(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAbilityTask_WaitGameplayEvent*         CallFunc_WaitGameplayEvent_ReturnValue;            // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBCharacter*                           CallFunc_GetGBInstigator_ReturnValue;              // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E2[0x6];                                       // 0x00E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayEventData                     Temp_struct_Variable;                              // 0x00E8(0x00B0)()
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_11;           // 0x0198(0x0010)(ZeroConstructor, NoDestructor)
-	class AGBCharacter*                           CallFunc_GetGBInstigator_ReturnValue_1;            // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1B1[0x7];                                      // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayEventData                     K2Node_Event_EventData;                            // 0x01B8(0x00B0)(ConstParm)
-	struct FGameplayEventData                     K2Node_CustomEvent_EventData;                      // 0x0268(0x00B0)()
-	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue;                 // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  CallFunc_MakeLiteralGameplayTagContainer_ReturnValue; // 0x0320(0x0020)()
-	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x0340(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_TryActivateAbilitiesByTag_ReturnValue;    // 0x0348(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_349[0x7];                                      // 0x0349(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_1;               // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLaunchVelocity_OutVelocity;            // 0x0358(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_364[0x4];                                      // 0x0364(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_2;               // 0x0368(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_3;               // 0x0370(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBInvItem*                             K2Node_CustomEvent_Grenade;                        // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_SpawnLocation;                  // 0x0380(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_CustomEvent_SpawnVelocity;                  // 0x038C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         K2Node_MakeArray_Array;                            // 0x0398(0x0010)(ConstParm, ReferenceParm)
-	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x03A8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3B4[0xC];                                      // 0x03B4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x03C0(0x0030)(IsPlainOldData, NoDestructor)
-	struct FGameplayEventData                     K2Node_CustomEvent_Payload;                        // 0x03F0(0x00B0)()
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x04A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBItemProjectile*                      CallFunc_FinishSpawningActor_ReturnValue;          // 0x04A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_4;               // 0x04B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsServer_ReturnValue;                     // 0x04B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x04B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4BA[0x2];                                      // 0x04BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetLaunchVelocity_OutVelocity_1;          // 0x04BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLocallyControlled_ReturnValue;          // 0x04C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4C9[0x7];                                      // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_5;               // 0x04D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetDesiredSpawnLocation_OutDesiredSpawnLocation; // 0x04D8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSafeSpawnLocation_ReturnValue;         // 0x04E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x04F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4F1[0x3];                                      // 0x04F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_SphereTraceSingleByProfile_OutHit;        // 0x04F4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_SphereTraceSingleByProfile_ReturnValue;   // 0x057C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x057D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x057E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_57F[0x1];                                      // 0x057F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakHitResult_Time;                      // 0x0580(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakHitResult_Distance;                  // 0x0584(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0588(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x0594(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x05A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x05AC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x05B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x05C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x05C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x05D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x05D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x05DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x05E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x05E4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x05F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_HasAuthority_ReturnValue;              // 0x05FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5FD[0x3];                                      // 0x05FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimMontage*                           CallFunc_GetMontage_ReturnValue;                   // 0x0600(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAbilityTask_PlayMontageAndWait*        CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue; // 0x0608(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FGameplayEventData& Payload)> K2Node_CreateDelegate_OutputDelegate_12; // 0x0610(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0620(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_621[0x7];                                      // 0x0621(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimMontage*                           CallFunc_GetMontage_ReturnValue_1;                 // 0x0628(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABP_GrenadeArc_C*                       CallFunc_GetActorOfClass_ReturnValue;              // 0x0630(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAbilityTask_PlayMontageAndWait*        CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue_1; // 0x0638(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0640(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x0641(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsLocallyControlledPlayer_ReturnValue;    // 0x0642(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_643[0x5];                                      // 0x0643(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimMontage*                           CallFunc_GetMontage_ReturnValue_2;                 // 0x0648(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayEventData                     Temp_struct_Variable;                              // 0x0008(0x00B0)()
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x00C8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x00D8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x00E8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x00F8(0x0010)(ZeroConstructor, NoDestructor)
+	float                                         K2Node_CustomEvent_TimeHeld;                       // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(float TimeHeld)>               K2Node_CreateDelegate_OutputDelegate_5;            // 0x010C(0x0010)(ZeroConstructor, NoDestructor)
+	float                                         Temp_float_Variable;                               // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAbilityTask_WaitInputRelease*          CallFunc_WaitInputRelease_ReturnValue;             // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_129[0x3];                                      // 0x0129(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x012C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_7;            // 0x013C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_8;            // 0x014C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_9;            // 0x015C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_10;           // 0x016C(0x0010)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayEventData                     K2Node_CustomEvent_Payload;                        // 0x0180(0x00B0)()
+	TDelegate<void(const struct FGameplayEventData& Payload)> K2Node_CreateDelegate_OutputDelegate_11; // 0x0230(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_12;           // 0x0240(0x0010)(ZeroConstructor, NoDestructor)
+	struct FGameplayEventData                     K2Node_Event_EventData;                            // 0x0250(0x00B0)(ConstParm)
+	struct FGameplayEventData                     K2Node_CustomEvent_EventData;                      // 0x0300(0x00B0)()
+	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue;                 // 0x03B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  CallFunc_MakeLiteralGameplayTagContainer_ReturnValue; // 0x03B8(0x0020)()
+	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x03D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_TryActivateAbilitiesByTag_ReturnValue;    // 0x03E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3E1[0x7];                                      // 0x03E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_1;               // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLaunchVelocity_OutVelocity;            // 0x03F0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3FC[0x4];                                      // 0x03FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_2;               // 0x0400(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_3;               // 0x0408(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBInvItem*                             K2Node_CustomEvent_Grenade;                        // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_SpawnLocation;                  // 0x0418(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_CustomEvent_SpawnVelocity;                  // 0x0424(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         K2Node_MakeArray_Array;                            // 0x0430(0x0010)(ConstParm, ReferenceParm)
+	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0440(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_44C[0x4];                                      // 0x044C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0450(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0480(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBCharacter*                           CallFunc_GetGBInstigator_ReturnValue;              // 0x0488(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0490(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_491[0x7];                                      // 0x0491(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBItemProjectile*                      CallFunc_FinishSpawningActor_ReturnValue;          // 0x0498(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x04A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4A1[0x7];                                      // 0x04A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_4;               // 0x04A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsServer_ReturnValue;                     // 0x04B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x04B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4B2[0x2];                                      // 0x04B2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetLaunchVelocity_OutVelocity_1;          // 0x04B4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLocallyControlled_ReturnValue;          // 0x04C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4C1[0x7];                                      // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_5;               // 0x04C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetDesiredSpawnLocation_OutDesiredSpawnLocation; // 0x04D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSafeSpawnLocation_ReturnValue;         // 0x04DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x04E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_4E9[0x3];                                      // 0x04E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_SphereTraceSingleByProfile_OutHit;        // 0x04EC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_SphereTraceSingleByProfile_ReturnValue;   // 0x0574(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bBlockingHit;              // 0x0575(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BreakHitResult_bInitialOverlap;           // 0x0576(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_577[0x1];                                      // 0x0577(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakHitResult_Time;                      // 0x0578(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakHitResult_Distance;                  // 0x057C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Location;                  // 0x0580(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactPoint;               // 0x058C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_Normal;                    // 0x0598(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_ImpactNormal;              // 0x05A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPhysicalMaterial*                      CallFunc_BreakHitResult_PhysMat;                   // 0x05B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BreakHitResult_HitActor;                  // 0x05B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    CallFunc_BreakHitResult_HitComponent;              // 0x05C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_BreakHitResult_HitBoneName;               // 0x05C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_HitItem;                   // 0x05D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_ElementIndex;              // 0x05D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakHitResult_FaceIndex;                 // 0x05D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x05DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x05E8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_HasAuthority_ReturnValue;              // 0x05F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5F5[0x3];                                      // 0x05F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimMontage*                           CallFunc_GetMontage_ReturnValue;                   // 0x05F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAbilityTask_PlayMontageAndWait*        CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue; // 0x0600(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0608(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_609[0x7];                                      // 0x0609(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimMontage*                           CallFunc_GetMontage_ReturnValue_1;                 // 0x0610(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAbilityTask_PlayMontageAndWait*        CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue_1; // 0x0618(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_GrenadeArc_C*                       CallFunc_GetActorOfClass_ReturnValue;              // 0x0620(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0628(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0629(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsLocallyControlledPlayer_ReturnValue;    // 0x062A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_62B[0x5];                                      // 0x062B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimMontage*                           CallFunc_GetMontage_ReturnValue_2;                 // 0x0630(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_6;                    // 0x0638(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_639[0x7];                                      // 0x0639(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBCharacter*                           CallFunc_GetGBInstigator_ReturnValue_1;            // 0x0640(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_7;                    // 0x0648(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_649[0x7];                                      // 0x0649(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_6;               // 0x0650(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAbilityTask_PlayMontageAndWait*        CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue_2; // 0x0658(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_7;                    // 0x0660(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x0660(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_661[0x3];                                      // 0x0661(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0664(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_HasAuthority_ReturnValue_1;            // 0x0668(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -136,20 +138,19 @@ public:
 	float                                         CallFunc_SelectFloat_ReturnValue_1;                // 0x067C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SelectFloat_ReturnValue_2;                // 0x0680(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0684(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0688(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_68C[0x4];                                      // 0x068C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_8;               // 0x0690(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsProne_ReturnValue_1;                    // 0x0698(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_699[0x3];                                      // 0x0699(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_SelectFloat_ReturnValue_3;                // 0x069C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x06A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x06A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAbilityTask_WaitDelay*                 CallFunc_WaitDelay_ReturnValue;                    // 0x06A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_8;                    // 0x06B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_K2_HasAuthority_ReturnValue_2;            // 0x06B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6B2[0x2];                                      // 0x06B2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_13;           // 0x06B4(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_6C4[0x4];                                      // 0x06C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_13;           // 0x0688(0x0010)(ZeroConstructor, NoDestructor)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0698(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69C[0x4];                                      // 0x069C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_8;               // 0x06A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsProne_ReturnValue_1;                    // 0x06A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6A9[0x3];                                      // 0x06A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_SelectFloat_ReturnValue_3;                // 0x06AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x06B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x06B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAbilityTask_WaitDelay*                 CallFunc_WaitDelay_ReturnValue;                    // 0x06B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_9;                    // 0x06C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_K2_HasAuthority_ReturnValue_2;            // 0x06C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6C2[0x6];                                      // 0x06C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_9;               // 0x06C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_14;           // 0x06D0(0x0010)(ZeroConstructor, NoDestructor)
 	class AGBInvItem*                             CallFunc_GetEquipped_ReturnValue;                  // 0x06E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -163,100 +164,105 @@ public:
 	bool                                          CallFunc_IsLocallyControlled_ReturnValue_1;        // 0x0740(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_741[0x7];                                      // 0x0741(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_10;              // 0x0748(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput; // 0x0750(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasMatchingGameplayTag_ReturnValue;       // 0x0760(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_761[0x7];                                      // 0x0761(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_11;              // 0x0768(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0770(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsAlive_ReturnValue;                      // 0x0750(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_751[0x7];                                      // 0x0751(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput; // 0x0758(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasMatchingGameplayTag_ReturnValue;       // 0x0768(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0769(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_76A[0x6];                                      // 0x076A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBCharacter*                           CallFunc_GetCharacter_ReturnValue_11;              // 0x0770(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAbilityTask_WaitGameplayEvent*         CallFunc_WaitGameplayEvent_ReturnValue;            // 0x0778(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_10;                   // 0x0780(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bWasCancelled;                        // 0x0781(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw) == 0x000010, "Wrong alignment on GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw");
-static_assert(sizeof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw) == 0x000780, "Wrong size on GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw");
+static_assert(sizeof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw) == 0x000790, "Wrong size on GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw");
 static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, EntryPoint) == 0x000000, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_2) == 0x000024, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_3) == 0x000034, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_4) == 0x000044, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CustomEvent_TimeHeld) == 0x000054, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CustomEvent_TimeHeld' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_5) == 0x000058, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, Temp_float_Variable) == 0x000068, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_WaitInputRelease_ReturnValue) == 0x000070, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_WaitInputRelease_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue) == 0x000078, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_6) == 0x00007C, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_7) == 0x00008C, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_8) == 0x00009C, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_9) == 0x0000AC, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_10) == 0x0000BC, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_WaitGameplayEvent_ReturnValue) == 0x0000D0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_WaitGameplayEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetGBInstigator_ReturnValue) == 0x0000D8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetGBInstigator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_1) == 0x0000E0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_2) == 0x0000E1, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, Temp_struct_Variable) == 0x0000E8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_11) == 0x000198, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetGBInstigator_ReturnValue_1) == 0x0001A8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetGBInstigator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_3) == 0x0001B0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_Event_EventData) == 0x0001B8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_Event_EventData' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CustomEvent_EventData) == 0x000268, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CustomEvent_EventData' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue) == 0x000318, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_MakeLiteralGameplayTagContainer_ReturnValue) == 0x000320, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_MakeLiteralGameplayTagContainer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x000340, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_TryActivateAbilitiesByTag_ReturnValue) == 0x000348, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_TryActivateAbilitiesByTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_1) == 0x000350, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetLaunchVelocity_OutVelocity) == 0x000358, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetLaunchVelocity_OutVelocity' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_2) == 0x000368, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_3) == 0x000370, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CustomEvent_Grenade) == 0x000378, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CustomEvent_Grenade' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CustomEvent_SpawnLocation) == 0x000380, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CustomEvent_SpawnLocation' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CustomEvent_SpawnVelocity) == 0x00038C, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CustomEvent_SpawnVelocity' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_MakeArray_Array) == 0x000398, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_K2_GetActorRotation_ReturnValue) == 0x0003A8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_MakeTransform_ReturnValue) == 0x0003C0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CustomEvent_Payload) == 0x0003F0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CustomEvent_Payload' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0004A0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_FinishSpawningActor_ReturnValue) == 0x0004A8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_4) == 0x0004B0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsServer_ReturnValue) == 0x0004B8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_Not_PreBool_ReturnValue) == 0x0004B9, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetLaunchVelocity_OutVelocity_1) == 0x0004BC, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetLaunchVelocity_OutVelocity_1' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsLocallyControlled_ReturnValue) == 0x0004C8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_5) == 0x0004D0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetDesiredSpawnLocation_OutDesiredSpawnLocation) == 0x0004D8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetDesiredSpawnLocation_OutDesiredSpawnLocation' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetSafeSpawnLocation_ReturnValue) == 0x0004E4, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetSafeSpawnLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0004F0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_SphereTraceSingleByProfile_OutHit) == 0x0004F4, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_SphereTraceSingleByProfile_OutHit' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_SphereTraceSingleByProfile_ReturnValue) == 0x00057C, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_SphereTraceSingleByProfile_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_bBlockingHit) == 0x00057D, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_bInitialOverlap) == 0x00057E, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_Time) == 0x000580, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_Distance) == 0x000584, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_Location) == 0x000588, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_ImpactPoint) == 0x000594, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_Normal) == 0x0005A0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_ImpactNormal) == 0x0005AC, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_PhysMat) == 0x0005B8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_HitActor) == 0x0005C0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_HitComponent) == 0x0005C8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_HitBoneName) == 0x0005D0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_HitItem) == 0x0005D8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_ElementIndex) == 0x0005DC, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_FaceIndex) == 0x0005E0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_TraceStart) == 0x0005E4, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_TraceEnd) == 0x0005F0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_K2_HasAuthority_ReturnValue) == 0x0005FC, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_K2_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetMontage_ReturnValue) == 0x000600, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetMontage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue) == 0x000608, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_12) == 0x000610, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_4) == 0x000620, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetMontage_ReturnValue_1) == 0x000628, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetMontage_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetActorOfClass_ReturnValue) == 0x000630, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue_1) == 0x000638, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_5) == 0x000640, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_6) == 0x000641, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsLocallyControlledPlayer_ReturnValue) == 0x000642, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsLocallyControlledPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetMontage_ReturnValue_2) == 0x000648, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetMontage_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, Temp_struct_Variable) == 0x000008, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate) == 0x0000B8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000C8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000D8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000E8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_4) == 0x0000F8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CustomEvent_TimeHeld) == 0x000108, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CustomEvent_TimeHeld' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_5) == 0x00010C, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, Temp_float_Variable) == 0x00011C, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::Temp_float_Variable' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_WaitInputRelease_ReturnValue) == 0x000120, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_WaitInputRelease_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue) == 0x000128, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_6) == 0x00012C, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_7) == 0x00013C, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_8) == 0x00014C, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_9) == 0x00015C, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_10) == 0x00016C, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CustomEvent_Payload) == 0x000180, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CustomEvent_Payload' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_11) == 0x000230, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_12) == 0x000240, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_Event_EventData) == 0x000250, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_Event_EventData' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CustomEvent_EventData) == 0x000300, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CustomEvent_EventData' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue) == 0x0003B0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_MakeLiteralGameplayTagContainer_ReturnValue) == 0x0003B8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_MakeLiteralGameplayTagContainer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x0003D8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_TryActivateAbilitiesByTag_ReturnValue) == 0x0003E0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_TryActivateAbilitiesByTag_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_1) == 0x0003E8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetLaunchVelocity_OutVelocity) == 0x0003F0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetLaunchVelocity_OutVelocity' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_2) == 0x000400, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_3) == 0x000408, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CustomEvent_Grenade) == 0x000410, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CustomEvent_Grenade' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CustomEvent_SpawnLocation) == 0x000418, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CustomEvent_SpawnLocation' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CustomEvent_SpawnVelocity) == 0x000424, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CustomEvent_SpawnVelocity' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_MakeArray_Array) == 0x000430, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_K2_GetActorRotation_ReturnValue) == 0x000440, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_MakeTransform_ReturnValue) == 0x000450, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000480, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetGBInstigator_ReturnValue) == 0x000488, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetGBInstigator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_1) == 0x000490, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_FinishSpawningActor_ReturnValue) == 0x000498, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_2) == 0x0004A0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_4) == 0x0004A8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsServer_ReturnValue) == 0x0004B0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsServer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_Not_PreBool_ReturnValue) == 0x0004B1, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetLaunchVelocity_OutVelocity_1) == 0x0004B4, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetLaunchVelocity_OutVelocity_1' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsLocallyControlled_ReturnValue) == 0x0004C0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_5) == 0x0004C8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetDesiredSpawnLocation_OutDesiredSpawnLocation) == 0x0004D0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetDesiredSpawnLocation_OutDesiredSpawnLocation' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetSafeSpawnLocation_ReturnValue) == 0x0004DC, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetSafeSpawnLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0004E8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_SphereTraceSingleByProfile_OutHit) == 0x0004EC, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_SphereTraceSingleByProfile_OutHit' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_SphereTraceSingleByProfile_ReturnValue) == 0x000574, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_SphereTraceSingleByProfile_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_bBlockingHit) == 0x000575, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_bInitialOverlap) == 0x000576, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_Time) == 0x000578, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_Time' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_Distance) == 0x00057C, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_Distance' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_Location) == 0x000580, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_Location' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_ImpactPoint) == 0x00058C, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_Normal) == 0x000598, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_Normal' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_ImpactNormal) == 0x0005A4, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_PhysMat) == 0x0005B0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_HitActor) == 0x0005B8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_HitComponent) == 0x0005C0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_HitBoneName) == 0x0005C8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_HitItem) == 0x0005D0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_ElementIndex) == 0x0005D4, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_ElementIndex' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_FaceIndex) == 0x0005D8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_TraceStart) == 0x0005DC, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_BreakHitResult_TraceEnd) == 0x0005E8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_K2_HasAuthority_ReturnValue) == 0x0005F4, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_K2_HasAuthority_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetMontage_ReturnValue) == 0x0005F8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetMontage_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue) == 0x000600, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_3) == 0x000608, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetMontage_ReturnValue_1) == 0x000610, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetMontage_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue_1) == 0x000618, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetActorOfClass_ReturnValue) == 0x000620, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_4) == 0x000628, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_5) == 0x000629, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsLocallyControlledPlayer_ReturnValue) == 0x00062A, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsLocallyControlledPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetMontage_ReturnValue_2) == 0x000630, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetMontage_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_6) == 0x000638, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetGBInstigator_ReturnValue_1) == 0x000640, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetGBInstigator_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_7) == 0x000648, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
 static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_6) == 0x000650, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_6' has a wrong offset!");
 static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue_2) == 0x000658, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_7) == 0x000660, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_8) == 0x000660, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
 static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_SelectFloat_ReturnValue) == 0x000664, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_K2_HasAuthority_ReturnValue_1) == 0x000668, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_K2_HasAuthority_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x000669, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
@@ -265,16 +271,16 @@ static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, Cal
 static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_SelectFloat_ReturnValue_1) == 0x00067C, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_SelectFloat_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_SelectFloat_ReturnValue_2) == 0x000680, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_SelectFloat_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000684, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000688, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_8) == 0x000690, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsProne_ReturnValue_1) == 0x000698, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsProne_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_SelectFloat_ReturnValue_3) == 0x00069C, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_SelectFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x0006A0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x0006A4, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_WaitDelay_ReturnValue) == 0x0006A8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_WaitDelay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_8) == 0x0006B0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_K2_HasAuthority_ReturnValue_2) == 0x0006B1, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_K2_HasAuthority_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_13) == 0x0006B4, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_13' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_13) == 0x000688, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_13' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000698, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_8) == 0x0006A0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_8' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsProne_ReturnValue_1) == 0x0006A8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsProne_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_SelectFloat_ReturnValue_3) == 0x0006AC, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_SelectFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x0006B0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x0006B4, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_WaitDelay_ReturnValue) == 0x0006B8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_WaitDelay_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_9) == 0x0006C0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_9' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_K2_HasAuthority_ReturnValue_2) == 0x0006C1, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_K2_HasAuthority_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_9) == 0x0006C8, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_9' has a wrong offset!");
 static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_CreateDelegate_OutputDelegate_14) == 0x0006D0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_CreateDelegate_OutputDelegate_14' has a wrong offset!");
 static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetEquipped_ReturnValue) == 0x0006E0, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetEquipped_ReturnValue' has a wrong offset!");
@@ -286,10 +292,25 @@ static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, Cal
 static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_FinishSpawningActor_ReturnValue_1) == 0x000738, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_FinishSpawningActor_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsLocallyControlled_ReturnValue_1) == 0x000740, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsLocallyControlled_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_10) == 0x000748, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_HasMatchingGameplayTag_self_CastInput) == 0x000750, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_HasMatchingGameplayTag_self_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_HasMatchingGameplayTag_ReturnValue) == 0x000760, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_HasMatchingGameplayTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_11) == 0x000768, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_Not_PreBool_ReturnValue_1) == 0x000770, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsAlive_ReturnValue) == 0x000750, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsAlive_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_HasMatchingGameplayTag_self_CastInput) == 0x000758, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_HasMatchingGameplayTag_self_CastInput' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_HasMatchingGameplayTag_ReturnValue) == 0x000768, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_HasMatchingGameplayTag_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_Not_PreBool_ReturnValue_1) == 0x000769, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_GetCharacter_ReturnValue_11) == 0x000770, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_GetCharacter_ReturnValue_11' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_WaitGameplayEvent_ReturnValue) == 0x000778, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_WaitGameplayEvent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, CallFunc_IsValid_ReturnValue_10) == 0x000780, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::CallFunc_IsValid_ReturnValue_10' has a wrong offset!");
+static_assert(offsetof(GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw, K2Node_Event_bWasCancelled) == 0x000781, "Member 'GA_Grenade_Throw_C_ExecuteUbergraph_GA_Grenade_Throw::K2Node_Event_bWasCancelled' has a wrong offset!");
+
+// Function GA_Grenade_Throw.GA_Grenade_Throw_C.K2_OnEndAbility
+// 0x0001 (0x0001 - 0x0000)
+struct GA_Grenade_Throw_C_K2_OnEndAbility final
+{
+public:
+	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(GA_Grenade_Throw_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on GA_Grenade_Throw_C_K2_OnEndAbility");
+static_assert(sizeof(GA_Grenade_Throw_C_K2_OnEndAbility) == 0x000001, "Wrong size on GA_Grenade_Throw_C_K2_OnEndAbility");
+static_assert(offsetof(GA_Grenade_Throw_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'GA_Grenade_Throw_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
 
 // Function GA_Grenade_Throw.GA_Grenade_Throw_C.ServerSpawnProjectile
 // 0x0020 (0x0020 - 0x0000)

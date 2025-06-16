@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_EndGameMessage.WBP_EndGameMessage_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_EndGameMessage_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EndGameMessage_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_EndGameMessage.WBP_EndGameMessage_C.ExecuteUbergraph_WBP_EndGameMessage
 // (Final, UbergraphFunction)
 // Parameters:
@@ -34,20 +48,6 @@ void UWBP_EndGameMessage_C::ExecuteUbergraph_WBP_EndGameMessage(int32 EntryPoint
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EndGameMessage.WBP_EndGameMessage_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_EndGameMessage_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EndGameMessage_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

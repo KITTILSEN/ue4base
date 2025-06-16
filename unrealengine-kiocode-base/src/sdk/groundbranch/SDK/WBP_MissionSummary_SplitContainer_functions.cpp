@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_MissionSummary_SplitContainer.WBP_MissionSummary_SplitContainer_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MissionSummary_SplitContainer_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MissionSummary_SplitContainer_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_MissionSummary_SplitContainer.WBP_MissionSummary_SplitContainer_C.ExecuteUbergraph_WBP_MissionSummary_SplitContainer
 // (Final, UbergraphFunction)
 // Parameters:
@@ -34,20 +48,6 @@ void UWBP_MissionSummary_SplitContainer_C::ExecuteUbergraph_WBP_MissionSummary_S
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MissionSummary_SplitContainer.WBP_MissionSummary_SplitContainer_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MissionSummary_SplitContainer_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MissionSummary_SplitContainer_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -156,7 +156,7 @@ static_assert(offsetof(UPortalSystemOccluderComponent, Visible) == 0x000472, "Me
 
 // Class PortalSystem.PortalSystemPortal
 // 0x0060 (0x0280 - 0x0220)
-class APortalSystemPortal final : public AActor
+class APortalSystemPortal : public AActor
 {
 public:
 	bool                                          IsOutsidePortal;                                   // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -192,7 +192,7 @@ static_assert(offsetof(APortalSystemPortal, Zones) == 0x000270, "Member 'APortal
 
 // Class PortalSystem.PortalSystemZone
 // 0x0068 (0x0288 - 0x0220)
-class APortalSystemZone final : public AActor
+class APortalSystemZone : public AActor
 {
 public:
 	struct FBox                                   _box;                                              // 0x0220(0x001C)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)

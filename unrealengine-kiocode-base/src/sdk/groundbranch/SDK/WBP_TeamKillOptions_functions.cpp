@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_TeamKillOptions.WBP_TeamKillOptions_C.ExecuteUbergraph_WBP_TeamKillOptions
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TeamKillOptions_C::ExecuteUbergraph_WBP_TeamKillOptions(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TeamKillOptions_C", "ExecuteUbergraph_WBP_TeamKillOptions");
-
-	Params::WBP_TeamKillOptions_C_ExecuteUbergraph_WBP_TeamKillOptions Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_TeamKillOptions.WBP_TeamKillOptions_C.SetNameAndPrevKills
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -59,15 +39,35 @@ void UWBP_TeamKillOptions_C::SetNameAndPrevKills(const class FString& inString, 
 }
 
 
-// Function WBP_TeamKillOptions.WBP_TeamKillOptions_C.BndEvt__Button_Report_K2Node_ComponentBoundEvent_81_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_TeamKillOptions.WBP_TeamKillOptions_C.ExecuteUbergraph_WBP_TeamKillOptions
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TeamKillOptions_C::BndEvt__Button_Report_K2Node_ComponentBoundEvent_81_OnButtonClickedEvent__DelegateSignature()
+void UWBP_TeamKillOptions_C::ExecuteUbergraph_WBP_TeamKillOptions(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TeamKillOptions_C", "BndEvt__Button_Report_K2Node_ComponentBoundEvent_81_OnButtonClickedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_TeamKillOptions_C", "ExecuteUbergraph_WBP_TeamKillOptions");
+
+	Params::WBP_TeamKillOptions_C_ExecuteUbergraph_WBP_TeamKillOptions Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TeamKillOptions.WBP_TeamKillOptions_C.BndEvt__Button_Forgive_K2Node_ComponentBoundEvent_85_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_TeamKillOptions_C::BndEvt__Button_Forgive_K2Node_ComponentBoundEvent_85_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TeamKillOptions_C", "BndEvt__Button_Forgive_K2Node_ComponentBoundEvent_85_OnButtonClickedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -93,15 +93,15 @@ void UWBP_TeamKillOptions_C::ShowMessage(const class FText& InText)
 }
 
 
-// Function WBP_TeamKillOptions.WBP_TeamKillOptions_C.BndEvt__Button_Forgive_K2Node_ComponentBoundEvent_85_OnButtonClickedEvent__DelegateSignature
+// Function WBP_TeamKillOptions.WBP_TeamKillOptions_C.BndEvt__Button_Report_K2Node_ComponentBoundEvent_81_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
 
-void UWBP_TeamKillOptions_C::BndEvt__Button_Forgive_K2Node_ComponentBoundEvent_85_OnButtonClickedEvent__DelegateSignature()
+void UWBP_TeamKillOptions_C::BndEvt__Button_Report_K2Node_ComponentBoundEvent_81_OnButtonClickedEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TeamKillOptions_C", "BndEvt__Button_Forgive_K2Node_ComponentBoundEvent_85_OnButtonClickedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_TeamKillOptions_C", "BndEvt__Button_Report_K2Node_ComponentBoundEvent_81_OnButtonClickedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

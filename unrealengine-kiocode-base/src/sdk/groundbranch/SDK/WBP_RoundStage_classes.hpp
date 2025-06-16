@@ -42,16 +42,16 @@ public:
 	class UAkComponent*                           AkComponent;                                       // 0x02E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_RoundStage(int32 EntryPoint);
-	void Construct();
-	void OnInitialized();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void OnAnimationFinished_Event_0();
-	void Hide();
-	void DisplayText();
-	class FText GetTimeText();
-	void GetText(class FText* OurText);
 	class FText GetFinalText();
+	void GetText(class FText* OurText);
+	class FText GetTimeText();
+	void DisplayText();
+	void Hide();
+	void OnAnimationFinished_Event_0();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void OnInitialized();
+	void Construct();
+	void ExecuteUbergraph_WBP_RoundStage(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

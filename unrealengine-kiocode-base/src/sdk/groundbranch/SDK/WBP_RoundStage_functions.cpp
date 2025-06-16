@@ -17,131 +17,19 @@
 namespace SDK
 {
 
-// Function WBP_RoundStage.WBP_RoundStage_C.ExecuteUbergraph_WBP_RoundStage
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_RoundStage_C::ExecuteUbergraph_WBP_RoundStage(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RoundStage_C", "ExecuteUbergraph_WBP_RoundStage");
-
-	Params::WBP_RoundStage_C_ExecuteUbergraph_WBP_RoundStage Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_RoundStage.WBP_RoundStage_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_RoundStage_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RoundStage_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RoundStage.WBP_RoundStage_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_RoundStage_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RoundStage_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RoundStage.WBP_RoundStage_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_RoundStage_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RoundStage_C", "Tick");
-
-	Params::WBP_RoundStage_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_RoundStage.WBP_RoundStage_C.OnAnimationFinished_Event_0
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_RoundStage_C::OnAnimationFinished_Event_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RoundStage_C", "OnAnimationFinished_Event_0");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RoundStage.WBP_RoundStage_C.Hide
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_RoundStage_C::Hide()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RoundStage_C", "Hide");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RoundStage.WBP_RoundStage_C.DisplayText
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_RoundStage_C::DisplayText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RoundStage_C", "DisplayText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RoundStage.WBP_RoundStage_C.GetTimeText
+// Function WBP_RoundStage.WBP_RoundStage_C.GetFinalText
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-class FText UWBP_RoundStage_C::GetTimeText()
+class FText UWBP_RoundStage_C::GetFinalText()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RoundStage_C", "GetTimeText");
+		Func = Class->GetFunction("WBP_RoundStage_C", "GetFinalText");
 
-	Params::WBP_RoundStage_C_GetTimeText Parms{};
+	Params::WBP_RoundStage_C_GetFinalText Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -170,23 +58,135 @@ void UWBP_RoundStage_C::GetText(class FText* OurText)
 }
 
 
-// Function WBP_RoundStage.WBP_RoundStage_C.GetFinalText
+// Function WBP_RoundStage.WBP_RoundStage_C.GetTimeText
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-class FText UWBP_RoundStage_C::GetFinalText()
+class FText UWBP_RoundStage_C::GetTimeText()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RoundStage_C", "GetFinalText");
+		Func = Class->GetFunction("WBP_RoundStage_C", "GetTimeText");
 
-	Params::WBP_RoundStage_C_GetFinalText Parms{};
+	Params::WBP_RoundStage_C_GetTimeText Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function WBP_RoundStage.WBP_RoundStage_C.DisplayText
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_RoundStage_C::DisplayText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RoundStage_C", "DisplayText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RoundStage.WBP_RoundStage_C.Hide
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_RoundStage_C::Hide()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RoundStage_C", "Hide");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RoundStage.WBP_RoundStage_C.OnAnimationFinished_Event_0
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_RoundStage_C::OnAnimationFinished_Event_0()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RoundStage_C", "OnAnimationFinished_Event_0");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RoundStage.WBP_RoundStage_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_RoundStage_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RoundStage_C", "Tick");
+
+	Params::WBP_RoundStage_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_RoundStage.WBP_RoundStage_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_RoundStage_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RoundStage_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RoundStage.WBP_RoundStage_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_RoundStage_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RoundStage_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RoundStage.WBP_RoundStage_C.ExecuteUbergraph_WBP_RoundStage
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_RoundStage_C::ExecuteUbergraph_WBP_RoundStage(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RoundStage_C", "ExecuteUbergraph_WBP_RoundStage");
+
+	Params::WBP_RoundStage_C_ExecuteUbergraph_WBP_RoundStage Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

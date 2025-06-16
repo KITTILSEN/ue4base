@@ -17,6 +17,37 @@
 namespace SDK::Params
 {
 
+// Function WBP_Mission_ObjectiveEntry.WBP_Mission_ObjectiveEntry_C.Get_TextBlock_Completion_ColorAndOpacity_0
+// 0x00A8 (0x00A8 - 0x0000)
+struct WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0 final
+{
+public:
+	struct FSlateColor                            ReturnValue;                                       // 0x0000(0x0028)(Parm, OutParm, ReturnParm)
+	bool                                          Temp_bool_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0030(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0058(0x0028)()
+	struct FSlateColor                            K2Node_Select_Default;                             // 0x0080(0x0028)()
+};
+static_assert(alignof(WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0) == 0x000008, "Wrong alignment on WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0");
+static_assert(sizeof(WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0) == 0x0000A8, "Wrong size on WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0");
+static_assert(offsetof(WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0, ReturnValue) == 0x000000, "Member 'WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0, Temp_bool_Variable) == 0x000028, "Member 'WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0, K2Node_MakeStruct_SlateColor) == 0x000030, "Member 'WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0::K2Node_MakeStruct_SlateColor' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0, K2Node_MakeStruct_SlateColor_1) == 0x000058, "Member 'WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0, K2Node_Select_Default) == 0x000080, "Member 'WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_Mission_ObjectiveEntry.WBP_Mission_ObjectiveEntry_C.SetIsPrimary
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Mission_ObjectiveEntry_C_SetIsPrimary final
+{
+public:
+	bool                                          bIsPrimary;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_Mission_ObjectiveEntry_C_SetIsPrimary) == 0x000001, "Wrong alignment on WBP_Mission_ObjectiveEntry_C_SetIsPrimary");
+static_assert(sizeof(WBP_Mission_ObjectiveEntry_C_SetIsPrimary) == 0x000001, "Wrong size on WBP_Mission_ObjectiveEntry_C_SetIsPrimary");
+static_assert(offsetof(WBP_Mission_ObjectiveEntry_C_SetIsPrimary, bIsPrimary) == 0x000000, "Member 'WBP_Mission_ObjectiveEntry_C_SetIsPrimary::bIsPrimary' has a wrong offset!");
+
 // Function WBP_Mission_ObjectiveEntry.WBP_Mission_ObjectiveEntry_C.ExecuteUbergraph_WBP_Mission_ObjectiveEntry
 // 0x0098 (0x0098 - 0x0000)
 struct WBP_Mission_ObjectiveEntry_C_ExecuteUbergraph_WBP_Mission_ObjectiveEntry final
@@ -56,37 +87,6 @@ static_assert(offsetof(WBP_Mission_ObjectiveEntry_C_ExecuteUbergraph_WBP_Mission
 static_assert(offsetof(WBP_Mission_ObjectiveEntry_C_ExecuteUbergraph_WBP_Mission_ObjectiveEntry, Temp_bool_Variable) == 0x000061, "Member 'WBP_Mission_ObjectiveEntry_C_ExecuteUbergraph_WBP_Mission_ObjectiveEntry::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_Mission_ObjectiveEntry_C_ExecuteUbergraph_WBP_Mission_ObjectiveEntry, K2Node_Select_Default) == 0x000068, "Member 'WBP_Mission_ObjectiveEntry_C_ExecuteUbergraph_WBP_Mission_ObjectiveEntry::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(WBP_Mission_ObjectiveEntry_C_ExecuteUbergraph_WBP_Mission_ObjectiveEntry, CallFunc_TextToUpper_ReturnValue) == 0x000080, "Member 'WBP_Mission_ObjectiveEntry_C_ExecuteUbergraph_WBP_Mission_ObjectiveEntry::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-
-// Function WBP_Mission_ObjectiveEntry.WBP_Mission_ObjectiveEntry_C.SetIsPrimary
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Mission_ObjectiveEntry_C_SetIsPrimary final
-{
-public:
-	bool                                          bIsPrimary;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_Mission_ObjectiveEntry_C_SetIsPrimary) == 0x000001, "Wrong alignment on WBP_Mission_ObjectiveEntry_C_SetIsPrimary");
-static_assert(sizeof(WBP_Mission_ObjectiveEntry_C_SetIsPrimary) == 0x000001, "Wrong size on WBP_Mission_ObjectiveEntry_C_SetIsPrimary");
-static_assert(offsetof(WBP_Mission_ObjectiveEntry_C_SetIsPrimary, bIsPrimary) == 0x000000, "Member 'WBP_Mission_ObjectiveEntry_C_SetIsPrimary::bIsPrimary' has a wrong offset!");
-
-// Function WBP_Mission_ObjectiveEntry.WBP_Mission_ObjectiveEntry_C.Get_TextBlock_Completion_ColorAndOpacity_0
-// 0x00A8 (0x00A8 - 0x0000)
-struct WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0 final
-{
-public:
-	struct FSlateColor                            ReturnValue;                                       // 0x0000(0x0028)(Parm, OutParm, ReturnParm)
-	bool                                          Temp_bool_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0030(0x0028)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0058(0x0028)()
-	struct FSlateColor                            K2Node_Select_Default;                             // 0x0080(0x0028)()
-};
-static_assert(alignof(WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0) == 0x000008, "Wrong alignment on WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0");
-static_assert(sizeof(WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0) == 0x0000A8, "Wrong size on WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0");
-static_assert(offsetof(WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0, ReturnValue) == 0x000000, "Member 'WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0, Temp_bool_Variable) == 0x000028, "Member 'WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0, K2Node_MakeStruct_SlateColor) == 0x000030, "Member 'WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0, K2Node_MakeStruct_SlateColor_1) == 0x000058, "Member 'WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0, K2Node_Select_Default) == 0x000080, "Member 'WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0::K2Node_Select_Default' has a wrong offset!");
 
 }
 

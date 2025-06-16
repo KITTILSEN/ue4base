@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_Tooltip_MapSymbolObjectives.WBP_Tooltip_MapSymbolObjectives_C.ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Tooltip_MapSymbolObjectives.WBP_Tooltip_MapSymbolObjectives_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_Tooltip_MapSymbolObjectives_C::ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives(int32 EntryPoint)
+void UWBP_Tooltip_MapSymbolObjectives_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Tooltip_MapSymbolObjectives_C", "ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives");
+		Func = Class->GetFunction("WBP_Tooltip_MapSymbolObjectives_C", "PreConstruct");
 
-	Params::WBP_Tooltip_MapSymbolObjectives_C_ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives Parms{};
+	Params::WBP_Tooltip_MapSymbolObjectives_C_PreConstruct Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -51,21 +51,21 @@ void UWBP_Tooltip_MapSymbolObjectives_C::Construct()
 }
 
 
-// Function WBP_Tooltip_MapSymbolObjectives.WBP_Tooltip_MapSymbolObjectives_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Tooltip_MapSymbolObjectives.WBP_Tooltip_MapSymbolObjectives_C.ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Tooltip_MapSymbolObjectives_C::PreConstruct(bool IsDesignTime)
+void UWBP_Tooltip_MapSymbolObjectives_C::ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Tooltip_MapSymbolObjectives_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_Tooltip_MapSymbolObjectives_C", "ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives");
 
-	Params::WBP_Tooltip_MapSymbolObjectives_C_PreConstruct Parms{};
+	Params::WBP_Tooltip_MapSymbolObjectives_C_ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

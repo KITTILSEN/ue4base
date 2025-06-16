@@ -36,10 +36,10 @@ public:
 	bool                                          bPrimary;                                          // 0x02E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
-	void ExecuteUbergraph_WBP_Mission_ObjectiveEntry(int32 EntryPoint);
-	void SetIsPrimary(bool bIsPrimary);
-	void Construct();
 	struct FSlateColor Get_TextBlock_Completion_ColorAndOpacity_0();
+	void Construct();
+	void SetIsPrimary(bool bIsPrimary);
+	void ExecuteUbergraph_WBP_Mission_ObjectiveEntry(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

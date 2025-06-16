@@ -17,6 +17,142 @@
 namespace SDK::Params
 {
 
+// Function WBP_DeathOptions.WBP_DeathOptions_C.AnyLiving
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_DeathOptions_C_AnyLiving final
+{
+public:
+	TArray<class AGBPlayerState*>                 Array;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	bool                                          bOutSomeoneIsAlive;                                // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bLocalSomeoneIsAlive;                              // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBPlayerState*                         CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBCharacter*                           K2Node_DynamicCast_AsGBCharacter;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsAlive_ReturnValue;                      // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_DeathOptions_C_AnyLiving) == 0x000008, "Wrong alignment on WBP_DeathOptions_C_AnyLiving");
+static_assert(sizeof(WBP_DeathOptions_C_AnyLiving) == 0x000050, "Wrong size on WBP_DeathOptions_C_AnyLiving");
+static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, Array) == 0x000000, "Member 'WBP_DeathOptions_C_AnyLiving::Array' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, bOutSomeoneIsAlive) == 0x000010, "Member 'WBP_DeathOptions_C_AnyLiving::bOutSomeoneIsAlive' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, bLocalSomeoneIsAlive) == 0x000011, "Member 'WBP_DeathOptions_C_AnyLiving::bLocalSomeoneIsAlive' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'WBP_DeathOptions_C_AnyLiving::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, Temp_bool_True_if_break_was_hit_Variable) == 0x000018, "Member 'WBP_DeathOptions_C_AnyLiving::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, Temp_int_Array_Index_Variable) == 0x00001C, "Member 'WBP_DeathOptions_C_AnyLiving::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, CallFunc_Array_Get_Item) == 0x000020, "Member 'WBP_DeathOptions_C_AnyLiving::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, CallFunc_Not_PreBool_ReturnValue) == 0x000028, "Member 'WBP_DeathOptions_C_AnyLiving::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, K2Node_DynamicCast_AsGBCharacter) == 0x000030, "Member 'WBP_DeathOptions_C_AnyLiving::K2Node_DynamicCast_AsGBCharacter' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'WBP_DeathOptions_C_AnyLiving::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, CallFunc_IsAlive_ReturnValue) == 0x000039, "Member 'WBP_DeathOptions_C_AnyLiving::CallFunc_IsAlive_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, Temp_int_Loop_Counter_Variable) == 0x00003C, "Member 'WBP_DeathOptions_C_AnyLiving::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'WBP_DeathOptions_C_AnyLiving::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, CallFunc_Add_IntInt_ReturnValue) == 0x000044, "Member 'WBP_DeathOptions_C_AnyLiving::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, CallFunc_BooleanAND_ReturnValue) == 0x000048, "Member 'WBP_DeathOptions_C_AnyLiving::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.Get_TextBlock_Respawn_ColorAndOpacity_0
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_DeathOptions_C_Get_TextBlock_Respawn_ColorAndOpacity_0 final
+{
+public:
+	struct FSlateColor                            ReturnValue;                                       // 0x0000(0x0028)(Parm, OutParm, ReturnParm)
+};
+static_assert(alignof(WBP_DeathOptions_C_Get_TextBlock_Respawn_ColorAndOpacity_0) == 0x000008, "Wrong alignment on WBP_DeathOptions_C_Get_TextBlock_Respawn_ColorAndOpacity_0");
+static_assert(sizeof(WBP_DeathOptions_C_Get_TextBlock_Respawn_ColorAndOpacity_0) == 0x000028, "Wrong size on WBP_DeathOptions_C_Get_TextBlock_Respawn_ColorAndOpacity_0");
+static_assert(offsetof(WBP_DeathOptions_C_Get_TextBlock_Respawn_ColorAndOpacity_0, ReturnValue) == 0x000000, "Member 'WBP_DeathOptions_C_Get_TextBlock_Respawn_ColorAndOpacity_0::ReturnValue' has a wrong offset!");
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.GetRespawnIsEnabled
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_DeathOptions_C_GetRespawnIsEnabled final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_FrozenTimeLeft_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_DeathOptions_C_GetRespawnIsEnabled) == 0x000008, "Wrong alignment on WBP_DeathOptions_C_GetRespawnIsEnabled");
+static_assert(sizeof(WBP_DeathOptions_C_GetRespawnIsEnabled) == 0x000028, "Wrong size on WBP_DeathOptions_C_GetRespawnIsEnabled");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnIsEnabled, ReturnValue) == 0x000000, "Member 'WBP_DeathOptions_C_GetRespawnIsEnabled::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnIsEnabled, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'WBP_DeathOptions_C_GetRespawnIsEnabled::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnIsEnabled, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000010, "Member 'WBP_DeathOptions_C_GetRespawnIsEnabled::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnIsEnabled, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_DeathOptions_C_GetRespawnIsEnabled::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnIsEnabled, CallFunc_FrozenTimeLeft_ReturnValue) == 0x00001C, "Member 'WBP_DeathOptions_C_GetRespawnIsEnabled::CallFunc_FrozenTimeLeft_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnIsEnabled, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000020, "Member 'WBP_DeathOptions_C_GetRespawnIsEnabled::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.GetRespawnText
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_DeathOptions_C_GetRespawnText final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_FrozenTimeLeft_ReturnValue;               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0038(0x0018)()
+};
+static_assert(alignof(WBP_DeathOptions_C_GetRespawnText) == 0x000008, "Wrong alignment on WBP_DeathOptions_C_GetRespawnText");
+static_assert(sizeof(WBP_DeathOptions_C_GetRespawnText) == 0x000050, "Wrong size on WBP_DeathOptions_C_GetRespawnText");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnText, ReturnValue) == 0x000000, "Member 'WBP_DeathOptions_C_GetRespawnText::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnText, CallFunc_GetPlayerController_ReturnValue) == 0x000018, "Member 'WBP_DeathOptions_C_GetRespawnText::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnText, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000020, "Member 'WBP_DeathOptions_C_GetRespawnText::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnText, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WBP_DeathOptions_C_GetRespawnText::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnText, CallFunc_FrozenTimeLeft_ReturnValue) == 0x00002C, "Member 'WBP_DeathOptions_C_GetRespawnText::CallFunc_FrozenTimeLeft_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnText, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000030, "Member 'WBP_DeathOptions_C_GetRespawnText::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnText, CallFunc_Conv_FloatToText_ReturnValue) == 0x000038, "Member 'WBP_DeathOptions_C_GetRespawnText::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.GetRespawnVisibility
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_DeathOptions_C_GetRespawnVisibility final
+{
+public:
+	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBPlayerState*                         K2Node_DynamicCast_AsGBPlayer_State;               // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_AllowedToRestart_ReturnValue;             // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_DeathOptions_C_GetRespawnVisibility) == 0x000008, "Wrong alignment on WBP_DeathOptions_C_GetRespawnVisibility");
+static_assert(sizeof(WBP_DeathOptions_C_GetRespawnVisibility) == 0x000020, "Wrong size on WBP_DeathOptions_C_GetRespawnVisibility");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnVisibility, ReturnValue) == 0x000000, "Member 'WBP_DeathOptions_C_GetRespawnVisibility::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnVisibility, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'WBP_DeathOptions_C_GetRespawnVisibility::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnVisibility, K2Node_DynamicCast_AsGBPlayer_State) == 0x000010, "Member 'WBP_DeathOptions_C_GetRespawnVisibility::K2Node_DynamicCast_AsGBPlayer_State' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnVisibility, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_DeathOptions_C_GetRespawnVisibility::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_GetRespawnVisibility, CallFunc_AllowedToRestart_ReturnValue) == 0x000019, "Member 'WBP_DeathOptions_C_GetRespawnVisibility::CallFunc_AllowedToRestart_ReturnValue' has a wrong offset!");
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.OnPlayerControllerStateChanged_Event_0
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0 final
+{
+public:
+	class FName                                   OldState;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   NewState;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0) == 0x000004, "Wrong alignment on WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0");
+static_assert(sizeof(WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0) == 0x000010, "Wrong size on WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0");
+static_assert(offsetof(WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0, OldState) == 0x000000, "Member 'WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0::OldState' has a wrong offset!");
+static_assert(offsetof(WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0, NewState) == 0x000008, "Member 'WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0::NewState' has a wrong offset!");
+
 // Function WBP_DeathOptions.WBP_DeathOptions_C.ExecuteUbergraph_WBP_DeathOptions
 // 0x0160 (0x0160 - 0x0000)
 struct WBP_DeathOptions_C_ExecuteUbergraph_WBP_DeathOptions final
@@ -140,142 +276,6 @@ static_assert(offsetof(WBP_DeathOptions_C_ExecuteUbergraph_WBP_DeathOptions, Cal
 static_assert(offsetof(WBP_DeathOptions_C_ExecuteUbergraph_WBP_DeathOptions, CallFunc_Not_PreBool_ReturnValue_2) == 0x000148, "Member 'WBP_DeathOptions_C_ExecuteUbergraph_WBP_DeathOptions::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(WBP_DeathOptions_C_ExecuteUbergraph_WBP_DeathOptions, K2Node_DynamicCast_AsGBPlayer_Controller_5) == 0x000150, "Member 'WBP_DeathOptions_C_ExecuteUbergraph_WBP_DeathOptions::K2Node_DynamicCast_AsGBPlayer_Controller_5' has a wrong offset!");
 static_assert(offsetof(WBP_DeathOptions_C_ExecuteUbergraph_WBP_DeathOptions, K2Node_DynamicCast_bSuccess_9) == 0x000158, "Member 'WBP_DeathOptions_C_ExecuteUbergraph_WBP_DeathOptions::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.OnPlayerControllerStateChanged_Event_0
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0 final
-{
-public:
-	class FName                                   OldState;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   NewState;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0) == 0x000004, "Wrong alignment on WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0");
-static_assert(sizeof(WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0) == 0x000010, "Wrong size on WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0");
-static_assert(offsetof(WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0, OldState) == 0x000000, "Member 'WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0::OldState' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0, NewState) == 0x000008, "Member 'WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0::NewState' has a wrong offset!");
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.GetRespawnVisibility
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_DeathOptions_C_GetRespawnVisibility final
-{
-public:
-	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBPlayerState*                         K2Node_DynamicCast_AsGBPlayer_State;               // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_AllowedToRestart_ReturnValue;             // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_DeathOptions_C_GetRespawnVisibility) == 0x000008, "Wrong alignment on WBP_DeathOptions_C_GetRespawnVisibility");
-static_assert(sizeof(WBP_DeathOptions_C_GetRespawnVisibility) == 0x000020, "Wrong size on WBP_DeathOptions_C_GetRespawnVisibility");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnVisibility, ReturnValue) == 0x000000, "Member 'WBP_DeathOptions_C_GetRespawnVisibility::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnVisibility, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'WBP_DeathOptions_C_GetRespawnVisibility::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnVisibility, K2Node_DynamicCast_AsGBPlayer_State) == 0x000010, "Member 'WBP_DeathOptions_C_GetRespawnVisibility::K2Node_DynamicCast_AsGBPlayer_State' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnVisibility, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_DeathOptions_C_GetRespawnVisibility::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnVisibility, CallFunc_AllowedToRestart_ReturnValue) == 0x000019, "Member 'WBP_DeathOptions_C_GetRespawnVisibility::CallFunc_AllowedToRestart_ReturnValue' has a wrong offset!");
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.GetRespawnText
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_DeathOptions_C_GetRespawnText final
-{
-public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_FrozenTimeLeft_ReturnValue;               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0038(0x0018)()
-};
-static_assert(alignof(WBP_DeathOptions_C_GetRespawnText) == 0x000008, "Wrong alignment on WBP_DeathOptions_C_GetRespawnText");
-static_assert(sizeof(WBP_DeathOptions_C_GetRespawnText) == 0x000050, "Wrong size on WBP_DeathOptions_C_GetRespawnText");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnText, ReturnValue) == 0x000000, "Member 'WBP_DeathOptions_C_GetRespawnText::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnText, CallFunc_GetPlayerController_ReturnValue) == 0x000018, "Member 'WBP_DeathOptions_C_GetRespawnText::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnText, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000020, "Member 'WBP_DeathOptions_C_GetRespawnText::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnText, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WBP_DeathOptions_C_GetRespawnText::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnText, CallFunc_FrozenTimeLeft_ReturnValue) == 0x00002C, "Member 'WBP_DeathOptions_C_GetRespawnText::CallFunc_FrozenTimeLeft_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnText, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000030, "Member 'WBP_DeathOptions_C_GetRespawnText::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnText, CallFunc_Conv_FloatToText_ReturnValue) == 0x000038, "Member 'WBP_DeathOptions_C_GetRespawnText::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.GetRespawnIsEnabled
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_DeathOptions_C_GetRespawnIsEnabled final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBPlayerController*                    K2Node_DynamicCast_AsGBPlayer_Controller;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_FrozenTimeLeft_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_DeathOptions_C_GetRespawnIsEnabled) == 0x000008, "Wrong alignment on WBP_DeathOptions_C_GetRespawnIsEnabled");
-static_assert(sizeof(WBP_DeathOptions_C_GetRespawnIsEnabled) == 0x000028, "Wrong size on WBP_DeathOptions_C_GetRespawnIsEnabled");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnIsEnabled, ReturnValue) == 0x000000, "Member 'WBP_DeathOptions_C_GetRespawnIsEnabled::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnIsEnabled, CallFunc_GetPlayerController_ReturnValue) == 0x000008, "Member 'WBP_DeathOptions_C_GetRespawnIsEnabled::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnIsEnabled, K2Node_DynamicCast_AsGBPlayer_Controller) == 0x000010, "Member 'WBP_DeathOptions_C_GetRespawnIsEnabled::K2Node_DynamicCast_AsGBPlayer_Controller' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnIsEnabled, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_DeathOptions_C_GetRespawnIsEnabled::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnIsEnabled, CallFunc_FrozenTimeLeft_ReturnValue) == 0x00001C, "Member 'WBP_DeathOptions_C_GetRespawnIsEnabled::CallFunc_FrozenTimeLeft_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_GetRespawnIsEnabled, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000020, "Member 'WBP_DeathOptions_C_GetRespawnIsEnabled::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.Get_TextBlock_Respawn_ColorAndOpacity_0
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_DeathOptions_C_Get_TextBlock_Respawn_ColorAndOpacity_0 final
-{
-public:
-	struct FSlateColor                            ReturnValue;                                       // 0x0000(0x0028)(Parm, OutParm, ReturnParm)
-};
-static_assert(alignof(WBP_DeathOptions_C_Get_TextBlock_Respawn_ColorAndOpacity_0) == 0x000008, "Wrong alignment on WBP_DeathOptions_C_Get_TextBlock_Respawn_ColorAndOpacity_0");
-static_assert(sizeof(WBP_DeathOptions_C_Get_TextBlock_Respawn_ColorAndOpacity_0) == 0x000028, "Wrong size on WBP_DeathOptions_C_Get_TextBlock_Respawn_ColorAndOpacity_0");
-static_assert(offsetof(WBP_DeathOptions_C_Get_TextBlock_Respawn_ColorAndOpacity_0, ReturnValue) == 0x000000, "Member 'WBP_DeathOptions_C_Get_TextBlock_Respawn_ColorAndOpacity_0::ReturnValue' has a wrong offset!");
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.AnyLiving
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_DeathOptions_C_AnyLiving final
-{
-public:
-	TArray<class AGBPlayerState*>                 Array;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	bool                                          bOutSomeoneIsAlive;                                // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          bLocalSomeoneIsAlive;                              // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBPlayerState*                         CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGBCharacter*                           K2Node_DynamicCast_AsGBCharacter;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsAlive_ReturnValue;                      // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_DeathOptions_C_AnyLiving) == 0x000008, "Wrong alignment on WBP_DeathOptions_C_AnyLiving");
-static_assert(sizeof(WBP_DeathOptions_C_AnyLiving) == 0x000050, "Wrong size on WBP_DeathOptions_C_AnyLiving");
-static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, Array) == 0x000000, "Member 'WBP_DeathOptions_C_AnyLiving::Array' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, bOutSomeoneIsAlive) == 0x000010, "Member 'WBP_DeathOptions_C_AnyLiving::bOutSomeoneIsAlive' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, bLocalSomeoneIsAlive) == 0x000011, "Member 'WBP_DeathOptions_C_AnyLiving::bLocalSomeoneIsAlive' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'WBP_DeathOptions_C_AnyLiving::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, Temp_bool_True_if_break_was_hit_Variable) == 0x000018, "Member 'WBP_DeathOptions_C_AnyLiving::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, Temp_int_Array_Index_Variable) == 0x00001C, "Member 'WBP_DeathOptions_C_AnyLiving::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, CallFunc_Array_Get_Item) == 0x000020, "Member 'WBP_DeathOptions_C_AnyLiving::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, CallFunc_Not_PreBool_ReturnValue) == 0x000028, "Member 'WBP_DeathOptions_C_AnyLiving::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, K2Node_DynamicCast_AsGBCharacter) == 0x000030, "Member 'WBP_DeathOptions_C_AnyLiving::K2Node_DynamicCast_AsGBCharacter' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'WBP_DeathOptions_C_AnyLiving::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, CallFunc_IsAlive_ReturnValue) == 0x000039, "Member 'WBP_DeathOptions_C_AnyLiving::CallFunc_IsAlive_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, Temp_int_Loop_Counter_Variable) == 0x00003C, "Member 'WBP_DeathOptions_C_AnyLiving::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'WBP_DeathOptions_C_AnyLiving::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, CallFunc_Add_IntInt_ReturnValue) == 0x000044, "Member 'WBP_DeathOptions_C_AnyLiving::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_DeathOptions_C_AnyLiving, CallFunc_BooleanAND_ReturnValue) == 0x000048, "Member 'WBP_DeathOptions_C_AnyLiving::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 }
 

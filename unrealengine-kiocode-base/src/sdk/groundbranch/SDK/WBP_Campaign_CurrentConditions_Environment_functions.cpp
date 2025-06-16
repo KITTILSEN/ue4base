@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_Campaign_CurrentConditions_Environment.WBP_Campaign_CurrentConditions_Environment_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Campaign_CurrentConditions_Environment_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Campaign_CurrentConditions_Environment_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Campaign_CurrentConditions_Environment.WBP_Campaign_CurrentConditions_Environment_C.ExecuteUbergraph_WBP_Campaign_CurrentConditions_Environment
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -34,20 +48,6 @@ void UWBP_Campaign_CurrentConditions_Environment_C::ExecuteUbergraph_WBP_Campaig
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Campaign_CurrentConditions_Environment.WBP_Campaign_CurrentConditions_Environment_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Campaign_CurrentConditions_Environment_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Campaign_CurrentConditions_Environment_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

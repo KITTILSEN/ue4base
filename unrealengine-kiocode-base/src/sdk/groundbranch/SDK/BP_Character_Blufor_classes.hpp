@@ -20,7 +20,8 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_Character_Blufor.BP_Character_Blufor_C
 // 0x0030 (0x0E10 - 0x0DE0)
-class ABP_Character_Blufor_C final : public ABP_Character_C
+#pragma pack(push, 0x1)
+class alignas(0x10) ABP_Character_Blufor_C : public ABP_Character_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_Character_Blufor_C;              // 0x0DE0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
@@ -44,6 +45,7 @@ public:
 		return GetDefaultObjImpl<ABP_Character_Blufor_C>();
 	}
 };
+#pragma pack(pop)
 static_assert(alignof(ABP_Character_Blufor_C) == 0x000010, "Wrong alignment on ABP_Character_Blufor_C");
 static_assert(sizeof(ABP_Character_Blufor_C) == 0x000E10, "Wrong size on ABP_Character_Blufor_C");
 static_assert(offsetof(ABP_Character_Blufor_C, UberGraphFrame_BP_Character_Blufor_C) == 0x000DE0, "Member 'ABP_Character_Blufor_C::UberGraphFrame_BP_Character_Blufor_C' has a wrong offset!");

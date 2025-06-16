@@ -32,8 +32,8 @@ public:
 	class FText                                   Text_Unknown;                                      // 0x0290(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_Campaign_CurrentConditions_Environment(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_Campaign_CurrentConditions_Environment(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -18,6 +18,41 @@
 namespace SDK::Params
 {
 
+// Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.Get_CheckBox_WholeItem_ToolTipWidget_0
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Tooltip_WorldMap_C*                CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0");
+static_assert(sizeof(WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0");
+static_assert(offsetof(WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+
+// Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignMissionListEntry_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_CampaignMissionListEntry_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CampaignMissionListEntry_C_PreConstruct");
+static_assert(sizeof(WBP_CampaignMissionListEntry_C_PreConstruct) == 0x000001, "Wrong size on WBP_CampaignMissionListEntry_C_PreConstruct");
+static_assert(offsetof(WBP_CampaignMissionListEntry_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CampaignMissionListEntry_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
+// Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignMissionListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature final
+{
+public:
+	bool                                          bIsChecked;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_CampaignMissionListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong alignment on WBP_CampaignMissionListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature");
+static_assert(sizeof(WBP_CampaignMissionListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong size on WBP_CampaignMissionListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature");
+static_assert(offsetof(WBP_CampaignMissionListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature, bIsChecked) == 0x000000, "Member 'WBP_CampaignMissionListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature::bIsChecked' has a wrong offset!");
+
 // Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.ExecuteUbergraph_WBP_CampaignMissionListEntry
 // 0x0170 (0x0170 - 0x0000)
 struct WBP_CampaignMissionListEntry_C_ExecuteUbergraph_WBP_CampaignMissionListEntry final
@@ -81,41 +116,6 @@ static_assert(offsetof(WBP_CampaignMissionListEntry_C_ExecuteUbergraph_WBP_Campa
 static_assert(offsetof(WBP_CampaignMissionListEntry_C_ExecuteUbergraph_WBP_CampaignMissionListEntry, CallFunc_GetCampaignMissionTypeToken_ReturnValue) == 0x000140, "Member 'WBP_CampaignMissionListEntry_C_ExecuteUbergraph_WBP_CampaignMissionListEntry::CallFunc_GetCampaignMissionTypeToken_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CampaignMissionListEntry_C_ExecuteUbergraph_WBP_CampaignMissionListEntry, CallFunc_MakeModIDForGame_ReturnValue_1) == 0x000150, "Member 'WBP_CampaignMissionListEntry_C_ExecuteUbergraph_WBP_CampaignMissionListEntry::CallFunc_MakeModIDForGame_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_CampaignMissionListEntry_C_ExecuteUbergraph_WBP_CampaignMissionListEntry, CallFunc_GetStringTableEntryOrDisplayString_ReturnValue_1) == 0x000158, "Member 'WBP_CampaignMissionListEntry_C_ExecuteUbergraph_WBP_CampaignMissionListEntry::CallFunc_GetStringTableEntryOrDisplayString_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignMissionListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature final
-{
-public:
-	bool                                          bIsChecked;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CampaignMissionListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong alignment on WBP_CampaignMissionListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature");
-static_assert(sizeof(WBP_CampaignMissionListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong size on WBP_CampaignMissionListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature");
-static_assert(offsetof(WBP_CampaignMissionListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature, bIsChecked) == 0x000000, "Member 'WBP_CampaignMissionListEntry_C_BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature::bIsChecked' has a wrong offset!");
-
-// Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignMissionListEntry_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CampaignMissionListEntry_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CampaignMissionListEntry_C_PreConstruct");
-static_assert(sizeof(WBP_CampaignMissionListEntry_C_PreConstruct) == 0x000001, "Wrong size on WBP_CampaignMissionListEntry_C_PreConstruct");
-static_assert(offsetof(WBP_CampaignMissionListEntry_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CampaignMissionListEntry_C_PreConstruct::IsDesignTime' has a wrong offset!");
-
-// Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.Get_CheckBox_WholeItem_ToolTipWidget_0
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Tooltip_WorldMap_C*                CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0");
-static_assert(sizeof(WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0");
-static_assert(offsetof(WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 }
 

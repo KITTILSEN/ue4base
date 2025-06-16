@@ -17,51 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_MissionSummary_Tab.WBP_MissionSummary_Tab_C.ExecuteUbergraph_WBP_MissionSummary_Tab
-// (Final, UbergraphFunction)
+// Function WBP_MissionSummary_Tab.WBP_MissionSummary_Tab_C.Get_MatchSummaryButtonText_ColorAndOpacity_0
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MissionSummary_Tab_C::ExecuteUbergraph_WBP_MissionSummary_Tab(int32 EntryPoint)
+struct FLinearColor UWBP_MissionSummary_Tab_C::Get_MatchSummaryButtonText_ColorAndOpacity_0()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MissionSummary_Tab_C", "ExecuteUbergraph_WBP_MissionSummary_Tab");
+		Func = Class->GetFunction("WBP_MissionSummary_Tab_C", "Get_MatchSummaryButtonText_ColorAndOpacity_0");
 
-	Params::WBP_MissionSummary_Tab_C_ExecuteUbergraph_WBP_MissionSummary_Tab Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0 Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
-
-// Function WBP_MissionSummary_Tab.WBP_MissionSummary_Tab_C.InternalOnSelected
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_MissionSummary_Tab_C::InternalOnSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MissionSummary_Tab_C", "InternalOnSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MissionSummary_Tab.WBP_MissionSummary_Tab_C.BndEvt__WBP_MissionSummary_Tab_Button_SwitchToMatchSummary_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_MissionSummary_Tab_C::BndEvt__WBP_MissionSummary_Tab_Button_SwitchToMatchSummary_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MissionSummary_Tab_C", "BndEvt__WBP_MissionSummary_Tab_Button_SwitchToMatchSummary_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
+	return Parms.ReturnValue;
 }
 
 
@@ -85,23 +57,51 @@ struct FLinearColor UWBP_MissionSummary_Tab_C::Get_Border_MatchSummary_BrushColo
 }
 
 
-// Function WBP_MissionSummary_Tab.WBP_MissionSummary_Tab_C.Get_MatchSummaryButtonText_ColorAndOpacity_0
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FLinearColor                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MissionSummary_Tab.WBP_MissionSummary_Tab_C.BndEvt__WBP_MissionSummary_Tab_Button_SwitchToMatchSummary_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
 
-struct FLinearColor UWBP_MissionSummary_Tab_C::Get_MatchSummaryButtonText_ColorAndOpacity_0()
+void UWBP_MissionSummary_Tab_C::BndEvt__WBP_MissionSummary_Tab_Button_SwitchToMatchSummary_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MissionSummary_Tab_C", "Get_MatchSummaryButtonText_ColorAndOpacity_0");
+		Func = Class->GetFunction("WBP_MissionSummary_Tab_C", "BndEvt__WBP_MissionSummary_Tab_Button_SwitchToMatchSummary_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
-	Params::WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0 Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MissionSummary_Tab.WBP_MissionSummary_Tab_C.InternalOnSelected
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_MissionSummary_Tab_C::InternalOnSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MissionSummary_Tab_C", "InternalOnSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MissionSummary_Tab.WBP_MissionSummary_Tab_C.ExecuteUbergraph_WBP_MissionSummary_Tab
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MissionSummary_Tab_C::ExecuteUbergraph_WBP_MissionSummary_Tab(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MissionSummary_Tab_C", "ExecuteUbergraph_WBP_MissionSummary_Tab");
+
+	Params::WBP_MissionSummary_Tab_C_ExecuteUbergraph_WBP_MissionSummary_Tab Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 }

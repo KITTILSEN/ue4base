@@ -77,27 +77,27 @@ public:
 	TMulticastInlineDelegate<void(int32 NewImageNumber, int32 NewPhotoFileNumber, bool bIsMapImage)> OnSelectedNewImage; // 0x0458(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ExecuteUbergraph_WBP_Campaign_MissionImageViewer(int32 EntryPoint);
-	void UpdateMapSymbolScaling();
-	void HideMapUsageBox();
-	void ShowMapUsageBox();
-	void RepositionAndResizeMapImage();
-	void SetNewMissionMapMarkers(const TArray<struct FGBMapMarker>& MapMarkerList);
-	void LoadInGameMap(const class FString& Filename);
-	void BndEvt__WBP_Campaign_MissionImageViewer_Button_GoForwards_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__WBP_Campaign_MissionImageViewer_Button_GoBack_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	void UpdateMissionList();
-	void SetNewMissionImageList(const TArray<struct FGBMissionImage>& MissionImageList_0);
-	void ChangeImageVisibility(bool bShowImage);
-	void SetImage(class UTexture2D* ImageTexture);
-	void DisplayImage(int32 ImageIndex);
-	void SetNewTabIndex(int32 NewTabIndex);
-	void Construct();
-	void IsHoveringOnMap(bool* bIsHoveringOnMap);
-	struct FEventReply OnMouseWheel(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void ClampMapTranslationToAvailableSize(const struct FVector2D& DesiredTranslation, struct FVector2D* ClampedTranslation);
 	void IsMapImage(const struct FGBMissionImage& InMissionImage, bool* bIsMapImage);
+	void ClampMapTranslationToAvailableSize(const struct FVector2D& DesiredTranslation, struct FVector2D* ClampedTranslation);
+	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	struct FEventReply OnMouseWheel(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void IsHoveringOnMap(bool* bIsHoveringOnMap);
+	void Construct();
+	void SetNewTabIndex(int32 NewTabIndex);
+	void DisplayImage(int32 ImageIndex);
+	void SetImage(class UTexture2D* ImageTexture);
+	void ChangeImageVisibility(bool bShowImage);
+	void SetNewMissionImageList(const TArray<struct FGBMissionImage>& MissionImageList_0);
+	void UpdateMissionList();
+	void BndEvt__WBP_Campaign_MissionImageViewer_Button_GoBack_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__WBP_Campaign_MissionImageViewer_Button_GoForwards_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
+	void LoadInGameMap(const class FString& Filename);
+	void SetNewMissionMapMarkers(const TArray<struct FGBMapMarker>& MapMarkerList);
+	void RepositionAndResizeMapImage();
+	void ShowMapUsageBox();
+	void HideMapUsageBox();
+	void UpdateMapSymbolScaling();
+	void ExecuteUbergraph_WBP_Campaign_MissionImageViewer(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

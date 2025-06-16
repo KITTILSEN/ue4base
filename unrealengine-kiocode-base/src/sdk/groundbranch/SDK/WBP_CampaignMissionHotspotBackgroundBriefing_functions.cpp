@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_CampaignMissionHotspotBackgroundBriefing.WBP_CampaignMissionHotspotBackgroundBriefing_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_CampaignMissionHotspotBackgroundBriefing_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CampaignMissionHotspotBackgroundBriefing_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_CampaignMissionHotspotBackgroundBriefing.WBP_CampaignMissionHotspotBackgroundBriefing_C.ExecuteUbergraph_WBP_CampaignMissionHotspotBackgroundBriefing
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -34,20 +48,6 @@ void UWBP_CampaignMissionHotspotBackgroundBriefing_C::ExecuteUbergraph_WBP_Campa
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignMissionHotspotBackgroundBriefing.WBP_CampaignMissionHotspotBackgroundBriefing_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_CampaignMissionHotspotBackgroundBriefing_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignMissionHotspotBackgroundBriefing_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

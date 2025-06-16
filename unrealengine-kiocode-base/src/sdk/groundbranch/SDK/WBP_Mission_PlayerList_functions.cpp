@@ -17,71 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.ExecuteUbergraph_WBP_Mission_PlayerList
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.SetTeamRole
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             Role                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Mission_PlayerList_C::ExecuteUbergraph_WBP_Mission_PlayerList(int32 EntryPoint)
+void UWBP_Mission_PlayerList_C::SetTeamRole(class FName Role)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_PlayerList_C", "ExecuteUbergraph_WBP_Mission_PlayerList");
+		Func = Class->GetFunction("WBP_Mission_PlayerList_C", "SetTeamRole");
 
-	Params::WBP_Mission_PlayerList_C_ExecuteUbergraph_WBP_Mission_PlayerList Parms{};
+	Params::WBP_Mission_PlayerList_C_SetTeamRole Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Role = Role;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.AddPlayerListEntry
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AGBPlayerState*                   PlayerState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Mission_PlayerList_C::AddPlayerListEntry(class AGBPlayerState* PlayerState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_PlayerList_C", "AddPlayerListEntry");
-
-	Params::WBP_Mission_PlayerList_C_AddPlayerListEntry Parms{};
-
-	Parms.PlayerState = PlayerState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.OnUpdate_Event_0
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Mission_PlayerList_C::OnUpdate_Event_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_PlayerList_C", "OnUpdate_Event_0");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Mission_PlayerList_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_PlayerList_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -105,21 +57,69 @@ ESlateVisibility UWBP_Mission_PlayerList_C::GetTotalTeamBoxVis()
 }
 
 
-// Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.SetTeamRole
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             Role                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Mission_PlayerList_C::SetTeamRole(class FName Role)
+void UWBP_Mission_PlayerList_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_PlayerList_C", "SetTeamRole");
+		Func = Class->GetFunction("WBP_Mission_PlayerList_C", "Construct");
 
-	Params::WBP_Mission_PlayerList_C_SetTeamRole Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Role = Role;
+
+// Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.OnUpdate_Event_0
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Mission_PlayerList_C::OnUpdate_Event_0()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Mission_PlayerList_C", "OnUpdate_Event_0");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.AddPlayerListEntry
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AGBPlayerState*                   PlayerState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Mission_PlayerList_C::AddPlayerListEntry(class AGBPlayerState* PlayerState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Mission_PlayerList_C", "AddPlayerListEntry");
+
+	Params::WBP_Mission_PlayerList_C_AddPlayerListEntry Parms{};
+
+	Parms.PlayerState = PlayerState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Mission_PlayerList.WBP_Mission_PlayerList_C.ExecuteUbergraph_WBP_Mission_PlayerList
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Mission_PlayerList_C::ExecuteUbergraph_WBP_Mission_PlayerList(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Mission_PlayerList_C", "ExecuteUbergraph_WBP_Mission_PlayerList");
+
+	Params::WBP_Mission_PlayerList_C_ExecuteUbergraph_WBP_Mission_PlayerList Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

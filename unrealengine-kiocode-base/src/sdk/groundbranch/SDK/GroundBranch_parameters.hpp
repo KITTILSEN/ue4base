@@ -2626,6 +2626,22 @@ static_assert(sizeof(GBCharacter_GetMinLightLevel) == 0x00000C, "Wrong size on G
 static_assert(offsetof(GBCharacter_GetMinLightLevel, Type) == 0x000000, "Member 'GBCharacter_GetMinLightLevel::Type' has a wrong offset!");
 static_assert(offsetof(GBCharacter_GetMinLightLevel, ReturnValue) == 0x000008, "Member 'GBCharacter_GetMinLightLevel::ReturnValue' has a wrong offset!");
 
+// Function GroundBranch.GBCharacter.GetPrevEquipped
+// 0x0018 (0x0018 - 0x0000)
+struct GBCharacter_GetPrevEquipped final
+{
+public:
+	class AGBInvItem*                             OutPrevEquippedLeft;                               // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AGBInvItem*                             OutPrevEquippedRight;                              // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(GBCharacter_GetPrevEquipped) == 0x000008, "Wrong alignment on GBCharacter_GetPrevEquipped");
+static_assert(sizeof(GBCharacter_GetPrevEquipped) == 0x000018, "Wrong size on GBCharacter_GetPrevEquipped");
+static_assert(offsetof(GBCharacter_GetPrevEquipped, OutPrevEquippedLeft) == 0x000000, "Member 'GBCharacter_GetPrevEquipped::OutPrevEquippedLeft' has a wrong offset!");
+static_assert(offsetof(GBCharacter_GetPrevEquipped, OutPrevEquippedRight) == 0x000008, "Member 'GBCharacter_GetPrevEquipped::OutPrevEquippedRight' has a wrong offset!");
+static_assert(offsetof(GBCharacter_GetPrevEquipped, ReturnValue) == 0x000010, "Member 'GBCharacter_GetPrevEquipped::ReturnValue' has a wrong offset!");
+
 // Function GroundBranch.GBCharacter.IncrementBulletIndex
 // 0x0001 (0x0001 - 0x0000)
 struct GBCharacter_IncrementBulletIndex final
@@ -3862,20 +3878,6 @@ public:
 static_assert(alignof(GBCharacter_GetPelvisBone) == 0x000004, "Wrong alignment on GBCharacter_GetPelvisBone");
 static_assert(sizeof(GBCharacter_GetPelvisBone) == 0x000008, "Wrong size on GBCharacter_GetPelvisBone");
 static_assert(offsetof(GBCharacter_GetPelvisBone, ReturnValue) == 0x000000, "Member 'GBCharacter_GetPelvisBone::ReturnValue' has a wrong offset!");
-
-// Function GroundBranch.GBCharacter.GetPrevEquipped
-// 0x0010 (0x0010 - 0x0000)
-struct GBCharacter_GetPrevEquipped final
-{
-public:
-	EHand                                         TargetHand;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGBInvItem*                             ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(GBCharacter_GetPrevEquipped) == 0x000008, "Wrong alignment on GBCharacter_GetPrevEquipped");
-static_assert(sizeof(GBCharacter_GetPrevEquipped) == 0x000010, "Wrong size on GBCharacter_GetPrevEquipped");
-static_assert(offsetof(GBCharacter_GetPrevEquipped, TargetHand) == 0x000000, "Member 'GBCharacter_GetPrevEquipped::TargetHand' has a wrong offset!");
-static_assert(offsetof(GBCharacter_GetPrevEquipped, ReturnValue) == 0x000008, "Member 'GBCharacter_GetPrevEquipped::ReturnValue' has a wrong offset!");
 
 // Function GroundBranch.GBCharacter.GetProneYawCenter
 // 0x0004 (0x0004 - 0x0000)

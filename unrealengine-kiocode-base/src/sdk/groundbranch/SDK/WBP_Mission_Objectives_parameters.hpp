@@ -18,6 +18,19 @@
 namespace SDK::Params
 {
 
+// Function WBP_Mission_Objectives.WBP_Mission_Objectives_C.AddCampaignMissionObjectives
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Mission_Objectives_C_AddCampaignMissionObjectives final
+{
+public:
+	TArray<class AGBMissionObjective*>            ObjectiveList;                                     // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	bool                                          bIsPrimary;                                        // 0x0010(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_Mission_Objectives_C_AddCampaignMissionObjectives) == 0x000008, "Wrong alignment on WBP_Mission_Objectives_C_AddCampaignMissionObjectives");
+static_assert(sizeof(WBP_Mission_Objectives_C_AddCampaignMissionObjectives) == 0x000018, "Wrong size on WBP_Mission_Objectives_C_AddCampaignMissionObjectives");
+static_assert(offsetof(WBP_Mission_Objectives_C_AddCampaignMissionObjectives, ObjectiveList) == 0x000000, "Member 'WBP_Mission_Objectives_C_AddCampaignMissionObjectives::ObjectiveList' has a wrong offset!");
+static_assert(offsetof(WBP_Mission_Objectives_C_AddCampaignMissionObjectives, bIsPrimary) == 0x000010, "Member 'WBP_Mission_Objectives_C_AddCampaignMissionObjectives::bIsPrimary' has a wrong offset!");
+
 // Function WBP_Mission_Objectives.WBP_Mission_Objectives_C.ExecuteUbergraph_WBP_Mission_Objectives
 // 0x01F0 (0x01F0 - 0x0000)
 struct WBP_Mission_Objectives_C_ExecuteUbergraph_WBP_Mission_Objectives final
@@ -176,19 +189,6 @@ static_assert(offsetof(WBP_Mission_Objectives_C_ExecuteUbergraph_WBP_Mission_Obj
 static_assert(offsetof(WBP_Mission_Objectives_C_ExecuteUbergraph_WBP_Mission_Objectives, CallFunc_GetLocalisedGameText_ReturnValue) == 0x0001D0, "Member 'WBP_Mission_Objectives_C_ExecuteUbergraph_WBP_Mission_Objectives::CallFunc_GetLocalisedGameText_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Mission_Objectives_C_ExecuteUbergraph_WBP_Mission_Objectives, Temp_byte_Variable_3) == 0x0001E8, "Member 'WBP_Mission_Objectives_C_ExecuteUbergraph_WBP_Mission_Objectives::Temp_byte_Variable_3' has a wrong offset!");
 static_assert(offsetof(WBP_Mission_Objectives_C_ExecuteUbergraph_WBP_Mission_Objectives, K2Node_Select_Default_3) == 0x0001E9, "Member 'WBP_Mission_Objectives_C_ExecuteUbergraph_WBP_Mission_Objectives::K2Node_Select_Default_3' has a wrong offset!");
-
-// Function WBP_Mission_Objectives.WBP_Mission_Objectives_C.AddCampaignMissionObjectives
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Mission_Objectives_C_AddCampaignMissionObjectives final
-{
-public:
-	TArray<class AGBMissionObjective*>            ObjectiveList;                                     // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	bool                                          bIsPrimary;                                        // 0x0010(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_Mission_Objectives_C_AddCampaignMissionObjectives) == 0x000008, "Wrong alignment on WBP_Mission_Objectives_C_AddCampaignMissionObjectives");
-static_assert(sizeof(WBP_Mission_Objectives_C_AddCampaignMissionObjectives) == 0x000018, "Wrong size on WBP_Mission_Objectives_C_AddCampaignMissionObjectives");
-static_assert(offsetof(WBP_Mission_Objectives_C_AddCampaignMissionObjectives, ObjectiveList) == 0x000000, "Member 'WBP_Mission_Objectives_C_AddCampaignMissionObjectives::ObjectiveList' has a wrong offset!");
-static_assert(offsetof(WBP_Mission_Objectives_C_AddCampaignMissionObjectives, bIsPrimary) == 0x000010, "Member 'WBP_Mission_Objectives_C_AddCampaignMissionObjectives::bIsPrimary' has a wrong offset!");
 
 }
 

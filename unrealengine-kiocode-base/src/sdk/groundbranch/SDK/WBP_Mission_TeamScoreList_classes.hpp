@@ -44,12 +44,12 @@ public:
 	TArray<struct FLinearColor>                   TeamColours;                                       // 0x02F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_Mission_TeamScoreList(int32 EntryPoint);
-	void OnTeamScoresUpdated(class AGBGameState* GameState);
-	void BindTeamScores();
-	void Construct();
-	ESlateVisibility GetTotalTeamBoxVis();
 	void SetTeamRole(class FName TeamRole);
+	ESlateVisibility GetTotalTeamBoxVis();
+	void Construct();
+	void BindTeamScores();
+	void OnTeamScoresUpdated(class AGBGameState* GameState);
+	void ExecuteUbergraph_WBP_Mission_TeamScoreList(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

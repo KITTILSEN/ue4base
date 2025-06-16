@@ -17,6 +17,147 @@
 namespace SDK::Params
 {
 
+// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.GetActorNameWithoutSuffix
+// 0x0078 (0x0078 - 0x0000)
+struct WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix final
+{
+public:
+	class FString                                 InActorName;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 NameWithoutSuffix;                                 // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FindSubstring_ReturnValue;                // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_RightChop_ReturnValue;                    // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FindSubstring_ReturnValue_1;              // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Left_ReturnValue;                         // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_SelectString_ReturnValue_1;               // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix) == 0x000008, "Wrong alignment on WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix");
+static_assert(sizeof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix) == 0x000078, "Wrong size on WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, InActorName) == 0x000000, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::InActorName' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, NameWithoutSuffix) == 0x000010, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::NameWithoutSuffix' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_FindSubstring_ReturnValue) == 0x000020, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_FindSubstring_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000028, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_RightChop_ReturnValue) == 0x000030, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_RightChop_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_SelectString_ReturnValue) == 0x000040, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_SelectString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_FindSubstring_ReturnValue_1) == 0x000050, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_FindSubstring_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x000054, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_Left_ReturnValue) == 0x000058, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_Left_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_SelectString_ReturnValue_1) == 0x000068, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_SelectString_ReturnValue_1' has a wrong offset!");
+
+// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.GetMissionTitleFromSoftRef
+// 0x0158 (0x0158 - 0x0000)
+struct WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef final
+{
+public:
+	TSoftObjectPtr<class AGBMissionObjective>     MissionObjectiveSoftRef;                           // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	class FString                                 MissionObjectiveTitle;                             // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          bPrimaryObjective;                                 // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBMissionObjective*                    K2Node_DynamicCast_AsGBMission_Objective;          // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GetIsPrimaryObjective_ReturnValue;        // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5A[0x6];                                       // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetObjectiveTitle_ReturnValue;            // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_SoftObjectReferenceToString_ReturnValue; // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix; // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGBSingleObjectiveData                 CallFunc_Array_Get_Item;                           // 0x00B8(0x0030)()
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix_1; // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_StriStri_ReturnValue;          // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_101[0x3];                                      // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGBSingleObjectiveData                 CallFunc_Array_Get_Item_1;                         // 0x0110(0x0030)()
+	class FString                                 CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix_2; // 0x0140(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_StriStri_ReturnValue_1;        // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef) == 0x000008, "Wrong alignment on WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef");
+static_assert(sizeof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef) == 0x000158, "Wrong size on WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, MissionObjectiveSoftRef) == 0x000000, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::MissionObjectiveSoftRef' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, MissionObjectiveTitle) == 0x000028, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::MissionObjectiveTitle' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, bPrimaryObjective) == 0x000038, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::bPrimaryObjective' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x000040, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000048, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, K2Node_DynamicCast_AsGBMission_Objective) == 0x000050, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::K2Node_DynamicCast_AsGBMission_Objective' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_GetIsPrimaryObjective_ReturnValue) == 0x000059, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_GetIsPrimaryObjective_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_GetObjectiveTitle_ReturnValue) == 0x000060, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_GetObjectiveTitle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_IsValid_ReturnValue) == 0x000070, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Conv_SoftObjectReferenceToString_ReturnValue) == 0x000078, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Conv_SoftObjectReferenceToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, Temp_int_Loop_Counter_Variable) == 0x000088, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix) == 0x000090, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Add_IntInt_ReturnValue) == 0x0000A0, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, Temp_int_Array_Index_Variable) == 0x0000A4, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, Temp_int_Loop_Counter_Variable_1) == 0x0000A8, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000AC, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, Temp_int_Array_Index_Variable_1) == 0x0000B0, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Array_Length_ReturnValue) == 0x0000B4, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Array_Get_Item) == 0x0000B8, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Less_IntInt_ReturnValue) == 0x0000E8, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix_1) == 0x0000F0, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix_1' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_EqualEqual_StriStri_ReturnValue) == 0x000100, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_EqualEqual_StriStri_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Array_Length_ReturnValue_1) == 0x000104, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Less_IntInt_ReturnValue_1) == 0x000108, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Array_Get_Item_1) == 0x000110, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix_2) == 0x000140, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix_2' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_EqualEqual_StriStri_ReturnValue_1) == 0x000150, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_EqualEqual_StriStri_ReturnValue_1' has a wrong offset!");
+
+// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.OnLoaded_408F25D74633A288D4801486CE2497E2
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Campaign_InGameMapMissionImage_C_OnLoaded_408F25D74633A288D4801486CE2497E2 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Campaign_InGameMapMissionImage_C_OnLoaded_408F25D74633A288D4801486CE2497E2) == 0x000008, "Wrong alignment on WBP_Campaign_InGameMapMissionImage_C_OnLoaded_408F25D74633A288D4801486CE2497E2");
+static_assert(sizeof(WBP_Campaign_InGameMapMissionImage_C_OnLoaded_408F25D74633A288D4801486CE2497E2) == 0x000008, "Wrong size on WBP_Campaign_InGameMapMissionImage_C_OnLoaded_408F25D74633A288D4801486CE2497E2");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_OnLoaded_408F25D74633A288D4801486CE2497E2, Loaded) == 0x000000, "Member 'WBP_Campaign_InGameMapMissionImage_C_OnLoaded_408F25D74633A288D4801486CE2497E2::Loaded' has a wrong offset!");
+
+// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.SpawnMapWidget
+// 0x00B8 (0x00B8 - 0x0000)
+struct WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget final
+{
+public:
+	struct FGBMapMarker                           MapMarkerInfo;                                     // 0x0000(0x00B0)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         WidgetIndex;                                       // 0x00B0(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget) == 0x000008, "Wrong alignment on WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget");
+static_assert(sizeof(WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget) == 0x0000B8, "Wrong size on WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget, MapMarkerInfo) == 0x000000, "Member 'WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget::MapMarkerInfo' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget, WidgetIndex) == 0x0000B0, "Member 'WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget::WidgetIndex' has a wrong offset!");
+
+// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.ResizeAllWidgets
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Campaign_InGameMapMissionImage_C_ResizeAllWidgets final
+{
+public:
+	float                                         NewScale;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Campaign_InGameMapMissionImage_C_ResizeAllWidgets) == 0x000004, "Wrong alignment on WBP_Campaign_InGameMapMissionImage_C_ResizeAllWidgets");
+static_assert(sizeof(WBP_Campaign_InGameMapMissionImage_C_ResizeAllWidgets) == 0x000004, "Wrong size on WBP_Campaign_InGameMapMissionImage_C_ResizeAllWidgets");
+static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_ResizeAllWidgets, NewScale) == 0x000000, "Member 'WBP_Campaign_InGameMapMissionImage_C_ResizeAllWidgets::NewScale' has a wrong offset!");
+
 // Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage
 // 0x02E8 (0x02E8 - 0x0000)
 struct WBP_Campaign_InGameMapMissionImage_C_ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage final
@@ -135,147 +276,6 @@ static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_ExecuteUbergraph_WBP
 static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage, K2Node_DynamicCast_bSuccess_1) == 0x0002D8, "Member 'WBP_Campaign_InGameMapMissionImage_C_ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage, CallFunc_Array_Length_ReturnValue_1) == 0x0002DC, "Member 'WBP_Campaign_InGameMapMissionImage_C_ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage, CallFunc_Less_IntInt_ReturnValue_1) == 0x0002E0, "Member 'WBP_Campaign_InGameMapMissionImage_C_ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.ResizeAllWidgets
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Campaign_InGameMapMissionImage_C_ResizeAllWidgets final
-{
-public:
-	float                                         NewScale;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Campaign_InGameMapMissionImage_C_ResizeAllWidgets) == 0x000004, "Wrong alignment on WBP_Campaign_InGameMapMissionImage_C_ResizeAllWidgets");
-static_assert(sizeof(WBP_Campaign_InGameMapMissionImage_C_ResizeAllWidgets) == 0x000004, "Wrong size on WBP_Campaign_InGameMapMissionImage_C_ResizeAllWidgets");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_ResizeAllWidgets, NewScale) == 0x000000, "Member 'WBP_Campaign_InGameMapMissionImage_C_ResizeAllWidgets::NewScale' has a wrong offset!");
-
-// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.SpawnMapWidget
-// 0x00B8 (0x00B8 - 0x0000)
-struct WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget final
-{
-public:
-	struct FGBMapMarker                           MapMarkerInfo;                                     // 0x0000(0x00B0)(BlueprintVisible, BlueprintReadOnly, Parm)
-	int32                                         WidgetIndex;                                       // 0x00B0(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget) == 0x000008, "Wrong alignment on WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget");
-static_assert(sizeof(WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget) == 0x0000B8, "Wrong size on WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget, MapMarkerInfo) == 0x000000, "Member 'WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget::MapMarkerInfo' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget, WidgetIndex) == 0x0000B0, "Member 'WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget::WidgetIndex' has a wrong offset!");
-
-// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.OnLoaded_408F25D74633A288D4801486CE2497E2
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Campaign_InGameMapMissionImage_C_OnLoaded_408F25D74633A288D4801486CE2497E2 final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Campaign_InGameMapMissionImage_C_OnLoaded_408F25D74633A288D4801486CE2497E2) == 0x000008, "Wrong alignment on WBP_Campaign_InGameMapMissionImage_C_OnLoaded_408F25D74633A288D4801486CE2497E2");
-static_assert(sizeof(WBP_Campaign_InGameMapMissionImage_C_OnLoaded_408F25D74633A288D4801486CE2497E2) == 0x000008, "Wrong size on WBP_Campaign_InGameMapMissionImage_C_OnLoaded_408F25D74633A288D4801486CE2497E2");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_OnLoaded_408F25D74633A288D4801486CE2497E2, Loaded) == 0x000000, "Member 'WBP_Campaign_InGameMapMissionImage_C_OnLoaded_408F25D74633A288D4801486CE2497E2::Loaded' has a wrong offset!");
-
-// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.GetMissionTitleFromSoftRef
-// 0x0158 (0x0158 - 0x0000)
-struct WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef final
-{
-public:
-	TSoftObjectPtr<class AGBMissionObjective>     MissionObjectiveSoftRef;                           // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	class FString                                 MissionObjectiveTitle;                             // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          bPrimaryObjective;                                 // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGBMissionObjective*                    K2Node_DynamicCast_AsGBMission_Objective;          // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GetIsPrimaryObjective_ReturnValue;        // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5A[0x6];                                       // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetObjectiveTitle_ReturnValue;            // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_SoftObjectReferenceToString_ReturnValue; // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix; // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGBSingleObjectiveData                 CallFunc_Array_Get_Item;                           // 0x00B8(0x0030)()
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix_1; // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_StriStri_ReturnValue;          // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_101[0x3];                                      // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGBSingleObjectiveData                 CallFunc_Array_Get_Item_1;                         // 0x0110(0x0030)()
-	class FString                                 CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix_2; // 0x0140(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_StriStri_ReturnValue_1;        // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef) == 0x000008, "Wrong alignment on WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef");
-static_assert(sizeof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef) == 0x000158, "Wrong size on WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, MissionObjectiveSoftRef) == 0x000000, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::MissionObjectiveSoftRef' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, MissionObjectiveTitle) == 0x000028, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::MissionObjectiveTitle' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, bPrimaryObjective) == 0x000038, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::bPrimaryObjective' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x000040, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000048, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, K2Node_DynamicCast_AsGBMission_Objective) == 0x000050, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::K2Node_DynamicCast_AsGBMission_Objective' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_GetIsPrimaryObjective_ReturnValue) == 0x000059, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_GetIsPrimaryObjective_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_GetObjectiveTitle_ReturnValue) == 0x000060, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_GetObjectiveTitle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_IsValid_ReturnValue) == 0x000070, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Conv_SoftObjectReferenceToString_ReturnValue) == 0x000078, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Conv_SoftObjectReferenceToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, Temp_int_Loop_Counter_Variable) == 0x000088, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix) == 0x000090, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Add_IntInt_ReturnValue) == 0x0000A0, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, Temp_int_Array_Index_Variable) == 0x0000A4, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, Temp_int_Loop_Counter_Variable_1) == 0x0000A8, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000AC, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, Temp_int_Array_Index_Variable_1) == 0x0000B0, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Array_Length_ReturnValue) == 0x0000B4, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Array_Get_Item) == 0x0000B8, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Less_IntInt_ReturnValue) == 0x0000E8, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix_1) == 0x0000F0, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix_1' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_EqualEqual_StriStri_ReturnValue) == 0x000100, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_EqualEqual_StriStri_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Array_Length_ReturnValue_1) == 0x000104, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Less_IntInt_ReturnValue_1) == 0x000108, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_Array_Get_Item_1) == 0x000110, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix_2) == 0x000140, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_GetActorNameWithoutSuffix_NameWithoutSuffix_2' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef, CallFunc_EqualEqual_StriStri_ReturnValue_1) == 0x000150, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetMissionTitleFromSoftRef::CallFunc_EqualEqual_StriStri_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.GetActorNameWithoutSuffix
-// 0x0078 (0x0078 - 0x0000)
-struct WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix final
-{
-public:
-	class FString                                 InActorName;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 NameWithoutSuffix;                                 // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FindSubstring_ReturnValue;                // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_RightChop_ReturnValue;                    // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FindSubstring_ReturnValue_1;              // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue_1;        // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Left_ReturnValue;                         // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_SelectString_ReturnValue_1;               // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix) == 0x000008, "Wrong alignment on WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix");
-static_assert(sizeof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix) == 0x000078, "Wrong size on WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, InActorName) == 0x000000, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::InActorName' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, NameWithoutSuffix) == 0x000010, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::NameWithoutSuffix' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_FindSubstring_ReturnValue) == 0x000020, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_FindSubstring_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000028, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_RightChop_ReturnValue) == 0x000030, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_RightChop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_SelectString_ReturnValue) == 0x000040, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_SelectString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_FindSubstring_ReturnValue_1) == 0x000050, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_FindSubstring_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x000054, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_Left_ReturnValue) == 0x000058, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_Left_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix, CallFunc_SelectString_ReturnValue_1) == 0x000068, "Member 'WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix::CallFunc_SelectString_ReturnValue_1' has a wrong offset!");
 
 }
 

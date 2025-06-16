@@ -14,6 +14,50 @@
 namespace SDK::Params
 {
 
+// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignTextBox_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_CampaignTextBox_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CampaignTextBox_C_PreConstruct");
+static_assert(sizeof(WBP_CampaignTextBox_C_PreConstruct) == 0x000001, "Wrong size on WBP_CampaignTextBox_C_PreConstruct");
+static_assert(offsetof(WBP_CampaignTextBox_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CampaignTextBox_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
+// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.AddChildItem
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignTextBox_C_AddChildItem final
+{
+public:
+	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignTextBox_C_AddChildItem) == 0x000008, "Wrong alignment on WBP_CampaignTextBox_C_AddChildItem");
+static_assert(sizeof(WBP_CampaignTextBox_C_AddChildItem) == 0x000008, "Wrong size on WBP_CampaignTextBox_C_AddChildItem");
+static_assert(offsetof(WBP_CampaignTextBox_C_AddChildItem, Widget) == 0x000000, "Member 'WBP_CampaignTextBox_C_AddChildItem::Widget' has a wrong offset!");
+
+// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.ClearChildItems
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignTextBox_C_ClearChildItems final
+{
+public:
+	bool                                          bCloseWindowImmediately;                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_CampaignTextBox_C_ClearChildItems) == 0x000001, "Wrong alignment on WBP_CampaignTextBox_C_ClearChildItems");
+static_assert(sizeof(WBP_CampaignTextBox_C_ClearChildItems) == 0x000001, "Wrong size on WBP_CampaignTextBox_C_ClearChildItems");
+static_assert(offsetof(WBP_CampaignTextBox_C_ClearChildItems, bCloseWindowImmediately) == 0x000000, "Member 'WBP_CampaignTextBox_C_ClearChildItems::bCloseWindowImmediately' has a wrong offset!");
+
+// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.SetBoxTitle
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_CampaignTextBox_C_SetBoxTitle final
+{
+public:
+	class FText                                   NewBoxTitle;                                       // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(WBP_CampaignTextBox_C_SetBoxTitle) == 0x000008, "Wrong alignment on WBP_CampaignTextBox_C_SetBoxTitle");
+static_assert(sizeof(WBP_CampaignTextBox_C_SetBoxTitle) == 0x000018, "Wrong size on WBP_CampaignTextBox_C_SetBoxTitle");
+static_assert(offsetof(WBP_CampaignTextBox_C_SetBoxTitle, NewBoxTitle) == 0x000000, "Member 'WBP_CampaignTextBox_C_SetBoxTitle::NewBoxTitle' has a wrong offset!");
+
 // Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.ExecuteUbergraph_WBP_CampaignTextBox
 // 0x0058 (0x0058 - 0x0000)
 struct WBP_CampaignTextBox_C_ExecuteUbergraph_WBP_CampaignTextBox final
@@ -45,50 +89,6 @@ static_assert(offsetof(WBP_CampaignTextBox_C_ExecuteUbergraph_WBP_CampaignTextBo
 static_assert(offsetof(WBP_CampaignTextBox_C_ExecuteUbergraph_WBP_CampaignTextBox, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000040, "Member 'WBP_CampaignTextBox_C_ExecuteUbergraph_WBP_CampaignTextBox::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CampaignTextBox_C_ExecuteUbergraph_WBP_CampaignTextBox, CallFunc_PlayAnimationForward_ReturnValue) == 0x000048, "Member 'WBP_CampaignTextBox_C_ExecuteUbergraph_WBP_CampaignTextBox::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CampaignTextBox_C_ExecuteUbergraph_WBP_CampaignTextBox, CallFunc_Not_PreBool_ReturnValue_1) == 0x000050, "Member 'WBP_CampaignTextBox_C_ExecuteUbergraph_WBP_CampaignTextBox::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.SetBoxTitle
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_CampaignTextBox_C_SetBoxTitle final
-{
-public:
-	class FText                                   NewBoxTitle;                                       // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-static_assert(alignof(WBP_CampaignTextBox_C_SetBoxTitle) == 0x000008, "Wrong alignment on WBP_CampaignTextBox_C_SetBoxTitle");
-static_assert(sizeof(WBP_CampaignTextBox_C_SetBoxTitle) == 0x000018, "Wrong size on WBP_CampaignTextBox_C_SetBoxTitle");
-static_assert(offsetof(WBP_CampaignTextBox_C_SetBoxTitle, NewBoxTitle) == 0x000000, "Member 'WBP_CampaignTextBox_C_SetBoxTitle::NewBoxTitle' has a wrong offset!");
-
-// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.ClearChildItems
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignTextBox_C_ClearChildItems final
-{
-public:
-	bool                                          bCloseWindowImmediately;                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CampaignTextBox_C_ClearChildItems) == 0x000001, "Wrong alignment on WBP_CampaignTextBox_C_ClearChildItems");
-static_assert(sizeof(WBP_CampaignTextBox_C_ClearChildItems) == 0x000001, "Wrong size on WBP_CampaignTextBox_C_ClearChildItems");
-static_assert(offsetof(WBP_CampaignTextBox_C_ClearChildItems, bCloseWindowImmediately) == 0x000000, "Member 'WBP_CampaignTextBox_C_ClearChildItems::bCloseWindowImmediately' has a wrong offset!");
-
-// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.AddChildItem
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignTextBox_C_AddChildItem final
-{
-public:
-	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignTextBox_C_AddChildItem) == 0x000008, "Wrong alignment on WBP_CampaignTextBox_C_AddChildItem");
-static_assert(sizeof(WBP_CampaignTextBox_C_AddChildItem) == 0x000008, "Wrong size on WBP_CampaignTextBox_C_AddChildItem");
-static_assert(offsetof(WBP_CampaignTextBox_C_AddChildItem, Widget) == 0x000000, "Member 'WBP_CampaignTextBox_C_AddChildItem::Widget' has a wrong offset!");
-
-// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignTextBox_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CampaignTextBox_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CampaignTextBox_C_PreConstruct");
-static_assert(sizeof(WBP_CampaignTextBox_C_PreConstruct) == 0x000001, "Wrong size on WBP_CampaignTextBox_C_PreConstruct");
-static_assert(offsetof(WBP_CampaignTextBox_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CampaignTextBox_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }
 

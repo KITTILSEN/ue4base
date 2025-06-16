@@ -16,6 +16,30 @@
 namespace SDK::Params
 {
 
+// Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.Get_SizeBox_Global_ToolTipWidget_0
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Tooltip_WorldMap_C*                CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0");
+static_assert(sizeof(WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0");
+static_assert(offsetof(WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+
+// Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_HotspotMapIcon_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_HotspotMapIcon_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_HotspotMapIcon_C_PreConstruct");
+static_assert(sizeof(WBP_HotspotMapIcon_C_PreConstruct) == 0x000001, "Wrong size on WBP_HotspotMapIcon_C_PreConstruct");
+static_assert(offsetof(WBP_HotspotMapIcon_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_HotspotMapIcon_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
 // Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.ExecuteUbergraph_WBP_HotspotMapIcon
 // 0x0050 (0x0050 - 0x0000)
 struct WBP_HotspotMapIcon_C_ExecuteUbergraph_WBP_HotspotMapIcon final
@@ -52,30 +76,6 @@ static_assert(offsetof(WBP_HotspotMapIcon_C_ExecuteUbergraph_WBP_HotspotMapIcon,
 static_assert(offsetof(WBP_HotspotMapIcon_C_ExecuteUbergraph_WBP_HotspotMapIcon, CallFunc_GetTimeSeconds_ReturnValue_1) == 0x000044, "Member 'WBP_HotspotMapIcon_C_ExecuteUbergraph_WBP_HotspotMapIcon::CallFunc_GetTimeSeconds_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_HotspotMapIcon_C_ExecuteUbergraph_WBP_HotspotMapIcon, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000048, "Member 'WBP_HotspotMapIcon_C_ExecuteUbergraph_WBP_HotspotMapIcon::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_HotspotMapIcon_C_ExecuteUbergraph_WBP_HotspotMapIcon, CallFunc_Greater_FloatFloat_ReturnValue) == 0x00004C, "Member 'WBP_HotspotMapIcon_C_ExecuteUbergraph_WBP_HotspotMapIcon::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-
-// Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_HotspotMapIcon_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_HotspotMapIcon_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_HotspotMapIcon_C_PreConstruct");
-static_assert(sizeof(WBP_HotspotMapIcon_C_PreConstruct) == 0x000001, "Wrong size on WBP_HotspotMapIcon_C_PreConstruct");
-static_assert(offsetof(WBP_HotspotMapIcon_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_HotspotMapIcon_C_PreConstruct::IsDesignTime' has a wrong offset!");
-
-// Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.Get_SizeBox_Global_ToolTipWidget_0
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Tooltip_WorldMap_C*                CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0");
-static_assert(sizeof(WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0");
-static_assert(offsetof(WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 }
 

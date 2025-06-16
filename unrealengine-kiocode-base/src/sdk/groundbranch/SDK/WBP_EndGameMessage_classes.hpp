@@ -27,8 +27,8 @@ public:
 	class FText                                   Message;                                           // 0x0270(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
-	void ExecuteUbergraph_WBP_EndGameMessage(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_EndGameMessage(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

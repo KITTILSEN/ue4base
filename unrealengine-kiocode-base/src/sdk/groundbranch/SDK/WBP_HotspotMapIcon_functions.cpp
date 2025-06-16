@@ -17,79 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.ExecuteUbergraph_WBP_HotspotMapIcon
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.Get_SizeBox_Global_ToolTipWidget_0
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_HotspotMapIcon_C::ExecuteUbergraph_WBP_HotspotMapIcon(int32 EntryPoint)
+class UWidget* UWBP_HotspotMapIcon_C::Get_SizeBox_Global_ToolTipWidget_0()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HotspotMapIcon_C", "ExecuteUbergraph_WBP_HotspotMapIcon");
+		Func = Class->GetFunction("WBP_HotspotMapIcon_C", "Get_SizeBox_Global_ToolTipWidget_0");
 
-	Params::WBP_HotspotMapIcon_C_ExecuteUbergraph_WBP_HotspotMapIcon Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0 Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
-
-// Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.HoverTimer
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_HotspotMapIcon_C::HoverTimer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HotspotMapIcon_C", "HoverTimer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.UserIsHoveringOnIcon
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_HotspotMapIcon_C::UserIsHoveringOnIcon()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HotspotMapIcon_C", "UserIsHoveringOnIcon");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.BndEvt__WBP_HotspotMapIcon_Button_SelectHotspot_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_HotspotMapIcon_C::BndEvt__WBP_HotspotMapIcon_Button_SelectHotspot_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HotspotMapIcon_C", "BndEvt__WBP_HotspotMapIcon_Button_SelectHotspot_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_HotspotMapIcon_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HotspotMapIcon_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
+	return Parms.ReturnValue;
 }
 
 
@@ -113,23 +57,79 @@ void UWBP_HotspotMapIcon_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.Get_SizeBox_Global_ToolTipWidget_0
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-class UWidget* UWBP_HotspotMapIcon_C::Get_SizeBox_Global_ToolTipWidget_0()
+void UWBP_HotspotMapIcon_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HotspotMapIcon_C", "Get_SizeBox_Global_ToolTipWidget_0");
+		Func = Class->GetFunction("WBP_HotspotMapIcon_C", "Construct");
 
-	Params::WBP_HotspotMapIcon_C_Get_SizeBox_Global_ToolTipWidget_0 Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.BndEvt__WBP_HotspotMapIcon_Button_SelectHotspot_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_HotspotMapIcon_C::BndEvt__WBP_HotspotMapIcon_Button_SelectHotspot_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HotspotMapIcon_C", "BndEvt__WBP_HotspotMapIcon_Button_SelectHotspot_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.UserIsHoveringOnIcon
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_HotspotMapIcon_C::UserIsHoveringOnIcon()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HotspotMapIcon_C", "UserIsHoveringOnIcon");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.HoverTimer
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_HotspotMapIcon_C::HoverTimer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HotspotMapIcon_C", "HoverTimer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_HotspotMapIcon.WBP_HotspotMapIcon_C.ExecuteUbergraph_WBP_HotspotMapIcon
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_HotspotMapIcon_C::ExecuteUbergraph_WBP_HotspotMapIcon(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HotspotMapIcon_C", "ExecuteUbergraph_WBP_HotspotMapIcon");
+
+	Params::WBP_HotspotMapIcon_C_ExecuteUbergraph_WBP_HotspotMapIcon Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 }

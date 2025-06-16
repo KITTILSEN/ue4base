@@ -40,10 +40,10 @@ public:
 	TMulticastInlineDelegate<void(class UGBHotspotDataAsset* SelectedHotspot)> OnDoubleClicked;      // 0x02F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ExecuteUbergraph_WBP_HotspotListEntry(int32 EntryPoint);
-	void BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-	void PreConstruct(bool IsDesignTime);
 	class UWidget* Get_CheckBox_WholeItem_ToolTipWidget_0();
+	void PreConstruct(bool IsDesignTime);
+	void BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
+	void ExecuteUbergraph_WBP_HotspotListEntry(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -22,7 +22,7 @@ namespace SDK::Params
 struct BP_CE_ListObj_Preset_C_InitPreset final
 {
 public:
-	class UVaRestJsonObject*                      InJsonObj;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UVaRestJsonObject*                      InJSonObj;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 InFilename;                                        // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -55,7 +55,7 @@ public:
 };
 static_assert(alignof(BP_CE_ListObj_Preset_C_InitPreset) == 0x000008, "Wrong alignment on BP_CE_ListObj_Preset_C_InitPreset");
 static_assert(sizeof(BP_CE_ListObj_Preset_C_InitPreset) == 0x000100, "Wrong size on BP_CE_ListObj_Preset_C_InitPreset");
-static_assert(offsetof(BP_CE_ListObj_Preset_C_InitPreset, InJsonObj) == 0x000000, "Member 'BP_CE_ListObj_Preset_C_InitPreset::InJsonObj' has a wrong offset!");
+static_assert(offsetof(BP_CE_ListObj_Preset_C_InitPreset, InJSonObj) == 0x000000, "Member 'BP_CE_ListObj_Preset_C_InitPreset::InJSonObj' has a wrong offset!");
 static_assert(offsetof(BP_CE_ListObj_Preset_C_InitPreset, InFilename) == 0x000008, "Member 'BP_CE_ListObj_Preset_C_InitPreset::InFilename' has a wrong offset!");
 static_assert(offsetof(BP_CE_ListObj_Preset_C_InitPreset, Temp_bool_True_if_break_was_hit_Variable) == 0x000018, "Member 'BP_CE_ListObj_Preset_C_InitPreset::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
 static_assert(offsetof(BP_CE_ListObj_Preset_C_InitPreset, CallFunc_Not_PreBool_ReturnValue) == 0x000019, "Member 'BP_CE_ListObj_Preset_C_InitPreset::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");

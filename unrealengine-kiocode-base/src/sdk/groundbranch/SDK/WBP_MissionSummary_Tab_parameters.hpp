@@ -16,16 +16,21 @@
 namespace SDK::Params
 {
 
-// Function WBP_MissionSummary_Tab.WBP_MissionSummary_Tab_C.ExecuteUbergraph_WBP_MissionSummary_Tab
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_MissionSummary_Tab_C_ExecuteUbergraph_WBP_MissionSummary_Tab final
+// Function WBP_MissionSummary_Tab.WBP_MissionSummary_Tab_C.Get_MatchSummaryButtonText_ColorAndOpacity_0
+// 0x0024 (0x0024 - 0x0000)
+struct WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0 final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MissionSummary_Tab_C_ExecuteUbergraph_WBP_MissionSummary_Tab) == 0x000004, "Wrong alignment on WBP_MissionSummary_Tab_C_ExecuteUbergraph_WBP_MissionSummary_Tab");
-static_assert(sizeof(WBP_MissionSummary_Tab_C_ExecuteUbergraph_WBP_MissionSummary_Tab) == 0x000004, "Wrong size on WBP_MissionSummary_Tab_C_ExecuteUbergraph_WBP_MissionSummary_Tab");
-static_assert(offsetof(WBP_MissionSummary_Tab_C_ExecuteUbergraph_WBP_MissionSummary_Tab, EntryPoint) == 0x000000, "Member 'WBP_MissionSummary_Tab_C_ExecuteUbergraph_WBP_MissionSummary_Tab::EntryPoint' has a wrong offset!");
+static_assert(alignof(WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0) == 0x000004, "Wrong alignment on WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0");
+static_assert(sizeof(WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0) == 0x000024, "Wrong size on WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0");
+static_assert(offsetof(WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0, ReturnValue) == 0x000000, "Member 'WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0, Temp_bool_Variable) == 0x000010, "Member 'WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0, K2Node_Select_Default) == 0x000014, "Member 'WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0::K2Node_Select_Default' has a wrong offset!");
 
 // Function WBP_MissionSummary_Tab.WBP_MissionSummary_Tab_C.Get_Border_MatchSummary_BrushColor_0
 // 0x0024 (0x0024 - 0x0000)
@@ -43,21 +48,16 @@ static_assert(offsetof(WBP_MissionSummary_Tab_C_Get_Border_MatchSummary_BrushCol
 static_assert(offsetof(WBP_MissionSummary_Tab_C_Get_Border_MatchSummary_BrushColor_0, Temp_bool_Variable) == 0x000010, "Member 'WBP_MissionSummary_Tab_C_Get_Border_MatchSummary_BrushColor_0::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_MissionSummary_Tab_C_Get_Border_MatchSummary_BrushColor_0, K2Node_Select_Default) == 0x000014, "Member 'WBP_MissionSummary_Tab_C_Get_Border_MatchSummary_BrushColor_0::K2Node_Select_Default' has a wrong offset!");
 
-// Function WBP_MissionSummary_Tab.WBP_MissionSummary_Tab_C.Get_MatchSummaryButtonText_ColorAndOpacity_0
-// 0x0024 (0x0024 - 0x0000)
-struct WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0 final
+// Function WBP_MissionSummary_Tab.WBP_MissionSummary_Tab_C.ExecuteUbergraph_WBP_MissionSummary_Tab
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_MissionSummary_Tab_C_ExecuteUbergraph_WBP_MissionSummary_Tab final
 {
 public:
-	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0) == 0x000004, "Wrong alignment on WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0");
-static_assert(sizeof(WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0) == 0x000024, "Wrong size on WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0");
-static_assert(offsetof(WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0, ReturnValue) == 0x000000, "Member 'WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0, Temp_bool_Variable) == 0x000010, "Member 'WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0, K2Node_Select_Default) == 0x000014, "Member 'WBP_MissionSummary_Tab_C_Get_MatchSummaryButtonText_ColorAndOpacity_0::K2Node_Select_Default' has a wrong offset!");
+static_assert(alignof(WBP_MissionSummary_Tab_C_ExecuteUbergraph_WBP_MissionSummary_Tab) == 0x000004, "Wrong alignment on WBP_MissionSummary_Tab_C_ExecuteUbergraph_WBP_MissionSummary_Tab");
+static_assert(sizeof(WBP_MissionSummary_Tab_C_ExecuteUbergraph_WBP_MissionSummary_Tab) == 0x000004, "Wrong size on WBP_MissionSummary_Tab_C_ExecuteUbergraph_WBP_MissionSummary_Tab");
+static_assert(offsetof(WBP_MissionSummary_Tab_C_ExecuteUbergraph_WBP_MissionSummary_Tab, EntryPoint) == 0x000000, "Member 'WBP_MissionSummary_Tab_C_ExecuteUbergraph_WBP_MissionSummary_Tab::EntryPoint' has a wrong offset!");
 
 }
 

@@ -1,315 +1,73 @@
 ﻿  Scanning sources for module dependencies...
-  dllmain.cpp
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Basic.hpp(826,2): warning C4369: 'SDK::EObjectFlags::AllocatedInSharedPage':  enumerator value '2147483648' cannot be represented as 'int', value is '2147483648'
-  (compiling source file 'dllmain.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'dllmain.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4369: 'SDK::ESkinCacheUsage::ESkinCacheUsage_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'dllmain.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'dllmain.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4369: 'SDK::ESoundWaveLoadingBehavior::ESoundWaveLoadingBehavior_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'dllmain.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'dllmain.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4369: 'SDK::EAkMidiEventType::EAkMidiEventType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'dllmain.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'dllmain.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4369: 'SDK::EWwiseGroupType::EWwiseGroupType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'dllmain.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\gui\core\gui.h(21,31): warning C4244: 'return': conversion from 'LRESULT' to 'HRESULT', possible loss of data
-  (compiling source file 'dllmain.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\config.h(49,21): warning C4091: 'inline static ': ignored on left of 'Config::MenuTab' when no variable is declared
-  (compiling source file 'dllmain.cpp')
-  
-  core.cpp
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Basic.hpp(826,2): warning C4369: 'SDK::EObjectFlags::AllocatedInSharedPage':  enumerator value '2147483648' cannot be represented as 'int', value is '2147483648'
-  (compiling source file 'src/features/core.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/features/core.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4369: 'SDK::ESkinCacheUsage::ESkinCacheUsage_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/features/core.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/features/core.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4369: 'SDK::ESoundWaveLoadingBehavior::ESoundWaveLoadingBehavior_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/features/core.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/features/core.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4369: 'SDK::EAkMidiEventType::EAkMidiEventType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/features/core.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/features/core.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4369: 'SDK::EWwiseGroupType::EWwiseGroupType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/features/core.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\config.h(49,21): warning C4091: 'inline static ': ignored on left of 'Config::MenuTab' when no variable is declared
-  (compiling source file 'src/features/core.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\gui\core\gui.h(21,31): warning C4244: 'return': conversion from 'LRESULT' to 'HRESULT', possible loss of data
-  (compiling source file 'src/features/core.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\features\core.cpp(117,20): warning C4244: 'initializing': conversion from 'ULONGLONG' to 'DWORD', possible loss of data
   esp.cpp
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Basic.hpp(826,2): warning C4369: 'SDK::EObjectFlags::AllocatedInSharedPage':  enumerator value '2147483648' cannot be represented as 'int', value is '2147483648'
+C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Basic.hpp(826,2): warning C4369: 'SDK::EObjectFlags':  enumerator value '2147483648' cannot be represented as 'int', value is '2147483648'
   (compiling source file 'src/features/esp.cpp')
   
 C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4309: 'initializing': truncation of constant value
   (compiling source file 'src/features/esp.cpp')
   
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4369: 'SDK::ESkinCacheUsage::ESkinCacheUsage_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4369: 'SDK::ESkinCacheUsage':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
   (compiling source file 'src/features/esp.cpp')
   
 C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4309: 'initializing': truncation of constant value
   (compiling source file 'src/features/esp.cpp')
   
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4369: 'SDK::ESoundWaveLoadingBehavior::ESoundWaveLoadingBehavior_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4369: 'SDK::ESoundWaveLoadingBehavior':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
   (compiling source file 'src/features/esp.cpp')
   
 C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4309: 'initializing': truncation of constant value
   (compiling source file 'src/features/esp.cpp')
   
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4369: 'SDK::EAkMidiEventType::EAkMidiEventType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4369: 'SDK::EAkMidiEventType':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
   (compiling source file 'src/features/esp.cpp')
   
 C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4309: 'initializing': truncation of constant value
   (compiling source file 'src/features/esp.cpp')
   
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4369: 'SDK::EWwiseGroupType::EWwiseGroupType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4369: 'SDK::EWwiseGroupType':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
   (compiling source file 'src/features/esp.cpp')
   
 C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\config.h(49,21): warning C4091: 'inline static ': ignored on left of 'Config::MenuTab' when no variable is declared
   (compiling source file 'src/features/esp.cpp')
   
   main_loop.cpp
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Basic.hpp(826,2): warning C4369: 'SDK::EObjectFlags::AllocatedInSharedPage':  enumerator value '2147483648' cannot be represented as 'int', value is '2147483648'
+C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Basic.hpp(826,2): warning C4369: 'SDK::EObjectFlags':  enumerator value '2147483648' cannot be represented as 'int', value is '2147483648'
   (compiling source file 'src/features/main_loop.cpp')
   
 C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4309: 'initializing': truncation of constant value
   (compiling source file 'src/features/main_loop.cpp')
   
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4369: 'SDK::ESkinCacheUsage::ESkinCacheUsage_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4369: 'SDK::ESkinCacheUsage':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
   (compiling source file 'src/features/main_loop.cpp')
   
 C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4309: 'initializing': truncation of constant value
   (compiling source file 'src/features/main_loop.cpp')
   
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4369: 'SDK::ESoundWaveLoadingBehavior::ESoundWaveLoadingBehavior_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4369: 'SDK::ESoundWaveLoadingBehavior':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
   (compiling source file 'src/features/main_loop.cpp')
   
 C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4309: 'initializing': truncation of constant value
   (compiling source file 'src/features/main_loop.cpp')
   
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4369: 'SDK::EAkMidiEventType::EAkMidiEventType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4369: 'SDK::EAkMidiEventType':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
   (compiling source file 'src/features/main_loop.cpp')
   
 C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4309: 'initializing': truncation of constant value
   (compiling source file 'src/features/main_loop.cpp')
   
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4369: 'SDK::EWwiseGroupType::EWwiseGroupType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4369: 'SDK::EWwiseGroupType':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
   (compiling source file 'src/features/main_loop.cpp')
   
 C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\config.h(49,21): warning C4091: 'inline static ': ignored on left of 'Config::MenuTab' when no variable is declared
   (compiling source file 'src/features/main_loop.cpp')
   
-  gui.cpp
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Basic.hpp(826,2): warning C4369: 'SDK::EObjectFlags::AllocatedInSharedPage':  enumerator value '2147483648' cannot be represented as 'int', value is '2147483648'
-  (compiling source file 'src/gui/core/gui.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/gui/core/gui.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4369: 'SDK::ESkinCacheUsage::ESkinCacheUsage_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/gui/core/gui.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/gui/core/gui.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4369: 'SDK::ESoundWaveLoadingBehavior::ESoundWaveLoadingBehavior_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/gui/core/gui.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/gui/core/gui.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4369: 'SDK::EAkMidiEventType::EAkMidiEventType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/gui/core/gui.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/gui/core/gui.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4369: 'SDK::EWwiseGroupType::EWwiseGroupType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/gui/core/gui.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\gui\core\gui.h(21,31): warning C4244: 'return': conversion from 'LRESULT' to 'HRESULT', possible loss of data
-  (compiling source file 'src/gui/core/gui.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\config.h(49,21): warning C4091: 'inline static ': ignored on left of 'Config::MenuTab' when no variable is declared
-  (compiling source file 'src/gui/core/gui.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\gui\core\gui.cpp(25,33): warning C4305: '=': truncation from 'double' to 'float'
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\gui\core\gui.cpp(40,127): warning C4244: 'argument': conversion from 'LONG' to 'float', possible loss of data
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\gui\core\gui.cpp(40,97): warning C4244: 'argument': conversion from 'LONG' to 'float', possible loss of data
-  modmenu.cpp
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Basic.hpp(826,2): warning C4369: 'SDK::EObjectFlags::AllocatedInSharedPage':  enumerator value '2147483648' cannot be represented as 'int', value is '2147483648'
-  (compiling source file 'src/gui/modmenu.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/gui/modmenu.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4369: 'SDK::ESkinCacheUsage::ESkinCacheUsage_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/gui/modmenu.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/gui/modmenu.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4369: 'SDK::ESoundWaveLoadingBehavior::ESoundWaveLoadingBehavior_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/gui/modmenu.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/gui/modmenu.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4369: 'SDK::EAkMidiEventType::EAkMidiEventType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/gui/modmenu.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/gui/modmenu.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4369: 'SDK::EWwiseGroupType::EWwiseGroupType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/gui/modmenu.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\config.h(49,21): warning C4091: 'inline static ': ignored on left of 'Config::MenuTab' when no variable is declared
-  (compiling source file 'src/gui/modmenu.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\gui\modmenu.cpp(287,60): warning C4477: 'sprintf_s' : format string '%#x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'uintptr_t'
-      C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\gui\modmenu.cpp(287,60):
-      consider using '%llx' in the format string
-      C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\gui\modmenu.cpp(287,60):
-      consider using '%Ix' in the format string
-      C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\gui\modmenu.cpp(287,60):
-      consider using '%I64x' in the format string
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\gui\modmenu.cpp(291,58): warning C4477: 'sprintf_s' : format string '%#x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'uintptr_t'
-      C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\gui\modmenu.cpp(291,58):
-      consider using '%llx' in the format string
-      C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\gui\modmenu.cpp(291,58):
-      consider using '%Ix' in the format string
-      C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\gui\modmenu.cpp(291,58):
-      consider using '%I64x' in the format string
-  
-  dumper.cpp
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Basic.hpp(826,2): warning C4369: 'SDK::EObjectFlags::AllocatedInSharedPage':  enumerator value '2147483648' cannot be represented as 'int', value is '2147483648'
-  (compiling source file 'src/utils/dumper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/utils/dumper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4369: 'SDK::ESkinCacheUsage::ESkinCacheUsage_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/utils/dumper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/utils/dumper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4369: 'SDK::ESoundWaveLoadingBehavior::ESoundWaveLoadingBehavior_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/utils/dumper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/utils/dumper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4369: 'SDK::EAkMidiEventType::EAkMidiEventType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/utils/dumper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/utils/dumper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4369: 'SDK::EWwiseGroupType::EWwiseGroupType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/utils/dumper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\config.h(49,21): warning C4091: 'inline static ': ignored on left of 'Config::MenuTab' when no variable is declared
-  (compiling source file 'src/utils/dumper.cpp')
-  
-  general.cpp
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Basic.hpp(826,2): warning C4369: 'SDK::EObjectFlags::AllocatedInSharedPage':  enumerator value '2147483648' cannot be represented as 'int', value is '2147483648'
-  (compiling source file 'src/utils/general.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/utils/general.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4369: 'SDK::ESkinCacheUsage::ESkinCacheUsage_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/utils/general.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/utils/general.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4369: 'SDK::ESoundWaveLoadingBehavior::ESoundWaveLoadingBehavior_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/utils/general.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/utils/general.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4369: 'SDK::EAkMidiEventType::EAkMidiEventType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/utils/general.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/utils/general.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4369: 'SDK::EWwiseGroupType::EWwiseGroupType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/utils/general.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\config.h(49,21): warning C4091: 'inline static ': ignored on left of 'Config::MenuTab' when no variable is declared
-  (compiling source file 'src/utils/general.cpp')
-  
-  imgui_helper.cpp
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Basic.hpp(826,2): warning C4369: 'SDK::EObjectFlags::AllocatedInSharedPage':  enumerator value '2147483648' cannot be represented as 'int', value is '2147483648'
-  (compiling source file 'src/utils/imgui/imgui_helper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/utils/imgui/imgui_helper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4017,2): warning C4369: 'SDK::ESkinCacheUsage::ESkinCacheUsage_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/utils/imgui/imgui_helper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/utils/imgui/imgui_helper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_structs.hpp(4512,2): warning C4369: 'SDK::ESoundWaveLoadingBehavior::ESoundWaveLoadingBehavior_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/utils/imgui/imgui_helper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/utils/imgui/imgui_helper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\AkAudio_structs.hpp(295,2): warning C4369: 'SDK::EAkMidiEventType::EAkMidiEventType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/utils/imgui/imgui_helper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4309: 'initializing': truncation of constant value
-  (compiling source file 'src/utils/imgui/imgui_helper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\WwiseResourceLoader_structs.hpp(45,2): warning C4369: 'SDK::EWwiseGroupType::EWwiseGroupType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
-  (compiling source file 'src/utils/imgui/imgui_helper.cpp')
-  
-C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\config.h(49,21): warning C4091: 'inline static ': ignored on left of 'Config::MenuTab' when no variable is declared
-  (compiling source file 'src/utils/imgui/imgui_helper.cpp')
-  
+  buffer.c
+  hde32.c
+  hde64.c
+  hook.c
+  trampoline.c
   Generating code
-  34 of 1866 functions ( 1.8%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    23 functions had inline decision re-evaluated but remain unchanged
+  Previous IPDB not found, fall back to full compilation.
+  All 1904 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
-  unrealengine-kiocode-base.vcxproj -> C:\Users\kittilsen\Source\Repos\ue4base\x64\Release\unrealengine-kiocode-base.dll
+  unrealengine-kiocode-base.vcxproj -> C:\Users\kittilsen\source\repos\ue4base\x64\Release\unrealengine-kiocode-base.dll

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Struct_Modding_MutatorInfo_structs.hpp"
+#include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "LuaMachine_structs.hpp"
 

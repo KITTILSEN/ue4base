@@ -68,12 +68,12 @@ public:
 	class FText                                   MaxPlayerCountChangedMessage;                      // 0x05A8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_NetworkFailureOverlay(int32 EntryPoint);
-	void SetupFromNetworkFailureType();
-	void SetupFromErrorString();
-	void RemoveLoadingScreen();
-	void BndEvt__Button_Password_Ok_K2Node_ComponentBoundEvent_735_OnButtonClickedEvent__DelegateSignature();
 	void Construct();
+	void BndEvt__Button_Password_Ok_K2Node_ComponentBoundEvent_735_OnButtonClickedEvent__DelegateSignature();
+	void RemoveLoadingScreen();
+	void SetupFromErrorString();
+	void SetupFromNetworkFailureType();
+	void ExecuteUbergraph_WBP_NetworkFailureOverlay(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -43,30 +43,30 @@ public:
 	class UWBP_MissionSummary_C*                  MissionSummaryRef;                                 // 0x0900(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_GameState(int32 EntryPoint);
-	void OnClose_Event_0();
-	void LocalOnRoundStageSet();
-	void ServerOnRoundStageSet();
-	void OnGameMessageEvent(class FName GameMessageId, class FName Type, float Duration, const struct FUInt64& ModID);
-	void StopInactiveCheck();
-	void StartInactiveCheck();
-	void InactiveCheck();
-	void OnPlayerControllerStateChanged_Event_0(class FName OldState, class FName NewState);
-	void BindToPlayerControllerState();
-	void ReceiveBeginPlay();
-	void MaybeShowMissionSummary();
-	void AddDeathOverlay();
-	void RoundStageSet();
-	void AllowVotingAgain();
-	void OnVoteEndedEvent(bool bPassed, int32 NextVoteDelay);
-	void OnVoteCountUpdatedEvent(int32 YesVotes, int32 NoVotes);
-	void OnVoteStartedEvent(class APlayerState* VoteStarter, const class FString& Command, const class FString& Params_0, int32 VoteTime);
-	void GetSpectatorOptions(TArray<TSoftClassPtr<class UClass>>* OutOptionClasses);
-	void GetRoundStageText(class FText* OutText);
-	void GetTimeToNextTimeReminder(float CurrentRoundTime, float* TimeToNextTimeReminder);
-	void ShowMOTD();
-	void RefreshPlayerStats();
 	void InternalOnGameMessage(class FName InGameMessageId, class FName InType, float InDuration, const struct FUInt64& InModId);
+	void RefreshPlayerStats();
+	void ShowMOTD();
+	void GetTimeToNextTimeReminder(float CurrentRoundTime, float* TimeToNextTimeReminder);
+	void GetRoundStageText(class FText* OutText);
+	void GetSpectatorOptions(TArray<TSoftClassPtr<class UClass>>* OutOptionClasses);
+	void OnVoteStartedEvent(class APlayerState* VoteStarter, const class FString& Command, const class FString& Params_0, int32 VoteTime);
+	void OnVoteCountUpdatedEvent(int32 YesVotes, int32 NoVotes);
+	void OnVoteEndedEvent(bool bPassed, int32 NextVoteDelay);
+	void AllowVotingAgain();
+	void RoundStageSet();
+	void AddDeathOverlay();
+	void MaybeShowMissionSummary();
+	void ReceiveBeginPlay();
+	void BindToPlayerControllerState();
+	void OnPlayerControllerStateChanged_Event_0(class FName OldState, class FName NewState);
+	void InactiveCheck();
+	void StartInactiveCheck();
+	void StopInactiveCheck();
+	void OnGameMessageEvent(class FName GameMessageId, class FName Type, float Duration, const struct FUInt64& ModID);
+	void ServerOnRoundStageSet();
+	void LocalOnRoundStageSet();
+	void OnClose_Event_0();
+	void ExecuteUbergraph_BP_GameState(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

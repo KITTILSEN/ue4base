@@ -17,6 +17,17 @@
 namespace SDK::Params
 {
 
+// Function WBP_Campaign_MissionImageTab.WBP_Campaign_MissionImageTab_C.SetSelected
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Campaign_MissionImageTab_C_SetSelected final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_Campaign_MissionImageTab_C_SetSelected) == 0x000001, "Wrong alignment on WBP_Campaign_MissionImageTab_C_SetSelected");
+static_assert(sizeof(WBP_Campaign_MissionImageTab_C_SetSelected) == 0x000001, "Wrong size on WBP_Campaign_MissionImageTab_C_SetSelected");
+static_assert(offsetof(WBP_Campaign_MissionImageTab_C_SetSelected, bIsSelected) == 0x000000, "Member 'WBP_Campaign_MissionImageTab_C_SetSelected::bIsSelected' has a wrong offset!");
+
 // Function WBP_Campaign_MissionImageTab.WBP_Campaign_MissionImageTab_C.ExecuteUbergraph_WBP_Campaign_MissionImageTab
 // 0x0040 (0x0040 - 0x0000)
 struct WBP_Campaign_MissionImageTab_C_ExecuteUbergraph_WBP_Campaign_MissionImageTab final
@@ -42,17 +53,6 @@ static_assert(offsetof(WBP_Campaign_MissionImageTab_C_ExecuteUbergraph_WBP_Campa
 static_assert(offsetof(WBP_Campaign_MissionImageTab_C_ExecuteUbergraph_WBP_Campaign_MissionImageTab, Temp_bool_Variable_1) == 0x000008, "Member 'WBP_Campaign_MissionImageTab_C_ExecuteUbergraph_WBP_Campaign_MissionImageTab::Temp_bool_Variable_1' has a wrong offset!");
 static_assert(offsetof(WBP_Campaign_MissionImageTab_C_ExecuteUbergraph_WBP_Campaign_MissionImageTab, K2Node_Select_Default) == 0x000010, "Member 'WBP_Campaign_MissionImageTab_C_ExecuteUbergraph_WBP_Campaign_MissionImageTab::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(WBP_Campaign_MissionImageTab_C_ExecuteUbergraph_WBP_Campaign_MissionImageTab, K2Node_Select_Default_1) == 0x000038, "Member 'WBP_Campaign_MissionImageTab_C_ExecuteUbergraph_WBP_Campaign_MissionImageTab::K2Node_Select_Default_1' has a wrong offset!");
-
-// Function WBP_Campaign_MissionImageTab.WBP_Campaign_MissionImageTab_C.SetSelected
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Campaign_MissionImageTab_C_SetSelected final
-{
-public:
-	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_Campaign_MissionImageTab_C_SetSelected) == 0x000001, "Wrong alignment on WBP_Campaign_MissionImageTab_C_SetSelected");
-static_assert(sizeof(WBP_Campaign_MissionImageTab_C_SetSelected) == 0x000001, "Wrong size on WBP_Campaign_MissionImageTab_C_SetSelected");
-static_assert(offsetof(WBP_Campaign_MissionImageTab_C_SetSelected, bIsSelected) == 0x000000, "Member 'WBP_Campaign_MissionImageTab_C_SetSelected::bIsSelected' has a wrong offset!");
 
 }
 

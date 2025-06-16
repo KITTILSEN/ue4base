@@ -31,8 +31,8 @@ public:
 	struct FSlateChildSize                        ContentSize;                                       // 0x0288(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void ExecuteUbergraph_WBP_MissionSummary_SplitContainer(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_MissionSummary_SplitContainer(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

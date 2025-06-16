@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "PopLeftRight_structs.hpp"
-#include "Full_structs.hpp"
 #include "KytheraPlugin_classes.hpp"
+#include "Full_structs.hpp"
 #include "PopUp_structs.hpp"
 
 

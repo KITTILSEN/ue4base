@@ -2109,7 +2109,7 @@ static_assert(offsetof(AKytNavCostBrush, NavCost) == 0x000260, "Member 'AKytNavC
 
 // Class KytheraPlugin.KytNavCostStaticMesh
 // 0x0018 (0x0238 - 0x0220)
-class AKytNavCostStaticMesh final : public AActor
+class AKytNavCostStaticMesh : public AActor
 {
 public:
 	uint8                                         Pad_220[0x8];                                      // 0x0220(0x0008)(Fixing Size After Last Property [ Dumper-7 ])

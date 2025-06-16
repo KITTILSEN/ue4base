@@ -17,49 +17,40 @@
 namespace SDK
 {
 
-// Function WBP_CharacterEditorScreen.WBP_CharacterEditorScreen_C.ExecuteUbergraph_WBP_CharacterEditorScreen
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_CharacterEditorScreen.WBP_CharacterEditorScreen_C.OnPreviewKeyDown
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FKeyEvent&                 InKeyEvent                                             (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-void UWBP_CharacterEditorScreen_C::ExecuteUbergraph_WBP_CharacterEditorScreen(int32 EntryPoint)
+struct FEventReply UWBP_CharacterEditorScreen_C::OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CharacterEditorScreen_C", "ExecuteUbergraph_WBP_CharacterEditorScreen");
+		Func = Class->GetFunction("WBP_CharacterEditorScreen_C", "OnPreviewKeyDown");
 
-	Params::WBP_CharacterEditorScreen_C_ExecuteUbergraph_WBP_CharacterEditorScreen Parms{};
+	Params::WBP_CharacterEditorScreen_C_OnPreviewKeyDown Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InKeyEvent = std::move(InKeyEvent);
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function WBP_CharacterEditorScreen.WBP_CharacterEditorScreen_C.Close
+// Function WBP_CharacterEditorScreen.WBP_CharacterEditorScreen_C.Setup
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_CharacterEditorScreen_C::Close()
+void UWBP_CharacterEditorScreen_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CharacterEditorScreen_C", "Close");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CharacterEditorScreen.WBP_CharacterEditorScreen_C.BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_2_CancelClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_CharacterEditorScreen_C::BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_2_CancelClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CharacterEditorScreen_C", "BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_2_CancelClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_CharacterEditorScreen_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,42 +76,51 @@ void UWBP_CharacterEditorScreen_C::BndEvt__WBP_CharacterEditor_NEW_K2Node_Compon
 }
 
 
-// Function WBP_CharacterEditorScreen.WBP_CharacterEditorScreen_C.Setup
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_CharacterEditorScreen.WBP_CharacterEditorScreen_C.BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_2_CancelClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_CharacterEditorScreen_C::Setup()
+void UWBP_CharacterEditorScreen_C::BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_2_CancelClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CharacterEditorScreen_C", "Setup");
+		Func = Class->GetFunction("WBP_CharacterEditorScreen_C", "BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_2_CancelClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CharacterEditorScreen.WBP_CharacterEditorScreen_C.OnPreviewKeyDown
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FKeyEvent&                 InKeyEvent                                             (BlueprintVisible, BlueprintReadOnly, Parm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+// Function WBP_CharacterEditorScreen.WBP_CharacterEditorScreen_C.Close
+// (BlueprintCallable, BlueprintEvent)
 
-struct FEventReply UWBP_CharacterEditorScreen_C::OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
+void UWBP_CharacterEditorScreen_C::Close()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CharacterEditorScreen_C", "OnPreviewKeyDown");
+		Func = Class->GetFunction("WBP_CharacterEditorScreen_C", "Close");
 
-	Params::WBP_CharacterEditorScreen_C_OnPreviewKeyDown Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InKeyEvent = std::move(InKeyEvent);
+
+// Function WBP_CharacterEditorScreen.WBP_CharacterEditorScreen_C.ExecuteUbergraph_WBP_CharacterEditorScreen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CharacterEditorScreen_C::ExecuteUbergraph_WBP_CharacterEditorScreen(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CharacterEditorScreen_C", "ExecuteUbergraph_WBP_CharacterEditorScreen");
+
+	Params::WBP_CharacterEditorScreen_C_ExecuteUbergraph_WBP_CharacterEditorScreen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 }

@@ -19,7 +19,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_Grenade_Master.BP_Grenade_Master_C
 // 0x0038 (0x0498 - 0x0460)
-class ABP_Grenade_Master_C final : public AGBGrenade
+class ABP_Grenade_Master_C : public AGBGrenade
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0460(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

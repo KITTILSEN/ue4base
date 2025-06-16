@@ -22,9 +22,9 @@ namespace SDK
 // Parameters:
 // const struct FPrimaryAssetId&           InInvItemAssetId                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FUInt64&                   InModId                                                (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// class UVaRestJsonObject*                InJsonObj                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UVaRestJsonObject*                InJSonObj                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_CE_ListObj_InvItem_C::InitDefaultBuild(const struct FPrimaryAssetId& InInvItemAssetId, const struct FUInt64& InModId, class UVaRestJsonObject* InJsonObj)
+void UBP_CE_ListObj_InvItem_C::InitDefaultBuild(const struct FPrimaryAssetId& InInvItemAssetId, const struct FUInt64& InModId, class UVaRestJsonObject* InJSonObj)
 {
 	static class UFunction* Func = nullptr;
 
@@ -35,7 +35,7 @@ void UBP_CE_ListObj_InvItem_C::InitDefaultBuild(const struct FPrimaryAssetId& In
 
 	Parms.InInvItemAssetId = std::move(InInvItemAssetId);
 	Parms.InModId = std::move(InModId);
-	Parms.InJsonObj = InJsonObj;
+	Parms.InJSonObj = InJSonObj;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -44,10 +44,10 @@ void UBP_CE_ListObj_InvItem_C::InitDefaultBuild(const struct FPrimaryAssetId& In
 // Function BP_CE_ListObj_InvItem.BP_CE_ListObj_InvItem_C.InitCustomBuild
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UVaRestJsonObject*                InJsonObj                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UVaRestJsonObject*                InJSonObj                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const class FString&                    InFilename                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UBP_CE_ListObj_InvItem_C::InitCustomBuild(class UVaRestJsonObject* InJsonObj, const class FString& InFilename)
+void UBP_CE_ListObj_InvItem_C::InitCustomBuild(class UVaRestJsonObject* InJSonObj, const class FString& InFilename)
 {
 	static class UFunction* Func = nullptr;
 
@@ -56,7 +56,7 @@ void UBP_CE_ListObj_InvItem_C::InitCustomBuild(class UVaRestJsonObject* InJsonOb
 
 	Params::BP_CE_ListObj_InvItem_C_InitCustomBuild Parms{};
 
-	Parms.InJsonObj = InJsonObj;
+	Parms.InJSonObj = InJSonObj;
 	Parms.InFilename = std::move(InFilename);
 
 	UObject::ProcessEvent(Func, &Parms);

@@ -177,7 +177,7 @@ public:
 	inline static bool m_bWatermark = false;
 
 	inline static bool m_bCameraFovChanger = false;
-	inline static float m_fCameraCustomFOV = 80.0f;
+	inline static float m_fCameraCustomFOV = 90.0f;
 
 	inline static bool m_bTimeScaleChanger = false;
 	inline static float m_fTimeScale = 1.0f;

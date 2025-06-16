@@ -19,6 +19,121 @@
 namespace SDK::Params
 {
 
+// Function WBP_RoundStage.WBP_RoundStage_C.GetFinalText
+// 0x0068 (0x0068 - 0x0000)
+struct WBP_RoundStage_C_GetFinalText final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
+	class FText                                   CallFunc_GetText_OurText;                          // 0x0018(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetSubstring_ReturnValue;                 // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0050(0x0018)()
+};
+static_assert(alignof(WBP_RoundStage_C_GetFinalText) == 0x000008, "Wrong alignment on WBP_RoundStage_C_GetFinalText");
+static_assert(sizeof(WBP_RoundStage_C_GetFinalText) == 0x000068, "Wrong size on WBP_RoundStage_C_GetFinalText");
+static_assert(offsetof(WBP_RoundStage_C_GetFinalText, ReturnValue) == 0x000000, "Member 'WBP_RoundStage_C_GetFinalText::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetFinalText, CallFunc_GetText_OurText) == 0x000018, "Member 'WBP_RoundStage_C_GetFinalText::CallFunc_GetText_OurText' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetFinalText, CallFunc_Conv_TextToString_ReturnValue) == 0x000030, "Member 'WBP_RoundStage_C_GetFinalText::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetFinalText, CallFunc_GetSubstring_ReturnValue) == 0x000040, "Member 'WBP_RoundStage_C_GetFinalText::CallFunc_GetSubstring_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetFinalText, CallFunc_Conv_StringToText_ReturnValue) == 0x000050, "Member 'WBP_RoundStage_C_GetFinalText::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+
+// Function WBP_RoundStage.WBP_RoundStage_C.GetText
+// 0x00D8 (0x00D8 - 0x0000)
+struct WBP_RoundStage_C_GetText final
+{
+public:
+	class FText                                   OurText;                                           // 0x0000(0x0018)(Parm, OutParm)
+	class FText                                   CallFunc_GetTimeText_ReturnValue;                  // 0x0018(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0030(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0070(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00B0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00C0(0x0018)()
+};
+static_assert(alignof(WBP_RoundStage_C_GetText) == 0x000008, "Wrong alignment on WBP_RoundStage_C_GetText");
+static_assert(sizeof(WBP_RoundStage_C_GetText) == 0x0000D8, "Wrong size on WBP_RoundStage_C_GetText");
+static_assert(offsetof(WBP_RoundStage_C_GetText, OurText) == 0x000000, "Member 'WBP_RoundStage_C_GetText::OurText' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetText, CallFunc_GetTimeText_ReturnValue) == 0x000018, "Member 'WBP_RoundStage_C_GetText::CallFunc_GetTimeText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetText, K2Node_MakeStruct_FormatArgumentData) == 0x000030, "Member 'WBP_RoundStage_C_GetText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetText, K2Node_MakeStruct_FormatArgumentData_1) == 0x000070, "Member 'WBP_RoundStage_C_GetText::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetText, K2Node_MakeArray_Array) == 0x0000B0, "Member 'WBP_RoundStage_C_GetText::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetText, CallFunc_Format_ReturnValue) == 0x0000C0, "Member 'WBP_RoundStage_C_GetText::CallFunc_Format_ReturnValue' has a wrong offset!");
+
+// Function WBP_RoundStage.WBP_RoundStage_C.GetTimeText
+// 0x0258 (0x0258 - 0x0000)
+struct WBP_RoundStage_C_GetTimeText final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
+	int32                                         Hours;                                             // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Minutes;                                           // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Seconds;                                           // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimespan                              CallFunc_FromSeconds_ReturnValue;                  // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0030(0x0018)()
+	int32                                         CallFunc_BreakTimespan_Days;                       // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakTimespan_Hours;                      // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakTimespan_Minutes;                    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakTimespan_Seconds;                    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_BreakTimespan_Milliseconds;               // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0060(0x0040)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x00A0(0x0018)()
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_2;             // 0x00B8(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00D0(0x0040)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0110(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0150(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0160(0x0018)()
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_3;             // 0x0178(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x0190(0x0040)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_4;             // 0x01D0(0x0018)()
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E9[0x7];                                      // 0x01E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_4;            // 0x01F0(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0230(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0240(0x0018)()
+};
+static_assert(alignof(WBP_RoundStage_C_GetTimeText) == 0x000008, "Wrong alignment on WBP_RoundStage_C_GetTimeText");
+static_assert(sizeof(WBP_RoundStage_C_GetTimeText) == 0x000258, "Wrong size on WBP_RoundStage_C_GetTimeText");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, ReturnValue) == 0x000000, "Member 'WBP_RoundStage_C_GetTimeText::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, Hours) == 0x000018, "Member 'WBP_RoundStage_C_GetTimeText::Hours' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, Minutes) == 0x00001C, "Member 'WBP_RoundStage_C_GetTimeText::Minutes' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, Seconds) == 0x000020, "Member 'WBP_RoundStage_C_GetTimeText::Seconds' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_FromSeconds_ReturnValue) == 0x000028, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_FromSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_Conv_IntToText_ReturnValue) == 0x000030, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_BreakTimespan_Days) == 0x000048, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_BreakTimespan_Days' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_BreakTimespan_Hours) == 0x00004C, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_BreakTimespan_Hours' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_BreakTimespan_Minutes) == 0x000050, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_BreakTimespan_Minutes' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_BreakTimespan_Seconds) == 0x000054, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_BreakTimespan_Seconds' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_BreakTimespan_Milliseconds) == 0x000058, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_BreakTimespan_Milliseconds' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, K2Node_MakeStruct_FormatArgumentData) == 0x000060, "Member 'WBP_RoundStage_C_GetTimeText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_Conv_IntToText_ReturnValue_1) == 0x0000A0, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_Conv_IntToText_ReturnValue_2) == 0x0000B8, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_Conv_IntToText_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000D0, "Member 'WBP_RoundStage_C_GetTimeText::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, K2Node_MakeStruct_FormatArgumentData_2) == 0x000110, "Member 'WBP_RoundStage_C_GetTimeText::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, K2Node_MakeArray_Array) == 0x000150, "Member 'WBP_RoundStage_C_GetTimeText::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_Format_ReturnValue) == 0x000160, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_Conv_IntToText_ReturnValue_3) == 0x000178, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_Conv_IntToText_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, K2Node_MakeStruct_FormatArgumentData_3) == 0x000190, "Member 'WBP_RoundStage_C_GetTimeText::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_Conv_IntToText_ReturnValue_4) == 0x0001D0, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_Conv_IntToText_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_Greater_IntInt_ReturnValue) == 0x0001E8, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, K2Node_MakeStruct_FormatArgumentData_4) == 0x0001F0, "Member 'WBP_RoundStage_C_GetTimeText::K2Node_MakeStruct_FormatArgumentData_4' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, K2Node_MakeArray_Array_1) == 0x000230, "Member 'WBP_RoundStage_C_GetTimeText::K2Node_MakeArray_Array_1' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_Format_ReturnValue_1) == 0x000240, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_Format_ReturnValue_1' has a wrong offset!");
+
+// Function WBP_RoundStage.WBP_RoundStage_C.Tick
+// 0x003C (0x003C - 0x0000)
+struct WBP_RoundStage_C_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_RoundStage_C_Tick) == 0x000004, "Wrong alignment on WBP_RoundStage_C_Tick");
+static_assert(sizeof(WBP_RoundStage_C_Tick) == 0x00003C, "Wrong size on WBP_RoundStage_C_Tick");
+static_assert(offsetof(WBP_RoundStage_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_RoundStage_C_Tick::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_RoundStage_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_RoundStage_C_Tick::InDeltaTime' has a wrong offset!");
+
 // Function WBP_RoundStage.WBP_RoundStage_C.ExecuteUbergraph_WBP_RoundStage
 // 0x0160 (0x0160 - 0x0000)
 struct WBP_RoundStage_C_ExecuteUbergraph_WBP_RoundStage final
@@ -110,121 +225,6 @@ static_assert(offsetof(WBP_RoundStage_C_ExecuteUbergraph_WBP_RoundStage, CallFun
 static_assert(offsetof(WBP_RoundStage_C_ExecuteUbergraph_WBP_RoundStage, CallFunc_PostEventAtLocation_ReturnValue_1) == 0x000150, "Member 'WBP_RoundStage_C_ExecuteUbergraph_WBP_RoundStage::CallFunc_PostEventAtLocation_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_RoundStage_C_ExecuteUbergraph_WBP_RoundStage, CallFunc_PostEventAtLocation_ReturnValue_2) == 0x000154, "Member 'WBP_RoundStage_C_ExecuteUbergraph_WBP_RoundStage::CallFunc_PostEventAtLocation_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(WBP_RoundStage_C_ExecuteUbergraph_WBP_RoundStage, CallFunc_PostEventAtLocation_ReturnValue_3) == 0x000158, "Member 'WBP_RoundStage_C_ExecuteUbergraph_WBP_RoundStage::CallFunc_PostEventAtLocation_ReturnValue_3' has a wrong offset!");
-
-// Function WBP_RoundStage.WBP_RoundStage_C.Tick
-// 0x003C (0x003C - 0x0000)
-struct WBP_RoundStage_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_RoundStage_C_Tick) == 0x000004, "Wrong alignment on WBP_RoundStage_C_Tick");
-static_assert(sizeof(WBP_RoundStage_C_Tick) == 0x00003C, "Wrong size on WBP_RoundStage_C_Tick");
-static_assert(offsetof(WBP_RoundStage_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_RoundStage_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_RoundStage_C_Tick::InDeltaTime' has a wrong offset!");
-
-// Function WBP_RoundStage.WBP_RoundStage_C.GetTimeText
-// 0x0258 (0x0258 - 0x0000)
-struct WBP_RoundStage_C_GetTimeText final
-{
-public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
-	int32                                         Hours;                                             // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Minutes;                                           // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Seconds;                                           // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimespan                              CallFunc_FromSeconds_ReturnValue;                  // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0030(0x0018)()
-	int32                                         CallFunc_BreakTimespan_Days;                       // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakTimespan_Hours;                      // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakTimespan_Minutes;                    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakTimespan_Seconds;                    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_BreakTimespan_Milliseconds;               // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0060(0x0040)(HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x00A0(0x0018)()
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_2;             // 0x00B8(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00D0(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0110(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0150(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0160(0x0018)()
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_3;             // 0x0178(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x0190(0x0040)(HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_4;             // 0x01D0(0x0018)()
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E9[0x7];                                      // 0x01E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_4;            // 0x01F0(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0230(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0240(0x0018)()
-};
-static_assert(alignof(WBP_RoundStage_C_GetTimeText) == 0x000008, "Wrong alignment on WBP_RoundStage_C_GetTimeText");
-static_assert(sizeof(WBP_RoundStage_C_GetTimeText) == 0x000258, "Wrong size on WBP_RoundStage_C_GetTimeText");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, ReturnValue) == 0x000000, "Member 'WBP_RoundStage_C_GetTimeText::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, Hours) == 0x000018, "Member 'WBP_RoundStage_C_GetTimeText::Hours' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, Minutes) == 0x00001C, "Member 'WBP_RoundStage_C_GetTimeText::Minutes' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, Seconds) == 0x000020, "Member 'WBP_RoundStage_C_GetTimeText::Seconds' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_FromSeconds_ReturnValue) == 0x000028, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_FromSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_Conv_IntToText_ReturnValue) == 0x000030, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_BreakTimespan_Days) == 0x000048, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_BreakTimespan_Days' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_BreakTimespan_Hours) == 0x00004C, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_BreakTimespan_Hours' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_BreakTimespan_Minutes) == 0x000050, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_BreakTimespan_Minutes' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_BreakTimespan_Seconds) == 0x000054, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_BreakTimespan_Seconds' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_BreakTimespan_Milliseconds) == 0x000058, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_BreakTimespan_Milliseconds' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, K2Node_MakeStruct_FormatArgumentData) == 0x000060, "Member 'WBP_RoundStage_C_GetTimeText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_Conv_IntToText_ReturnValue_1) == 0x0000A0, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_Conv_IntToText_ReturnValue_2) == 0x0000B8, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_Conv_IntToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000D0, "Member 'WBP_RoundStage_C_GetTimeText::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, K2Node_MakeStruct_FormatArgumentData_2) == 0x000110, "Member 'WBP_RoundStage_C_GetTimeText::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, K2Node_MakeArray_Array) == 0x000150, "Member 'WBP_RoundStage_C_GetTimeText::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_Format_ReturnValue) == 0x000160, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_Conv_IntToText_ReturnValue_3) == 0x000178, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_Conv_IntToText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, K2Node_MakeStruct_FormatArgumentData_3) == 0x000190, "Member 'WBP_RoundStage_C_GetTimeText::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_Conv_IntToText_ReturnValue_4) == 0x0001D0, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_Conv_IntToText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_Greater_IntInt_ReturnValue) == 0x0001E8, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, K2Node_MakeStruct_FormatArgumentData_4) == 0x0001F0, "Member 'WBP_RoundStage_C_GetTimeText::K2Node_MakeStruct_FormatArgumentData_4' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, K2Node_MakeArray_Array_1) == 0x000230, "Member 'WBP_RoundStage_C_GetTimeText::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetTimeText, CallFunc_Format_ReturnValue_1) == 0x000240, "Member 'WBP_RoundStage_C_GetTimeText::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_RoundStage.WBP_RoundStage_C.GetText
-// 0x00D8 (0x00D8 - 0x0000)
-struct WBP_RoundStage_C_GetText final
-{
-public:
-	class FText                                   OurText;                                           // 0x0000(0x0018)(Parm, OutParm)
-	class FText                                   CallFunc_GetTimeText_ReturnValue;                  // 0x0018(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0030(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0070(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00B0(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00C0(0x0018)()
-};
-static_assert(alignof(WBP_RoundStage_C_GetText) == 0x000008, "Wrong alignment on WBP_RoundStage_C_GetText");
-static_assert(sizeof(WBP_RoundStage_C_GetText) == 0x0000D8, "Wrong size on WBP_RoundStage_C_GetText");
-static_assert(offsetof(WBP_RoundStage_C_GetText, OurText) == 0x000000, "Member 'WBP_RoundStage_C_GetText::OurText' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetText, CallFunc_GetTimeText_ReturnValue) == 0x000018, "Member 'WBP_RoundStage_C_GetText::CallFunc_GetTimeText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetText, K2Node_MakeStruct_FormatArgumentData) == 0x000030, "Member 'WBP_RoundStage_C_GetText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetText, K2Node_MakeStruct_FormatArgumentData_1) == 0x000070, "Member 'WBP_RoundStage_C_GetText::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetText, K2Node_MakeArray_Array) == 0x0000B0, "Member 'WBP_RoundStage_C_GetText::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetText, CallFunc_Format_ReturnValue) == 0x0000C0, "Member 'WBP_RoundStage_C_GetText::CallFunc_Format_ReturnValue' has a wrong offset!");
-
-// Function WBP_RoundStage.WBP_RoundStage_C.GetFinalText
-// 0x0068 (0x0068 - 0x0000)
-struct WBP_RoundStage_C_GetFinalText final
-{
-public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
-	class FText                                   CallFunc_GetText_OurText;                          // 0x0018(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetSubstring_ReturnValue;                 // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0050(0x0018)()
-};
-static_assert(alignof(WBP_RoundStage_C_GetFinalText) == 0x000008, "Wrong alignment on WBP_RoundStage_C_GetFinalText");
-static_assert(sizeof(WBP_RoundStage_C_GetFinalText) == 0x000068, "Wrong size on WBP_RoundStage_C_GetFinalText");
-static_assert(offsetof(WBP_RoundStage_C_GetFinalText, ReturnValue) == 0x000000, "Member 'WBP_RoundStage_C_GetFinalText::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetFinalText, CallFunc_GetText_OurText) == 0x000018, "Member 'WBP_RoundStage_C_GetFinalText::CallFunc_GetText_OurText' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetFinalText, CallFunc_Conv_TextToString_ReturnValue) == 0x000030, "Member 'WBP_RoundStage_C_GetFinalText::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetFinalText, CallFunc_GetSubstring_ReturnValue) == 0x000040, "Member 'WBP_RoundStage_C_GetFinalText::CallFunc_GetSubstring_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_RoundStage_C_GetFinalText, CallFunc_Conv_StringToText_ReturnValue) == 0x000050, "Member 'WBP_RoundStage_C_GetFinalText::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
 
 }
 

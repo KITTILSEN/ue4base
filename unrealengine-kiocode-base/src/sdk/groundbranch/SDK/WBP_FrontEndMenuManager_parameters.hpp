@@ -20,6 +20,17 @@
 namespace SDK::Params
 {
 
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.PerformTravel
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_FrontEndMenuManager_C_PerformTravel final
+{
+public:
+	class FString                                 TravelCommand_0;                                   // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_PerformTravel) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_PerformTravel");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_PerformTravel) == 0x000010, "Wrong size on WBP_FrontEndMenuManager_C_PerformTravel");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_PerformTravel, TravelCommand_0) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_PerformTravel::TravelCommand_0' has a wrong offset!");
+
 // Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.ExecuteUbergraph_WBP_FrontEndMenuManager
 // 0x0A40 (0x0A40 - 0x0000)
 struct WBP_FrontEndMenuManager_C_ExecuteUbergraph_WBP_FrontEndMenuManager final
@@ -762,247 +773,18 @@ static_assert(offsetof(WBP_FrontEndMenuManager_C_ExecuteUbergraph_WBP_FrontEndMe
 static_assert(offsetof(WBP_FrontEndMenuManager_C_ExecuteUbergraph_WBP_FrontEndMenuManager, CallFunc_MakeModIDForGame_ReturnValue) == 0x000A30, "Member 'WBP_FrontEndMenuManager_C_ExecuteUbergraph_WBP_FrontEndMenuManager::CallFunc_MakeModIDForGame_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_FrontEndMenuManager_C_ExecuteUbergraph_WBP_FrontEndMenuManager, CallFunc_IsCommunityTestBuild_ReturnValue) == 0x000A38, "Member 'WBP_FrontEndMenuManager_C_ExecuteUbergraph_WBP_FrontEndMenuManager::CallFunc_IsCommunityTestBuild_ReturnValue' has a wrong offset!");
 
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.PerformTravel
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.Get_Button_PlayCampaign_ToolTipWidget_0
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_FrontEndMenuManager_C_PerformTravel final
-{
-public:
-	class FString                                 TravelCommand_0;                                   // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_PerformTravel) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_PerformTravel");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_PerformTravel) == 0x000010, "Wrong size on WBP_FrontEndMenuManager_C_PerformTravel");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_PerformTravel, TravelCommand_0) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_PerformTravel::TravelCommand_0' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnFinishModSync
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_FrontEndMenuManager_C_OnFinishModSync final
-{
-public:
-	bool                                          bSuccess;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_OnFinishModSync) == 0x000001, "Wrong alignment on WBP_FrontEndMenuManager_C_OnFinishModSync");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_OnFinishModSync) == 0x000001, "Wrong size on WBP_FrontEndMenuManager_C_OnFinishModSync");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_OnFinishModSync, bSuccess) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnFinishModSync::bSuccess' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnOkClicked_Event_1
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_FrontEndMenuManager_C_OnOkClicked_Event_1 final
-{
-public:
-	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_OnOkClicked_Event_1) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnOkClicked_Event_1");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_OnOkClicked_Event_1) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnOkClicked_Event_1");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_OnOkClicked_Event_1, Dialogue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnOkClicked_Event_1::Dialogue' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnOkClickedQuit
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_FrontEndMenuManager_C_OnOkClickedQuit final
-{
-public:
-	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_OnOkClickedQuit) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnOkClickedQuit");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_OnOkClickedQuit) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnOkClickedQuit");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_OnOkClickedQuit, Dialogue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnOkClickedQuit::Dialogue' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnClickedOkRunTraining
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_FrontEndMenuManager_C_OnClickedOkRunTraining final
-{
-public:
-	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_OnClickedOkRunTraining) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnClickedOkRunTraining");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_OnClickedOkRunTraining) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnClickedOkRunTraining");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_OnClickedOkRunTraining, Dialogue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnClickedOkRunTraining::Dialogue' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_FrontEndMenuManager_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_FrontEndMenuManager_C_PreConstruct");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_PreConstruct) == 0x000001, "Wrong size on WBP_FrontEndMenuManager_C_PreConstruct");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_PreConstruct::IsDesignTime' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnLoaded_F58963B04C789C48C74184BB8E3CCBF3
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB8E3CCBF3 final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB8E3CCBF3) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB8E3CCBF3");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB8E3CCBF3) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB8E3CCBF3");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB8E3CCBF3, Loaded) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB8E3CCBF3::Loaded' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnLoaded_F58963B04C789C48C74184BB7E3305E0
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB7E3305E0 final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB7E3305E0) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB7E3305E0");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB7E3305E0) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB7E3305E0");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB7E3305E0, Loaded) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB7E3305E0::Loaded' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnLoaded_F58963B04C789C48C74184BB49F34926
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB49F34926 final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB49F34926) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB49F34926");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB49F34926) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB49F34926");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB49F34926, Loaded) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB49F34926::Loaded' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnLoaded_F58963B04C789C48C74184BB75BADC38
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB75BADC38 final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB75BADC38) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB75BADC38");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB75BADC38) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB75BADC38");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB75BADC38, Loaded) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB75BADC38::Loaded' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnLoaded_F58963B04C789C48C74184BB6BBD4CD6
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB6BBD4CD6 final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB6BBD4CD6) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB6BBD4CD6");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB6BBD4CD6) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB6BBD4CD6");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB6BBD4CD6, Loaded) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB6BBD4CD6::Loaded' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnLoaded_F58963B04C789C48C74184BB52EBA4D3
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB52EBA4D3 final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB52EBA4D3) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB52EBA4D3");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB52EBA4D3) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB52EBA4D3");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB52EBA4D3, Loaded) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB52EBA4D3::Loaded' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnLoaded_F58963B04C789C48C74184BB31E4BFBF
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB31E4BFBF final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB31E4BFBF) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB31E4BFBF");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB31E4BFBF) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB31E4BFBF");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB31E4BFBF, Loaded) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB31E4BFBF::Loaded' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnLoaded_F58963B04C789C48C74184BBEC45BF6B
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BBEC45BF6B final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BBEC45BF6B) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BBEC45BF6B");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BBEC45BF6B) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BBEC45BF6B");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BBEC45BF6B, Loaded) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BBEC45BF6B::Loaded' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.Get_Button_Training_ToolTipWidget_0
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)(ConstParm)
-	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0) == 0x000028, "Wrong size on WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0, Temp_text_Variable) == 0x000008, "Member 'WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000020, "Member 'WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.Get_Button_PlayOffline_ToolTipWidget_0
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0 final
+struct WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0 final
 {
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.Get_Button_HostGame_ToolTipWidget_0
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)(ConstParm)
-	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0) == 0x000028, "Wrong size on WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0, Temp_text_Variable) == 0x000008, "Member 'WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000020, "Member 'WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.Get_Button_ServerBrowser_ToolTipWidget_0
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)(ConstParm)
-	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0) == 0x000028, "Wrong size on WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0, Temp_text_Variable) == 0x000008, "Member 'WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000020, "Member 'WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.Get_Button_CustomiseOperator_ToolTipWidget_0
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)(ConstParm)
-	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0) == 0x000028, "Wrong size on WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0, Temp_text_Variable) == 0x000008, "Member 'WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000020, "Member 'WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
-
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.GetToolTipWidget_0
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_FrontEndMenuManager_C_GetToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)(ConstParm)
-	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FrontEndMenuManager_C_GetToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_GetToolTipWidget_0");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_GetToolTipWidget_0) == 0x000028, "Wrong size on WBP_FrontEndMenuManager_C_GetToolTipWidget_0");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_GetToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_GetToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_GetToolTipWidget_0, Temp_text_Variable) == 0x000008, "Member 'WBP_FrontEndMenuManager_C_GetToolTipWidget_0::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_GetToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000020, "Member 'WBP_FrontEndMenuManager_C_GetToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(alignof(WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.GetToolTipWidget_1
 // 0x0028 (0x0028 - 0x0000)
@@ -1019,18 +801,236 @@ static_assert(offsetof(WBP_FrontEndMenuManager_C_GetToolTipWidget_1, ReturnValue
 static_assert(offsetof(WBP_FrontEndMenuManager_C_GetToolTipWidget_1, Temp_text_Variable) == 0x000008, "Member 'WBP_FrontEndMenuManager_C_GetToolTipWidget_1::Temp_text_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_FrontEndMenuManager_C_GetToolTipWidget_1, CallFunc_Create_ReturnValue) == 0x000020, "Member 'WBP_FrontEndMenuManager_C_GetToolTipWidget_1::CallFunc_Create_ReturnValue' has a wrong offset!");
 
-// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.Get_Button_PlayCampaign_ToolTipWidget_0
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.GetToolTipWidget_0
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_FrontEndMenuManager_C_GetToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)(ConstParm)
+	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_GetToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_GetToolTipWidget_0");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_GetToolTipWidget_0) == 0x000028, "Wrong size on WBP_FrontEndMenuManager_C_GetToolTipWidget_0");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_GetToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_GetToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_GetToolTipWidget_0, Temp_text_Variable) == 0x000008, "Member 'WBP_FrontEndMenuManager_C_GetToolTipWidget_0::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_GetToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000020, "Member 'WBP_FrontEndMenuManager_C_GetToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.Get_Button_CustomiseOperator_ToolTipWidget_0
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)(ConstParm)
+	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0) == 0x000028, "Wrong size on WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0, Temp_text_Variable) == 0x000008, "Member 'WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000020, "Member 'WBP_FrontEndMenuManager_C_Get_Button_CustomiseOperator_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.Get_Button_ServerBrowser_ToolTipWidget_0
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)(ConstParm)
+	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0) == 0x000028, "Wrong size on WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0, Temp_text_Variable) == 0x000008, "Member 'WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000020, "Member 'WBP_FrontEndMenuManager_C_Get_Button_ServerBrowser_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.Get_Button_HostGame_ToolTipWidget_0
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)(ConstParm)
+	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0) == 0x000028, "Wrong size on WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0, Temp_text_Variable) == 0x000008, "Member 'WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000020, "Member 'WBP_FrontEndMenuManager_C_Get_Button_HostGame_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.Get_Button_PlayOffline_ToolTipWidget_0
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0 final
+struct WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0 final
 {
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0");
-static_assert(sizeof(WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_FrontEndMenuManager_C_Get_Button_PlayCampaign_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(alignof(WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_FrontEndMenuManager_C_Get_Button_PlayOffline_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.Get_Button_Training_ToolTipWidget_0
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)(ConstParm)
+	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0) == 0x000028, "Wrong size on WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0, Temp_text_Variable) == 0x000008, "Member 'WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000020, "Member 'WBP_FrontEndMenuManager_C_Get_Button_Training_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnLoaded_F58963B04C789C48C74184BBEC45BF6B
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BBEC45BF6B final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BBEC45BF6B) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BBEC45BF6B");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BBEC45BF6B) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BBEC45BF6B");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BBEC45BF6B, Loaded) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BBEC45BF6B::Loaded' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnLoaded_F58963B04C789C48C74184BB31E4BFBF
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB31E4BFBF final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB31E4BFBF) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB31E4BFBF");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB31E4BFBF) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB31E4BFBF");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB31E4BFBF, Loaded) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB31E4BFBF::Loaded' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnLoaded_F58963B04C789C48C74184BB52EBA4D3
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB52EBA4D3 final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB52EBA4D3) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB52EBA4D3");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB52EBA4D3) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB52EBA4D3");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB52EBA4D3, Loaded) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB52EBA4D3::Loaded' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnLoaded_F58963B04C789C48C74184BB6BBD4CD6
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB6BBD4CD6 final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB6BBD4CD6) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB6BBD4CD6");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB6BBD4CD6) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB6BBD4CD6");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB6BBD4CD6, Loaded) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB6BBD4CD6::Loaded' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnLoaded_F58963B04C789C48C74184BB75BADC38
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB75BADC38 final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB75BADC38) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB75BADC38");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB75BADC38) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB75BADC38");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB75BADC38, Loaded) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB75BADC38::Loaded' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnLoaded_F58963B04C789C48C74184BB49F34926
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB49F34926 final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB49F34926) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB49F34926");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB49F34926) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB49F34926");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB49F34926, Loaded) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB49F34926::Loaded' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnLoaded_F58963B04C789C48C74184BB7E3305E0
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB7E3305E0 final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB7E3305E0) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB7E3305E0");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB7E3305E0) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB7E3305E0");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB7E3305E0, Loaded) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB7E3305E0::Loaded' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnLoaded_F58963B04C789C48C74184BB8E3CCBF3
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB8E3CCBF3 final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB8E3CCBF3) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB8E3CCBF3");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB8E3CCBF3) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB8E3CCBF3");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB8E3CCBF3, Loaded) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnLoaded_F58963B04C789C48C74184BB8E3CCBF3::Loaded' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_FrontEndMenuManager_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_FrontEndMenuManager_C_PreConstruct");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_PreConstruct) == 0x000001, "Wrong size on WBP_FrontEndMenuManager_C_PreConstruct");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnClickedOkRunTraining
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_FrontEndMenuManager_C_OnClickedOkRunTraining final
+{
+public:
+	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_OnClickedOkRunTraining) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnClickedOkRunTraining");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_OnClickedOkRunTraining) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnClickedOkRunTraining");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_OnClickedOkRunTraining, Dialogue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnClickedOkRunTraining::Dialogue' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnOkClickedQuit
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_FrontEndMenuManager_C_OnOkClickedQuit final
+{
+public:
+	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_OnOkClickedQuit) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnOkClickedQuit");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_OnOkClickedQuit) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnOkClickedQuit");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_OnOkClickedQuit, Dialogue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnOkClickedQuit::Dialogue' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnOkClicked_Event_1
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_FrontEndMenuManager_C_OnOkClicked_Event_1 final
+{
+public:
+	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_OnOkClicked_Event_1) == 0x000008, "Wrong alignment on WBP_FrontEndMenuManager_C_OnOkClicked_Event_1");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_OnOkClicked_Event_1) == 0x000008, "Wrong size on WBP_FrontEndMenuManager_C_OnOkClicked_Event_1");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_OnOkClicked_Event_1, Dialogue) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnOkClicked_Event_1::Dialogue' has a wrong offset!");
+
+// Function WBP_FrontEndMenuManager.WBP_FrontEndMenuManager_C.OnFinishModSync
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_FrontEndMenuManager_C_OnFinishModSync final
+{
+public:
+	bool                                          bSuccess;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_FrontEndMenuManager_C_OnFinishModSync) == 0x000001, "Wrong alignment on WBP_FrontEndMenuManager_C_OnFinishModSync");
+static_assert(sizeof(WBP_FrontEndMenuManager_C_OnFinishModSync) == 0x000001, "Wrong size on WBP_FrontEndMenuManager_C_OnFinishModSync");
+static_assert(offsetof(WBP_FrontEndMenuManager_C_OnFinishModSync, bSuccess) == 0x000000, "Member 'WBP_FrontEndMenuManager_C_OnFinishModSync::bSuccess' has a wrong offset!");
 
 }
 

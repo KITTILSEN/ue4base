@@ -25,117 +25,116 @@ struct BP_Character_C_ExecuteUbergraph_BP_Character final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  CallFunc_GetCosmeticTags_ReturnValue;              // 0x0008(0x0020)(ConstParm)
-	class FName                                   K2Node_Event_DeathVoiceKey;                        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasTag_ReturnValue;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          CallFunc_GetCharVoiceAudioEvent_ReturnValue;       // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAkComponent*                           CallFunc_GetVoiceComp_ReturnValue;                 // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4A[0x2];                                       // 0x004A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_HalfHeightAdjust_3;                   // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_ScaledHalfHeightAdjust_3;             // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkComponent*                           CallFunc_GetFootstepComp_ReturnValue;              // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_HalfHeightAdjust_2;                   // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_ScaledHalfHeightAdjust_2;             // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_Event_Hit;                                  // 0x006C(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         K2Node_Event_FallingSpeed;                         // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAkComponent*                           CallFunc_GetVoiceComp_ReturnValue_1;               // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetStamina_ReturnValue;                   // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0105(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EAkCallbackType                               K2Node_CustomEvent_CallbackType;                   // 0x0106(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_107[0x1];                                      // 0x0107(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkCallbackInfo*                        K2Node_CustomEvent_CallbackInfo;                   // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0110(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
-	class UAkComponent*                           CallFunc_GetVoiceComp_ReturnValue_2;               // 0x0120(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostAkEvent_ReturnValue;                  // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_OldStamina;                           // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_HalfHeightAdjust_1;                   // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_ScaledHalfHeightAdjust_1;             // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_HalfHeightAdjust;                     // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_ScaledHalfHeightAdjust;               // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAkAudioEvent*                          K2Node_Event_VoiceAudioEvent;                      // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsLocalPlayer;                       // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_149[0x3];                                      // 0x0149(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_1; // 0x014C(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_2;             // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15D[0x3];                                      // 0x015D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class AGBCharacter* Character)> K2Node_CreateDelegate_OutputDelegate;             // 0x0160(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_3;             // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0004(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
+	class FName                                   K2Node_Event_DeathVoiceKey;                        // 0x0014(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkComponent*                           CallFunc_GetVoiceComp_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAkAudioEvent*                          CallFunc_GetCharVoiceAudioEvent_ReturnValue;       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_32[0x2];                                       // 0x0032(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_HalfHeightAdjust_3;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_ScaledHalfHeightAdjust_3;             // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkComponent*                           CallFunc_GetFootstepComp_ReturnValue;              // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_HalfHeightAdjust_2;                   // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_ScaledHalfHeightAdjust_2;             // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_Event_Hit;                                  // 0x0054(0x0088)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         K2Node_Event_FallingSpeed;                         // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAkComponent*                           CallFunc_GetVoiceComp_ReturnValue_1;               // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E9[0x3];                                       // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_PostAkEvent_ReturnValue;                  // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetStamina_ReturnValue;                   // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_2;             // 0x00F5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EAkCallbackType                               K2Node_CustomEvent_CallbackType;                   // 0x00F6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F7[0x1];                                       // 0x00F7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkCallbackInfo*                        K2Node_CustomEvent_CallbackInfo;                   // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_1; // 0x0100(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
+	class UAkComponent*                           CallFunc_GetVoiceComp_ReturnValue_2;               // 0x0110(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostAkEvent_ReturnValue_1;                // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_OldStamina;                           // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_HalfHeightAdjust_1;                   // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_ScaledHalfHeightAdjust_1;             // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_HalfHeightAdjust;                     // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_ScaledHalfHeightAdjust;               // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAkAudioEvent*                          K2Node_Event_VoiceAudioEvent;                      // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsLocalPlayer;                       // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_2; // 0x013C(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_3;             // 0x014C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_14D[0x3];                                      // 0x014D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_ExecuteAction_ReturnValue;                // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_ExecuteAction_ReturnValue_1;              // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class AGBCharacter* Character)> K2Node_CreateDelegate_OutputDelegate;             // 0x0158(0x0010)(ZeroConstructor, NoDestructor)
+	int32                                         CallFunc_ExecuteAction_ReturnValue_2;              // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostAkEvent_ReturnValue_2;                // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_171[0x3];                                      // 0x0171(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_ExecuteAction_ReturnValue;                // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_ExecuteAction_ReturnValue_1;              // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x017C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_17D[0x3];                                      // 0x017D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_ExecuteAction_ReturnValue_2;              // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostAkEvent_ReturnValue_1;                // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0188(0x0010)(ZeroConstructor, NoDestructor)
-	int32                                         CallFunc_PostAkEvent_ReturnValue_2;                // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetStamina_ReturnValue_1;                 // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A1[0x3];                                      // 0x01A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_2; // 0x01A4(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
-	int32                                         CallFunc_PostAkEvent_ReturnValue_3;                // 0x01B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAkComponent*                           CallFunc_GetVoiceComp_ReturnValue_3;               // 0x01B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBCharacter*                           K2Node_CustomEvent_Character;                      // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetStamina_ReturnValue_1;                 // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0178(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_189[0x3];                                      // 0x0189(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_PostAkEvent_ReturnValue_3;                // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAkComponent*                           CallFunc_GetVoiceComp_ReturnValue_3;               // 0x0190(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBCharacter*                           K2Node_CustomEvent_Character;                      // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  CallFunc_GetCosmeticTags_ReturnValue;              // 0x01A0(0x0020)(ConstParm)
+	bool                                          CallFunc_HasTag_ReturnValue;                       // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(BP_Character_C_ExecuteUbergraph_BP_Character) == 0x000008, "Wrong alignment on BP_Character_C_ExecuteUbergraph_BP_Character");
 static_assert(sizeof(BP_Character_C_ExecuteUbergraph_BP_Character) == 0x0001C8, "Wrong size on BP_Character_C_ExecuteUbergraph_BP_Character");
 static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, EntryPoint) == 0x000000, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetCosmeticTags_ReturnValue) == 0x000008, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetCosmeticTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_DeathVoiceKey) == 0x000028, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_DeathVoiceKey' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_HasTag_ReturnValue) == 0x000030, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_HasTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetCharVoiceAudioEvent_ReturnValue) == 0x000038, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetCharVoiceAudioEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetVoiceComp_ReturnValue) == 0x000040, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetVoiceComp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000048, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_Greater_IntInt_ReturnValue) == 0x000049, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_HalfHeightAdjust_3) == 0x00004C, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_HalfHeightAdjust_3' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_ScaledHalfHeightAdjust_3) == 0x000050, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_ScaledHalfHeightAdjust_3' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetFootstepComp_ReturnValue) == 0x000058, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetFootstepComp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_HalfHeightAdjust_2) == 0x000060, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_HalfHeightAdjust_2' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_ScaledHalfHeightAdjust_2) == 0x000064, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_ScaledHalfHeightAdjust_2' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_IsValid_ReturnValue) == 0x000068, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_Hit) == 0x00006C, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_Hit' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_FallingSpeed) == 0x0000F4, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_FallingSpeed' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetVoiceComp_ReturnValue_1) == 0x0000F8, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetVoiceComp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetStamina_ReturnValue) == 0x000100, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetStamina_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_IsDedicatedServer_ReturnValue) == 0x000104, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000105, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_CustomEvent_CallbackType) == 0x000106, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_CustomEvent_CallbackType' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_CustomEvent_CallbackInfo) == 0x000108, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_CustomEvent_CallbackInfo' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, Temp_delegate_Variable) == 0x000110, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::Temp_delegate_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetVoiceComp_ReturnValue_2) == 0x000120, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetVoiceComp_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_PostAkEvent_ReturnValue) == 0x000128, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_PostAkEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_OldStamina) == 0x00012C, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_OldStamina' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_HalfHeightAdjust_1) == 0x000130, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_HalfHeightAdjust_1' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_ScaledHalfHeightAdjust_1) == 0x000134, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_ScaledHalfHeightAdjust_1' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_HalfHeightAdjust) == 0x000138, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_HalfHeightAdjust' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_ScaledHalfHeightAdjust) == 0x00013C, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_ScaledHalfHeightAdjust' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_VoiceAudioEvent) == 0x000140, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_VoiceAudioEvent' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_bIsLocalPlayer) == 0x000148, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_bIsLocalPlayer' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, Temp_delegate_Variable_1) == 0x00014C, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::Temp_delegate_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_Greater_IntInt_ReturnValue_2) == 0x00015C, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_CreateDelegate_OutputDelegate) == 0x000160, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_Greater_IntInt_ReturnValue_3) == 0x000170, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_Greater_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_ExecuteAction_ReturnValue) == 0x000174, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_ExecuteAction_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_ExecuteAction_ReturnValue_1) == 0x000178, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_ExecuteAction_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_IsValid_ReturnValue_1) == 0x00017C, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_ExecuteAction_ReturnValue_2) == 0x000180, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_ExecuteAction_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_PostAkEvent_ReturnValue_1) == 0x000184, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_PostAkEvent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_CreateDelegate_OutputDelegate_1) == 0x000188, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_PostAkEvent_ReturnValue_2) == 0x000198, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_PostAkEvent_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetStamina_ReturnValue_1) == 0x00019C, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetStamina_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_Less_FloatFloat_ReturnValue) == 0x0001A0, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, Temp_delegate_Variable_2) == 0x0001A4, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::Temp_delegate_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_PostAkEvent_ReturnValue_3) == 0x0001B4, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_PostAkEvent_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetVoiceComp_ReturnValue_3) == 0x0001B8, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetVoiceComp_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_CustomEvent_Character) == 0x0001C0, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_CustomEvent_Character' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, Temp_delegate_Variable) == 0x000004, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::Temp_delegate_Variable' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_DeathVoiceKey) == 0x000014, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_DeathVoiceKey' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetVoiceComp_ReturnValue) == 0x000020, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetVoiceComp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetCharVoiceAudioEvent_ReturnValue) == 0x000028, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetCharVoiceAudioEvent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000030, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_Greater_IntInt_ReturnValue) == 0x000031, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_HalfHeightAdjust_3) == 0x000034, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_HalfHeightAdjust_3' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_ScaledHalfHeightAdjust_3) == 0x000038, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_ScaledHalfHeightAdjust_3' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetFootstepComp_ReturnValue) == 0x000040, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetFootstepComp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_HalfHeightAdjust_2) == 0x000048, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_HalfHeightAdjust_2' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_ScaledHalfHeightAdjust_2) == 0x00004C, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_ScaledHalfHeightAdjust_2' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_Hit) == 0x000054, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_Hit' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_FallingSpeed) == 0x0000DC, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_FallingSpeed' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetVoiceComp_ReturnValue_1) == 0x0000E0, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetVoiceComp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_Greater_IntInt_ReturnValue_1) == 0x0000E8, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_PostAkEvent_ReturnValue) == 0x0000EC, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_PostAkEvent_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetStamina_ReturnValue) == 0x0000F0, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetStamina_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_IsDedicatedServer_ReturnValue) == 0x0000F4, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_Greater_IntInt_ReturnValue_2) == 0x0000F5, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_CustomEvent_CallbackType) == 0x0000F6, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_CustomEvent_CallbackType' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_CustomEvent_CallbackInfo) == 0x0000F8, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_CustomEvent_CallbackInfo' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, Temp_delegate_Variable_1) == 0x000100, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::Temp_delegate_Variable_1' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetVoiceComp_ReturnValue_2) == 0x000110, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetVoiceComp_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_PostAkEvent_ReturnValue_1) == 0x000118, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_PostAkEvent_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_OldStamina) == 0x00011C, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_OldStamina' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_HalfHeightAdjust_1) == 0x000120, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_HalfHeightAdjust_1' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_ScaledHalfHeightAdjust_1) == 0x000124, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_ScaledHalfHeightAdjust_1' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_HalfHeightAdjust) == 0x000128, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_HalfHeightAdjust' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_ScaledHalfHeightAdjust) == 0x00012C, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_ScaledHalfHeightAdjust' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_VoiceAudioEvent) == 0x000130, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_VoiceAudioEvent' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_Event_bIsLocalPlayer) == 0x000138, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_Event_bIsLocalPlayer' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, Temp_delegate_Variable_2) == 0x00013C, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::Temp_delegate_Variable_2' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_Greater_IntInt_ReturnValue_3) == 0x00014C, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_Greater_IntInt_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_ExecuteAction_ReturnValue) == 0x000150, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_ExecuteAction_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_ExecuteAction_ReturnValue_1) == 0x000154, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_ExecuteAction_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_CreateDelegate_OutputDelegate) == 0x000158, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_ExecuteAction_ReturnValue_2) == 0x000168, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_ExecuteAction_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_PostAkEvent_ReturnValue_2) == 0x00016C, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_PostAkEvent_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_IsValid_ReturnValue_1) == 0x000170, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetStamina_ReturnValue_1) == 0x000174, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetStamina_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_CreateDelegate_OutputDelegate_1) == 0x000178, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_Less_FloatFloat_ReturnValue) == 0x000188, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_PostAkEvent_ReturnValue_3) == 0x00018C, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_PostAkEvent_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetVoiceComp_ReturnValue_3) == 0x000190, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetVoiceComp_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, K2Node_CustomEvent_Character) == 0x000198, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::K2Node_CustomEvent_Character' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_GetCosmeticTags_ReturnValue) == 0x0001A0, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_GetCosmeticTags_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_Character_C_ExecuteUbergraph_BP_Character, CallFunc_HasTag_ReturnValue) == 0x0001C0, "Member 'BP_Character_C_ExecuteUbergraph_BP_Character::CallFunc_HasTag_ReturnValue' has a wrong offset!");
 
 // Function BP_Character.BP_Character_C.OnDeathStarted_Event_0
 // 0x0008 (0x0008 - 0x0000)

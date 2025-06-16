@@ -17,157 +17,64 @@
 namespace SDK
 {
 
-// Function WBP_Vote.WBP_Vote_C.ExecuteUbergraph_WBP_Vote
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Vote.WBP_Vote_C.Parse Mission Option
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    OptionString                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// class FString*                          Parameter                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_Vote_C::ExecuteUbergraph_WBP_Vote(int32 EntryPoint)
+void UWBP_Vote_C::Parse_Mission_Option(const class FString& OptionString, class FString* Parameter)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Vote_C", "ExecuteUbergraph_WBP_Vote");
+		Func = Class->GetFunction("WBP_Vote_C", "Parse Mission Option");
 
-	Params::WBP_Vote_C_ExecuteUbergraph_WBP_Vote Parms{};
+	Params::WBP_Vote_C_Parse_Mission_Option Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.OptionString = std::move(OptionString);
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Parameter != nullptr)
+		*Parameter = std::move(Parms.Parameter);
 }
 
 
-// Function WBP_Vote.WBP_Vote_C.AddMap
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Vote_C::AddMap()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Vote_C", "AddMap");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Vote.WBP_Vote_C.AddReason
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Vote_C::AddReason()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Vote_C", "AddReason");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Vote.WBP_Vote_C.AddTargetPlayerText
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Vote_C::AddTargetPlayerText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Vote_C", "AddTargetPlayerText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Vote.WBP_Vote_C.SetTexts
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Vote_C::SetTexts()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Vote_C", "SetTexts");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Vote.WBP_Vote_C.SetTimer
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Vote_C::SetTimer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Vote_C", "SetTimer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Vote.WBP_Vote_C.VoteTimer
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Vote_C::VoteTimer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Vote_C", "VoteTimer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Vote.WBP_Vote_C.VoteEnded
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Vote.WBP_Vote_C.GetMapAndOptions
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bPassed_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FString*                          Combined                                               (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_Vote_C::VoteEnded(bool bPassed_0)
+void UWBP_Vote_C::GetMapAndOptions(class FString* Combined)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Vote_C", "VoteEnded");
+		Func = Class->GetFunction("WBP_Vote_C", "GetMapAndOptions");
 
-	Params::WBP_Vote_C_VoteEnded Parms{};
-
-	Parms.bPassed_0 = bPassed_0;
+	Params::WBP_Vote_C_GetMapAndOptions Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Combined != nullptr)
+		*Combined = std::move(Parms.Combined);
 }
 
 
-// Function WBP_Vote.WBP_Vote_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Vote_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Vote_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Vote.WBP_Vote_C.GetVotingTimeLeft
+// Function WBP_Vote.WBP_Vote_C.GetVotesNo
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-class FText UWBP_Vote_C::GetVotingTimeLeft()
+class FText UWBP_Vote_C::GetVotesNo()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Vote_C", "GetVotingTimeLeft");
+		Func = Class->GetFunction("WBP_Vote_C", "GetVotesNo");
 
-	Params::WBP_Vote_C_GetVotingTimeLeft Parms{};
+	Params::WBP_Vote_C_GetVotesNo Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -195,19 +102,19 @@ class FText UWBP_Vote_C::GetVotesYes()
 }
 
 
-// Function WBP_Vote.WBP_Vote_C.GetVotesNo
+// Function WBP_Vote.WBP_Vote_C.GetVotingTimeLeft
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-class FText UWBP_Vote_C::GetVotesNo()
+class FText UWBP_Vote_C::GetVotingTimeLeft()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Vote_C", "GetVotesNo");
+		Func = Class->GetFunction("WBP_Vote_C", "GetVotingTimeLeft");
 
-	Params::WBP_Vote_C_GetVotesNo Parms{};
+	Params::WBP_Vote_C_GetVotingTimeLeft Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -215,48 +122,141 @@ class FText UWBP_Vote_C::GetVotesNo()
 }
 
 
-// Function WBP_Vote.WBP_Vote_C.GetMapAndOptions
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString*                          Combined                                               (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// Function WBP_Vote.WBP_Vote_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Vote_C::GetMapAndOptions(class FString* Combined)
+void UWBP_Vote_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Vote_C", "GetMapAndOptions");
+		Func = Class->GetFunction("WBP_Vote_C", "Construct");
 
-	Params::WBP_Vote_C_GetMapAndOptions Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Combined != nullptr)
-		*Combined = std::move(Parms.Combined);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Vote.WBP_Vote_C.Parse Mission Option
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_Vote.WBP_Vote_C.VoteEnded
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FString&                    OptionString                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// class FString*                          Parameter                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// bool                                    bPassed_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_Vote_C::Parse_Mission_Option(const class FString& OptionString, class FString* Parameter)
+void UWBP_Vote_C::VoteEnded(bool bPassed_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Vote_C", "Parse Mission Option");
+		Func = Class->GetFunction("WBP_Vote_C", "VoteEnded");
 
-	Params::WBP_Vote_C_Parse_Mission_Option Parms{};
+	Params::WBP_Vote_C_VoteEnded Parms{};
 
-	Parms.OptionString = std::move(OptionString);
+	Parms.bPassed_0 = bPassed_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (Parameter != nullptr)
-		*Parameter = std::move(Parms.Parameter);
+
+// Function WBP_Vote.WBP_Vote_C.VoteTimer
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Vote_C::VoteTimer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Vote_C", "VoteTimer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Vote.WBP_Vote_C.SetTimer
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Vote_C::SetTimer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Vote_C", "SetTimer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Vote.WBP_Vote_C.SetTexts
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Vote_C::SetTexts()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Vote_C", "SetTexts");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Vote.WBP_Vote_C.AddTargetPlayerText
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Vote_C::AddTargetPlayerText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Vote_C", "AddTargetPlayerText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Vote.WBP_Vote_C.AddReason
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Vote_C::AddReason()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Vote_C", "AddReason");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Vote.WBP_Vote_C.AddMap
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Vote_C::AddMap()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Vote_C", "AddMap");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Vote.WBP_Vote_C.ExecuteUbergraph_WBP_Vote
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Vote_C::ExecuteUbergraph_WBP_Vote(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Vote_C", "ExecuteUbergraph_WBP_Vote");
+
+	Params::WBP_Vote_C_ExecuteUbergraph_WBP_Vote Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

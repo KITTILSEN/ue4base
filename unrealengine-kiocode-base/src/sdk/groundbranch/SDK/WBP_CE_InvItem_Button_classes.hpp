@@ -152,7 +152,7 @@ public:
 	ESlateVisibility GetNoItemVis();
 	ESlateVisibility GetEditVis();
 	struct FLinearColor IconHoverColor();
-	void SetupItemFromJsonObj(class UVaRestJsonObject* InJsonObj, bool bUpdatePresets_0);
+	void SetupItemFromJsonObj(class UVaRestJsonObject* InJSonObj, bool bUpdatePresets_0);
 	void UpdateItemFromItemAssetId(const struct FPrimaryAssetId& InItemAssetId, const struct FPrimaryAssetId& InItemSkinId);
 	void GetDisplayNameSafe(class FText* OutDisplayName);
 	void CacheListObjs();

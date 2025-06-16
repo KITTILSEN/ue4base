@@ -42,12 +42,12 @@ public:
 	class FName                                   MissionDetailsTableId;                             // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CampaignMissionListEntry(int32 EntryPoint);
-	void LookupMissionNameAndType();
-	void BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-	void Construct();
-	void PreConstruct(bool IsDesignTime);
 	class UWidget* Get_CheckBox_WholeItem_ToolTipWidget_0();
+	void PreConstruct(bool IsDesignTime);
+	void Construct();
+	void BndEvt__WBP_HotspotListEntry_CheckBox_WholeItem_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
+	void LookupMissionNameAndType();
+	void ExecuteUbergraph_WBP_CampaignMissionListEntry(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

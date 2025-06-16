@@ -31,9 +31,9 @@ public:
 	class FName                                   MissionDetailsTableId;                             // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CampaignMissionBriefingText(int32 EntryPoint);
-	void SetMissionDetails(class FName InHotspotCodename, int32 InSequenceNumber);
 	void Construct();
+	void SetMissionDetails(class FName InHotspotCodename, int32 InSequenceNumber);
+	void ExecuteUbergraph_WBP_CampaignMissionBriefingText(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

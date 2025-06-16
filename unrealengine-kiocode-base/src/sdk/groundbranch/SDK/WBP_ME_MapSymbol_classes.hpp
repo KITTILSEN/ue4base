@@ -74,29 +74,29 @@ public:
 	float                                         ScaleOverride;                                     // 0x0434(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_ME_MapSymbol(int32 EntryPoint);
-	void UpdateScaling();
-	void SetNewScale(float NewScale);
-	void NotifyHoveredStarted();
-	void NotifyHoveredEnded();
-	void TooltipTimer();
-	void StartTooltipTimer();
-	void OnMissionObjectiveStatusUpdate();
-	void SetupObjectiveStatusChangeTimer();
-	void CheckObjectiveStatusChangeTimer();
-	void UpdateParentWidget();
-	void SetSelected(bool bIsSelected);
-	void OnPropertiesUpdated();
-	void OnDragCancelled(const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation);
-	void OnDragged(class UDragDropOperation* Operation);
-	void BindDragDropOperation(class UDragDropOperation* DragDropOp);
-	void PositionSelf(class UOverlay* ParentOverlay);
-	void Construct();
-	void OnDragDetected(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation** Operation);
-	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	bool OnDrop(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation);
-	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void MakeMissionObjectiveTooltip(const class FText& TooltipTitle, class UImage* HoveredImageRef, const class FText& OptionalText, class UTexture2D* OptionalImage, class UUserWidget** CreatedWidget);
+	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	bool OnDrop(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation);
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnDragDetected(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation** Operation);
+	void Construct();
+	void PositionSelf(class UOverlay* ParentOverlay);
+	void BindDragDropOperation(class UDragDropOperation* DragDropOp);
+	void OnDragged(class UDragDropOperation* Operation);
+	void OnDragCancelled(const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation);
+	void OnPropertiesUpdated();
+	void SetSelected(bool bIsSelected);
+	void UpdateParentWidget();
+	void CheckObjectiveStatusChangeTimer();
+	void SetupObjectiveStatusChangeTimer();
+	void OnMissionObjectiveStatusUpdate();
+	void StartTooltipTimer();
+	void TooltipTimer();
+	void NotifyHoveredEnded();
+	void NotifyHoveredStarted();
+	void SetNewScale(float NewScale);
+	void UpdateScaling();
+	void ExecuteUbergraph_WBP_ME_MapSymbol(int32 EntryPoint);
 
 	bool IsInteractable() const;
 

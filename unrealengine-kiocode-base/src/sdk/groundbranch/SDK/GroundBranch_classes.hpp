@@ -1043,6 +1043,7 @@ public:
 	TArray<class AGBInvItem*> GetInvItemsAttachedToSocket(class FName SocketName);
 	class AGBInvItem* GetItemAttachedToSocket(class FName SocketName);
 	float GetMinLightLevel(const class FName& Type);
+	bool GetPrevEquipped(class AGBInvItem** OutPrevEquippedLeft, class AGBInvItem** OutPrevEquippedRight);
 	uint8 IncrementBulletIndex();
 	bool IsFrozen();
 	bool ModifyDamageCaused(int32& AppliedDamage, int32& Damage, struct FVector& Momentum, const struct FHitResult& HitInfo, class AActor* Victim, class AController* EventInstigator, class AActor* DamageCauser, TSubclassOf<class UDamageType> DamageType);
@@ -1168,7 +1169,6 @@ public:
 	class FName GetNetworkedMontageSyncName() const;
 	float GetOffTargetAlpha() const;
 	class FName GetPelvisBone() const;
-	class AGBInvItem* GetPrevEquipped(EHand TargetHand) const;
 	float GetProneYawCenter() const;
 	float GetProneYawOffCenterLimit() const;
 	float GetRecoilAlpha() const;
@@ -3245,7 +3245,7 @@ static_assert(offsetof(UGBBarrelComponent, LightLevelTime) == 0x000224, "Member 
 
 // Class GroundBranch.GBBenchmarker
 // 0x0530 (0x0750 - 0x0220)
-class AGBBenchmarker final : public AActor
+class AGBBenchmarker : public AActor
 {
 public:
 	class ULevelSequence*                         BenchmarkSequence;                                 // 0x0220(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3462,7 +3462,7 @@ static_assert(offsetof(AGBPlayerControllerBase, FullScreenWidgets) == 0x000598, 
 
 // Class GroundBranch.GBPlayerController
 // 0x0578 (0x0B20 - 0x05A8)
-class AGBPlayerController final : public AGBPlayerControllerBase
+class AGBPlayerController : public AGBPlayerControllerBase
 {
 public:
 	uint8                                         Pad_5A8[0x8];                                      // 0x05A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -5488,7 +5488,7 @@ static_assert(offsetof(UGBFirearmGameplayAbility_Shoot, TriggerPullDelay) == 0x0
 
 // Class GroundBranch.GBFocusCameraModifier
 // 0x05B8 (0x0600 - 0x0048)
-class UGBFocusCameraModifier final : public UGBCameraModifier
+class UGBFocusCameraModifier : public UGBCameraModifier
 {
 public:
 	float                                         FOVScale;                                          // 0x0048(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -5531,7 +5531,7 @@ static_assert(offsetof(UGBFocusCameraModifier, TimeoutDuration) == 0x0005F0, "Me
 
 // Class GroundBranch.GBRadialMenuWidget
 // 0x0088 (0x02E8 - 0x0260)
-class UGBRadialMenuWidget final : public UUserWidget
+class UGBRadialMenuWidget : public UUserWidget
 {
 public:
 	TMulticastInlineDelegate<void(int32 Idx)>     OnMenuElementSelected;                             // 0x0260(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -6020,7 +6020,7 @@ static_assert(sizeof(UGBFunctionLibrary) == 0x000028, "Wrong size on UGBFunction
 
 // Class GroundBranch.GBPlayerState
 // 0x0230 (0x0550 - 0x0320)
-class AGBPlayerState final : public APlayerState
+class AGBPlayerState : public APlayerState
 {
 public:
 	uint8                                         Pad_320[0x10];                                     // 0x0320(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -6304,7 +6304,7 @@ static_assert(offsetof(UGBGameInstance, bStillDownloadingModsForListenServerClie
 
 // Class GroundBranch.GBGameMode
 // 0x04D8 (0x0798 - 0x02C0)
-class AGBGameMode final : public AGameModeBase
+class AGBGameMode : public AGameModeBase
 {
 public:
 	class AGBGameState*                           GBGameState;                                       // 0x02C0(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -6741,7 +6741,7 @@ static_assert(sizeof(UGBGameplayAbility_BlockMovement) == 0x0003B8, "Wrong size 
 
 // Class GroundBranch.GBGameplayAbility_Death
 // 0x0000 (0x03B8 - 0x03B8)
-class UGBGameplayAbility_Death final : public UGBGameplayAbility
+class UGBGameplayAbility_Death : public UGBGameplayAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -7839,7 +7839,7 @@ static_assert(offsetof(AGBHUD, TimeToIdentifyPlayer) == 0x00034C, "Member 'AGBHU
 
 // Class GroundBranch.GBIngameMapWidget
 // 0x0050 (0x02B0 - 0x0260)
-class UGBIngameMapWidget final : public UUserWidget
+class UGBIngameMapWidget : public UUserWidget
 {
 public:
 	class UButton*                                GoAlphaBtn;                                        // 0x0260(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -8228,7 +8228,7 @@ static_assert(offsetof(UGBInvItemPickupComponent, InputComponent) == 0x000128, "
 
 // Class GroundBranch.GBInvItemPickupWidget
 // 0x0008 (0x0268 - 0x0260)
-class UGBInvItemPickupWidget final : public UUserWidget
+class UGBInvItemPickupWidget : public UUserWidget
 {
 public:
 	class UGBInvItemPickupComponent*              InvItemPickupComp;                                 // 0x0260(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -9614,7 +9614,7 @@ static_assert(offsetof(AGBMagazine, StartTracerCount) == 0x000488, "Member 'AGBM
 
 // Class GroundBranch.GBMinimap
 // 0x0010 (0x0230 - 0x0220)
-class AGBMinimap final : public AActor
+class AGBMinimap : public AActor
 {
 public:
 	TArray<class FName>                           ApplicableMissionVariantNames;                     // 0x0220(0x0010)(Edit, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
@@ -9872,7 +9872,7 @@ static_assert(sizeof(UGBNavArea_UseActorNavLink) == 0x000048, "Wrong size on UGB
 
 // Class GroundBranch.GBNavBlocker
 // 0x0010 (0x0258 - 0x0248)
-class AGBNavBlocker final : public AGBMissionVolume
+class AGBNavBlocker : public AGBMissionVolume
 {
 public:
 	uint8                                         Pad_248[0x8];                                      // 0x0248(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -10092,7 +10092,7 @@ static_assert(offsetof(AGBPlatform, RadioSocket) == 0x0004C8, "Member 'AGBPlatfo
 
 // Class GroundBranch.GBPlayerCameraManager
 // 0x00A0 (0x28B0 - 0x2810)
-class AGBPlayerCameraManager final : public APlayerCameraManager
+class AGBPlayerCameraManager : public APlayerCameraManager
 {
 public:
 	float                                         ShoulderCamDistance;                               // 0x2810(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -10138,7 +10138,7 @@ static_assert(offsetof(AGBPlayerCameraManager, SurfaceTypesToIgnore) == 0x0028A0
 
 // Class GroundBranch.GBPlayerCommandComponent
 // 0x0068 (0x0118 - 0x00B0)
-class UGBPlayerCommandComponent final : public UActorComponent
+class UGBPlayerCommandComponent : public UActorComponent
 {
 public:
 	TMulticastInlineDelegate<void(EGBAICommands Command)> OnCommandSelected;                         // 0x00B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -10259,7 +10259,7 @@ static_assert(sizeof(AGBPortalSystemManager) == 0x000338, "Wrong size on AGBPort
 
 // Class GroundBranch.GBRadialMenuElementWidget
 // 0x0028 (0x0288 - 0x0260)
-class UGBRadialMenuElementWidget final : public UUserWidget
+class UGBRadialMenuElementWidget : public UUserWidget
 {
 public:
 	class UImage*                                 ElementIcon;                                       // 0x0260(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -10732,7 +10732,7 @@ static_assert(sizeof(AGBSpawnProtectionVolume) == 0x000270, "Wrong size on AGBSp
 
 // Class GroundBranch.GBSpectatorPawn
 // 0x0030 (0x02D8 - 0x02A8)
-class AGBSpectatorPawn final : public ASpectatorPawn
+class AGBSpectatorPawn : public ASpectatorPawn
 {
 public:
 	class AGBPlayerController*                    GBPlayerController;                                // 0x02A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -10889,7 +10889,7 @@ static_assert(sizeof(IGBUseInterface) == 0x000001, "Wrong size on IGBUseInterfac
 
 // Class GroundBranch.GBVOIPManager
 // 0x00B8 (0x00E0 - 0x0028)
-class UGBVOIPManager final : public UObject
+class UGBVOIPManager : public UObject
 {
 public:
 	TArray<class FString>                         MuteList;                                          // 0x0028(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)

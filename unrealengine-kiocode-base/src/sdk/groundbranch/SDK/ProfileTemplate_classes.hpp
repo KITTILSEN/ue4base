@@ -12,8 +12,8 @@
 
 #include "Perception_structs.hpp"
 #include "AreaProfile_structs.hpp"
-#include "KytheraPlugin_classes.hpp"
 #include "AdvancedMovement_structs.hpp"
+#include "KytheraPlugin_classes.hpp"
 
 
 namespace SDK

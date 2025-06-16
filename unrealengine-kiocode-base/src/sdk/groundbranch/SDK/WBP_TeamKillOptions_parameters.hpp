@@ -16,6 +16,19 @@
 namespace SDK::Params
 {
 
+// Function WBP_TeamKillOptions.WBP_TeamKillOptions_C.SetNameAndPrevKills
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_TeamKillOptions_C_SetNameAndPrevKills final
+{
+public:
+	class FString                                 inString;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	int32                                         Value;                                             // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_TeamKillOptions_C_SetNameAndPrevKills) == 0x000008, "Wrong alignment on WBP_TeamKillOptions_C_SetNameAndPrevKills");
+static_assert(sizeof(WBP_TeamKillOptions_C_SetNameAndPrevKills) == 0x000018, "Wrong size on WBP_TeamKillOptions_C_SetNameAndPrevKills");
+static_assert(offsetof(WBP_TeamKillOptions_C_SetNameAndPrevKills, inString) == 0x000000, "Member 'WBP_TeamKillOptions_C_SetNameAndPrevKills::inString' has a wrong offset!");
+static_assert(offsetof(WBP_TeamKillOptions_C_SetNameAndPrevKills, Value) == 0x000010, "Member 'WBP_TeamKillOptions_C_SetNameAndPrevKills::Value' has a wrong offset!");
+
 // Function WBP_TeamKillOptions.WBP_TeamKillOptions_C.ExecuteUbergraph_WBP_TeamKillOptions
 // 0x0150 (0x0150 - 0x0000)
 struct WBP_TeamKillOptions_C_ExecuteUbergraph_WBP_TeamKillOptions final
@@ -52,19 +65,6 @@ static_assert(offsetof(WBP_TeamKillOptions_C_ExecuteUbergraph_WBP_TeamKillOption
 static_assert(offsetof(WBP_TeamKillOptions_C_ExecuteUbergraph_WBP_TeamKillOptions, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000E8, "Member 'WBP_TeamKillOptions_C_ExecuteUbergraph_WBP_TeamKillOptions::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
 static_assert(offsetof(WBP_TeamKillOptions_C_ExecuteUbergraph_WBP_TeamKillOptions, K2Node_MakeArray_Array_1) == 0x000128, "Member 'WBP_TeamKillOptions_C_ExecuteUbergraph_WBP_TeamKillOptions::K2Node_MakeArray_Array_1' has a wrong offset!");
 static_assert(offsetof(WBP_TeamKillOptions_C_ExecuteUbergraph_WBP_TeamKillOptions, CallFunc_Format_ReturnValue_1) == 0x000138, "Member 'WBP_TeamKillOptions_C_ExecuteUbergraph_WBP_TeamKillOptions::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_TeamKillOptions.WBP_TeamKillOptions_C.SetNameAndPrevKills
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_TeamKillOptions_C_SetNameAndPrevKills final
-{
-public:
-	class FString                                 inString;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	int32                                         Value;                                             // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_TeamKillOptions_C_SetNameAndPrevKills) == 0x000008, "Wrong alignment on WBP_TeamKillOptions_C_SetNameAndPrevKills");
-static_assert(sizeof(WBP_TeamKillOptions_C_SetNameAndPrevKills) == 0x000018, "Wrong size on WBP_TeamKillOptions_C_SetNameAndPrevKills");
-static_assert(offsetof(WBP_TeamKillOptions_C_SetNameAndPrevKills, inString) == 0x000000, "Member 'WBP_TeamKillOptions_C_SetNameAndPrevKills::inString' has a wrong offset!");
-static_assert(offsetof(WBP_TeamKillOptions_C_SetNameAndPrevKills, Value) == 0x000010, "Member 'WBP_TeamKillOptions_C_SetNameAndPrevKills::Value' has a wrong offset!");
 
 // Function WBP_TeamKillOptions.WBP_TeamKillOptions_C.ShowMessage
 // 0x0018 (0x0018 - 0x0000)

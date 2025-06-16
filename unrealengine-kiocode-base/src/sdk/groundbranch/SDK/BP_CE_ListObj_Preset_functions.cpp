@@ -20,10 +20,10 @@ namespace SDK
 // Function BP_CE_ListObj_Preset.BP_CE_ListObj_Preset_C.InitPreset
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UVaRestJsonObject*                InJsonObj                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UVaRestJsonObject*                InJSonObj                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const class FString&                    InFilename                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UBP_CE_ListObj_Preset_C::InitPreset(class UVaRestJsonObject* InJsonObj, const class FString& InFilename)
+void UBP_CE_ListObj_Preset_C::InitPreset(class UVaRestJsonObject* InJSonObj, const class FString& InFilename)
 {
 	static class UFunction* Func = nullptr;
 
@@ -32,7 +32,7 @@ void UBP_CE_ListObj_Preset_C::InitPreset(class UVaRestJsonObject* InJsonObj, con
 
 	Params::BP_CE_ListObj_Preset_C_InitPreset Parms{};
 
-	Parms.InJsonObj = InJsonObj;
+	Parms.InJSonObj = InJSonObj;
 	Parms.InFilename = std::move(InFilename);
 
 	UObject::ProcessEvent(Func, &Parms);

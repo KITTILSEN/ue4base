@@ -52,6 +52,7 @@ public:
 
 public:
 	void ExecuteUbergraph_GA_Grenade_Throw(int32 EntryPoint);
+	void K2_OnEndAbility(bool bWasCancelled);
 	void MontageInterupterOrCancelled();
 	void PlayerWaitForInputRelease();
 	void ServerSpawnProjectile(class AGBInvItem* Grenade_0, const struct FVector& SpawnLocation_0, const struct FVector& SpawnVelocity);

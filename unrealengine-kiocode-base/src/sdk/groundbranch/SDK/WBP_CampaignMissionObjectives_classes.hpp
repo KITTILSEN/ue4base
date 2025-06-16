@@ -37,10 +37,10 @@ public:
 	struct FGBObjectiveData                       ObjectiveData;                                     // 0x02B8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_CampaignMissionObjectives(int32 EntryPoint);
-	void LoadObjectivesFromMissionData();
-	void SetObjectiveData(const struct FGBObjectiveData& InObjectiveData, class FName InHotspotCodename, int32 InMissionSequenceNumber);
 	void Construct();
+	void SetObjectiveData(const struct FGBObjectiveData& InObjectiveData, class FName InHotspotCodename, int32 InMissionSequenceNumber);
+	void LoadObjectivesFromMissionData();
+	void ExecuteUbergraph_WBP_CampaignMissionObjectives(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

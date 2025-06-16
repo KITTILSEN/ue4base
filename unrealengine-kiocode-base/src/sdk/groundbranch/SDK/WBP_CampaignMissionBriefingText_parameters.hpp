@@ -17,6 +17,19 @@
 namespace SDK::Params
 {
 
+// Function WBP_CampaignMissionBriefingText.WBP_CampaignMissionBriefingText_C.SetMissionDetails
+// 0x000C (0x000C - 0x0000)
+struct WBP_CampaignMissionBriefingText_C_SetMissionDetails final
+{
+public:
+	class FName                                   InHotspotCodename;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         InSequenceNumber;                                  // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionBriefingText_C_SetMissionDetails) == 0x000004, "Wrong alignment on WBP_CampaignMissionBriefingText_C_SetMissionDetails");
+static_assert(sizeof(WBP_CampaignMissionBriefingText_C_SetMissionDetails) == 0x00000C, "Wrong size on WBP_CampaignMissionBriefingText_C_SetMissionDetails");
+static_assert(offsetof(WBP_CampaignMissionBriefingText_C_SetMissionDetails, InHotspotCodename) == 0x000000, "Member 'WBP_CampaignMissionBriefingText_C_SetMissionDetails::InHotspotCodename' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionBriefingText_C_SetMissionDetails, InSequenceNumber) == 0x000008, "Member 'WBP_CampaignMissionBriefingText_C_SetMissionDetails::InSequenceNumber' has a wrong offset!");
+
 // Function WBP_CampaignMissionBriefingText.WBP_CampaignMissionBriefingText_C.ExecuteUbergraph_WBP_CampaignMissionBriefingText
 // 0x0158 (0x0158 - 0x0000)
 struct WBP_CampaignMissionBriefingText_C_ExecuteUbergraph_WBP_CampaignMissionBriefingText final
@@ -67,19 +80,6 @@ static_assert(offsetof(WBP_CampaignMissionBriefingText_C_ExecuteUbergraph_WBP_Ca
 static_assert(offsetof(WBP_CampaignMissionBriefingText_C_ExecuteUbergraph_WBP_CampaignMissionBriefingText, K2Node_Select_Default) == 0x000130, "Member 'WBP_CampaignMissionBriefingText_C_ExecuteUbergraph_WBP_CampaignMissionBriefingText::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(WBP_CampaignMissionBriefingText_C_ExecuteUbergraph_WBP_CampaignMissionBriefingText, K2Node_CustomEvent_InHotspotCodename) == 0x000148, "Member 'WBP_CampaignMissionBriefingText_C_ExecuteUbergraph_WBP_CampaignMissionBriefingText::K2Node_CustomEvent_InHotspotCodename' has a wrong offset!");
 static_assert(offsetof(WBP_CampaignMissionBriefingText_C_ExecuteUbergraph_WBP_CampaignMissionBriefingText, K2Node_CustomEvent_InSequenceNumber) == 0x000150, "Member 'WBP_CampaignMissionBriefingText_C_ExecuteUbergraph_WBP_CampaignMissionBriefingText::K2Node_CustomEvent_InSequenceNumber' has a wrong offset!");
-
-// Function WBP_CampaignMissionBriefingText.WBP_CampaignMissionBriefingText_C.SetMissionDetails
-// 0x000C (0x000C - 0x0000)
-struct WBP_CampaignMissionBriefingText_C_SetMissionDetails final
-{
-public:
-	class FName                                   InHotspotCodename;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         InSequenceNumber;                                  // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionBriefingText_C_SetMissionDetails) == 0x000004, "Wrong alignment on WBP_CampaignMissionBriefingText_C_SetMissionDetails");
-static_assert(sizeof(WBP_CampaignMissionBriefingText_C_SetMissionDetails) == 0x00000C, "Wrong size on WBP_CampaignMissionBriefingText_C_SetMissionDetails");
-static_assert(offsetof(WBP_CampaignMissionBriefingText_C_SetMissionDetails, InHotspotCodename) == 0x000000, "Member 'WBP_CampaignMissionBriefingText_C_SetMissionDetails::InHotspotCodename' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionBriefingText_C_SetMissionDetails, InSequenceNumber) == 0x000008, "Member 'WBP_CampaignMissionBriefingText_C_SetMissionDetails::InSequenceNumber' has a wrong offset!");
 
 }
 

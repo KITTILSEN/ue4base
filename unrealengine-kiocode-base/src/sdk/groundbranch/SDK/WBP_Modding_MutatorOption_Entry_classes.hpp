@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "FMModdingPlugin_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "Struct_Modding_MutatorInfo_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "UMG_classes.hpp"
 
 

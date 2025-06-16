@@ -33,11 +33,11 @@ public:
 	class AGBPlayerState*                         PlayerState;                                       // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Mission_PlayerScoreList(int32 EntryPoint);
-	void OnPlayerScoresUpdated(class AGBPlayerState* PlayerState_0);
-	void BindPlayerScores();
-	void Construct();
 	ESlateVisibility GetTotalTeamBoxVis();
+	void Construct();
+	void BindPlayerScores();
+	void OnPlayerScoresUpdated(class AGBPlayerState* PlayerState_0);
+	void ExecuteUbergraph_WBP_Mission_PlayerScoreList(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -17,35 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_CampaignMissionObjectives.WBP_CampaignMissionObjectives_C.ExecuteUbergraph_WBP_CampaignMissionObjectives
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CampaignMissionObjectives.WBP_CampaignMissionObjectives_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_CampaignMissionObjectives_C::ExecuteUbergraph_WBP_CampaignMissionObjectives(int32 EntryPoint)
+void UWBP_CampaignMissionObjectives_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignMissionObjectives_C", "ExecuteUbergraph_WBP_CampaignMissionObjectives");
-
-	Params::WBP_CampaignMissionObjectives_C_ExecuteUbergraph_WBP_CampaignMissionObjectives Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignMissionObjectives.WBP_CampaignMissionObjectives_C.LoadObjectivesFromMissionData
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CampaignMissionObjectives_C::LoadObjectivesFromMissionData()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignMissionObjectives_C", "LoadObjectivesFromMissionData");
+		Func = Class->GetFunction("WBP_CampaignMissionObjectives_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,17 +55,37 @@ void UWBP_CampaignMissionObjectives_C::SetObjectiveData(const struct FGBObjectiv
 }
 
 
-// Function WBP_CampaignMissionObjectives.WBP_CampaignMissionObjectives_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_CampaignMissionObjectives.WBP_CampaignMissionObjectives_C.LoadObjectivesFromMissionData
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_CampaignMissionObjectives_C::Construct()
+void UWBP_CampaignMissionObjectives_C::LoadObjectivesFromMissionData()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignMissionObjectives_C", "Construct");
+		Func = Class->GetFunction("WBP_CampaignMissionObjectives_C", "LoadObjectivesFromMissionData");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CampaignMissionObjectives.WBP_CampaignMissionObjectives_C.ExecuteUbergraph_WBP_CampaignMissionObjectives
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignMissionObjectives_C::ExecuteUbergraph_WBP_CampaignMissionObjectives(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CampaignMissionObjectives_C", "ExecuteUbergraph_WBP_CampaignMissionObjectives");
+
+	Params::WBP_CampaignMissionObjectives_C_ExecuteUbergraph_WBP_CampaignMissionObjectives Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

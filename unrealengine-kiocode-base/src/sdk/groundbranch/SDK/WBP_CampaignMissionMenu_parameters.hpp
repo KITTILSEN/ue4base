@@ -23,6 +23,319 @@
 namespace SDK::Params
 {
 
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.Get_Button_DeployToHotspot_Offline_ToolTipWidget_0
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.Get_Button_DeployToHotspot_Online_ToolTipWidget_0
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanWeDeployOnline_bCanWeDeployOnline;     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x0020(0x0018)()
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0) == 0x000038, "Wrong size on WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0, Temp_bool_Variable) == 0x000008, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000010, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0, CallFunc_CanWeDeployOnline_bCanWeDeployOnline) == 0x000018, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0::CallFunc_CanWeDeployOnline_bCanWeDeployOnline' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0, K2Node_Select_Default) == 0x000020, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.CanWeDeployOnline
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_CampaignMissionMenu_C_CanWeDeployOnline final
+{
+public:
+	bool                                          bCanWeDeployOnline;                                // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsSteamAPIAvailable_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_CanWeDeployOnline) == 0x000001, "Wrong alignment on WBP_CampaignMissionMenu_C_CanWeDeployOnline");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_CanWeDeployOnline) == 0x000002, "Wrong size on WBP_CampaignMissionMenu_C_CanWeDeployOnline");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_CanWeDeployOnline, bCanWeDeployOnline) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_CanWeDeployOnline::bCanWeDeployOnline' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_CanWeDeployOnline, CallFunc_IsSteamAPIAvailable_ReturnValue) == 0x000001, "Member 'WBP_CampaignMissionMenu_C_CanWeDeployOnline::CallFunc_IsSteamAPIAvailable_ReturnValue' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.Get_Button_DeployToHotspot_Online_bIsEnabled_0
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0 final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_CanWeDeployOnline_bCanWeDeployOnline;     // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0) == 0x000001, "Wrong alignment on WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0) == 0x000002, "Wrong size on WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0, CallFunc_CanWeDeployOnline_bCanWeDeployOnline) == 0x000001, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0::CallFunc_CanWeDeployOnline_bCanWeDeployOnline' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.PrepLoadingScreen
+// 0x00D0 (0x00D0 - 0x0000)
+struct WBP_CampaignMissionMenu_C_PrepLoadingScreen final
+{
+public:
+	class UTexture2D*                             LocalMapScreenshot;                                // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Map_Find_Value;                           // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUInt64                                CallFunc_GetModIDFromFileName_ReturnValue;         // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsModIDForGame_ReturnValue;               // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUInt64                                CallFunc_GetModIDFromFileName_ReturnValue_1;       // 0x0030(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetGameModeAuthor_ReturnValue;            // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetBaseFilename_ReturnValue;              // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FUInt64                                CallFunc_GetModIDFromFileName_ReturnValue_2;       // 0x0060(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsModIDForGame_ReturnValue_1;             // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x006A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6B[0x5];                                       // 0x006B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetMapInfo_OutTitle;                      // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetMapInfo_OutAuthor;                     // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetMapInfo_OutDescription;                // 0x0090(0x0018)()
+	bool                                          CallFunc_GetMapInfo_ReturnValue;                   // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GenerateMissionDisplayName_ReturnValue;   // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UGBPlayerLoadingScreenComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_PrepLoadingScreen) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_PrepLoadingScreen");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_PrepLoadingScreen) == 0x0000D0, "Wrong size on WBP_CampaignMissionMenu_C_PrepLoadingScreen");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, LocalMapScreenshot) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::LocalMapScreenshot' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_Map_Find_Value) == 0x000008, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_Map_Find_Value' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_Map_Find_ReturnValue) == 0x000018, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetModIDFromFileName_ReturnValue) == 0x000020, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetModIDFromFileName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_IsModIDForGame_ReturnValue) == 0x000028, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_IsModIDForGame_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetModIDFromFileName_ReturnValue_1) == 0x000030, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetModIDFromFileName_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_Not_PreBool_ReturnValue) == 0x000038, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetGameModeAuthor_ReturnValue) == 0x000040, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetGameModeAuthor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetBaseFilename_ReturnValue) == 0x000050, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetBaseFilename_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetModIDFromFileName_ReturnValue_2) == 0x000060, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetModIDFromFileName_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_IsValid_ReturnValue) == 0x000068, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_IsModIDForGame_ReturnValue_1) == 0x000069, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_IsModIDForGame_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_Not_PreBool_ReturnValue_1) == 0x00006A, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetMapInfo_OutTitle) == 0x000070, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetMapInfo_OutTitle' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetMapInfo_OutAuthor) == 0x000080, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetMapInfo_OutAuthor' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetMapInfo_OutDescription) == 0x000090, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetMapInfo_OutDescription' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetMapInfo_ReturnValue) == 0x0000A8, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetMapInfo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000B0, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GenerateMissionDisplayName_ReturnValue) == 0x0000B8, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GenerateMissionDisplayName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetComponentByClass_ReturnValue) == 0x0000C8, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.Get_Overlay_MapAndNews_ToolTipWidget_0
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignMissionMenu_C_Get_Overlay_MapAndNews_ToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_Get_Overlay_MapAndNews_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_Get_Overlay_MapAndNews_ToolTipWidget_0");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_Get_Overlay_MapAndNews_ToolTipWidget_0) == 0x000008, "Wrong size on WBP_CampaignMissionMenu_C_Get_Overlay_MapAndNews_ToolTipWidget_0");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Overlay_MapAndNews_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_Get_Overlay_MapAndNews_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.Get_Button_DeployToHotspot_Visibility_0
+// 0x000C (0x000C - 0x0000)
+struct WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0 final
+{
+public:
+	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0) == 0x000004, "Wrong alignment on WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0) == 0x00000C, "Wrong size on WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0, Temp_bool_Variable) == 0x000001, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0, Temp_byte_Variable) == 0x000002, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000004, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0, K2Node_Select_Default) == 0x000009, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.OnPreviewKeyDown
+// 0x0378 (0x0378 - 0x0000)
+struct WBP_CampaignMissionMenu_C_OnPreviewKeyDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0128(0x0018)(HasGetValueTypeHash)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0140(0x00B8)()
+	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1F9[0x3];                                      // 0x01F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_201[0x7];                                      // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0208(0x00B8)()
+	struct FEventReply                            CallFunc_Handled_ReturnValue_1;                    // 0x02C0(0x00B8)()
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_OnPreviewKeyDown");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown) == 0x000378, "Wrong size on WBP_CampaignMissionMenu_C_OnPreviewKeyDown");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, MyGeometry) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, InKeyEvent) == 0x000038, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::InKeyEvent' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, ReturnValue) == 0x000070, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, CallFunc_GetKey_ReturnValue) == 0x000128, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::CallFunc_GetKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, CallFunc_Handled_ReturnValue) == 0x000140, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x0001F8, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x0001FC, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, K2Node_SwitchInteger_CmpSuccess) == 0x000200, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, CallFunc_Unhandled_ReturnValue) == 0x000208, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, CallFunc_Handled_ReturnValue_1) == 0x0002C0, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::CallFunc_Handled_ReturnValue_1' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.OnLoaded_A9302FC548BA2D76764DD19C859BB6E6
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignMissionMenu_C_OnLoaded_A9302FC548BA2D76764DD19C859BB6E6 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_OnLoaded_A9302FC548BA2D76764DD19C859BB6E6) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_OnLoaded_A9302FC548BA2D76764DD19C859BB6E6");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_OnLoaded_A9302FC548BA2D76764DD19C859BB6E6) == 0x000008, "Wrong size on WBP_CampaignMissionMenu_C_OnLoaded_A9302FC548BA2D76764DD19C859BB6E6");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnLoaded_A9302FC548BA2D76764DD19C859BB6E6, Loaded) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_OnLoaded_A9302FC548BA2D76764DD19C859BB6E6::Loaded' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.SetHotspotRef
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignMissionMenu_C_SetHotspotRef final
+{
+public:
+	class UGBHotspotDataAsset*                    HotspotRef_0;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_SetHotspotRef) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_SetHotspotRef");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_SetHotspotRef) == 0x000008, "Wrong size on WBP_CampaignMissionMenu_C_SetHotspotRef");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_SetHotspotRef, HotspotRef_0) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_SetHotspotRef::HotspotRef_0' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.OnHoveredOverMission
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_CampaignMissionMenu_C_OnHoveredOverMission final
+{
+public:
+	int32                                         SelectedMissionNumber_0;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_OnHoveredOverMission) == 0x000004, "Wrong alignment on WBP_CampaignMissionMenu_C_OnHoveredOverMission");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_OnHoveredOverMission) == 0x000004, "Wrong size on WBP_CampaignMissionMenu_C_OnHoveredOverMission");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnHoveredOverMission, SelectedMissionNumber_0) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_OnHoveredOverMission::SelectedMissionNumber_0' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.OnSelectedMission
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_CampaignMissionMenu_C_OnSelectedMission final
+{
+public:
+	int32                                         SelectedMissionNumber_0;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_OnSelectedMission) == 0x000004, "Wrong alignment on WBP_CampaignMissionMenu_C_OnSelectedMission");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_OnSelectedMission) == 0x000004, "Wrong size on WBP_CampaignMissionMenu_C_OnSelectedMission");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnSelectedMission, SelectedMissionNumber_0) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_OnSelectedMission::SelectedMissionNumber_0' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.Tick
+// 0x003C (0x003C - 0x0000)
+struct WBP_CampaignMissionMenu_C_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_Tick) == 0x000004, "Wrong alignment on WBP_CampaignMissionMenu_C_Tick");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_Tick) == 0x00003C, "Wrong size on WBP_CampaignMissionMenu_C_Tick");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_Tick::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_CampaignMissionMenu_C_Tick::InDeltaTime' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.SwitchScreen
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_CampaignMissionMenu_C_SwitchScreen final
+{
+public:
+	int32                                         NewScreen;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_SwitchScreen) == 0x000004, "Wrong alignment on WBP_CampaignMissionMenu_C_SwitchScreen");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_SwitchScreen) == 0x000004, "Wrong size on WBP_CampaignMissionMenu_C_SwitchScreen");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_SwitchScreen, NewScreen) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_SwitchScreen::NewScreen' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.OnFinishModSync
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignMissionMenu_C_OnFinishModSync final
+{
+public:
+	bool                                          bSuccess;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_OnFinishModSync) == 0x000001, "Wrong alignment on WBP_CampaignMissionMenu_C_OnFinishModSync");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_OnFinishModSync) == 0x000001, "Wrong size on WBP_CampaignMissionMenu_C_OnFinishModSync");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnFinishModSync, bSuccess) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_OnFinishModSync::bSuccess' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.OnClickedOkProceedWithDeployment
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeployment final
+{
+public:
+	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeployment) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeployment");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeployment) == 0x000008, "Wrong size on WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeployment");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeployment, Dialogue) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeployment::Dialogue' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.OnClickedOkResetProgress
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignMissionMenu_C_OnClickedOkResetProgress final
+{
+public:
+	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_OnClickedOkResetProgress) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_OnClickedOkResetProgress");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_OnClickedOkResetProgress) == 0x000008, "Wrong size on WBP_CampaignMissionMenu_C_OnClickedOkResetProgress");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnClickedOkResetProgress, Dialogue) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_OnClickedOkResetProgress::Dialogue' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.PrepLoadingScreenAndConsoleCommand
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignMissionMenu_C_PrepLoadingScreenAndConsoleCommand final
+{
+public:
+	bool                                          bOnline;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_PrepLoadingScreenAndConsoleCommand) == 0x000001, "Wrong alignment on WBP_CampaignMissionMenu_C_PrepLoadingScreenAndConsoleCommand");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_PrepLoadingScreenAndConsoleCommand) == 0x000001, "Wrong size on WBP_CampaignMissionMenu_C_PrepLoadingScreenAndConsoleCommand");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreenAndConsoleCommand, bOnline) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreenAndConsoleCommand::bOnline' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.OnClickedOkProceedWithDeploymentOffline
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeploymentOffline final
+{
+public:
+	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeploymentOffline) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeploymentOffline");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeploymentOffline) == 0x000008, "Wrong size on WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeploymentOffline");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeploymentOffline, Dialogue) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeploymentOffline::Dialogue' has a wrong offset!");
+
+// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.PerformTravel
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CampaignMissionMenu_C_PerformTravel final
+{
+public:
+	class FString                                 TravelCommand_0;                                   // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionMenu_C_PerformTravel) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_PerformTravel");
+static_assert(sizeof(WBP_CampaignMissionMenu_C_PerformTravel) == 0x000010, "Wrong size on WBP_CampaignMissionMenu_C_PerformTravel");
+static_assert(offsetof(WBP_CampaignMissionMenu_C_PerformTravel, TravelCommand_0) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_PerformTravel::TravelCommand_0' has a wrong offset!");
+
 // Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.ExecuteUbergraph_WBP_CampaignMissionMenu
 // 0x07E0 (0x07E0 - 0x0000)
 struct WBP_CampaignMissionMenu_C_ExecuteUbergraph_WBP_CampaignMissionMenu final
@@ -454,319 +767,6 @@ static_assert(offsetof(WBP_CampaignMissionMenu_C_ExecuteUbergraph_WBP_CampaignMi
 static_assert(offsetof(WBP_CampaignMissionMenu_C_ExecuteUbergraph_WBP_CampaignMissionMenu, CallFunc_PostEvent_ReturnValue) == 0x0007C0, "Member 'WBP_CampaignMissionMenu_C_ExecuteUbergraph_WBP_CampaignMissionMenu::CallFunc_PostEvent_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CampaignMissionMenu_C_ExecuteUbergraph_WBP_CampaignMissionMenu, CallFunc_GetParentWidgetOfClass_ReturnValue) == 0x0007C8, "Member 'WBP_CampaignMissionMenu_C_ExecuteUbergraph_WBP_CampaignMissionMenu::CallFunc_GetParentWidgetOfClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CampaignMissionMenu_C_ExecuteUbergraph_WBP_CampaignMissionMenu, CallFunc_IsValid_ReturnValue_10) == 0x0007D0, "Member 'WBP_CampaignMissionMenu_C_ExecuteUbergraph_WBP_CampaignMissionMenu::CallFunc_IsValid_ReturnValue_10' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.PerformTravel
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CampaignMissionMenu_C_PerformTravel final
-{
-public:
-	class FString                                 TravelCommand_0;                                   // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_PerformTravel) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_PerformTravel");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_PerformTravel) == 0x000010, "Wrong size on WBP_CampaignMissionMenu_C_PerformTravel");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PerformTravel, TravelCommand_0) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_PerformTravel::TravelCommand_0' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.OnClickedOkProceedWithDeploymentOffline
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeploymentOffline final
-{
-public:
-	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeploymentOffline) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeploymentOffline");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeploymentOffline) == 0x000008, "Wrong size on WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeploymentOffline");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeploymentOffline, Dialogue) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeploymentOffline::Dialogue' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.PrepLoadingScreenAndConsoleCommand
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignMissionMenu_C_PrepLoadingScreenAndConsoleCommand final
-{
-public:
-	bool                                          bOnline;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_PrepLoadingScreenAndConsoleCommand) == 0x000001, "Wrong alignment on WBP_CampaignMissionMenu_C_PrepLoadingScreenAndConsoleCommand");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_PrepLoadingScreenAndConsoleCommand) == 0x000001, "Wrong size on WBP_CampaignMissionMenu_C_PrepLoadingScreenAndConsoleCommand");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreenAndConsoleCommand, bOnline) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreenAndConsoleCommand::bOnline' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.OnClickedOkResetProgress
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignMissionMenu_C_OnClickedOkResetProgress final
-{
-public:
-	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_OnClickedOkResetProgress) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_OnClickedOkResetProgress");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_OnClickedOkResetProgress) == 0x000008, "Wrong size on WBP_CampaignMissionMenu_C_OnClickedOkResetProgress");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnClickedOkResetProgress, Dialogue) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_OnClickedOkResetProgress::Dialogue' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.OnClickedOkProceedWithDeployment
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeployment final
-{
-public:
-	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeployment) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeployment");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeployment) == 0x000008, "Wrong size on WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeployment");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeployment, Dialogue) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_OnClickedOkProceedWithDeployment::Dialogue' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.OnFinishModSync
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignMissionMenu_C_OnFinishModSync final
-{
-public:
-	bool                                          bSuccess;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_OnFinishModSync) == 0x000001, "Wrong alignment on WBP_CampaignMissionMenu_C_OnFinishModSync");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_OnFinishModSync) == 0x000001, "Wrong size on WBP_CampaignMissionMenu_C_OnFinishModSync");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnFinishModSync, bSuccess) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_OnFinishModSync::bSuccess' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.SwitchScreen
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_CampaignMissionMenu_C_SwitchScreen final
-{
-public:
-	int32                                         NewScreen;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_SwitchScreen) == 0x000004, "Wrong alignment on WBP_CampaignMissionMenu_C_SwitchScreen");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_SwitchScreen) == 0x000004, "Wrong size on WBP_CampaignMissionMenu_C_SwitchScreen");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_SwitchScreen, NewScreen) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_SwitchScreen::NewScreen' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.Tick
-// 0x003C (0x003C - 0x0000)
-struct WBP_CampaignMissionMenu_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_Tick) == 0x000004, "Wrong alignment on WBP_CampaignMissionMenu_C_Tick");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_Tick) == 0x00003C, "Wrong size on WBP_CampaignMissionMenu_C_Tick");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_CampaignMissionMenu_C_Tick::InDeltaTime' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.OnSelectedMission
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_CampaignMissionMenu_C_OnSelectedMission final
-{
-public:
-	int32                                         SelectedMissionNumber_0;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_OnSelectedMission) == 0x000004, "Wrong alignment on WBP_CampaignMissionMenu_C_OnSelectedMission");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_OnSelectedMission) == 0x000004, "Wrong size on WBP_CampaignMissionMenu_C_OnSelectedMission");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnSelectedMission, SelectedMissionNumber_0) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_OnSelectedMission::SelectedMissionNumber_0' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.OnHoveredOverMission
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_CampaignMissionMenu_C_OnHoveredOverMission final
-{
-public:
-	int32                                         SelectedMissionNumber_0;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_OnHoveredOverMission) == 0x000004, "Wrong alignment on WBP_CampaignMissionMenu_C_OnHoveredOverMission");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_OnHoveredOverMission) == 0x000004, "Wrong size on WBP_CampaignMissionMenu_C_OnHoveredOverMission");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnHoveredOverMission, SelectedMissionNumber_0) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_OnHoveredOverMission::SelectedMissionNumber_0' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.SetHotspotRef
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignMissionMenu_C_SetHotspotRef final
-{
-public:
-	class UGBHotspotDataAsset*                    HotspotRef_0;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_SetHotspotRef) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_SetHotspotRef");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_SetHotspotRef) == 0x000008, "Wrong size on WBP_CampaignMissionMenu_C_SetHotspotRef");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_SetHotspotRef, HotspotRef_0) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_SetHotspotRef::HotspotRef_0' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.OnLoaded_A9302FC548BA2D76764DD19C859BB6E6
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignMissionMenu_C_OnLoaded_A9302FC548BA2D76764DD19C859BB6E6 final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_OnLoaded_A9302FC548BA2D76764DD19C859BB6E6) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_OnLoaded_A9302FC548BA2D76764DD19C859BB6E6");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_OnLoaded_A9302FC548BA2D76764DD19C859BB6E6) == 0x000008, "Wrong size on WBP_CampaignMissionMenu_C_OnLoaded_A9302FC548BA2D76764DD19C859BB6E6");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnLoaded_A9302FC548BA2D76764DD19C859BB6E6, Loaded) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_OnLoaded_A9302FC548BA2D76764DD19C859BB6E6::Loaded' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.OnPreviewKeyDown
-// 0x0378 (0x0378 - 0x0000)
-struct WBP_CampaignMissionMenu_C_OnPreviewKeyDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
-	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0128(0x0018)(HasGetValueTypeHash)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0140(0x00B8)()
-	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F9[0x3];                                      // 0x01F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_201[0x7];                                      // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0208(0x00B8)()
-	struct FEventReply                            CallFunc_Handled_ReturnValue_1;                    // 0x02C0(0x00B8)()
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_OnPreviewKeyDown");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown) == 0x000378, "Wrong size on WBP_CampaignMissionMenu_C_OnPreviewKeyDown");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, MyGeometry) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, InKeyEvent) == 0x000038, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::InKeyEvent' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, ReturnValue) == 0x000070, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, CallFunc_GetKey_ReturnValue) == 0x000128, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::CallFunc_GetKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, CallFunc_Handled_ReturnValue) == 0x000140, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x0001F8, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x0001FC, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, K2Node_SwitchInteger_CmpSuccess) == 0x000200, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, CallFunc_Unhandled_ReturnValue) == 0x000208, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_OnPreviewKeyDown, CallFunc_Handled_ReturnValue_1) == 0x0002C0, "Member 'WBP_CampaignMissionMenu_C_OnPreviewKeyDown::CallFunc_Handled_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.Get_Button_DeployToHotspot_Visibility_0
-// 0x000C (0x000C - 0x0000)
-struct WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0 final
-{
-public:
-	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0) == 0x000004, "Wrong alignment on WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0) == 0x00000C, "Wrong size on WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0, Temp_bool_Variable) == 0x000001, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0, Temp_byte_Variable) == 0x000002, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000004, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0, K2Node_Select_Default) == 0x000009, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Visibility_0::K2Node_Select_Default' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.Get_Overlay_MapAndNews_ToolTipWidget_0
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignMissionMenu_C_Get_Overlay_MapAndNews_ToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_Get_Overlay_MapAndNews_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_Get_Overlay_MapAndNews_ToolTipWidget_0");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_Get_Overlay_MapAndNews_ToolTipWidget_0) == 0x000008, "Wrong size on WBP_CampaignMissionMenu_C_Get_Overlay_MapAndNews_ToolTipWidget_0");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Overlay_MapAndNews_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_Get_Overlay_MapAndNews_ToolTipWidget_0::ReturnValue' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.PrepLoadingScreen
-// 0x00D0 (0x00D0 - 0x0000)
-struct WBP_CampaignMissionMenu_C_PrepLoadingScreen final
-{
-public:
-	class UTexture2D*                             LocalMapScreenshot;                                // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Map_Find_Value;                           // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUInt64                                CallFunc_GetModIDFromFileName_ReturnValue;         // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsModIDForGame_ReturnValue;               // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUInt64                                CallFunc_GetModIDFromFileName_ReturnValue_1;       // 0x0030(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetGameModeAuthor_ReturnValue;            // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetBaseFilename_ReturnValue;              // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FUInt64                                CallFunc_GetModIDFromFileName_ReturnValue_2;       // 0x0060(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsModIDForGame_ReturnValue_1;             // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x006A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6B[0x5];                                       // 0x006B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetMapInfo_OutTitle;                      // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetMapInfo_OutAuthor;                     // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetMapInfo_OutDescription;                // 0x0090(0x0018)()
-	bool                                          CallFunc_GetMapInfo_ReturnValue;                   // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GenerateMissionDisplayName_ReturnValue;   // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class UGBPlayerLoadingScreenComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_PrepLoadingScreen) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_PrepLoadingScreen");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_PrepLoadingScreen) == 0x0000D0, "Wrong size on WBP_CampaignMissionMenu_C_PrepLoadingScreen");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, LocalMapScreenshot) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::LocalMapScreenshot' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_Map_Find_Value) == 0x000008, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_Map_Find_ReturnValue) == 0x000018, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetModIDFromFileName_ReturnValue) == 0x000020, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetModIDFromFileName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_IsModIDForGame_ReturnValue) == 0x000028, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_IsModIDForGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetModIDFromFileName_ReturnValue_1) == 0x000030, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetModIDFromFileName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_Not_PreBool_ReturnValue) == 0x000038, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetGameModeAuthor_ReturnValue) == 0x000040, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetGameModeAuthor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetBaseFilename_ReturnValue) == 0x000050, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetBaseFilename_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetModIDFromFileName_ReturnValue_2) == 0x000060, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetModIDFromFileName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_IsValid_ReturnValue) == 0x000068, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_IsModIDForGame_ReturnValue_1) == 0x000069, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_IsModIDForGame_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_Not_PreBool_ReturnValue_1) == 0x00006A, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetMapInfo_OutTitle) == 0x000070, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetMapInfo_OutTitle' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetMapInfo_OutAuthor) == 0x000080, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetMapInfo_OutAuthor' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetMapInfo_OutDescription) == 0x000090, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetMapInfo_OutDescription' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetMapInfo_ReturnValue) == 0x0000A8, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetMapInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000B0, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GenerateMissionDisplayName_ReturnValue) == 0x0000B8, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GenerateMissionDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_PrepLoadingScreen, CallFunc_GetComponentByClass_ReturnValue) == 0x0000C8, "Member 'WBP_CampaignMissionMenu_C_PrepLoadingScreen::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.Get_Button_DeployToHotspot_Online_bIsEnabled_0
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0 final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_CanWeDeployOnline_bCanWeDeployOnline;     // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0) == 0x000001, "Wrong alignment on WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0) == 0x000002, "Wrong size on WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0, CallFunc_CanWeDeployOnline_bCanWeDeployOnline) == 0x000001, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_bIsEnabled_0::CallFunc_CanWeDeployOnline_bCanWeDeployOnline' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.CanWeDeployOnline
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_CampaignMissionMenu_C_CanWeDeployOnline final
-{
-public:
-	bool                                          bCanWeDeployOnline;                                // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsSteamAPIAvailable_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_CanWeDeployOnline) == 0x000001, "Wrong alignment on WBP_CampaignMissionMenu_C_CanWeDeployOnline");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_CanWeDeployOnline) == 0x000002, "Wrong size on WBP_CampaignMissionMenu_C_CanWeDeployOnline");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_CanWeDeployOnline, bCanWeDeployOnline) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_CanWeDeployOnline::bCanWeDeployOnline' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_CanWeDeployOnline, CallFunc_IsSteamAPIAvailable_ReturnValue) == 0x000001, "Member 'WBP_CampaignMissionMenu_C_CanWeDeployOnline::CallFunc_IsSteamAPIAvailable_ReturnValue' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.Get_Button_DeployToHotspot_Online_ToolTipWidget_0
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanWeDeployOnline_bCanWeDeployOnline;     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x0020(0x0018)()
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0) == 0x000038, "Wrong size on WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0, Temp_bool_Variable) == 0x000008, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000010, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0, CallFunc_CanWeDeployOnline_bCanWeDeployOnline) == 0x000018, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0::CallFunc_CanWeDeployOnline_bCanWeDeployOnline' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0, K2Node_Select_Default) == 0x000020, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Online_ToolTipWidget_0::K2Node_Select_Default' has a wrong offset!");
-
-// Function WBP_CampaignMissionMenu.WBP_CampaignMissionMenu_C.Get_Button_DeployToHotspot_Offline_ToolTipWidget_0
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0");
-static_assert(sizeof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_CampaignMissionMenu_C_Get_Button_DeployToHotspot_Offline_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 }
 

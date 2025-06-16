@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_News.WBP_News_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_News_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_News_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_News.WBP_News_C.ExecuteUbergraph_WBP_News
 // (Final, UbergraphFunction)
 // Parameters:
@@ -34,20 +48,6 @@ void UWBP_News_C::ExecuteUbergraph_WBP_News(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_News.WBP_News_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_News_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_News_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -88,41 +88,41 @@ public:
 	class FText                                   CampaignHasBeenReset_Message;                      // 0x0488(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_CampaignMainMenu(int32 EntryPoint);
-	void DisconnectToMainMenu();
-	void OnClickedOkProceedToResetCampaign(class UWBP_DialogueBox_C* Dialogue);
-	void BndEvt__WBP_CampaignMainMenu_Button_ResetCampaign_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
-	void ResetAutoZoom();
-	void OnHotspotEntryDoubleClicked(class UGBHotspotDataAsset* SelectedHotspot);
-	void SimulateClickViewHotspot();
-	void OnHotspotIconDoubleClicked(class UGBHotspotDataAsset* SelectedHotspot);
-	void ApplyHighlightToSelectedHotspot();
-	void OnHotspotIconHovered(class UGBHotspotDataAsset* SelectedHotspot);
-	void OnHotspotEntryHovered(class UGBHotspotDataAsset* SelectedHotspot);
-	void BndEvt__WBP_CampaignMainMenu_Button_DeployToHotspot_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
-	void AttemptToSetMapTranslation(const struct FVector2D& DesiredTranslation);
-	void CentreMapOnSelectedHotspot();
-	void SetSelectionsInHotspotList();
-	void OnHotspotIconClicked(class UGBHotspotDataAsset* SelectedHotspot);
-	void SelectHotspot(class UGBHotspotDataAsset* HotspotToSelect);
-	void OnHotspotEntrySelected(class UGBHotspotDataAsset* SelectedHotspotData);
-	void LoadHotspotData();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void Construct();
-	void Back();
-	void BndEvt__Button_NEWBack_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	void OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC(TSubclassOf<class UObject> Loaded);
-	struct FEventReply OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
-	struct FEventReply OnMouseWheel(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void Get_Hotspot_Screen_Location(class UWBP_HotspotMapIcon_C* HotspotMarkerWidget, struct FVector2D* RawMapPosition, struct FVector2D* CentredScreenPosition, struct FVector2D* TranslationNeededToCentreIcon);
-	void ClampMapTranslationToAvailableSize(const struct FVector2D& DesiredTranslation, struct FVector2D* ClampedTranslation);
-	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	bool Get_Button_DeployToHotspot_bIsEnabled_0();
-	void ShowScreen(class UClass* WidgetClass, class UUserWidget** CreatedMissionScreenWidget);
-	void IsHoveringOnMap(bool* bIsHoveringOnMap);
-	class UWidget* Get_Button_ResetCampaign_ToolTipWidget_0();
-	class UWidget* Get_Button_ViewRoster_ToolTipWidget_0();
 	class UWidget* Get_Button_ViewHotspot_ToolTipWidget_0();
+	class UWidget* Get_Button_ViewRoster_ToolTipWidget_0();
+	class UWidget* Get_Button_ResetCampaign_ToolTipWidget_0();
+	void IsHoveringOnMap(bool* bIsHoveringOnMap);
+	void ShowScreen(class UClass* WidgetClass, class UUserWidget** CreatedMissionScreenWidget);
+	bool Get_Button_DeployToHotspot_bIsEnabled_0();
+	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void ClampMapTranslationToAvailableSize(const struct FVector2D& DesiredTranslation, struct FVector2D* ClampedTranslation);
+	void Get_Hotspot_Screen_Location(class UWBP_HotspotMapIcon_C* HotspotMarkerWidget, struct FVector2D* RawMapPosition, struct FVector2D* CentredScreenPosition, struct FVector2D* TranslationNeededToCentreIcon);
+	struct FEventReply OnMouseWheel(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	struct FEventReply OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	void OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC(TSubclassOf<class UObject> Loaded);
+	void BndEvt__Button_NEWBack_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void Back();
+	void Construct();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void LoadHotspotData();
+	void OnHotspotEntrySelected(class UGBHotspotDataAsset* SelectedHotspotData);
+	void SelectHotspot(class UGBHotspotDataAsset* HotspotToSelect);
+	void OnHotspotIconClicked(class UGBHotspotDataAsset* SelectedHotspot);
+	void SetSelectionsInHotspotList();
+	void CentreMapOnSelectedHotspot();
+	void AttemptToSetMapTranslation(const struct FVector2D& DesiredTranslation);
+	void BndEvt__WBP_CampaignMainMenu_Button_DeployToHotspot_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
+	void OnHotspotEntryHovered(class UGBHotspotDataAsset* SelectedHotspot);
+	void OnHotspotIconHovered(class UGBHotspotDataAsset* SelectedHotspot);
+	void ApplyHighlightToSelectedHotspot();
+	void OnHotspotIconDoubleClicked(class UGBHotspotDataAsset* SelectedHotspot);
+	void SimulateClickViewHotspot();
+	void OnHotspotEntryDoubleClicked(class UGBHotspotDataAsset* SelectedHotspot);
+	void ResetAutoZoom();
+	void BndEvt__WBP_CampaignMainMenu_Button_ResetCampaign_K2Node_ComponentBoundEvent_2_OnButtonClickedEvent__DelegateSignature();
+	void OnClickedOkProceedToResetCampaign(class UWBP_DialogueBox_C* Dialogue);
+	void DisconnectToMainMenu();
+	void ExecuteUbergraph_WBP_CampaignMainMenu(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

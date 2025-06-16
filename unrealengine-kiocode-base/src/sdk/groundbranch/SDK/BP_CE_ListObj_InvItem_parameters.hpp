@@ -25,7 +25,7 @@ struct BP_CE_ListObj_InvItem_C_InitDefaultBuild final
 public:
 	struct FPrimaryAssetId                        InInvItemAssetId;                                  // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FUInt64                                InModId;                                           // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	class UVaRestJsonObject*                      InJsonObj;                                         // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UVaRestJsonObject*                      InJSonObj;                                         // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsModIDForModOrStaging_ReturnValue;       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayTagContainer                  CallFunc_GetInvItemTags_ReturnValue;               // 0x0028(0x0020)()
@@ -41,7 +41,7 @@ static_assert(alignof(BP_CE_ListObj_InvItem_C_InitDefaultBuild) == 0x000008, "Wr
 static_assert(sizeof(BP_CE_ListObj_InvItem_C_InitDefaultBuild) == 0x0000C0, "Wrong size on BP_CE_ListObj_InvItem_C_InitDefaultBuild");
 static_assert(offsetof(BP_CE_ListObj_InvItem_C_InitDefaultBuild, InInvItemAssetId) == 0x000000, "Member 'BP_CE_ListObj_InvItem_C_InitDefaultBuild::InInvItemAssetId' has a wrong offset!");
 static_assert(offsetof(BP_CE_ListObj_InvItem_C_InitDefaultBuild, InModId) == 0x000010, "Member 'BP_CE_ListObj_InvItem_C_InitDefaultBuild::InModId' has a wrong offset!");
-static_assert(offsetof(BP_CE_ListObj_InvItem_C_InitDefaultBuild, InJsonObj) == 0x000018, "Member 'BP_CE_ListObj_InvItem_C_InitDefaultBuild::InJsonObj' has a wrong offset!");
+static_assert(offsetof(BP_CE_ListObj_InvItem_C_InitDefaultBuild, InJSonObj) == 0x000018, "Member 'BP_CE_ListObj_InvItem_C_InitDefaultBuild::InJSonObj' has a wrong offset!");
 static_assert(offsetof(BP_CE_ListObj_InvItem_C_InitDefaultBuild, CallFunc_IsModIDForModOrStaging_ReturnValue) == 0x000020, "Member 'BP_CE_ListObj_InvItem_C_InitDefaultBuild::CallFunc_IsModIDForModOrStaging_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_CE_ListObj_InvItem_C_InitDefaultBuild, CallFunc_GetInvItemTags_ReturnValue) == 0x000028, "Member 'BP_CE_ListObj_InvItem_C_InitDefaultBuild::CallFunc_GetInvItemTags_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_CE_ListObj_InvItem_C_InitDefaultBuild, CallFunc_GetARSSoftObjectPtrFromPrimaryAsset_OutSoftObjectPtr) == 0x000048, "Member 'BP_CE_ListObj_InvItem_C_InitDefaultBuild::CallFunc_GetARSSoftObjectPtrFromPrimaryAsset_OutSoftObjectPtr' has a wrong offset!");
@@ -56,7 +56,7 @@ static_assert(offsetof(BP_CE_ListObj_InvItem_C_InitDefaultBuild, CallFunc_GetARS
 struct BP_CE_ListObj_InvItem_C_InitCustomBuild final
 {
 public:
-	class UVaRestJsonObject*                      InJsonObj;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UVaRestJsonObject*                      InJSonObj;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 InFilename;                                        // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	struct FUInt64                                CallFunc_GetModIDForPrimaryAssetId_ReturnValue;    // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetBuildNameField_ReturnValue;            // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
@@ -69,7 +69,7 @@ public:
 };
 static_assert(alignof(BP_CE_ListObj_InvItem_C_InitCustomBuild) == 0x000008, "Wrong alignment on BP_CE_ListObj_InvItem_C_InitCustomBuild");
 static_assert(sizeof(BP_CE_ListObj_InvItem_C_InitCustomBuild) == 0x000090, "Wrong size on BP_CE_ListObj_InvItem_C_InitCustomBuild");
-static_assert(offsetof(BP_CE_ListObj_InvItem_C_InitCustomBuild, InJsonObj) == 0x000000, "Member 'BP_CE_ListObj_InvItem_C_InitCustomBuild::InJsonObj' has a wrong offset!");
+static_assert(offsetof(BP_CE_ListObj_InvItem_C_InitCustomBuild, InJSonObj) == 0x000000, "Member 'BP_CE_ListObj_InvItem_C_InitCustomBuild::InJSonObj' has a wrong offset!");
 static_assert(offsetof(BP_CE_ListObj_InvItem_C_InitCustomBuild, InFilename) == 0x000008, "Member 'BP_CE_ListObj_InvItem_C_InitCustomBuild::InFilename' has a wrong offset!");
 static_assert(offsetof(BP_CE_ListObj_InvItem_C_InitCustomBuild, CallFunc_GetModIDForPrimaryAssetId_ReturnValue) == 0x000018, "Member 'BP_CE_ListObj_InvItem_C_InitCustomBuild::CallFunc_GetModIDForPrimaryAssetId_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_CE_ListObj_InvItem_C_InitCustomBuild, CallFunc_GetBuildNameField_ReturnValue) == 0x000020, "Member 'BP_CE_ListObj_InvItem_C_InitCustomBuild::CallFunc_GetBuildNameField_ReturnValue' has a wrong offset!");

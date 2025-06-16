@@ -127,7 +127,7 @@ static_assert(sizeof(UDefaultCameraShakeBase) == 0x0000B0, "Wrong size on UDefau
 
 // Class GameplayCameras.MatineeCameraShake
 // 0x0100 (0x01B0 - 0x00B0)
-class UMatineeCameraShake final : public UCameraShakeBase
+class UMatineeCameraShake : public UCameraShakeBase
 {
 public:
 	float                                         OscillationDuration;                               // 0x00A8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)

@@ -31,8 +31,8 @@ public:
 	class FText                                   ScoreDescription;                                  // 0x0290(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
-	void ExecuteUbergraph_WBP_Mission_TeamScoreListEntry(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_Mission_TeamScoreListEntry(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -37,10 +37,10 @@ public:
 	struct FSlateColor                            SelectedTextColour;                                // 0x02E8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_Campaign_MissionImageTab(int32 EntryPoint);
-	void BndEvt__WBP_Campaign_MissionImageTab_Button_ImageTabClicked_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	void SetSelected(bool bIsSelected);
 	void Construct();
+	void SetSelected(bool bIsSelected);
+	void BndEvt__WBP_Campaign_MissionImageTab_Button_ImageTabClicked_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void ExecuteUbergraph_WBP_Campaign_MissionImageTab(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -36,23 +36,23 @@ public:
 	class FText                                   HeadingBackToReadyRoom;                            // 0x02E0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_DeathOptions(int32 EntryPoint);
-	void EnableTooltips();
-	void OnPlayerControllerStateChanged_Event_0(class FName OldState, class FName NewState);
-	void BindToPlayerControllerState();
-	void ValidateSpectateButton();
-	void ValidateReadyRoomButton();
-	void ValidateRespawnButton();
-	void Close();
-	void BndEvt__Button_ReadyRoom_K2Node_ComponentBoundEvent_710_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__Button_Spectate_K2Node_ComponentBoundEvent_690_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__Button_Respawn_K2Node_ComponentBoundEvent_1012_OnButtonClickedEvent__DelegateSignature();
-	void Construct();
-	ESlateVisibility GetRespawnVisibility();
-	class FText GetRespawnText();
-	bool GetRespawnIsEnabled();
-	struct FSlateColor Get_TextBlock_Respawn_ColorAndOpacity_0();
 	void AnyLiving(TArray<class AGBPlayerState*>& Array, bool* bOutSomeoneIsAlive);
+	struct FSlateColor Get_TextBlock_Respawn_ColorAndOpacity_0();
+	bool GetRespawnIsEnabled();
+	class FText GetRespawnText();
+	ESlateVisibility GetRespawnVisibility();
+	void Construct();
+	void BndEvt__Button_Respawn_K2Node_ComponentBoundEvent_1012_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__Button_Spectate_K2Node_ComponentBoundEvent_690_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__Button_ReadyRoom_K2Node_ComponentBoundEvent_710_OnButtonClickedEvent__DelegateSignature();
+	void Close();
+	void ValidateRespawnButton();
+	void ValidateReadyRoomButton();
+	void ValidateSpectateButton();
+	void BindToPlayerControllerState();
+	void OnPlayerControllerStateChanged_Event_0(class FName OldState, class FName NewState);
+	void EnableTooltips();
+	void ExecuteUbergraph_WBP_DeathOptions(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

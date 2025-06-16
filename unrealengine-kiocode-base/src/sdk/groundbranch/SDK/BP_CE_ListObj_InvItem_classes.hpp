@@ -36,8 +36,8 @@ public:
 	class FString                                 Filename;                                          // 0x00D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
-	void InitDefaultBuild(const struct FPrimaryAssetId& InInvItemAssetId, const struct FUInt64& InModId, class UVaRestJsonObject* InJsonObj);
-	void InitCustomBuild(class UVaRestJsonObject* InJsonObj, const class FString& InFilename);
+	void InitDefaultBuild(const struct FPrimaryAssetId& InInvItemAssetId, const struct FUInt64& InModId, class UVaRestJsonObject* InJSonObj);
+	void InitCustomBuild(class UVaRestJsonObject* InJSonObj, const class FString& InFilename);
 	void SetCustomBuildGameplayTags(const struct FGameplayTagContainer& GameplayTags_0);
 
 public:

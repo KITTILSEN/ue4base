@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UMG_classes.hpp"
 #include "FGBMissionNotification_structs.hpp"
+#include "UMG_classes.hpp"
 #include "GroundBranch_structs.hpp"
 
 

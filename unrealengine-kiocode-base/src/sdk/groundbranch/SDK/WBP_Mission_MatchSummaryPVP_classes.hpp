@@ -50,13 +50,13 @@ public:
 	class FText                                   TeamName2;                                         // 0x0318(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_Mission_MatchSummaryPVP(int32 EntryPoint);
-	void OnMatchStatsUpdated(class AGBGameState* GameState);
-	void BindMatchStats();
-	void Construct();
-	void SetTeamRolesVisibility();
-	void UpdateNormalMatchStats(class AGBGameState* InGameState);
 	void GetTeamName(uint8 TeamId, class FText* TeamName);
+	void UpdateNormalMatchStats(class AGBGameState* InGameState);
+	void SetTeamRolesVisibility();
+	void Construct();
+	void BindMatchStats();
+	void OnMatchStatsUpdated(class AGBGameState* GameState);
+	void ExecuteUbergraph_WBP_Mission_MatchSummaryPVP(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -18,6 +18,17 @@
 namespace SDK::Params
 {
 
+// Function WBP_ME_MapWidgetListItem.WBP_ME_MapWidgetListItem_C.DragCancelled
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ME_MapWidgetListItem_C_DragCancelled final
+{
+public:
+	class UDragDropOperation*                     Operation;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapWidgetListItem_C_DragCancelled) == 0x000008, "Wrong alignment on WBP_ME_MapWidgetListItem_C_DragCancelled");
+static_assert(sizeof(WBP_ME_MapWidgetListItem_C_DragCancelled) == 0x000008, "Wrong size on WBP_ME_MapWidgetListItem_C_DragCancelled");
+static_assert(offsetof(WBP_ME_MapWidgetListItem_C_DragCancelled, Operation) == 0x000000, "Member 'WBP_ME_MapWidgetListItem_C_DragCancelled::Operation' has a wrong offset!");
+
 // Function WBP_ME_MapWidgetListItem.WBP_ME_MapWidgetListItem_C.ExecuteUbergraph_WBP_ME_MapWidgetListItem
 // 0x0068 (0x0068 - 0x0000)
 struct WBP_ME_MapWidgetListItem_C_ExecuteUbergraph_WBP_ME_MapWidgetListItem final
@@ -53,38 +64,35 @@ static_assert(offsetof(WBP_ME_MapWidgetListItem_C_ExecuteUbergraph_WBP_ME_MapWid
 static_assert(offsetof(WBP_ME_MapWidgetListItem_C_ExecuteUbergraph_WBP_ME_MapWidgetListItem, CallFunc_GetParentWidgetOfClass_ReturnValue) == 0x000058, "Member 'WBP_ME_MapWidgetListItem_C_ExecuteUbergraph_WBP_ME_MapWidgetListItem::CallFunc_GetParentWidgetOfClass_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_ME_MapWidgetListItem_C_ExecuteUbergraph_WBP_ME_MapWidgetListItem, K2Node_CustomEvent_Loaded) == 0x000060, "Member 'WBP_ME_MapWidgetListItem_C_ExecuteUbergraph_WBP_ME_MapWidgetListItem::K2Node_CustomEvent_Loaded' has a wrong offset!");
 
-// Function WBP_ME_MapWidgetListItem.WBP_ME_MapWidgetListItem_C.DragCancelled
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ME_MapWidgetListItem_C_DragCancelled final
+// Function WBP_ME_MapWidgetListItem.WBP_ME_MapWidgetListItem_C.GetBrushColor_0
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_ME_MapWidgetListItem_C_GetBrushColor_0 final
 {
 public:
-	class UDragDropOperation*                     Operation;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WBP_ME_MapWidgetListItem_C_DragCancelled) == 0x000008, "Wrong alignment on WBP_ME_MapWidgetListItem_C_DragCancelled");
-static_assert(sizeof(WBP_ME_MapWidgetListItem_C_DragCancelled) == 0x000008, "Wrong size on WBP_ME_MapWidgetListItem_C_DragCancelled");
-static_assert(offsetof(WBP_ME_MapWidgetListItem_C_DragCancelled, Operation) == 0x000000, "Member 'WBP_ME_MapWidgetListItem_C_DragCancelled::Operation' has a wrong offset!");
+static_assert(alignof(WBP_ME_MapWidgetListItem_C_GetBrushColor_0) == 0x000004, "Wrong alignment on WBP_ME_MapWidgetListItem_C_GetBrushColor_0");
+static_assert(sizeof(WBP_ME_MapWidgetListItem_C_GetBrushColor_0) == 0x000014, "Wrong size on WBP_ME_MapWidgetListItem_C_GetBrushColor_0");
+static_assert(offsetof(WBP_ME_MapWidgetListItem_C_GetBrushColor_0, ReturnValue) == 0x000000, "Member 'WBP_ME_MapWidgetListItem_C_GetBrushColor_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapWidgetListItem_C_GetBrushColor_0, CallFunc_IsHovered_ReturnValue) == 0x000010, "Member 'WBP_ME_MapWidgetListItem_C_GetBrushColor_0::CallFunc_IsHovered_ReturnValue' has a wrong offset!");
 
-// Function WBP_ME_MapWidgetListItem.WBP_ME_MapWidgetListItem_C.BindDragDropOperation
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ME_MapWidgetListItem_C_BindDragDropOperation final
+// Function WBP_ME_MapWidgetListItem.WBP_ME_MapWidgetListItem_C.OnMouseButtonDown
+// 0x0218 (0x0218 - 0x0000)
+struct WBP_ME_MapWidgetListItem_C_OnMouseButtonDown final
 {
 public:
-	class UDragDropOperation*                     DragDropOp;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_DetectDragIfPressed_ReturnValue;          // 0x0160(0x00B8)()
 };
-static_assert(alignof(WBP_ME_MapWidgetListItem_C_BindDragDropOperation) == 0x000008, "Wrong alignment on WBP_ME_MapWidgetListItem_C_BindDragDropOperation");
-static_assert(sizeof(WBP_ME_MapWidgetListItem_C_BindDragDropOperation) == 0x000008, "Wrong size on WBP_ME_MapWidgetListItem_C_BindDragDropOperation");
-static_assert(offsetof(WBP_ME_MapWidgetListItem_C_BindDragDropOperation, DragDropOp) == 0x000000, "Member 'WBP_ME_MapWidgetListItem_C_BindDragDropOperation::DragDropOp' has a wrong offset!");
-
-// Function WBP_ME_MapWidgetListItem.WBP_ME_MapWidgetListItem_C.OnLoaded_CCEA74F146EB214E46A765B498F9C9A3
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ME_MapWidgetListItem_C_OnLoaded_CCEA74F146EB214E46A765B498F9C9A3 final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapWidgetListItem_C_OnLoaded_CCEA74F146EB214E46A765B498F9C9A3) == 0x000008, "Wrong alignment on WBP_ME_MapWidgetListItem_C_OnLoaded_CCEA74F146EB214E46A765B498F9C9A3");
-static_assert(sizeof(WBP_ME_MapWidgetListItem_C_OnLoaded_CCEA74F146EB214E46A765B498F9C9A3) == 0x000008, "Wrong size on WBP_ME_MapWidgetListItem_C_OnLoaded_CCEA74F146EB214E46A765B498F9C9A3");
-static_assert(offsetof(WBP_ME_MapWidgetListItem_C_OnLoaded_CCEA74F146EB214E46A765B498F9C9A3, Loaded) == 0x000000, "Member 'WBP_ME_MapWidgetListItem_C_OnLoaded_CCEA74F146EB214E46A765B498F9C9A3::Loaded' has a wrong offset!");
+static_assert(alignof(WBP_ME_MapWidgetListItem_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on WBP_ME_MapWidgetListItem_C_OnMouseButtonDown");
+static_assert(sizeof(WBP_ME_MapWidgetListItem_C_OnMouseButtonDown) == 0x000218, "Wrong size on WBP_ME_MapWidgetListItem_C_OnMouseButtonDown");
+static_assert(offsetof(WBP_ME_MapWidgetListItem_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'WBP_ME_MapWidgetListItem_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapWidgetListItem_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'WBP_ME_MapWidgetListItem_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapWidgetListItem_C_OnMouseButtonDown, ReturnValue) == 0x0000A8, "Member 'WBP_ME_MapWidgetListItem_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapWidgetListItem_C_OnMouseButtonDown, CallFunc_DetectDragIfPressed_ReturnValue) == 0x000160, "Member 'WBP_ME_MapWidgetListItem_C_OnMouseButtonDown::CallFunc_DetectDragIfPressed_ReturnValue' has a wrong offset!");
 
 // Function WBP_ME_MapWidgetListItem.WBP_ME_MapWidgetListItem_C.OnDragDetected
 // 0x00C0 (0x00C0 - 0x0000)
@@ -105,35 +113,27 @@ static_assert(offsetof(WBP_ME_MapWidgetListItem_C_OnDragDetected, Operation) == 
 static_assert(offsetof(WBP_ME_MapWidgetListItem_C_OnDragDetected, CallFunc_Create_ReturnValue) == 0x0000B0, "Member 'WBP_ME_MapWidgetListItem_C_OnDragDetected::CallFunc_Create_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_ME_MapWidgetListItem_C_OnDragDetected, CallFunc_CreateDragDropOperation_ReturnValue) == 0x0000B8, "Member 'WBP_ME_MapWidgetListItem_C_OnDragDetected::CallFunc_CreateDragDropOperation_ReturnValue' has a wrong offset!");
 
-// Function WBP_ME_MapWidgetListItem.WBP_ME_MapWidgetListItem_C.OnMouseButtonDown
-// 0x0218 (0x0218 - 0x0000)
-struct WBP_ME_MapWidgetListItem_C_OnMouseButtonDown final
+// Function WBP_ME_MapWidgetListItem.WBP_ME_MapWidgetListItem_C.OnLoaded_CCEA74F146EB214E46A765B498F9C9A3
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ME_MapWidgetListItem_C_OnLoaded_CCEA74F146EB214E46A765B498F9C9A3 final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_DetectDragIfPressed_ReturnValue;          // 0x0160(0x00B8)()
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ME_MapWidgetListItem_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on WBP_ME_MapWidgetListItem_C_OnMouseButtonDown");
-static_assert(sizeof(WBP_ME_MapWidgetListItem_C_OnMouseButtonDown) == 0x000218, "Wrong size on WBP_ME_MapWidgetListItem_C_OnMouseButtonDown");
-static_assert(offsetof(WBP_ME_MapWidgetListItem_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'WBP_ME_MapWidgetListItem_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapWidgetListItem_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'WBP_ME_MapWidgetListItem_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapWidgetListItem_C_OnMouseButtonDown, ReturnValue) == 0x0000A8, "Member 'WBP_ME_MapWidgetListItem_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapWidgetListItem_C_OnMouseButtonDown, CallFunc_DetectDragIfPressed_ReturnValue) == 0x000160, "Member 'WBP_ME_MapWidgetListItem_C_OnMouseButtonDown::CallFunc_DetectDragIfPressed_ReturnValue' has a wrong offset!");
+static_assert(alignof(WBP_ME_MapWidgetListItem_C_OnLoaded_CCEA74F146EB214E46A765B498F9C9A3) == 0x000008, "Wrong alignment on WBP_ME_MapWidgetListItem_C_OnLoaded_CCEA74F146EB214E46A765B498F9C9A3");
+static_assert(sizeof(WBP_ME_MapWidgetListItem_C_OnLoaded_CCEA74F146EB214E46A765B498F9C9A3) == 0x000008, "Wrong size on WBP_ME_MapWidgetListItem_C_OnLoaded_CCEA74F146EB214E46A765B498F9C9A3");
+static_assert(offsetof(WBP_ME_MapWidgetListItem_C_OnLoaded_CCEA74F146EB214E46A765B498F9C9A3, Loaded) == 0x000000, "Member 'WBP_ME_MapWidgetListItem_C_OnLoaded_CCEA74F146EB214E46A765B498F9C9A3::Loaded' has a wrong offset!");
 
-// Function WBP_ME_MapWidgetListItem.WBP_ME_MapWidgetListItem_C.GetBrushColor_0
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_ME_MapWidgetListItem_C_GetBrushColor_0 final
+// Function WBP_ME_MapWidgetListItem.WBP_ME_MapWidgetListItem_C.BindDragDropOperation
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ME_MapWidgetListItem_C_BindDragDropOperation final
 {
 public:
-	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UDragDropOperation*                     DragDropOp;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_ME_MapWidgetListItem_C_GetBrushColor_0) == 0x000004, "Wrong alignment on WBP_ME_MapWidgetListItem_C_GetBrushColor_0");
-static_assert(sizeof(WBP_ME_MapWidgetListItem_C_GetBrushColor_0) == 0x000014, "Wrong size on WBP_ME_MapWidgetListItem_C_GetBrushColor_0");
-static_assert(offsetof(WBP_ME_MapWidgetListItem_C_GetBrushColor_0, ReturnValue) == 0x000000, "Member 'WBP_ME_MapWidgetListItem_C_GetBrushColor_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapWidgetListItem_C_GetBrushColor_0, CallFunc_IsHovered_ReturnValue) == 0x000010, "Member 'WBP_ME_MapWidgetListItem_C_GetBrushColor_0::CallFunc_IsHovered_ReturnValue' has a wrong offset!");
+static_assert(alignof(WBP_ME_MapWidgetListItem_C_BindDragDropOperation) == 0x000008, "Wrong alignment on WBP_ME_MapWidgetListItem_C_BindDragDropOperation");
+static_assert(sizeof(WBP_ME_MapWidgetListItem_C_BindDragDropOperation) == 0x000008, "Wrong size on WBP_ME_MapWidgetListItem_C_BindDragDropOperation");
+static_assert(offsetof(WBP_ME_MapWidgetListItem_C_BindDragDropOperation, DragDropOp) == 0x000000, "Member 'WBP_ME_MapWidgetListItem_C_BindDragDropOperation::DragDropOp' has a wrong offset!");
 
 }
 

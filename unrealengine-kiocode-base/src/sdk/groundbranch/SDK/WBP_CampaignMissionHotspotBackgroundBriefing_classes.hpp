@@ -29,8 +29,8 @@ public:
 	class FName                                   MissionDetailsTableId;                             // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CampaignMissionHotspotBackgroundBriefing(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_CampaignMissionHotspotBackgroundBriefing(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

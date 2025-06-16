@@ -43,12 +43,12 @@ public:
 	class FText                                   ClientTravelFailure;                               // 0x0370(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_TravelFailureOverlay(int32 EntryPoint);
-	void CheckNoLevel();
-	void CheckPackageMissingURL();
-	void Construct();
-	void RemoveLoadingScreen();
 	void BndEvt__Button_Password_Ok_K2Node_ComponentBoundEvent_735_OnButtonClickedEvent__DelegateSignature();
+	void RemoveLoadingScreen();
+	void Construct();
+	void CheckPackageMissingURL();
+	void CheckNoLevel();
+	void ExecuteUbergraph_WBP_TravelFailureOverlay(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

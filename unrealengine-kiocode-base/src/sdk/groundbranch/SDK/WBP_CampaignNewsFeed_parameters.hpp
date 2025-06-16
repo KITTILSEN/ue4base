@@ -18,6 +18,28 @@
 namespace SDK::Params
 {
 
+// Function WBP_CampaignNewsFeed.WBP_CampaignNewsFeed_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignNewsFeed_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_CampaignNewsFeed_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CampaignNewsFeed_C_PreConstruct");
+static_assert(sizeof(WBP_CampaignNewsFeed_C_PreConstruct) == 0x000001, "Wrong size on WBP_CampaignNewsFeed_C_PreConstruct");
+static_assert(offsetof(WBP_CampaignNewsFeed_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CampaignNewsFeed_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
+// Function WBP_CampaignNewsFeed.WBP_CampaignNewsFeed_C.SetCurrentHotspot
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignNewsFeed_C_SetCurrentHotspot final
+{
+public:
+	class UGBHotspotDataAsset*                    NewHotspotRef;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignNewsFeed_C_SetCurrentHotspot) == 0x000008, "Wrong alignment on WBP_CampaignNewsFeed_C_SetCurrentHotspot");
+static_assert(sizeof(WBP_CampaignNewsFeed_C_SetCurrentHotspot) == 0x000008, "Wrong size on WBP_CampaignNewsFeed_C_SetCurrentHotspot");
+static_assert(offsetof(WBP_CampaignNewsFeed_C_SetCurrentHotspot, NewHotspotRef) == 0x000000, "Member 'WBP_CampaignNewsFeed_C_SetCurrentHotspot::NewHotspotRef' has a wrong offset!");
+
 // Function WBP_CampaignNewsFeed.WBP_CampaignNewsFeed_C.ExecuteUbergraph_WBP_CampaignNewsFeed
 // 0x00E8 (0x00E8 - 0x0000)
 struct WBP_CampaignNewsFeed_C_ExecuteUbergraph_WBP_CampaignNewsFeed final
@@ -114,28 +136,6 @@ static_assert(offsetof(WBP_CampaignNewsFeed_C_ExecuteUbergraph_WBP_CampaignNewsF
 static_assert(offsetof(WBP_CampaignNewsFeed_C_ExecuteUbergraph_WBP_CampaignNewsFeed, CallFunc_MakeRandomStream_ReturnValue) == 0x0000C0, "Member 'WBP_CampaignNewsFeed_C_ExecuteUbergraph_WBP_CampaignNewsFeed::CallFunc_MakeRandomStream_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CampaignNewsFeed_C_ExecuteUbergraph_WBP_CampaignNewsFeed, CallFunc_AddChild_ReturnValue) == 0x0000C8, "Member 'WBP_CampaignNewsFeed_C_ExecuteUbergraph_WBP_CampaignNewsFeed::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CampaignNewsFeed_C_ExecuteUbergraph_WBP_CampaignNewsFeed, CallFunc_Array_Get_Item_1) == 0x0000D0, "Member 'WBP_CampaignNewsFeed_C_ExecuteUbergraph_WBP_CampaignNewsFeed::CallFunc_Array_Get_Item_1' has a wrong offset!");
-
-// Function WBP_CampaignNewsFeed.WBP_CampaignNewsFeed_C.SetCurrentHotspot
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignNewsFeed_C_SetCurrentHotspot final
-{
-public:
-	class UGBHotspotDataAsset*                    NewHotspotRef;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignNewsFeed_C_SetCurrentHotspot) == 0x000008, "Wrong alignment on WBP_CampaignNewsFeed_C_SetCurrentHotspot");
-static_assert(sizeof(WBP_CampaignNewsFeed_C_SetCurrentHotspot) == 0x000008, "Wrong size on WBP_CampaignNewsFeed_C_SetCurrentHotspot");
-static_assert(offsetof(WBP_CampaignNewsFeed_C_SetCurrentHotspot, NewHotspotRef) == 0x000000, "Member 'WBP_CampaignNewsFeed_C_SetCurrentHotspot::NewHotspotRef' has a wrong offset!");
-
-// Function WBP_CampaignNewsFeed.WBP_CampaignNewsFeed_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignNewsFeed_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CampaignNewsFeed_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CampaignNewsFeed_C_PreConstruct");
-static_assert(sizeof(WBP_CampaignNewsFeed_C_PreConstruct) == 0x000001, "Wrong size on WBP_CampaignNewsFeed_C_PreConstruct");
-static_assert(offsetof(WBP_CampaignNewsFeed_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CampaignNewsFeed_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }
 

@@ -41,10 +41,10 @@ public:
 	class FText                                   StatusOK;                                          // 0x0308(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_Mission_PlayerListEntry(int32 EntryPoint);
-	void UpdateStatus(const class FString& StatusKey);
-	void OnReplicatedPlayerStatsUpdated_Event_0(class AGBPlayerState* PlayerState_0);
 	void Construct();
+	void OnReplicatedPlayerStatsUpdated_Event_0(class AGBPlayerState* PlayerState_0);
+	void UpdateStatus(const class FString& StatusKey);
+	void ExecuteUbergraph_WBP_Mission_PlayerListEntry(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

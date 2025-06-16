@@ -25,7 +25,7 @@ public:
 	class FString                                 Filename;                                          // 0x0068(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
-	void InitPreset(class UVaRestJsonObject* InJsonObj, const class FString& InFilename);
+	void InitPreset(class UVaRestJsonObject* InJSonObj, const class FString& InFilename);
 
 public:
 	static class UClass* StaticClass()

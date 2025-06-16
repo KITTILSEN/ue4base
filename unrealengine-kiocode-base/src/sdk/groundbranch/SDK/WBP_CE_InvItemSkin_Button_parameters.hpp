@@ -421,7 +421,7 @@ static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_HasBeenChanged, ReturnValue) 
 static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_HasBeenChanged, CallFunc_NotEqual_PrimaryAssetId_ReturnValue) == 0x000001, "Member 'WBP_CE_InvItemSkin_Button_C_HasBeenChanged::CallFunc_NotEqual_PrimaryAssetId_ReturnValue' has a wrong offset!");
 
 // Function WBP_CE_InvItemSkin_Button.WBP_CE_InvItemSkin_Button_C.PrepItemToItemSkinIdMap
-// 0x0198 (0x0198 - 0x0000)
+// 0x01B8 (0x01B8 - 0x0000)
 struct WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap final
 {
 public:
@@ -429,89 +429,100 @@ public:
 	TArray<struct FPrimaryAssetId>                LocalInvItemSkinIdsToLoad;                         // 0x0010(0x0010)(Edit, BlueprintVisible)
 	struct FGameplayTagContainer                  LocalSubstituteInvItemSkinNameTags;                // 0x0020(0x0020)(Edit, BlueprintVisible)
 	struct FGameplayTag                           LocalInvItemSkinNameTag;                           // 0x0040(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
-	class AGBInvItem*                             LocalItem;                                         // 0x0048(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AGBInvItem*>                     CallFunc_Map_Keys_Keys;                            // 0x0070(0x0010)(ReferenceParm)
-	TArray<struct FPrimaryAssetId>                CallFunc_Map_Values_Values;                        // 0x0080(0x0010)(ReferenceParm)
-	class AGBInvItem*                             CallFunc_Array_Get_Item;                           // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Map_Length_ReturnValue;                   // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AGBInvItem*>                     CallFunc_GetChildInvItems_ReturnValue;             // 0x00B0(0x0010)(ReferenceParm)
-	struct FGameplayTagContainer                  CallFunc_GetSubstituteInvItemSkinNameTags_ReturnValue; // 0x00C0(0x0020)()
-	class AGBInvItem*                             CallFunc_Array_Get_Item_1;                         // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  CallFunc_GetInvItemTags_ReturnValue;               // 0x00E8(0x0020)()
-	struct FPrimaryAssetId                        CallFunc_GetInvItemSkinId_ReturnValue;             // 0x0108(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  CallFunc_GameplayTagContainer_Filter_OutFilteredContainer; // 0x0118(0x0020)()
-	bool                                          CallFunc_GameplayTagContainer_Filter_ReturnValue;  // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FGameplayTag>                   CallFunc_BreakGameplayTagContainer_GameplayTags;   // 0x0140(0x0010)(ReferenceParm)
-	struct FPrimaryAssetId                        CallFunc_GetInvItemSkinId_ReturnValue_1;           // 0x0150(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0164(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AGBInvItem*                             CurrentChildItem;                                  // 0x0048(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBInvItem*                             LocalItem;                                         // 0x0050(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBInvItem*                             CallFunc_GetParentItem_ReturnValue;                // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBPouch*                               K2Node_DynamicCast_AsGBPouch;                      // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_82[0x2];                                       // 0x0082(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPrimaryAssetId                        CallFunc_GetInvItemSkinId_ReturnValue;             // 0x0084(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPrimaryAssetId                        CallFunc_GetInvItemSkinId_ReturnValue_1;           // 0x0094(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  CallFunc_GetInvItemTags_ReturnValue;               // 0x00A8(0x0020)()
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  CallFunc_GameplayTagContainer_Filter_OutFilteredContainer; // 0x00D0(0x0020)()
+	bool                                          CallFunc_GameplayTagContainer_Filter_ReturnValue;  // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FGameplayTag>                   CallFunc_BreakGameplayTagContainer_GameplayTags;   // 0x00F8(0x0010)(ReferenceParm)
+	struct FGameplayTagContainer                  CallFunc_GetSubstituteInvItemSkinNameTags_ReturnValue; // 0x0108(0x0020)()
+	TArray<class AGBInvItem*>                     CallFunc_Map_Keys_Keys;                            // 0x0128(0x0010)(ReferenceParm)
+	TArray<struct FPrimaryAssetId>                CallFunc_Map_Values_Values;                        // 0x0138(0x0010)(ReferenceParm)
+	class AGBInvItem*                             CallFunc_Array_Get_Item;                           // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_151[0x3];                                      // 0x0151(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_15D[0x3];                                      // 0x015D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Map_Length_ReturnValue;                   // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0164(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_165[0x3];                                      // 0x0165(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           CallFunc_GetInvItemSkinNameTag_ReturnValue;        // 0x0168(0x0008)(NoDestructor, HasGetValueTypeHash)
-	struct FPrimaryAssetId                        CallFunc_GetSimilarInvItemSkinId_ReturnValue;      // 0x0170(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_AddUnique_ReturnValue_1;            // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGBInvItem*                             CallFunc_GetFirstInvItemByTags_ReturnValue;        // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_PrimaryAssetId_ReturnValue;      // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_191[0x3];                                      // 0x0191(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_AddUnique_ReturnValue_2;            // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AGBInvItem*>                     CallFunc_GetChildInvItems_ReturnValue;             // 0x0168(0x0010)(ReferenceParm)
+	struct FGameplayTag                           CallFunc_GetInvItemSkinNameTag_ReturnValue;        // 0x0178(0x0008)(NoDestructor, HasGetValueTypeHash)
+	class AGBInvItem*                             CallFunc_Array_Get_Item_1;                         // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x018C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_18D[0x3];                                      // 0x018D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPrimaryAssetId                        CallFunc_GetSimilarInvItemSkinId_ReturnValue;      // 0x0190(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_AddUnique_ReturnValue_1;            // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_PrimaryAssetId_ReturnValue;      // 0x01A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A5[0x3];                                      // 0x01A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBInvItem*                             CallFunc_GetFirstInvItemByTags_ReturnValue;        // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_AddUnique_ReturnValue_2;            // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap) == 0x000008, "Wrong alignment on WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap");
-static_assert(sizeof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap) == 0x000198, "Wrong size on WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap");
+static_assert(sizeof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap) == 0x0001B8, "Wrong size on WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap");
 static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, OutItemSkinsToLoad) == 0x000000, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::OutItemSkinsToLoad' has a wrong offset!");
 static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, LocalInvItemSkinIdsToLoad) == 0x000010, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::LocalInvItemSkinIdsToLoad' has a wrong offset!");
 static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, LocalSubstituteInvItemSkinNameTags) == 0x000020, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::LocalSubstituteInvItemSkinNameTags' has a wrong offset!");
 static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, LocalInvItemSkinNameTag) == 0x000040, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::LocalInvItemSkinNameTag' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, LocalItem) == 0x000048, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::LocalItem' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, Temp_int_Array_Index_Variable) == 0x000050, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, Temp_int_Loop_Counter_Variable) == 0x000054, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Add_IntInt_ReturnValue) == 0x000058, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, Temp_int_Loop_Counter_Variable_1) == 0x00005C, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Add_IntInt_ReturnValue_1) == 0x000060, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, Temp_int_Array_Index_Variable_1) == 0x000064, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_IsValid_ReturnValue) == 0x000068, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Map_Keys_Keys) == 0x000070, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Map_Values_Values) == 0x000080, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Map_Values_Values' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Array_Get_Item) == 0x000090, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_IsValid_ReturnValue_1) == 0x000098, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Array_AddUnique_ReturnValue) == 0x00009C, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Array_Length_ReturnValue) == 0x0000A0, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Less_IntInt_ReturnValue) == 0x0000A4, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Map_Length_ReturnValue) == 0x0000A8, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Map_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Greater_IntInt_ReturnValue) == 0x0000AC, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetChildInvItems_ReturnValue) == 0x0000B0, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetChildInvItems_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetSubstituteInvItemSkinNameTags_ReturnValue) == 0x0000C0, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetSubstituteInvItemSkinNameTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Array_Get_Item_1) == 0x0000E0, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetInvItemTags_ReturnValue) == 0x0000E8, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetInvItemTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetInvItemSkinId_ReturnValue) == 0x000108, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetInvItemSkinId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GameplayTagContainer_Filter_OutFilteredContainer) == 0x000118, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GameplayTagContainer_Filter_OutFilteredContainer' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GameplayTagContainer_Filter_ReturnValue) == 0x000138, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GameplayTagContainer_Filter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_BreakGameplayTagContainer_GameplayTags) == 0x000140, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_BreakGameplayTagContainer_GameplayTags' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetInvItemSkinId_ReturnValue_1) == 0x000150, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetInvItemSkinId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Array_Length_ReturnValue_1) == 0x000160, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Less_IntInt_ReturnValue_1) == 0x000164, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetInvItemSkinNameTag_ReturnValue) == 0x000168, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetInvItemSkinNameTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetSimilarInvItemSkinId_ReturnValue) == 0x000170, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetSimilarInvItemSkinId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Array_AddUnique_ReturnValue_1) == 0x000180, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Array_AddUnique_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetFirstInvItemByTags_ReturnValue) == 0x000188, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetFirstInvItemByTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_NotEqual_PrimaryAssetId_ReturnValue) == 0x000190, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_NotEqual_PrimaryAssetId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Array_AddUnique_ReturnValue_2) == 0x000194, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Array_AddUnique_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CurrentChildItem) == 0x000048, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CurrentChildItem' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, LocalItem) == 0x000050, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::LocalItem' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, Temp_int_Array_Index_Variable) == 0x000058, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, Temp_int_Loop_Counter_Variable) == 0x00005C, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Add_IntInt_ReturnValue) == 0x000060, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, Temp_int_Loop_Counter_Variable_1) == 0x000064, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Add_IntInt_ReturnValue_1) == 0x000068, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, Temp_int_Array_Index_Variable_1) == 0x00006C, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::Temp_int_Array_Index_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetParentItem_ReturnValue) == 0x000070, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetParentItem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, K2Node_DynamicCast_AsGBPouch) == 0x000078, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::K2Node_DynamicCast_AsGBPouch' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, K2Node_DynamicCast_bSuccess) == 0x000080, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Not_PreBool_ReturnValue) == 0x000081, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetInvItemSkinId_ReturnValue) == 0x000084, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetInvItemSkinId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetInvItemSkinId_ReturnValue_1) == 0x000094, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetInvItemSkinId_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetInvItemTags_ReturnValue) == 0x0000A8, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetInvItemTags_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_IsValid_ReturnValue) == 0x0000C8, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GameplayTagContainer_Filter_OutFilteredContainer) == 0x0000D0, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GameplayTagContainer_Filter_OutFilteredContainer' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GameplayTagContainer_Filter_ReturnValue) == 0x0000F0, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GameplayTagContainer_Filter_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_BreakGameplayTagContainer_GameplayTags) == 0x0000F8, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_BreakGameplayTagContainer_GameplayTags' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetSubstituteInvItemSkinNameTags_ReturnValue) == 0x000108, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetSubstituteInvItemSkinNameTags_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Map_Keys_Keys) == 0x000128, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Map_Keys_Keys' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Map_Values_Values) == 0x000138, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Map_Values_Values' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Array_Get_Item) == 0x000148, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_IsValid_ReturnValue_1) == 0x000150, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Array_AddUnique_ReturnValue) == 0x000154, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Array_Length_ReturnValue) == 0x000158, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Less_IntInt_ReturnValue) == 0x00015C, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Map_Length_ReturnValue) == 0x000160, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Map_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Greater_IntInt_ReturnValue) == 0x000164, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetChildInvItems_ReturnValue) == 0x000168, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetChildInvItems_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetInvItemSkinNameTag_ReturnValue) == 0x000178, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetInvItemSkinNameTag_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Array_Get_Item_1) == 0x000180, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Array_Length_ReturnValue_1) == 0x000188, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Less_IntInt_ReturnValue_1) == 0x00018C, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetSimilarInvItemSkinId_ReturnValue) == 0x000190, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetSimilarInvItemSkinId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Array_AddUnique_ReturnValue_1) == 0x0001A0, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Array_AddUnique_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_NotEqual_PrimaryAssetId_ReturnValue) == 0x0001A4, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_NotEqual_PrimaryAssetId_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_GetFirstInvItemByTags_ReturnValue) == 0x0001A8, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_GetFirstInvItemByTags_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap, CallFunc_Array_AddUnique_ReturnValue_2) == 0x0001B0, "Member 'WBP_CE_InvItemSkin_Button_C_PrepItemToItemSkinIdMap::CallFunc_Array_AddUnique_ReturnValue_2' has a wrong offset!");
 
 // Function WBP_CE_InvItemSkin_Button.WBP_CE_InvItemSkin_Button_C.CacheListObjs
 // 0x0190 (0x0190 - 0x0000)

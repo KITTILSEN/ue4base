@@ -21,6 +21,45 @@
 namespace SDK::Params
 {
 
+// Function WBP_CharacterEditorScreen.WBP_CharacterEditorScreen_C.OnPreviewKeyDown
+// 0x0378 (0x0378 - 0x0000)
+struct WBP_CharacterEditorScreen_C_OnPreviewKeyDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0128(0x0018)(HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0148(0x00B8)()
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0200(0x00B8)()
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue_1;                  // 0x02B8(0x00B8)()
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0370(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown) == 0x000008, "Wrong alignment on WBP_CharacterEditorScreen_C_OnPreviewKeyDown");
+static_assert(sizeof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown) == 0x000378, "Wrong size on WBP_CharacterEditorScreen_C_OnPreviewKeyDown");
+static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, MyGeometry) == 0x000000, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, InKeyEvent) == 0x000038, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::InKeyEvent' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, ReturnValue) == 0x000070, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, CallFunc_GetKey_ReturnValue) == 0x000128, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::CallFunc_GetKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x000140, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, CallFunc_Unhandled_ReturnValue) == 0x000148, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, CallFunc_Handled_ReturnValue) == 0x000200, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, CallFunc_Unhandled_ReturnValue_1) == 0x0002B8, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::CallFunc_Unhandled_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, CallFunc_HasKeyboardFocus_ReturnValue) == 0x000370, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::CallFunc_HasKeyboardFocus_ReturnValue' has a wrong offset!");
+
+// Function WBP_CharacterEditorScreen.WBP_CharacterEditorScreen_C.BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CharacterEditorScreen_C_BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature final
+{
+public:
+	class UVaRestJsonObject*                      JsonObj;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CharacterEditorScreen_C_BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_CharacterEditorScreen_C_BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature");
+static_assert(sizeof(WBP_CharacterEditorScreen_C_BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_CharacterEditorScreen_C_BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature");
+static_assert(offsetof(WBP_CharacterEditorScreen_C_BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature, JsonObj) == 0x000000, "Member 'WBP_CharacterEditorScreen_C_BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature::JsonObj' has a wrong offset!");
+
 // Function WBP_CharacterEditorScreen.WBP_CharacterEditorScreen_C.ExecuteUbergraph_WBP_CharacterEditorScreen
 // 0x0210 (0x0210 - 0x0000)
 struct WBP_CharacterEditorScreen_C_ExecuteUbergraph_WBP_CharacterEditorScreen final
@@ -121,45 +160,6 @@ static_assert(offsetof(WBP_CharacterEditorScreen_C_ExecuteUbergraph_WBP_Characte
 static_assert(offsetof(WBP_CharacterEditorScreen_C_ExecuteUbergraph_WBP_CharacterEditorScreen, K2Node_DynamicCast_bSuccess_2) == 0x0001E0, "Member 'WBP_CharacterEditorScreen_C_ExecuteUbergraph_WBP_CharacterEditorScreen::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
 static_assert(offsetof(WBP_CharacterEditorScreen_C_ExecuteUbergraph_WBP_CharacterEditorScreen, CallFunc_GetRequiredInvItemTypeTags_ReturnValue_1) == 0x0001E8, "Member 'WBP_CharacterEditorScreen_C_ExecuteUbergraph_WBP_CharacterEditorScreen::CallFunc_GetRequiredInvItemTypeTags_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_CharacterEditorScreen_C_ExecuteUbergraph_WBP_CharacterEditorScreen, CallFunc_HasRequiredInvItemTypeTags_ReturnValue_1) == 0x000208, "Member 'WBP_CharacterEditorScreen_C_ExecuteUbergraph_WBP_CharacterEditorScreen::CallFunc_HasRequiredInvItemTypeTags_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_CharacterEditorScreen.WBP_CharacterEditorScreen_C.BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CharacterEditorScreen_C_BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature final
-{
-public:
-	class UVaRestJsonObject*                      JsonObj;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CharacterEditorScreen_C_BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_CharacterEditorScreen_C_BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature");
-static_assert(sizeof(WBP_CharacterEditorScreen_C_BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_CharacterEditorScreen_C_BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature");
-static_assert(offsetof(WBP_CharacterEditorScreen_C_BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature, JsonObj) == 0x000000, "Member 'WBP_CharacterEditorScreen_C_BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature::JsonObj' has a wrong offset!");
-
-// Function WBP_CharacterEditorScreen.WBP_CharacterEditorScreen_C.OnPreviewKeyDown
-// 0x0378 (0x0378 - 0x0000)
-struct WBP_CharacterEditorScreen_C_OnPreviewKeyDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
-	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0128(0x0018)(HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0148(0x00B8)()
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0200(0x00B8)()
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue_1;                  // 0x02B8(0x00B8)()
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0370(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown) == 0x000008, "Wrong alignment on WBP_CharacterEditorScreen_C_OnPreviewKeyDown");
-static_assert(sizeof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown) == 0x000378, "Wrong size on WBP_CharacterEditorScreen_C_OnPreviewKeyDown");
-static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, MyGeometry) == 0x000000, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, InKeyEvent) == 0x000038, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::InKeyEvent' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, ReturnValue) == 0x000070, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, CallFunc_GetKey_ReturnValue) == 0x000128, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::CallFunc_GetKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x000140, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, CallFunc_Unhandled_ReturnValue) == 0x000148, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, CallFunc_Handled_ReturnValue) == 0x000200, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, CallFunc_Unhandled_ReturnValue_1) == 0x0002B8, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::CallFunc_Unhandled_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CharacterEditorScreen_C_OnPreviewKeyDown, CallFunc_HasKeyboardFocus_ReturnValue) == 0x000370, "Member 'WBP_CharacterEditorScreen_C_OnPreviewKeyDown::CallFunc_HasKeyboardFocus_ReturnValue' has a wrong offset!");
 
 }
 

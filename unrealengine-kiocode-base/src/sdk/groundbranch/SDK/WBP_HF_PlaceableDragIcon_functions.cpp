@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_HF_PlaceableDragIcon.WBP_HF_PlaceableDragIcon_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_HF_PlaceableDragIcon_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HF_PlaceableDragIcon_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_HF_PlaceableDragIcon.WBP_HF_PlaceableDragIcon_C.ExecuteUbergraph_WBP_HF_PlaceableDragIcon
 // (Final, UbergraphFunction)
 // Parameters:
@@ -34,20 +48,6 @@ void UWBP_HF_PlaceableDragIcon_C::ExecuteUbergraph_WBP_HF_PlaceableDragIcon(int3
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_HF_PlaceableDragIcon.WBP_HF_PlaceableDragIcon_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_HF_PlaceableDragIcon_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HF_PlaceableDragIcon_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

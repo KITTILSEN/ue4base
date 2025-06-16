@@ -37,6 +37,26 @@ void UGA_Grenade_Throw_C::ExecuteUbergraph_GA_Grenade_Throw(int32 EntryPoint)
 }
 
 
+// Function GA_Grenade_Throw.GA_Grenade_Throw_C.K2_OnEndAbility
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bWasCancelled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UGA_Grenade_Throw_C::K2_OnEndAbility(bool bWasCancelled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Grenade_Throw_C", "K2_OnEndAbility");
+
+	Params::GA_Grenade_Throw_C_K2_OnEndAbility Parms{};
+
+	Parms.bWasCancelled = bWasCancelled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function GA_Grenade_Throw.GA_Grenade_Throw_C.MontageInterupterOrCancelled
 // (BlueprintCallable, BlueprintEvent)
 

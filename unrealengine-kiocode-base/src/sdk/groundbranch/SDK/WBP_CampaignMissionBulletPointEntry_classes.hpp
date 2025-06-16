@@ -48,8 +48,8 @@ public:
 	bool                                          bListAsStarted;                                    // 0x0329(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
-	void ExecuteUbergraph_WBP_CampaignMissionBulletPointEntry(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_CampaignMissionBulletPointEntry(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

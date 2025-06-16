@@ -17,6 +17,21 @@
 namespace SDK::Params
 {
 
+// Function WBP_CampaignMissionObjectives.WBP_CampaignMissionObjectives_C.SetObjectiveData
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_CampaignMissionObjectives_C_SetObjectiveData final
+{
+public:
+	struct FGBObjectiveData                       InObjectiveData;                                   // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FName                                   InHotspotCodename;                                 // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         InMissionSequenceNumber;                           // 0x0028(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMissionObjectives_C_SetObjectiveData) == 0x000008, "Wrong alignment on WBP_CampaignMissionObjectives_C_SetObjectiveData");
+static_assert(sizeof(WBP_CampaignMissionObjectives_C_SetObjectiveData) == 0x000030, "Wrong size on WBP_CampaignMissionObjectives_C_SetObjectiveData");
+static_assert(offsetof(WBP_CampaignMissionObjectives_C_SetObjectiveData, InObjectiveData) == 0x000000, "Member 'WBP_CampaignMissionObjectives_C_SetObjectiveData::InObjectiveData' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionObjectives_C_SetObjectiveData, InHotspotCodename) == 0x000020, "Member 'WBP_CampaignMissionObjectives_C_SetObjectiveData::InHotspotCodename' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMissionObjectives_C_SetObjectiveData, InMissionSequenceNumber) == 0x000028, "Member 'WBP_CampaignMissionObjectives_C_SetObjectiveData::InMissionSequenceNumber' has a wrong offset!");
+
 // Function WBP_CampaignMissionObjectives.WBP_CampaignMissionObjectives_C.ExecuteUbergraph_WBP_CampaignMissionObjectives
 // 0x0100 (0x0100 - 0x0000)
 struct WBP_CampaignMissionObjectives_C_ExecuteUbergraph_WBP_CampaignMissionObjectives final
@@ -85,21 +100,6 @@ static_assert(offsetof(WBP_CampaignMissionObjectives_C_ExecuteUbergraph_WBP_Camp
 static_assert(offsetof(WBP_CampaignMissionObjectives_C_ExecuteUbergraph_WBP_CampaignMissionObjectives, Temp_byte_Variable_1) == 0x0000E8, "Member 'WBP_CampaignMissionObjectives_C_ExecuteUbergraph_WBP_CampaignMissionObjectives::Temp_byte_Variable_1' has a wrong offset!");
 static_assert(offsetof(WBP_CampaignMissionObjectives_C_ExecuteUbergraph_WBP_CampaignMissionObjectives, CallFunc_AddChild_ReturnValue_1) == 0x0000F0, "Member 'WBP_CampaignMissionObjectives_C_ExecuteUbergraph_WBP_CampaignMissionObjectives::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_CampaignMissionObjectives_C_ExecuteUbergraph_WBP_CampaignMissionObjectives, K2Node_Select_Default) == 0x0000F8, "Member 'WBP_CampaignMissionObjectives_C_ExecuteUbergraph_WBP_CampaignMissionObjectives::K2Node_Select_Default' has a wrong offset!");
-
-// Function WBP_CampaignMissionObjectives.WBP_CampaignMissionObjectives_C.SetObjectiveData
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_CampaignMissionObjectives_C_SetObjectiveData final
-{
-public:
-	struct FGBObjectiveData                       InObjectiveData;                                   // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FName                                   InHotspotCodename;                                 // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         InMissionSequenceNumber;                           // 0x0028(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMissionObjectives_C_SetObjectiveData) == 0x000008, "Wrong alignment on WBP_CampaignMissionObjectives_C_SetObjectiveData");
-static_assert(sizeof(WBP_CampaignMissionObjectives_C_SetObjectiveData) == 0x000030, "Wrong size on WBP_CampaignMissionObjectives_C_SetObjectiveData");
-static_assert(offsetof(WBP_CampaignMissionObjectives_C_SetObjectiveData, InObjectiveData) == 0x000000, "Member 'WBP_CampaignMissionObjectives_C_SetObjectiveData::InObjectiveData' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionObjectives_C_SetObjectiveData, InHotspotCodename) == 0x000020, "Member 'WBP_CampaignMissionObjectives_C_SetObjectiveData::InHotspotCodename' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMissionObjectives_C_SetObjectiveData, InMissionSequenceNumber) == 0x000028, "Member 'WBP_CampaignMissionObjectives_C_SetObjectiveData::InMissionSequenceNumber' has a wrong offset!");
 
 }
 

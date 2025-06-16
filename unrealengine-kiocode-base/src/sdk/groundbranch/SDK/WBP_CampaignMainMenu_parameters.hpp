@@ -19,6 +19,460 @@
 namespace SDK::Params
 {
 
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.Get_Button_ViewHotspot_ToolTipWidget_0
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0");
+static_assert(sizeof(WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.Get_Button_ViewRoster_ToolTipWidget_0
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0");
+static_assert(sizeof(WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.Get_Button_ResetCampaign_ToolTipWidget_0
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0");
+static_assert(sizeof(WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.IsHoveringOnMap
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_CampaignMainMenu_C_IsHoveringOnMap final
+{
+public:
+	bool                                          bIsHoveringOnMap;                                  // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_IsHoveringOnMap) == 0x000001, "Wrong alignment on WBP_CampaignMainMenu_C_IsHoveringOnMap");
+static_assert(sizeof(WBP_CampaignMainMenu_C_IsHoveringOnMap) == 0x000002, "Wrong size on WBP_CampaignMainMenu_C_IsHoveringOnMap");
+static_assert(offsetof(WBP_CampaignMainMenu_C_IsHoveringOnMap, bIsHoveringOnMap) == 0x000000, "Member 'WBP_CampaignMainMenu_C_IsHoveringOnMap::bIsHoveringOnMap' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_IsHoveringOnMap, CallFunc_IsHovered_ReturnValue) == 0x000001, "Member 'WBP_CampaignMainMenu_C_IsHoveringOnMap::CallFunc_IsHovered_ReturnValue' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.ShowScreen
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_CampaignMainMenu_C_ShowScreen final
+{
+public:
+	class UClass*                                 WidgetClass;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            CreatedMissionScreenWidget;                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            CallFunc_Create_ReturnValue;                       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBPlayerControllerBase*                K2Node_DynamicCast_AsGBPlayer_Controller_Base;     // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBPlayerControllerBase*                K2Node_DynamicCast_AsGBPlayer_Controller_Base_1;   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_43[0x1];                                       // 0x0043(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            CallFunc_Array_Get_Item;                           // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6A[0x2];                                       // 0x006A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_75[0x3];                                       // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_ShowScreen) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_ShowScreen");
+static_assert(sizeof(WBP_CampaignMainMenu_C_ShowScreen) == 0x000080, "Wrong size on WBP_CampaignMainMenu_C_ShowScreen");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, WidgetClass) == 0x000000, "Member 'WBP_CampaignMainMenu_C_ShowScreen::WidgetClass' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CreatedMissionScreenWidget) == 0x000008, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CreatedMissionScreenWidget' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_GetPlayerController_ReturnValue) == 0x000010, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_Create_ReturnValue) == 0x000018, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, K2Node_DynamicCast_AsGBPlayer_Controller_Base) == 0x000020, "Member 'WBP_CampaignMainMenu_C_ShowScreen::K2Node_DynamicCast_AsGBPlayer_Controller_Base' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WBP_CampaignMainMenu_C_ShowScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_GetPlayerController_ReturnValue_1) == 0x000030, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, K2Node_DynamicCast_AsGBPlayer_Controller_Base_1) == 0x000038, "Member 'WBP_CampaignMainMenu_C_ShowScreen::K2Node_DynamicCast_AsGBPlayer_Controller_Base_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'WBP_CampaignMainMenu_C_ShowScreen::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_IsValid_ReturnValue) == 0x000041, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_IsValid_ReturnValue_1) == 0x000042, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_Array_Length_ReturnValue) == 0x000044, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_Not_PreBool_ReturnValue) == 0x000048, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, Temp_int_Array_Index_Variable) == 0x00004C, "Member 'WBP_CampaignMainMenu_C_ShowScreen::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, Temp_bool_True_if_break_was_hit_Variable) == 0x000050, "Member 'WBP_CampaignMainMenu_C_ShowScreen::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_Array_Get_Item) == 0x000058, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_GetObjectClass_ReturnValue) == 0x000060, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_GetObjectClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_Not_PreBool_ReturnValue_1) == 0x000068, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_EqualEqual_ClassClass_ReturnValue) == 0x000069, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_EqualEqual_ClassClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, Temp_int_Loop_Counter_Variable) == 0x00006C, "Member 'WBP_CampaignMainMenu_C_ShowScreen::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_Array_AddUnique_ReturnValue) == 0x000070, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_Less_IntInt_ReturnValue) == 0x000074, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_Add_IntInt_ReturnValue) == 0x000078, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_BooleanAND_ReturnValue) == 0x00007C, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.Get_Button_DeployToHotspot_bIsEnabled_0
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0 final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0) == 0x000001, "Wrong alignment on WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0");
+static_assert(sizeof(WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0) == 0x000002, "Wrong size on WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnMouseMove
+// 0x03B8 (0x03B8 - 0x0000)
+struct WBP_CampaignMainMenu_C_OnMouseMove final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FVector2D                              CallFunc_PointerEvent_GetCursorDelta_ReturnValue;  // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue; // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_VSize2DSquared_ReturnValue;               // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsHoveringOnMap_bIsHoveringOnMap;         // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_172[0x2];                                      // 0x0172(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0174(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue;         // 0x017C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0188(0x00B8)()
+	struct FVector2D                              CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation; // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0248(0x00B8)()
+	struct FEventReply                            CallFunc_Handled_ReturnValue_1;                    // 0x0300(0x00B8)()
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_OnMouseMove) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnMouseMove");
+static_assert(sizeof(WBP_CampaignMainMenu_C_OnMouseMove) == 0x0003B8, "Wrong size on WBP_CampaignMainMenu_C_OnMouseMove");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, MyGeometry) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, MouseEvent) == 0x000038, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::MouseEvent' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, ReturnValue) == 0x0000A8, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_PointerEvent_GetCursorDelta_ReturnValue) == 0x000160, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_PointerEvent_GetCursorDelta_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue) == 0x000168, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_VSize2DSquared_ReturnValue) == 0x00016C, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_VSize2DSquared_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000170, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_IsHoveringOnMap_bIsHoveringOnMap) == 0x000171, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_IsHoveringOnMap_bIsHoveringOnMap' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_Multiply_Vector2DFloat_ReturnValue) == 0x000174, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_Multiply_Vector2DFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_Add_Vector2DVector2D_ReturnValue) == 0x00017C, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_Add_Vector2DVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_Unhandled_ReturnValue) == 0x000188, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation) == 0x000240, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_Handled_ReturnValue) == 0x000248, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_Handled_ReturnValue_1) == 0x000300, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_Handled_ReturnValue_1' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.ClampMapTranslationToAvailableSize
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize final
+{
+public:
+	struct FVector2D                              DesiredTranslation;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              ClampedTranslation;                                // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_BreakVector2D_X;                          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_Y;                          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              Temp_struct_Variable;                              // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_X_1;                        // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_Y_1;                        // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_3;        // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_4;        // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue_1;                     // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Select_Default;                             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize) == 0x000004, "Wrong alignment on WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize");
+static_assert(sizeof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize) == 0x000060, "Wrong size on WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, DesiredTranslation) == 0x000000, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::DesiredTranslation' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, ClampedTranslation) == 0x000008, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::ClampedTranslation' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, Temp_bool_Variable) == 0x000010, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_BreakVector2D_X) == 0x000014, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_BreakVector2D_X' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_BreakVector2D_Y) == 0x000018, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_BreakVector2D_Y' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, Temp_struct_Variable) == 0x00001C, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x000024, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000028, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00002C, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_BreakVector2D_X_1) == 0x000030, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_BreakVector2D_X_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_BreakVector2D_Y_1) == 0x000034, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_BreakVector2D_Y_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000038, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x00003C, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000040, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x000044, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_FClamp_ReturnValue) == 0x000048, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_FClamp_ReturnValue_1) == 0x00004C, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_FClamp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_MakeVector2D_ReturnValue) == 0x000050, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, K2Node_Select_Default) == 0x000058, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.Get Hotspot Screen Location
+// 0x0118 (0x0118 - 0x0000)
+struct WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location final
+{
+public:
+	class UWBP_HotspotMapIcon_C*                  HotspotMarkerWidget;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              RawMapPosition;                                    // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CentredScreenPosition;                             // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              TranslationNeededToCentreIcon;                     // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              CallFunc_GetCachedGeometry_ReturnValue;            // 0x0020(0x0038)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FVector2D                              CallFunc_BreakGeometry_OutPosition;                // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_BreakGeometry_OutAbsolutePosition;        // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_BreakGeometry_OutSize;                    // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakGeometry_OutScale;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0074(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              CallFunc_GetCachedGeometry_ReturnValue_1;          // 0x0084(0x0038)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FVector2D                              CallFunc_BreakGeometry_OutPosition_1;              // 0x00BC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_BreakGeometry_OutAbsolutePosition_1;      // 0x00C4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_BreakGeometry_OutSize_1;                  // 0x00CC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakGeometry_OutScale_1;                 // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue_1;     // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Multiply_Vector2DVector2D_ReturnValue;    // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Multiply_Vector2DVector2D_ReturnValue_1;  // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue_2;     // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue;    // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue;         // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue_1;  // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue_2;  // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location");
+static_assert(sizeof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location) == 0x000118, "Wrong size on WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, HotspotMarkerWidget) == 0x000000, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::HotspotMarkerWidget' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, RawMapPosition) == 0x000008, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::RawMapPosition' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CentredScreenPosition) == 0x000010, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CentredScreenPosition' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, TranslationNeededToCentreIcon) == 0x000018, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::TranslationNeededToCentreIcon' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_GetCachedGeometry_ReturnValue) == 0x000020, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_GetCachedGeometry_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_BreakGeometry_OutPosition) == 0x000058, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_BreakGeometry_OutPosition' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_BreakGeometry_OutAbsolutePosition) == 0x000060, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_BreakGeometry_OutAbsolutePosition' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_BreakGeometry_OutSize) == 0x000068, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_BreakGeometry_OutSize' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_BreakGeometry_OutScale) == 0x000070, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_BreakGeometry_OutScale' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Multiply_Vector2DFloat_ReturnValue) == 0x000074, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Multiply_Vector2DFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00007C, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000080, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_GetCachedGeometry_ReturnValue_1) == 0x000084, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_GetCachedGeometry_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_BreakGeometry_OutPosition_1) == 0x0000BC, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_BreakGeometry_OutPosition_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_BreakGeometry_OutAbsolutePosition_1) == 0x0000C4, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_BreakGeometry_OutAbsolutePosition_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_BreakGeometry_OutSize_1) == 0x0000CC, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_BreakGeometry_OutSize_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_BreakGeometry_OutScale_1) == 0x0000D4, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_BreakGeometry_OutScale_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Multiply_Vector2DFloat_ReturnValue_1) == 0x0000D8, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Multiply_Vector2DFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Multiply_Vector2DVector2D_ReturnValue) == 0x0000E0, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Multiply_Vector2DVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Multiply_Vector2DVector2D_ReturnValue_1) == 0x0000E8, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Multiply_Vector2DVector2D_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Multiply_Vector2DFloat_ReturnValue_2) == 0x0000F0, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Multiply_Vector2DFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Subtract_Vector2DVector2D_ReturnValue) == 0x0000F8, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Subtract_Vector2DVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Add_Vector2DVector2D_ReturnValue) == 0x000100, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Add_Vector2DVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Subtract_Vector2DVector2D_ReturnValue_1) == 0x000108, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Subtract_Vector2DVector2D_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Subtract_Vector2DVector2D_ReturnValue_2) == 0x000110, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Subtract_Vector2DVector2D_ReturnValue_2' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnMouseWheel
+// 0x02E8 (0x02E8 - 0x0000)
+struct WBP_CampaignMainMenu_C_OnMouseWheel final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0160(0x00B8)()
+	float                                         CallFunc_PointerEvent_GetWheelDelta_ReturnValue;   // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsHoveringOnMap_bIsHoveringOnMap;         // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21D[0x3];                                      // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_224[0x4];                                      // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0228(0x00B8)()
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x02E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x02E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_OnMouseWheel) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnMouseWheel");
+static_assert(sizeof(WBP_CampaignMainMenu_C_OnMouseWheel) == 0x0002E8, "Wrong size on WBP_CampaignMainMenu_C_OnMouseWheel");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, MyGeometry) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, MouseEvent) == 0x000038, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::MouseEvent' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, ReturnValue) == 0x0000A8, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, CallFunc_Unhandled_ReturnValue) == 0x000160, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, CallFunc_PointerEvent_GetWheelDelta_ReturnValue) == 0x000218, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::CallFunc_PointerEvent_GetWheelDelta_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, CallFunc_IsHoveringOnMap_bIsHoveringOnMap) == 0x00021C, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::CallFunc_IsHoveringOnMap_bIsHoveringOnMap' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000220, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, CallFunc_Handled_ReturnValue) == 0x000228, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, CallFunc_Add_FloatFloat_ReturnValue) == 0x0002E0, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, CallFunc_FClamp_ReturnValue) == 0x0002E4, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnPreviewKeyDown
+// 0x02B8 (0x02B8 - 0x0000)
+struct WBP_CampaignMainMenu_C_OnPreviewKeyDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0128(0x0018)(HasGetValueTypeHash)
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0140(0x00B8)()
+	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0200(0x00B8)()
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_OnPreviewKeyDown) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnPreviewKeyDown");
+static_assert(sizeof(WBP_CampaignMainMenu_C_OnPreviewKeyDown) == 0x0002B8, "Wrong size on WBP_CampaignMainMenu_C_OnPreviewKeyDown");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnPreviewKeyDown, MyGeometry) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnPreviewKeyDown::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnPreviewKeyDown, InKeyEvent) == 0x000038, "Member 'WBP_CampaignMainMenu_C_OnPreviewKeyDown::InKeyEvent' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnPreviewKeyDown, ReturnValue) == 0x000070, "Member 'WBP_CampaignMainMenu_C_OnPreviewKeyDown::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnPreviewKeyDown, CallFunc_GetKey_ReturnValue) == 0x000128, "Member 'WBP_CampaignMainMenu_C_OnPreviewKeyDown::CallFunc_GetKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnPreviewKeyDown, CallFunc_Unhandled_ReturnValue) == 0x000140, "Member 'WBP_CampaignMainMenu_C_OnPreviewKeyDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnPreviewKeyDown, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x0001F8, "Member 'WBP_CampaignMainMenu_C_OnPreviewKeyDown::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnPreviewKeyDown, CallFunc_Handled_ReturnValue) == 0x000200, "Member 'WBP_CampaignMainMenu_C_OnPreviewKeyDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignMainMenu_C_OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC");
+static_assert(sizeof(WBP_CampaignMainMenu_C_OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC, Loaded) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC::Loaded' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.Tick
+// 0x003C (0x003C - 0x0000)
+struct WBP_CampaignMainMenu_C_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_Tick) == 0x000004, "Wrong alignment on WBP_CampaignMainMenu_C_Tick");
+static_assert(sizeof(WBP_CampaignMainMenu_C_Tick) == 0x00003C, "Wrong size on WBP_CampaignMainMenu_C_Tick");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_CampaignMainMenu_C_Tick::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_CampaignMainMenu_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_CampaignMainMenu_C_Tick::InDeltaTime' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnHotspotEntrySelected
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignMainMenu_C_OnHotspotEntrySelected final
+{
+public:
+	class UGBHotspotDataAsset*                    SelectedHotspotData;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_OnHotspotEntrySelected) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnHotspotEntrySelected");
+static_assert(sizeof(WBP_CampaignMainMenu_C_OnHotspotEntrySelected) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_OnHotspotEntrySelected");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnHotspotEntrySelected, SelectedHotspotData) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnHotspotEntrySelected::SelectedHotspotData' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.SelectHotspot
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignMainMenu_C_SelectHotspot final
+{
+public:
+	class UGBHotspotDataAsset*                    HotspotToSelect;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_SelectHotspot) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_SelectHotspot");
+static_assert(sizeof(WBP_CampaignMainMenu_C_SelectHotspot) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_SelectHotspot");
+static_assert(offsetof(WBP_CampaignMainMenu_C_SelectHotspot, HotspotToSelect) == 0x000000, "Member 'WBP_CampaignMainMenu_C_SelectHotspot::HotspotToSelect' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnHotspotIconClicked
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignMainMenu_C_OnHotspotIconClicked final
+{
+public:
+	class UGBHotspotDataAsset*                    SelectedHotspot;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_OnHotspotIconClicked) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnHotspotIconClicked");
+static_assert(sizeof(WBP_CampaignMainMenu_C_OnHotspotIconClicked) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_OnHotspotIconClicked");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnHotspotIconClicked, SelectedHotspot) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnHotspotIconClicked::SelectedHotspot' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.AttemptToSetMapTranslation
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignMainMenu_C_AttemptToSetMapTranslation final
+{
+public:
+	struct FVector2D                              DesiredTranslation;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_AttemptToSetMapTranslation) == 0x000004, "Wrong alignment on WBP_CampaignMainMenu_C_AttemptToSetMapTranslation");
+static_assert(sizeof(WBP_CampaignMainMenu_C_AttemptToSetMapTranslation) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_AttemptToSetMapTranslation");
+static_assert(offsetof(WBP_CampaignMainMenu_C_AttemptToSetMapTranslation, DesiredTranslation) == 0x000000, "Member 'WBP_CampaignMainMenu_C_AttemptToSetMapTranslation::DesiredTranslation' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnHotspotEntryHovered
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignMainMenu_C_OnHotspotEntryHovered final
+{
+public:
+	class UGBHotspotDataAsset*                    SelectedHotspot;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_OnHotspotEntryHovered) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnHotspotEntryHovered");
+static_assert(sizeof(WBP_CampaignMainMenu_C_OnHotspotEntryHovered) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_OnHotspotEntryHovered");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnHotspotEntryHovered, SelectedHotspot) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnHotspotEntryHovered::SelectedHotspot' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnHotspotIconHovered
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignMainMenu_C_OnHotspotIconHovered final
+{
+public:
+	class UGBHotspotDataAsset*                    SelectedHotspot;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_OnHotspotIconHovered) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnHotspotIconHovered");
+static_assert(sizeof(WBP_CampaignMainMenu_C_OnHotspotIconHovered) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_OnHotspotIconHovered");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnHotspotIconHovered, SelectedHotspot) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnHotspotIconHovered::SelectedHotspot' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnHotspotIconDoubleClicked
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignMainMenu_C_OnHotspotIconDoubleClicked final
+{
+public:
+	class UGBHotspotDataAsset*                    SelectedHotspot;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_OnHotspotIconDoubleClicked) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnHotspotIconDoubleClicked");
+static_assert(sizeof(WBP_CampaignMainMenu_C_OnHotspotIconDoubleClicked) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_OnHotspotIconDoubleClicked");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnHotspotIconDoubleClicked, SelectedHotspot) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnHotspotIconDoubleClicked::SelectedHotspot' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnHotspotEntryDoubleClicked
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignMainMenu_C_OnHotspotEntryDoubleClicked final
+{
+public:
+	class UGBHotspotDataAsset*                    SelectedHotspot;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_OnHotspotEntryDoubleClicked) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnHotspotEntryDoubleClicked");
+static_assert(sizeof(WBP_CampaignMainMenu_C_OnHotspotEntryDoubleClicked) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_OnHotspotEntryDoubleClicked");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnHotspotEntryDoubleClicked, SelectedHotspot) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnHotspotEntryDoubleClicked::SelectedHotspot' has a wrong offset!");
+
+// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnClickedOkProceedToResetCampaign
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignMainMenu_C_OnClickedOkProceedToResetCampaign final
+{
+public:
+	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_CampaignMainMenu_C_OnClickedOkProceedToResetCampaign) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnClickedOkProceedToResetCampaign");
+static_assert(sizeof(WBP_CampaignMainMenu_C_OnClickedOkProceedToResetCampaign) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_OnClickedOkProceedToResetCampaign");
+static_assert(offsetof(WBP_CampaignMainMenu_C_OnClickedOkProceedToResetCampaign, Dialogue) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnClickedOkProceedToResetCampaign::Dialogue' has a wrong offset!");
+
 // Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.ExecuteUbergraph_WBP_CampaignMainMenu
 // 0x0558 (0x0558 - 0x0000)
 struct WBP_CampaignMainMenu_C_ExecuteUbergraph_WBP_CampaignMainMenu final
@@ -411,460 +865,6 @@ static_assert(offsetof(WBP_CampaignMainMenu_C_ExecuteUbergraph_WBP_CampaignMainM
 static_assert(offsetof(WBP_CampaignMainMenu_C_ExecuteUbergraph_WBP_CampaignMainMenu, K2Node_CustomEvent_dialogue) == 0x000538, "Member 'WBP_CampaignMainMenu_C_ExecuteUbergraph_WBP_CampaignMainMenu::K2Node_CustomEvent_dialogue' has a wrong offset!");
 static_assert(offsetof(WBP_CampaignMainMenu_C_ExecuteUbergraph_WBP_CampaignMainMenu, CallFunc_Get_ReturnValue) == 0x000540, "Member 'WBP_CampaignMainMenu_C_ExecuteUbergraph_WBP_CampaignMainMenu::CallFunc_Get_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_CampaignMainMenu_C_ExecuteUbergraph_WBP_CampaignMainMenu, K2Node_CreateDelegate_OutputDelegate_7) == 0x000548, "Member 'WBP_CampaignMainMenu_C_ExecuteUbergraph_WBP_CampaignMainMenu::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnClickedOkProceedToResetCampaign
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignMainMenu_C_OnClickedOkProceedToResetCampaign final
-{
-public:
-	class UWBP_DialogueBox_C*                     Dialogue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_OnClickedOkProceedToResetCampaign) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnClickedOkProceedToResetCampaign");
-static_assert(sizeof(WBP_CampaignMainMenu_C_OnClickedOkProceedToResetCampaign) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_OnClickedOkProceedToResetCampaign");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnClickedOkProceedToResetCampaign, Dialogue) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnClickedOkProceedToResetCampaign::Dialogue' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnHotspotEntryDoubleClicked
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignMainMenu_C_OnHotspotEntryDoubleClicked final
-{
-public:
-	class UGBHotspotDataAsset*                    SelectedHotspot;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_OnHotspotEntryDoubleClicked) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnHotspotEntryDoubleClicked");
-static_assert(sizeof(WBP_CampaignMainMenu_C_OnHotspotEntryDoubleClicked) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_OnHotspotEntryDoubleClicked");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnHotspotEntryDoubleClicked, SelectedHotspot) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnHotspotEntryDoubleClicked::SelectedHotspot' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnHotspotIconDoubleClicked
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignMainMenu_C_OnHotspotIconDoubleClicked final
-{
-public:
-	class UGBHotspotDataAsset*                    SelectedHotspot;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_OnHotspotIconDoubleClicked) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnHotspotIconDoubleClicked");
-static_assert(sizeof(WBP_CampaignMainMenu_C_OnHotspotIconDoubleClicked) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_OnHotspotIconDoubleClicked");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnHotspotIconDoubleClicked, SelectedHotspot) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnHotspotIconDoubleClicked::SelectedHotspot' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnHotspotIconHovered
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignMainMenu_C_OnHotspotIconHovered final
-{
-public:
-	class UGBHotspotDataAsset*                    SelectedHotspot;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_OnHotspotIconHovered) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnHotspotIconHovered");
-static_assert(sizeof(WBP_CampaignMainMenu_C_OnHotspotIconHovered) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_OnHotspotIconHovered");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnHotspotIconHovered, SelectedHotspot) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnHotspotIconHovered::SelectedHotspot' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnHotspotEntryHovered
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignMainMenu_C_OnHotspotEntryHovered final
-{
-public:
-	class UGBHotspotDataAsset*                    SelectedHotspot;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_OnHotspotEntryHovered) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnHotspotEntryHovered");
-static_assert(sizeof(WBP_CampaignMainMenu_C_OnHotspotEntryHovered) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_OnHotspotEntryHovered");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnHotspotEntryHovered, SelectedHotspot) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnHotspotEntryHovered::SelectedHotspot' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.AttemptToSetMapTranslation
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignMainMenu_C_AttemptToSetMapTranslation final
-{
-public:
-	struct FVector2D                              DesiredTranslation;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_AttemptToSetMapTranslation) == 0x000004, "Wrong alignment on WBP_CampaignMainMenu_C_AttemptToSetMapTranslation");
-static_assert(sizeof(WBP_CampaignMainMenu_C_AttemptToSetMapTranslation) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_AttemptToSetMapTranslation");
-static_assert(offsetof(WBP_CampaignMainMenu_C_AttemptToSetMapTranslation, DesiredTranslation) == 0x000000, "Member 'WBP_CampaignMainMenu_C_AttemptToSetMapTranslation::DesiredTranslation' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnHotspotIconClicked
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignMainMenu_C_OnHotspotIconClicked final
-{
-public:
-	class UGBHotspotDataAsset*                    SelectedHotspot;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_OnHotspotIconClicked) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnHotspotIconClicked");
-static_assert(sizeof(WBP_CampaignMainMenu_C_OnHotspotIconClicked) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_OnHotspotIconClicked");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnHotspotIconClicked, SelectedHotspot) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnHotspotIconClicked::SelectedHotspot' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.SelectHotspot
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignMainMenu_C_SelectHotspot final
-{
-public:
-	class UGBHotspotDataAsset*                    HotspotToSelect;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_SelectHotspot) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_SelectHotspot");
-static_assert(sizeof(WBP_CampaignMainMenu_C_SelectHotspot) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_SelectHotspot");
-static_assert(offsetof(WBP_CampaignMainMenu_C_SelectHotspot, HotspotToSelect) == 0x000000, "Member 'WBP_CampaignMainMenu_C_SelectHotspot::HotspotToSelect' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnHotspotEntrySelected
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignMainMenu_C_OnHotspotEntrySelected final
-{
-public:
-	class UGBHotspotDataAsset*                    SelectedHotspotData;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_OnHotspotEntrySelected) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnHotspotEntrySelected");
-static_assert(sizeof(WBP_CampaignMainMenu_C_OnHotspotEntrySelected) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_OnHotspotEntrySelected");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnHotspotEntrySelected, SelectedHotspotData) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnHotspotEntrySelected::SelectedHotspotData' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.Tick
-// 0x003C (0x003C - 0x0000)
-struct WBP_CampaignMainMenu_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_Tick) == 0x000004, "Wrong alignment on WBP_CampaignMainMenu_C_Tick");
-static_assert(sizeof(WBP_CampaignMainMenu_C_Tick) == 0x00003C, "Wrong size on WBP_CampaignMainMenu_C_Tick");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Tick, MyGeometry) == 0x000000, "Member 'WBP_CampaignMainMenu_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Tick, InDeltaTime) == 0x000038, "Member 'WBP_CampaignMainMenu_C_Tick::InDeltaTime' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignMainMenu_C_OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC");
-static_assert(sizeof(WBP_CampaignMainMenu_C_OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC) == 0x000008, "Wrong size on WBP_CampaignMainMenu_C_OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC, Loaded) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnLoaded_F6718D544E4C7ABB7D8A57B017CF46AC::Loaded' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnPreviewKeyDown
-// 0x02B8 (0x02B8 - 0x0000)
-struct WBP_CampaignMainMenu_C_OnPreviewKeyDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
-	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0128(0x0018)(HasGetValueTypeHash)
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0140(0x00B8)()
-	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0200(0x00B8)()
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_OnPreviewKeyDown) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnPreviewKeyDown");
-static_assert(sizeof(WBP_CampaignMainMenu_C_OnPreviewKeyDown) == 0x0002B8, "Wrong size on WBP_CampaignMainMenu_C_OnPreviewKeyDown");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnPreviewKeyDown, MyGeometry) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnPreviewKeyDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnPreviewKeyDown, InKeyEvent) == 0x000038, "Member 'WBP_CampaignMainMenu_C_OnPreviewKeyDown::InKeyEvent' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnPreviewKeyDown, ReturnValue) == 0x000070, "Member 'WBP_CampaignMainMenu_C_OnPreviewKeyDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnPreviewKeyDown, CallFunc_GetKey_ReturnValue) == 0x000128, "Member 'WBP_CampaignMainMenu_C_OnPreviewKeyDown::CallFunc_GetKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnPreviewKeyDown, CallFunc_Unhandled_ReturnValue) == 0x000140, "Member 'WBP_CampaignMainMenu_C_OnPreviewKeyDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnPreviewKeyDown, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x0001F8, "Member 'WBP_CampaignMainMenu_C_OnPreviewKeyDown::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnPreviewKeyDown, CallFunc_Handled_ReturnValue) == 0x000200, "Member 'WBP_CampaignMainMenu_C_OnPreviewKeyDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnMouseWheel
-// 0x02E8 (0x02E8 - 0x0000)
-struct WBP_CampaignMainMenu_C_OnMouseWheel final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0160(0x00B8)()
-	float                                         CallFunc_PointerEvent_GetWheelDelta_ReturnValue;   // 0x0218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsHoveringOnMap_bIsHoveringOnMap;         // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21D[0x3];                                      // 0x021D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_224[0x4];                                      // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0228(0x00B8)()
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x02E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x02E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_OnMouseWheel) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnMouseWheel");
-static_assert(sizeof(WBP_CampaignMainMenu_C_OnMouseWheel) == 0x0002E8, "Wrong size on WBP_CampaignMainMenu_C_OnMouseWheel");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, MyGeometry) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, MouseEvent) == 0x000038, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, ReturnValue) == 0x0000A8, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, CallFunc_Unhandled_ReturnValue) == 0x000160, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, CallFunc_PointerEvent_GetWheelDelta_ReturnValue) == 0x000218, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::CallFunc_PointerEvent_GetWheelDelta_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, CallFunc_IsHoveringOnMap_bIsHoveringOnMap) == 0x00021C, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::CallFunc_IsHoveringOnMap_bIsHoveringOnMap' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000220, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, CallFunc_Handled_ReturnValue) == 0x000228, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, CallFunc_Add_FloatFloat_ReturnValue) == 0x0002E0, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseWheel, CallFunc_FClamp_ReturnValue) == 0x0002E4, "Member 'WBP_CampaignMainMenu_C_OnMouseWheel::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.Get Hotspot Screen Location
-// 0x0118 (0x0118 - 0x0000)
-struct WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location final
-{
-public:
-	class UWBP_HotspotMapIcon_C*                  HotspotMarkerWidget;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              RawMapPosition;                                    // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CentredScreenPosition;                             // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              TranslationNeededToCentreIcon;                     // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              CallFunc_GetCachedGeometry_ReturnValue;            // 0x0020(0x0038)(ConstParm, IsPlainOldData, NoDestructor)
-	struct FVector2D                              CallFunc_BreakGeometry_OutPosition;                // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_BreakGeometry_OutAbsolutePosition;        // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_BreakGeometry_OutSize;                    // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakGeometry_OutScale;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0074(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              CallFunc_GetCachedGeometry_ReturnValue_1;          // 0x0084(0x0038)(ConstParm, IsPlainOldData, NoDestructor)
-	struct FVector2D                              CallFunc_BreakGeometry_OutPosition_1;              // 0x00BC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_BreakGeometry_OutAbsolutePosition_1;      // 0x00C4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_BreakGeometry_OutSize_1;                  // 0x00CC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakGeometry_OutScale_1;                 // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue_1;     // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Multiply_Vector2DVector2D_ReturnValue;    // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Multiply_Vector2DVector2D_ReturnValue_1;  // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue_2;     // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue;    // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue;         // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue_1;  // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue_2;  // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location");
-static_assert(sizeof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location) == 0x000118, "Wrong size on WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, HotspotMarkerWidget) == 0x000000, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::HotspotMarkerWidget' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, RawMapPosition) == 0x000008, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::RawMapPosition' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CentredScreenPosition) == 0x000010, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CentredScreenPosition' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, TranslationNeededToCentreIcon) == 0x000018, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::TranslationNeededToCentreIcon' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_GetCachedGeometry_ReturnValue) == 0x000020, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_GetCachedGeometry_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_BreakGeometry_OutPosition) == 0x000058, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_BreakGeometry_OutPosition' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_BreakGeometry_OutAbsolutePosition) == 0x000060, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_BreakGeometry_OutAbsolutePosition' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_BreakGeometry_OutSize) == 0x000068, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_BreakGeometry_OutSize' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_BreakGeometry_OutScale) == 0x000070, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_BreakGeometry_OutScale' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Multiply_Vector2DFloat_ReturnValue) == 0x000074, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Multiply_Vector2DFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00007C, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000080, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_GetCachedGeometry_ReturnValue_1) == 0x000084, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_GetCachedGeometry_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_BreakGeometry_OutPosition_1) == 0x0000BC, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_BreakGeometry_OutPosition_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_BreakGeometry_OutAbsolutePosition_1) == 0x0000C4, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_BreakGeometry_OutAbsolutePosition_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_BreakGeometry_OutSize_1) == 0x0000CC, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_BreakGeometry_OutSize_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_BreakGeometry_OutScale_1) == 0x0000D4, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_BreakGeometry_OutScale_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Multiply_Vector2DFloat_ReturnValue_1) == 0x0000D8, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Multiply_Vector2DFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Multiply_Vector2DVector2D_ReturnValue) == 0x0000E0, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Multiply_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Multiply_Vector2DVector2D_ReturnValue_1) == 0x0000E8, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Multiply_Vector2DVector2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Multiply_Vector2DFloat_ReturnValue_2) == 0x0000F0, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Multiply_Vector2DFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Subtract_Vector2DVector2D_ReturnValue) == 0x0000F8, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Subtract_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Add_Vector2DVector2D_ReturnValue) == 0x000100, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Add_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Subtract_Vector2DVector2D_ReturnValue_1) == 0x000108, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Subtract_Vector2DVector2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location, CallFunc_Subtract_Vector2DVector2D_ReturnValue_2) == 0x000110, "Member 'WBP_CampaignMainMenu_C_Get_Hotspot_Screen_Location::CallFunc_Subtract_Vector2DVector2D_ReturnValue_2' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.ClampMapTranslationToAvailableSize
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize final
-{
-public:
-	struct FVector2D                              DesiredTranslation;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              ClampedTranslation;                                // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_BreakVector2D_X;                          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y;                          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              Temp_struct_Variable;                              // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X_1;                        // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y_1;                        // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_3;        // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_4;        // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue_1;                     // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Select_Default;                             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize) == 0x000004, "Wrong alignment on WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize");
-static_assert(sizeof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize) == 0x000060, "Wrong size on WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, DesiredTranslation) == 0x000000, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::DesiredTranslation' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, ClampedTranslation) == 0x000008, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::ClampedTranslation' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, Temp_bool_Variable) == 0x000010, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_BreakVector2D_X) == 0x000014, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_BreakVector2D_Y) == 0x000018, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, Temp_struct_Variable) == 0x00001C, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x000024, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000028, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00002C, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_BreakVector2D_X_1) == 0x000030, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_BreakVector2D_X_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_BreakVector2D_Y_1) == 0x000034, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_BreakVector2D_Y_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000038, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x00003C, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000040, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x000044, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_FClamp_ReturnValue) == 0x000048, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_FClamp_ReturnValue_1) == 0x00004C, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_FClamp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, CallFunc_MakeVector2D_ReturnValue) == 0x000050, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize, K2Node_Select_Default) == 0x000058, "Member 'WBP_CampaignMainMenu_C_ClampMapTranslationToAvailableSize::K2Node_Select_Default' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.OnMouseMove
-// 0x03B8 (0x03B8 - 0x0000)
-struct WBP_CampaignMainMenu_C_OnMouseMove final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FVector2D                              CallFunc_PointerEvent_GetCursorDelta_ReturnValue;  // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue; // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_VSize2DSquared_ReturnValue;               // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsHoveringOnMap_bIsHoveringOnMap;         // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_172[0x2];                                      // 0x0172(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0174(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue;         // 0x017C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0188(0x00B8)()
-	struct FVector2D                              CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation; // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0248(0x00B8)()
-	struct FEventReply                            CallFunc_Handled_ReturnValue_1;                    // 0x0300(0x00B8)()
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_OnMouseMove) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_OnMouseMove");
-static_assert(sizeof(WBP_CampaignMainMenu_C_OnMouseMove) == 0x0003B8, "Wrong size on WBP_CampaignMainMenu_C_OnMouseMove");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, MyGeometry) == 0x000000, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, MouseEvent) == 0x000038, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, ReturnValue) == 0x0000A8, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_PointerEvent_GetCursorDelta_ReturnValue) == 0x000160, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_PointerEvent_GetCursorDelta_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue) == 0x000168, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_VSize2DSquared_ReturnValue) == 0x00016C, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_VSize2DSquared_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000170, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_IsHoveringOnMap_bIsHoveringOnMap) == 0x000171, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_IsHoveringOnMap_bIsHoveringOnMap' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_Multiply_Vector2DFloat_ReturnValue) == 0x000174, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_Multiply_Vector2DFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_Add_Vector2DVector2D_ReturnValue) == 0x00017C, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_Add_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_Unhandled_ReturnValue) == 0x000188, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation) == 0x000240, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_Handled_ReturnValue) == 0x000248, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_OnMouseMove, CallFunc_Handled_ReturnValue_1) == 0x000300, "Member 'WBP_CampaignMainMenu_C_OnMouseMove::CallFunc_Handled_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.Get_Button_DeployToHotspot_bIsEnabled_0
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0 final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0) == 0x000001, "Wrong alignment on WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0");
-static_assert(sizeof(WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0) == 0x000002, "Wrong size on WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'WBP_CampaignMainMenu_C_Get_Button_DeployToHotspot_bIsEnabled_0::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.ShowScreen
-// 0x0080 (0x0080 - 0x0000)
-struct WBP_CampaignMainMenu_C_ShowScreen final
-{
-public:
-	class UClass*                                 WidgetClass;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUserWidget*                            CreatedMissionScreenWidget;                        // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUserWidget*                            CallFunc_Create_ReturnValue;                       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBPlayerControllerBase*                K2Node_DynamicCast_AsGBPlayer_Controller_Base;     // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBPlayerControllerBase*                K2Node_DynamicCast_AsGBPlayer_Controller_Base_1;   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_43[0x1];                                       // 0x0043(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            CallFunc_Array_Get_Item;                           // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6A[0x2];                                       // 0x006A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_75[0x3];                                       // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_ShowScreen) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_ShowScreen");
-static_assert(sizeof(WBP_CampaignMainMenu_C_ShowScreen) == 0x000080, "Wrong size on WBP_CampaignMainMenu_C_ShowScreen");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, WidgetClass) == 0x000000, "Member 'WBP_CampaignMainMenu_C_ShowScreen::WidgetClass' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CreatedMissionScreenWidget) == 0x000008, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CreatedMissionScreenWidget' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_GetPlayerController_ReturnValue) == 0x000010, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_Create_ReturnValue) == 0x000018, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, K2Node_DynamicCast_AsGBPlayer_Controller_Base) == 0x000020, "Member 'WBP_CampaignMainMenu_C_ShowScreen::K2Node_DynamicCast_AsGBPlayer_Controller_Base' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WBP_CampaignMainMenu_C_ShowScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_GetPlayerController_ReturnValue_1) == 0x000030, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, K2Node_DynamicCast_AsGBPlayer_Controller_Base_1) == 0x000038, "Member 'WBP_CampaignMainMenu_C_ShowScreen::K2Node_DynamicCast_AsGBPlayer_Controller_Base_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'WBP_CampaignMainMenu_C_ShowScreen::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_IsValid_ReturnValue) == 0x000041, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_IsValid_ReturnValue_1) == 0x000042, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_Array_Length_ReturnValue) == 0x000044, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_Not_PreBool_ReturnValue) == 0x000048, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, Temp_int_Array_Index_Variable) == 0x00004C, "Member 'WBP_CampaignMainMenu_C_ShowScreen::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, Temp_bool_True_if_break_was_hit_Variable) == 0x000050, "Member 'WBP_CampaignMainMenu_C_ShowScreen::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_Array_Get_Item) == 0x000058, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_GetObjectClass_ReturnValue) == 0x000060, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_GetObjectClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_Not_PreBool_ReturnValue_1) == 0x000068, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_EqualEqual_ClassClass_ReturnValue) == 0x000069, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_EqualEqual_ClassClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, Temp_int_Loop_Counter_Variable) == 0x00006C, "Member 'WBP_CampaignMainMenu_C_ShowScreen::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_Array_AddUnique_ReturnValue) == 0x000070, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_Less_IntInt_ReturnValue) == 0x000074, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_Add_IntInt_ReturnValue) == 0x000078, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_ShowScreen, CallFunc_BooleanAND_ReturnValue) == 0x00007C, "Member 'WBP_CampaignMainMenu_C_ShowScreen::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.IsHoveringOnMap
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_CampaignMainMenu_C_IsHoveringOnMap final
-{
-public:
-	bool                                          bIsHoveringOnMap;                                  // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_IsHoveringOnMap) == 0x000001, "Wrong alignment on WBP_CampaignMainMenu_C_IsHoveringOnMap");
-static_assert(sizeof(WBP_CampaignMainMenu_C_IsHoveringOnMap) == 0x000002, "Wrong size on WBP_CampaignMainMenu_C_IsHoveringOnMap");
-static_assert(offsetof(WBP_CampaignMainMenu_C_IsHoveringOnMap, bIsHoveringOnMap) == 0x000000, "Member 'WBP_CampaignMainMenu_C_IsHoveringOnMap::bIsHoveringOnMap' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_IsHoveringOnMap, CallFunc_IsHovered_ReturnValue) == 0x000001, "Member 'WBP_CampaignMainMenu_C_IsHoveringOnMap::CallFunc_IsHovered_ReturnValue' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.Get_Button_ResetCampaign_ToolTipWidget_0
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0");
-static_assert(sizeof(WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_CampaignMainMenu_C_Get_Button_ResetCampaign_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.Get_Button_ViewRoster_ToolTipWidget_0
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0");
-static_assert(sizeof(WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_CampaignMainMenu_C_Get_Button_ViewRoster_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
-
-// Function WBP_CampaignMainMenu.WBP_CampaignMainMenu_C.Get_Button_ViewHotspot_ToolTipWidget_0
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0");
-static_assert(sizeof(WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_CampaignMainMenu_C_Get_Button_ViewHotspot_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 }
 

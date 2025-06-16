@@ -37,11 +37,11 @@ public:
 	struct FLinearColor                           DefaultTextColour;                                 // 0x0384(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_MissionSummary_Tab(int32 EntryPoint);
-	void InternalOnSelected();
-	void BndEvt__WBP_MissionSummary_Tab_Button_SwitchToMatchSummary_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	struct FLinearColor Get_Border_MatchSummary_BrushColor_0();
 	struct FLinearColor Get_MatchSummaryButtonText_ColorAndOpacity_0();
+	struct FLinearColor Get_Border_MatchSummary_BrushColor_0();
+	void BndEvt__WBP_MissionSummary_Tab_Button_SwitchToMatchSummary_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void InternalOnSelected();
+	void ExecuteUbergraph_WBP_MissionSummary_Tab(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

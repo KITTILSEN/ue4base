@@ -27,8 +27,8 @@ public:
 	int32                                         SteamAppId;                                        // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_News(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_News(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

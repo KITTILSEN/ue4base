@@ -243,6 +243,21 @@ static_assert(alignof(BP_KytBase_C_OnNotifyEnd_57DFBDB84A18F4C71465C2BF15ACDA23)
 static_assert(sizeof(BP_KytBase_C_OnNotifyEnd_57DFBDB84A18F4C71465C2BF15ACDA23) == 0x000008, "Wrong size on BP_KytBase_C_OnNotifyEnd_57DFBDB84A18F4C71465C2BF15ACDA23");
 static_assert(offsetof(BP_KytBase_C_OnNotifyEnd_57DFBDB84A18F4C71465C2BF15ACDA23, NotifyName) == 0x000000, "Member 'BP_KytBase_C_OnNotifyEnd_57DFBDB84A18F4C71465C2BF15ACDA23::NotifyName' has a wrong offset!");
 
+// Function BP_KytBase.BP_KytBase_C.IsAnimationSupported
+// 0x0020 (0x0020 - 0x0000)
+struct BP_KytBase_C_IsAnimationSupported final
+{
+public:
+	class FString                                 AnimationName;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	const class UKytBlackboard*                   AnimationParameters;                               // 0x0010(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(BP_KytBase_C_IsAnimationSupported) == 0x000008, "Wrong alignment on BP_KytBase_C_IsAnimationSupported");
+static_assert(sizeof(BP_KytBase_C_IsAnimationSupported) == 0x000020, "Wrong size on BP_KytBase_C_IsAnimationSupported");
+static_assert(offsetof(BP_KytBase_C_IsAnimationSupported, AnimationName) == 0x000000, "Member 'BP_KytBase_C_IsAnimationSupported::AnimationName' has a wrong offset!");
+static_assert(offsetof(BP_KytBase_C_IsAnimationSupported, AnimationParameters) == 0x000010, "Member 'BP_KytBase_C_IsAnimationSupported::AnimationParameters' has a wrong offset!");
+static_assert(offsetof(BP_KytBase_C_IsAnimationSupported, ReturnValue) == 0x000018, "Member 'BP_KytBase_C_IsAnimationSupported::ReturnValue' has a wrong offset!");
+
 // Function BP_KytBase.BP_KytBase_C.CheckUseDoor
 // 0x0198 (0x0198 - 0x0000)
 struct BP_KytBase_C_CheckUseDoor final
@@ -441,21 +456,6 @@ static_assert(alignof(BP_KytBase_C_MoveDown) == 0x000004, "Wrong alignment on BP
 static_assert(sizeof(BP_KytBase_C_MoveDown) == 0x000018, "Wrong size on BP_KytBase_C_MoveDown");
 static_assert(offsetof(BP_KytBase_C_MoveDown, CallFunc_GetActorForwardVector_ReturnValue) == 0x000000, "Member 'BP_KytBase_C_MoveDown::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_KytBase_C_MoveDown, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x00000C, "Member 'BP_KytBase_C_MoveDown::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-
-// Function BP_KytBase.BP_KytBase_C.IsAnimationSupported
-// 0x0020 (0x0020 - 0x0000)
-struct BP_KytBase_C_IsAnimationSupported final
-{
-public:
-	class FString                                 AnimationName;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	const class UKytBlackboard*                   AnimationParameters;                               // 0x0010(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(BP_KytBase_C_IsAnimationSupported) == 0x000008, "Wrong alignment on BP_KytBase_C_IsAnimationSupported");
-static_assert(sizeof(BP_KytBase_C_IsAnimationSupported) == 0x000020, "Wrong size on BP_KytBase_C_IsAnimationSupported");
-static_assert(offsetof(BP_KytBase_C_IsAnimationSupported, AnimationName) == 0x000000, "Member 'BP_KytBase_C_IsAnimationSupported::AnimationName' has a wrong offset!");
-static_assert(offsetof(BP_KytBase_C_IsAnimationSupported, AnimationParameters) == 0x000010, "Member 'BP_KytBase_C_IsAnimationSupported::AnimationParameters' has a wrong offset!");
-static_assert(offsetof(BP_KytBase_C_IsAnimationSupported, ReturnValue) == 0x000018, "Member 'BP_KytBase_C_IsAnimationSupported::ReturnValue' has a wrong offset!");
 
 }
 

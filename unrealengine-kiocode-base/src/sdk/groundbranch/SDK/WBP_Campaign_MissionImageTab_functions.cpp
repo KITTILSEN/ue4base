@@ -17,35 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_Campaign_MissionImageTab.WBP_Campaign_MissionImageTab_C.ExecuteUbergraph_WBP_Campaign_MissionImageTab
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Campaign_MissionImageTab.WBP_Campaign_MissionImageTab_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Campaign_MissionImageTab_C::ExecuteUbergraph_WBP_Campaign_MissionImageTab(int32 EntryPoint)
+void UWBP_Campaign_MissionImageTab_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Campaign_MissionImageTab_C", "ExecuteUbergraph_WBP_Campaign_MissionImageTab");
-
-	Params::WBP_Campaign_MissionImageTab_C_ExecuteUbergraph_WBP_Campaign_MissionImageTab Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Campaign_MissionImageTab.WBP_Campaign_MissionImageTab_C.BndEvt__WBP_Campaign_MissionImageTab_Button_ImageTabClicked_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Campaign_MissionImageTab_C::BndEvt__WBP_Campaign_MissionImageTab_Button_ImageTabClicked_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Campaign_MissionImageTab_C", "BndEvt__WBP_Campaign_MissionImageTab_Button_ImageTabClicked_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_Campaign_MissionImageTab_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,17 +51,37 @@ void UWBP_Campaign_MissionImageTab_C::SetSelected(bool bIsSelected)
 }
 
 
-// Function WBP_Campaign_MissionImageTab.WBP_Campaign_MissionImageTab_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Campaign_MissionImageTab.WBP_Campaign_MissionImageTab_C.BndEvt__WBP_Campaign_MissionImageTab_Button_ImageTabClicked_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_Campaign_MissionImageTab_C::Construct()
+void UWBP_Campaign_MissionImageTab_C::BndEvt__WBP_Campaign_MissionImageTab_Button_ImageTabClicked_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Campaign_MissionImageTab_C", "Construct");
+		Func = Class->GetFunction("WBP_Campaign_MissionImageTab_C", "BndEvt__WBP_Campaign_MissionImageTab_Button_ImageTabClicked_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Campaign_MissionImageTab.WBP_Campaign_MissionImageTab_C.ExecuteUbergraph_WBP_Campaign_MissionImageTab
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Campaign_MissionImageTab_C::ExecuteUbergraph_WBP_Campaign_MissionImageTab(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Campaign_MissionImageTab_C", "ExecuteUbergraph_WBP_Campaign_MissionImageTab");
+
+	Params::WBP_Campaign_MissionImageTab_C_ExecuteUbergraph_WBP_Campaign_MissionImageTab Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

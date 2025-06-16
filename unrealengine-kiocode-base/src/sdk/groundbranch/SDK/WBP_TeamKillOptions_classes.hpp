@@ -40,11 +40,11 @@ public:
 	class FText                                   UnknownPlayer;                                     // 0x0328(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_TeamKillOptions(int32 EntryPoint);
 	void SetNameAndPrevKills(const class FString& inString, int32 Value);
-	void BndEvt__Button_Report_K2Node_ComponentBoundEvent_81_OnButtonClickedEvent__DelegateSignature();
-	void ShowMessage(const class FText& InText);
+	void ExecuteUbergraph_WBP_TeamKillOptions(int32 EntryPoint);
 	void BndEvt__Button_Forgive_K2Node_ComponentBoundEvent_85_OnButtonClickedEvent__DelegateSignature();
+	void ShowMessage(const class FText& InText);
+	void BndEvt__Button_Report_K2Node_ComponentBoundEvent_81_OnButtonClickedEvent__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

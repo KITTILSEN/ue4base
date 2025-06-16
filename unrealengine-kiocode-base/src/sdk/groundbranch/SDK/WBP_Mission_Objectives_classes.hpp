@@ -41,11 +41,11 @@ public:
 	TArray<class FName>                           NamesOfCompletedCampaignMissionObjectives;         // 0x02C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_Mission_Objectives(int32 EntryPoint);
-	void OnInitialized();
-	void AddCampaignMissionObjectives(const TArray<class AGBMissionObjective*>& ObjectiveList, const bool bIsPrimary);
-	void UpdateVisibilityOfObjectiveLists();
 	void Construct();
+	void UpdateVisibilityOfObjectiveLists();
+	void AddCampaignMissionObjectives(const TArray<class AGBMissionObjective*>& ObjectiveList, const bool bIsPrimary);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_Mission_Objectives(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

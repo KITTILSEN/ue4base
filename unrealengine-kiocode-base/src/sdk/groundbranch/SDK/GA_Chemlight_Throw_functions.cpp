@@ -37,20 +37,6 @@ void UGA_Chemlight_Throw_C::ExecuteUbergraph_GA_Chemlight_Throw(int32 EntryPoint
 }
 
 
-// Function GA_Chemlight_Throw.GA_Chemlight_Throw_C.ActivateShared
-// (BlueprintCallable, BlueprintEvent)
-
-void UGA_Chemlight_Throw_C::ActivateShared()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Chemlight_Throw_C", "ActivateShared");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function GA_Chemlight_Throw.GA_Chemlight_Throw_C.EventReceived_26F8B4649CAC44DABDA5DBB270258AE4
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -68,6 +54,20 @@ void UGA_Chemlight_Throw_C::EventReceived_26F8B4649CAC44DABDA5DBB270258AE4(const
 	Parms.Payload = std::move(Payload);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GA_Chemlight_Throw.GA_Chemlight_Throw_C.ActivateShared
+// (BlueprintCallable, BlueprintEvent)
+
+void UGA_Chemlight_Throw_C::ActivateShared()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Chemlight_Throw_C", "ActivateShared");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

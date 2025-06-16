@@ -17,35 +17,55 @@
 namespace SDK
 {
 
-// Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.ExecuteUbergraph_WBP_CampaignMissionListEntry
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.Get_CheckBox_WholeItem_ToolTipWidget_0
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignMissionListEntry_C::ExecuteUbergraph_WBP_CampaignMissionListEntry(int32 EntryPoint)
+class UWidget* UWBP_CampaignMissionListEntry_C::Get_CheckBox_WholeItem_ToolTipWidget_0()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignMissionListEntry_C", "ExecuteUbergraph_WBP_CampaignMissionListEntry");
+		Func = Class->GetFunction("WBP_CampaignMissionListEntry_C", "Get_CheckBox_WholeItem_ToolTipWidget_0");
 
-	Params::WBP_CampaignMissionListEntry_C_ExecuteUbergraph_WBP_CampaignMissionListEntry Parms{};
+	Params::WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0 Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_CampaignMissionListEntry_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CampaignMissionListEntry_C", "PreConstruct");
+
+	Params::WBP_CampaignMissionListEntry_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.LookupMissionNameAndType
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_CampaignMissionListEntry_C::LookupMissionNameAndType()
+void UWBP_CampaignMissionListEntry_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignMissionListEntry_C", "LookupMissionNameAndType");
+		Func = Class->GetFunction("WBP_CampaignMissionListEntry_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,57 +91,37 @@ void UWBP_CampaignMissionListEntry_C::BndEvt__WBP_HotspotListEntry_CheckBox_Whol
 }
 
 
-// Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.LookupMissionNameAndType
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_CampaignMissionListEntry_C::Construct()
+void UWBP_CampaignMissionListEntry_C::LookupMissionNameAndType()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignMissionListEntry_C", "Construct");
+		Func = Class->GetFunction("WBP_CampaignMissionListEntry_C", "LookupMissionNameAndType");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.ExecuteUbergraph_WBP_CampaignMissionListEntry
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignMissionListEntry_C::PreConstruct(bool IsDesignTime)
+void UWBP_CampaignMissionListEntry_C::ExecuteUbergraph_WBP_CampaignMissionListEntry(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignMissionListEntry_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_CampaignMissionListEntry_C", "ExecuteUbergraph_WBP_CampaignMissionListEntry");
 
-	Params::WBP_CampaignMissionListEntry_C_PreConstruct Parms{};
+	Params::WBP_CampaignMissionListEntry_C_ExecuteUbergraph_WBP_CampaignMissionListEntry Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignMissionListEntry.WBP_CampaignMissionListEntry_C.Get_CheckBox_WholeItem_ToolTipWidget_0
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_CampaignMissionListEntry_C::Get_CheckBox_WholeItem_ToolTipWidget_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignMissionListEntry_C", "Get_CheckBox_WholeItem_ToolTipWidget_0");
-
-	Params::WBP_CampaignMissionListEntry_C_Get_CheckBox_WholeItem_ToolTipWidget_0 Parms{};
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 }

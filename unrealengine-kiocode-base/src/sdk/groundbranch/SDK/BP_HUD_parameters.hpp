@@ -116,21 +116,19 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_15;                   // 0x0245(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_246[0x2];                                      // 0x0246(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_Event_WarningName;                          // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_16;                   // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchName_CmpSuccess_2;                    // 0x0251(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_252[0x6];                                      // 0x0252(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_HUD_C*                             CallFunc_Create_ReturnValue_4;                     // 0x0258(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_HUD_C*                             CallFunc_Create_ReturnValue_4;                     // 0x0250(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchName_CmpSuccess_2;                    // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_259[0x7];                                      // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftClassPtr<class UClass>                   K2Node_CustomEvent_UserWidgetClass;                // 0x0260(0x0028)(HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_17;                   // 0x0288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_289[0x3];                                      // 0x0289(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x028C(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_29C[0x4];                                      // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x02A0(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_18;                   // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A9[0x7];                                      // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGBPlayerState*                         K2Node_CustomEvent_PlayerState;                    // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UUserWidget*>                    K2Node_Event_RadialMenuEntries;                    // 0x02B8(0x0010)(ConstParm, ReferenceParm, ContainsInstancedReference)
-	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_2;       // 0x02C8(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_16;                   // 0x0288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_17;                   // 0x0289(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_28A[0x6];                                      // 0x028A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBPlayerState*                         K2Node_CustomEvent_PlayerState;                    // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UUserWidget*>                    K2Node_Event_RadialMenuEntries;                    // 0x0298(0x0010)(ConstParm, ReferenceParm, ContainsInstancedReference)
+	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_1;       // 0x02A8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x02B8(0x0010)(ZeroConstructor, NoDestructor)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x02C8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_18;                   // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(BP_HUD_C_ExecuteUbergraph_BP_HUD) == 0x000008, "Wrong alignment on BP_HUD_C_ExecuteUbergraph_BP_HUD");
 static_assert(sizeof(BP_HUD_C_ExecuteUbergraph_BP_HUD) == 0x0002D8, "Wrong size on BP_HUD_C_ExecuteUbergraph_BP_HUD");
@@ -207,17 +205,17 @@ static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, CallFunc_IsValid_Return
 static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, CallFunc_IsValid_ReturnValue_14) == 0x000244, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::CallFunc_IsValid_ReturnValue_14' has a wrong offset!");
 static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, CallFunc_IsValid_ReturnValue_15) == 0x000245, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::CallFunc_IsValid_ReturnValue_15' has a wrong offset!");
 static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, K2Node_Event_WarningName) == 0x000248, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::K2Node_Event_WarningName' has a wrong offset!");
-static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, CallFunc_IsValid_ReturnValue_16) == 0x000250, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::CallFunc_IsValid_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, K2Node_SwitchName_CmpSuccess_2) == 0x000251, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::K2Node_SwitchName_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, CallFunc_Create_ReturnValue_4) == 0x000258, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::CallFunc_Create_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, CallFunc_Create_ReturnValue_4) == 0x000250, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::CallFunc_Create_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, K2Node_SwitchName_CmpSuccess_2) == 0x000258, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::K2Node_SwitchName_CmpSuccess_2' has a wrong offset!");
 static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, K2Node_CustomEvent_UserWidgetClass) == 0x000260, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::K2Node_CustomEvent_UserWidgetClass' has a wrong offset!");
-static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, CallFunc_IsValid_ReturnValue_17) == 0x000288, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::CallFunc_IsValid_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, K2Node_CreateDelegate_OutputDelegate_1) == 0x00028C, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0002A0, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, CallFunc_IsValid_ReturnValue_18) == 0x0002A8, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::CallFunc_IsValid_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, K2Node_CustomEvent_PlayerState) == 0x0002B0, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::K2Node_CustomEvent_PlayerState' has a wrong offset!");
-static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, K2Node_Event_RadialMenuEntries) == 0x0002B8, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::K2Node_Event_RadialMenuEntries' has a wrong offset!");
-static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, K2Node_CreateDelegate_OutputDelegate_2) == 0x0002C8, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, CallFunc_IsValid_ReturnValue_16) == 0x000288, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::CallFunc_IsValid_ReturnValue_16' has a wrong offset!");
+static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, CallFunc_IsValid_ReturnValue_17) == 0x000289, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::CallFunc_IsValid_ReturnValue_17' has a wrong offset!");
+static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, K2Node_CustomEvent_PlayerState) == 0x000290, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::K2Node_CustomEvent_PlayerState' has a wrong offset!");
+static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, K2Node_Event_RadialMenuEntries) == 0x000298, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::K2Node_Event_RadialMenuEntries' has a wrong offset!");
+static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, K2Node_CreateDelegate_OutputDelegate_1) == 0x0002A8, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, K2Node_CreateDelegate_OutputDelegate_2) == 0x0002B8, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0002C8, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HUD_C_ExecuteUbergraph_BP_HUD, CallFunc_IsValid_ReturnValue_18) == 0x0002D0, "Member 'BP_HUD_C_ExecuteUbergraph_BP_HUD::CallFunc_IsValid_ReturnValue_18' has a wrong offset!");
 
 // Function BP_HUD.BP_HUD_C.ShowRadialMenuEvent
 // 0x0010 (0x0010 - 0x0000)

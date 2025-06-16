@@ -17,113 +17,27 @@
 namespace SDK
 {
 
-// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.GetActorNameWithoutSuffix
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    InActorName                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// class FString*                          NameWithoutSuffix                                      (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_Campaign_InGameMapMissionImage_C::ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage(int32 EntryPoint)
+void UWBP_Campaign_InGameMapMissionImage_C::GetActorNameWithoutSuffix(const class FString& InActorName, class FString* NameWithoutSuffix)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Campaign_InGameMapMissionImage_C", "ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage");
+		Func = Class->GetFunction("WBP_Campaign_InGameMapMissionImage_C", "GetActorNameWithoutSuffix");
 
-	Params::WBP_Campaign_InGameMapMissionImage_C_ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage Parms{};
+	Params::WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.InActorName = std::move(InActorName);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
-
-// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.ResizeAllWidgets
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   NewScale                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Campaign_InGameMapMissionImage_C::ResizeAllWidgets(float NewScale)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Campaign_InGameMapMissionImage_C", "ResizeAllWidgets");
-
-	Params::WBP_Campaign_InGameMapMissionImage_C_ResizeAllWidgets Parms{};
-
-	Parms.NewScale = NewScale;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.RedisplayMapMarkers
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Campaign_InGameMapMissionImage_C::RedisplayMapMarkers()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Campaign_InGameMapMissionImage_C", "RedisplayMapMarkers");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.SpawnMapWidget
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGBMapMarker&              MapMarkerInfo                                          (BlueprintVisible, BlueprintReadOnly, Parm)
-// int32                                   WidgetIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Campaign_InGameMapMissionImage_C::SpawnMapWidget(const struct FGBMapMarker& MapMarkerInfo, int32 WidgetIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Campaign_InGameMapMissionImage_C", "SpawnMapWidget");
-
-	Params::WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget Parms{};
-
-	Parms.MapMarkerInfo = std::move(MapMarkerInfo);
-	Parms.WidgetIndex = WidgetIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Campaign_InGameMapMissionImage_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Campaign_InGameMapMissionImage_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.OnLoaded_408F25D74633A288D4801486CE2497E2
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Campaign_InGameMapMissionImage_C::OnLoaded_408F25D74633A288D4801486CE2497E2(class UObject* Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Campaign_InGameMapMissionImage_C", "OnLoaded_408F25D74633A288D4801486CE2497E2");
-
-	Params::WBP_Campaign_InGameMapMissionImage_C_OnLoaded_408F25D74633A288D4801486CE2497E2 Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
+	if (NameWithoutSuffix != nullptr)
+		*NameWithoutSuffix = std::move(Parms.NameWithoutSuffix);
 }
 
 
@@ -155,27 +69,113 @@ void UWBP_Campaign_InGameMapMissionImage_C::GetMissionTitleFromSoftRef(TSoftObje
 }
 
 
-// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.GetActorNameWithoutSuffix
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.OnLoaded_408F25D74633A288D4801486CE2497E2
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FString&                    InActorName                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// class FString*                          NameWithoutSuffix                                      (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Campaign_InGameMapMissionImage_C::GetActorNameWithoutSuffix(const class FString& InActorName, class FString* NameWithoutSuffix)
+void UWBP_Campaign_InGameMapMissionImage_C::OnLoaded_408F25D74633A288D4801486CE2497E2(class UObject* Loaded)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Campaign_InGameMapMissionImage_C", "GetActorNameWithoutSuffix");
+		Func = Class->GetFunction("WBP_Campaign_InGameMapMissionImage_C", "OnLoaded_408F25D74633A288D4801486CE2497E2");
 
-	Params::WBP_Campaign_InGameMapMissionImage_C_GetActorNameWithoutSuffix Parms{};
+	Params::WBP_Campaign_InGameMapMissionImage_C_OnLoaded_408F25D74633A288D4801486CE2497E2 Parms{};
 
-	Parms.InActorName = std::move(InActorName);
+	Parms.Loaded = Loaded;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (NameWithoutSuffix != nullptr)
-		*NameWithoutSuffix = std::move(Parms.NameWithoutSuffix);
+
+// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Campaign_InGameMapMissionImage_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Campaign_InGameMapMissionImage_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.SpawnMapWidget
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGBMapMarker&              MapMarkerInfo                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   WidgetIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Campaign_InGameMapMissionImage_C::SpawnMapWidget(const struct FGBMapMarker& MapMarkerInfo, int32 WidgetIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Campaign_InGameMapMissionImage_C", "SpawnMapWidget");
+
+	Params::WBP_Campaign_InGameMapMissionImage_C_SpawnMapWidget Parms{};
+
+	Parms.MapMarkerInfo = std::move(MapMarkerInfo);
+	Parms.WidgetIndex = WidgetIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.RedisplayMapMarkers
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Campaign_InGameMapMissionImage_C::RedisplayMapMarkers()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Campaign_InGameMapMissionImage_C", "RedisplayMapMarkers");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.ResizeAllWidgets
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   NewScale                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Campaign_InGameMapMissionImage_C::ResizeAllWidgets(float NewScale)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Campaign_InGameMapMissionImage_C", "ResizeAllWidgets");
+
+	Params::WBP_Campaign_InGameMapMissionImage_C_ResizeAllWidgets Parms{};
+
+	Parms.NewScale = NewScale;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Campaign_InGameMapMissionImage.WBP_Campaign_InGameMapMissionImage_C.ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Campaign_InGameMapMissionImage_C::ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Campaign_InGameMapMissionImage_C", "ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage");
+
+	Params::WBP_Campaign_InGameMapMissionImage_C_ExecuteUbergraph_WBP_Campaign_InGameMapMissionImage Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

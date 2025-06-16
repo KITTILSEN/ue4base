@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_CampaignMissionBriefingText.WBP_CampaignMissionBriefingText_C.ExecuteUbergraph_WBP_CampaignMissionBriefingText
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CampaignMissionBriefingText.WBP_CampaignMissionBriefingText_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_CampaignMissionBriefingText_C::ExecuteUbergraph_WBP_CampaignMissionBriefingText(int32 EntryPoint)
+void UWBP_CampaignMissionBriefingText_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignMissionBriefingText_C", "ExecuteUbergraph_WBP_CampaignMissionBriefingText");
+		Func = Class->GetFunction("WBP_CampaignMissionBriefingText_C", "Construct");
 
-	Params::WBP_CampaignMissionBriefingText_C_ExecuteUbergraph_WBP_CampaignMissionBriefingText Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -59,17 +53,23 @@ void UWBP_CampaignMissionBriefingText_C::SetMissionDetails(class FName InHotspot
 }
 
 
-// Function WBP_CampaignMissionBriefingText.WBP_CampaignMissionBriefingText_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_CampaignMissionBriefingText.WBP_CampaignMissionBriefingText_C.ExecuteUbergraph_WBP_CampaignMissionBriefingText
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignMissionBriefingText_C::Construct()
+void UWBP_CampaignMissionBriefingText_C::ExecuteUbergraph_WBP_CampaignMissionBriefingText(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignMissionBriefingText_C", "Construct");
+		Func = Class->GetFunction("WBP_CampaignMissionBriefingText_C", "ExecuteUbergraph_WBP_CampaignMissionBriefingText");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_CampaignMissionBriefingText_C_ExecuteUbergraph_WBP_CampaignMissionBriefingText Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

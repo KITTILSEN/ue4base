@@ -27,8 +27,8 @@ public:
 	class UTexture2D*                             Icon;                                              // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_HF_PlaceableDragIcon(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_HF_PlaceableDragIcon(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

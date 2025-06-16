@@ -14,6 +14,17 @@
 namespace SDK::Params
 {
 
+// Function WBP_Transition.WBP_Transition_C.SetMessageText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Transition_C_SetMessageText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(WBP_Transition_C_SetMessageText) == 0x000008, "Wrong alignment on WBP_Transition_C_SetMessageText");
+static_assert(sizeof(WBP_Transition_C_SetMessageText) == 0x000018, "Wrong size on WBP_Transition_C_SetMessageText");
+static_assert(offsetof(WBP_Transition_C_SetMessageText, InText) == 0x000000, "Member 'WBP_Transition_C_SetMessageText::InText' has a wrong offset!");
+
 // Function WBP_Transition.WBP_Transition_C.ExecuteUbergraph_WBP_Transition
 // 0x00B8 (0x00B8 - 0x0000)
 struct WBP_Transition_C_ExecuteUbergraph_WBP_Transition final
@@ -91,17 +102,6 @@ static_assert(offsetof(WBP_Transition_C_ExecuteUbergraph_WBP_Transition, K2Node_
 static_assert(offsetof(WBP_Transition_C_ExecuteUbergraph_WBP_Transition, Temp_float_Variable) == 0x0000A8, "Member 'WBP_Transition_C_ExecuteUbergraph_WBP_Transition::Temp_float_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_Transition_C_ExecuteUbergraph_WBP_Transition, K2Node_Select_Default) == 0x0000AC, "Member 'WBP_Transition_C_ExecuteUbergraph_WBP_Transition::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(WBP_Transition_C_ExecuteUbergraph_WBP_Transition, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000B0, "Member 'WBP_Transition_C_ExecuteUbergraph_WBP_Transition::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_Transition.WBP_Transition_C.SetMessageText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Transition_C_SetMessageText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-static_assert(alignof(WBP_Transition_C_SetMessageText) == 0x000008, "Wrong alignment on WBP_Transition_C_SetMessageText");
-static_assert(sizeof(WBP_Transition_C_SetMessageText) == 0x000018, "Wrong size on WBP_Transition_C_SetMessageText");
-static_assert(offsetof(WBP_Transition_C_SetMessageText, InText) == 0x000000, "Member 'WBP_Transition_C_SetMessageText::InText' has a wrong offset!");
 
 }
 

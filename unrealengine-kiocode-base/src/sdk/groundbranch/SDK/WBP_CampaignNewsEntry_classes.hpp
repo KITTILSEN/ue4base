@@ -31,9 +31,9 @@ public:
 	struct FDateTime                              Date;                                              // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CampaignNewsEntry(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
 	void Construct();
+	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_WBP_CampaignNewsEntry(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

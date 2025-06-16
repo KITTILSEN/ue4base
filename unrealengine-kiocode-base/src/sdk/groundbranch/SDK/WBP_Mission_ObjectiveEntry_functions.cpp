@@ -17,23 +17,37 @@
 namespace SDK
 {
 
-// Function WBP_Mission_ObjectiveEntry.WBP_Mission_ObjectiveEntry_C.ExecuteUbergraph_WBP_Mission_ObjectiveEntry
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Mission_ObjectiveEntry.WBP_Mission_ObjectiveEntry_C.Get_TextBlock_Completion_ColorAndOpacity_0
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSlateColor                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-void UWBP_Mission_ObjectiveEntry_C::ExecuteUbergraph_WBP_Mission_ObjectiveEntry(int32 EntryPoint)
+struct FSlateColor UWBP_Mission_ObjectiveEntry_C::Get_TextBlock_Completion_ColorAndOpacity_0()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_ObjectiveEntry_C", "ExecuteUbergraph_WBP_Mission_ObjectiveEntry");
+		Func = Class->GetFunction("WBP_Mission_ObjectiveEntry_C", "Get_TextBlock_Completion_ColorAndOpacity_0");
 
-	Params::WBP_Mission_ObjectiveEntry_C_ExecuteUbergraph_WBP_Mission_ObjectiveEntry Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0 Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_Mission_ObjectiveEntry.WBP_Mission_ObjectiveEntry_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Mission_ObjectiveEntry_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Mission_ObjectiveEntry_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,37 +71,23 @@ void UWBP_Mission_ObjectiveEntry_C::SetIsPrimary(bool bIsPrimary)
 }
 
 
-// Function WBP_Mission_ObjectiveEntry.WBP_Mission_ObjectiveEntry_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Mission_ObjectiveEntry_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_ObjectiveEntry_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Mission_ObjectiveEntry.WBP_Mission_ObjectiveEntry_C.Get_TextBlock_Completion_ColorAndOpacity_0
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_Mission_ObjectiveEntry.WBP_Mission_ObjectiveEntry_C.ExecuteUbergraph_WBP_Mission_ObjectiveEntry
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// struct FSlateColor                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-struct FSlateColor UWBP_Mission_ObjectiveEntry_C::Get_TextBlock_Completion_ColorAndOpacity_0()
+void UWBP_Mission_ObjectiveEntry_C::ExecuteUbergraph_WBP_Mission_ObjectiveEntry(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_ObjectiveEntry_C", "Get_TextBlock_Completion_ColorAndOpacity_0");
+		Func = Class->GetFunction("WBP_Mission_ObjectiveEntry_C", "ExecuteUbergraph_WBP_Mission_ObjectiveEntry");
 
-	Params::WBP_Mission_ObjectiveEntry_C_Get_TextBlock_Completion_ColorAndOpacity_0 Parms{};
+	Params::WBP_Mission_ObjectiveEntry_C_ExecuteUbergraph_WBP_Mission_ObjectiveEntry Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 }

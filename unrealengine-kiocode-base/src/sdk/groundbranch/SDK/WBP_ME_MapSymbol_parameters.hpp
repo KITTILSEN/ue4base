@@ -20,6 +20,200 @@
 namespace SDK::Params
 {
 
+// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.MakeMissionObjectiveTooltip
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip final
+{
+public:
+	class FText                                   TooltipTitle;                                      // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class UImage*                                 HoveredImageRef;                                   // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   OptionalText;                                      // 0x0020(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class UTexture2D*                             OptionalImage;                                     // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            CreatedWidget;                                     // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Tooltip_MapSymbolObjectives_C*     CallFunc_Create_ReturnValue;                       // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0053(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0056(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0057(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x005B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x005D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x005E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip");
+static_assert(sizeof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip) == 0x000060, "Wrong size on WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, TooltipTitle) == 0x000000, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::TooltipTitle' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, HoveredImageRef) == 0x000018, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::HoveredImageRef' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, OptionalText) == 0x000020, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::OptionalText' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, OptionalImage) == 0x000038, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::OptionalImage' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CreatedWidget) == 0x000040, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CreatedWidget' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_Create_ReturnValue) == 0x000048, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_Create_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_Not_PreBool_ReturnValue) == 0x000051, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_TextIsEmpty_ReturnValue) == 0x000052, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_BooleanOR_ReturnValue) == 0x000053, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, Temp_byte_Variable) == 0x000054, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_Not_PreBool_ReturnValue_1) == 0x000055, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_BooleanOR_ReturnValue_1) == 0x000056, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, Temp_byte_Variable_1) == 0x000057, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_IsEmpty_ReturnValue) == 0x000058, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_BooleanAND_ReturnValue) == 0x000059, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_BooleanAND_ReturnValue_1) == 0x00005A, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_Not_PreBool_ReturnValue_2) == 0x00005B, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_BooleanAND_ReturnValue_2) == 0x00005C, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, Temp_bool_Variable) == 0x00005D, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, K2Node_Select_Default) == 0x00005E, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.OnMouseButtonUp
+// 0x02E0 (0x02E0 - 0x0000)
+struct WBP_ME_MapSymbol_C_OnMouseButtonUp final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0160(0x00B8)()
+	class UWBP_ME_MapAnnotator_C*                 CallFunc_GetParentWidgetOfClass_ReturnValue;       // 0x0218(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_221[0x7];                                      // 0x0221(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0228(0x00B8)()
+};
+static_assert(alignof(WBP_ME_MapSymbol_C_OnMouseButtonUp) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_OnMouseButtonUp");
+static_assert(sizeof(WBP_ME_MapSymbol_C_OnMouseButtonUp) == 0x0002E0, "Wrong size on WBP_ME_MapSymbol_C_OnMouseButtonUp");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonUp, MyGeometry) == 0x000000, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonUp::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonUp, MouseEvent) == 0x000038, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonUp::MouseEvent' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonUp, ReturnValue) == 0x0000A8, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonUp::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonUp, CallFunc_Handled_ReturnValue) == 0x000160, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonUp::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonUp, CallFunc_GetParentWidgetOfClass_ReturnValue) == 0x000218, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonUp::CallFunc_GetParentWidgetOfClass_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonUp, CallFunc_IsValid_ReturnValue) == 0x000220, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonUp::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonUp, CallFunc_Unhandled_ReturnValue) == 0x000228, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonUp::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+
+// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.OnDrop
+// 0x00B8 (0x00B8 - 0x0000)
+struct WBP_ME_MapSymbol_C_OnDrop final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0070)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class UDragDropOperation*                     Operation;                                         // 0x00A8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ReturnValue;                                       // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_ME_MapSymbol_C_OnDrop) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_OnDrop");
+static_assert(sizeof(WBP_ME_MapSymbol_C_OnDrop) == 0x0000B8, "Wrong size on WBP_ME_MapSymbol_C_OnDrop");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnDrop, MyGeometry) == 0x000000, "Member 'WBP_ME_MapSymbol_C_OnDrop::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnDrop, PointerEvent) == 0x000038, "Member 'WBP_ME_MapSymbol_C_OnDrop::PointerEvent' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnDrop, Operation) == 0x0000A8, "Member 'WBP_ME_MapSymbol_C_OnDrop::Operation' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnDrop, ReturnValue) == 0x0000B0, "Member 'WBP_ME_MapSymbol_C_OnDrop::ReturnValue' has a wrong offset!");
+
+// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.OnMouseButtonDown
+// 0x0218 (0x0218 - 0x0000)
+struct WBP_ME_MapSymbol_C_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_DetectDragIfPressed_ReturnValue;          // 0x0160(0x00B8)()
+};
+static_assert(alignof(WBP_ME_MapSymbol_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_OnMouseButtonDown");
+static_assert(sizeof(WBP_ME_MapSymbol_C_OnMouseButtonDown) == 0x000218, "Wrong size on WBP_ME_MapSymbol_C_OnMouseButtonDown");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonDown, ReturnValue) == 0x0000A8, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonDown, CallFunc_DetectDragIfPressed_ReturnValue) == 0x000160, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonDown::CallFunc_DetectDragIfPressed_ReturnValue' has a wrong offset!");
+
+// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.OnDragDetected
+// 0x00B8 (0x00B8 - 0x0000)
+struct WBP_ME_MapSymbol_C_OnDragDetected final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class UDragDropOperation*                     Operation;                                         // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHFDragDropOperation*                   CallFunc_CreateDragDropOperation_ReturnValue;      // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapSymbol_C_OnDragDetected) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_OnDragDetected");
+static_assert(sizeof(WBP_ME_MapSymbol_C_OnDragDetected) == 0x0000B8, "Wrong size on WBP_ME_MapSymbol_C_OnDragDetected");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnDragDetected, MyGeometry) == 0x000000, "Member 'WBP_ME_MapSymbol_C_OnDragDetected::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnDragDetected, PointerEvent) == 0x000038, "Member 'WBP_ME_MapSymbol_C_OnDragDetected::PointerEvent' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnDragDetected, Operation) == 0x0000A8, "Member 'WBP_ME_MapSymbol_C_OnDragDetected::Operation' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnDragDetected, CallFunc_CreateDragDropOperation_ReturnValue) == 0x0000B0, "Member 'WBP_ME_MapSymbol_C_OnDragDetected::CallFunc_CreateDragDropOperation_ReturnValue' has a wrong offset!");
+
+// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.PositionSelf
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ME_MapSymbol_C_PositionSelf final
+{
+public:
+	class UOverlay*                               ParentOverlay;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapSymbol_C_PositionSelf) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_PositionSelf");
+static_assert(sizeof(WBP_ME_MapSymbol_C_PositionSelf) == 0x000008, "Wrong size on WBP_ME_MapSymbol_C_PositionSelf");
+static_assert(offsetof(WBP_ME_MapSymbol_C_PositionSelf, ParentOverlay) == 0x000000, "Member 'WBP_ME_MapSymbol_C_PositionSelf::ParentOverlay' has a wrong offset!");
+
+// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.BindDragDropOperation
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ME_MapSymbol_C_BindDragDropOperation final
+{
+public:
+	class UDragDropOperation*                     DragDropOp;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapSymbol_C_BindDragDropOperation) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_BindDragDropOperation");
+static_assert(sizeof(WBP_ME_MapSymbol_C_BindDragDropOperation) == 0x000008, "Wrong size on WBP_ME_MapSymbol_C_BindDragDropOperation");
+static_assert(offsetof(WBP_ME_MapSymbol_C_BindDragDropOperation, DragDropOp) == 0x000000, "Member 'WBP_ME_MapSymbol_C_BindDragDropOperation::DragDropOp' has a wrong offset!");
+
+// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.OnDragged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ME_MapSymbol_C_OnDragged final
+{
+public:
+	class UDragDropOperation*                     Operation;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapSymbol_C_OnDragged) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_OnDragged");
+static_assert(sizeof(WBP_ME_MapSymbol_C_OnDragged) == 0x000008, "Wrong size on WBP_ME_MapSymbol_C_OnDragged");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnDragged, Operation) == 0x000000, "Member 'WBP_ME_MapSymbol_C_OnDragged::Operation' has a wrong offset!");
+
+// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.OnDragCancelled
+// 0x0078 (0x0078 - 0x0000)
+struct WBP_ME_MapSymbol_C_OnDragCancelled final
+{
+public:
+	struct FPointerEvent                          PointerEvent;                                      // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class UDragDropOperation*                     Operation;                                         // 0x0070(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapSymbol_C_OnDragCancelled) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_OnDragCancelled");
+static_assert(sizeof(WBP_ME_MapSymbol_C_OnDragCancelled) == 0x000078, "Wrong size on WBP_ME_MapSymbol_C_OnDragCancelled");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnDragCancelled, PointerEvent) == 0x000000, "Member 'WBP_ME_MapSymbol_C_OnDragCancelled::PointerEvent' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapSymbol_C_OnDragCancelled, Operation) == 0x000070, "Member 'WBP_ME_MapSymbol_C_OnDragCancelled::Operation' has a wrong offset!");
+
+// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.SetSelected
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ME_MapSymbol_C_SetSelected final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_ME_MapSymbol_C_SetSelected) == 0x000001, "Wrong alignment on WBP_ME_MapSymbol_C_SetSelected");
+static_assert(sizeof(WBP_ME_MapSymbol_C_SetSelected) == 0x000001, "Wrong size on WBP_ME_MapSymbol_C_SetSelected");
+static_assert(offsetof(WBP_ME_MapSymbol_C_SetSelected, bIsSelected) == 0x000000, "Member 'WBP_ME_MapSymbol_C_SetSelected::bIsSelected' has a wrong offset!");
+
+// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.SetNewScale
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_ME_MapSymbol_C_SetNewScale final
+{
+public:
+	float                                         NewScale;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapSymbol_C_SetNewScale) == 0x000004, "Wrong alignment on WBP_ME_MapSymbol_C_SetNewScale");
+static_assert(sizeof(WBP_ME_MapSymbol_C_SetNewScale) == 0x000004, "Wrong size on WBP_ME_MapSymbol_C_SetNewScale");
+static_assert(offsetof(WBP_ME_MapSymbol_C_SetNewScale, NewScale) == 0x000000, "Member 'WBP_ME_MapSymbol_C_SetNewScale::NewScale' has a wrong offset!");
+
 // Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.ExecuteUbergraph_WBP_ME_MapSymbol
 // 0x02B8 (0x02B8 - 0x0000)
 struct WBP_ME_MapSymbol_C_ExecuteUbergraph_WBP_ME_MapSymbol final
@@ -157,200 +351,6 @@ static_assert(offsetof(WBP_ME_MapSymbol_C_ExecuteUbergraph_WBP_ME_MapSymbol, Cal
 static_assert(offsetof(WBP_ME_MapSymbol_C_ExecuteUbergraph_WBP_ME_MapSymbol, K2Node_Select_Default) == 0x000294, "Member 'WBP_ME_MapSymbol_C_ExecuteUbergraph_WBP_ME_MapSymbol::K2Node_Select_Default' has a wrong offset!");
 static_assert(offsetof(WBP_ME_MapSymbol_C_ExecuteUbergraph_WBP_ME_MapSymbol, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0002A4, "Member 'WBP_ME_MapSymbol_C_ExecuteUbergraph_WBP_ME_MapSymbol::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_ME_MapSymbol_C_ExecuteUbergraph_WBP_ME_MapSymbol, K2Node_CreateDelegate_OutputDelegate_2) == 0x0002A8, "Member 'WBP_ME_MapSymbol_C_ExecuteUbergraph_WBP_ME_MapSymbol::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-
-// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.SetNewScale
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_ME_MapSymbol_C_SetNewScale final
-{
-public:
-	float                                         NewScale;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapSymbol_C_SetNewScale) == 0x000004, "Wrong alignment on WBP_ME_MapSymbol_C_SetNewScale");
-static_assert(sizeof(WBP_ME_MapSymbol_C_SetNewScale) == 0x000004, "Wrong size on WBP_ME_MapSymbol_C_SetNewScale");
-static_assert(offsetof(WBP_ME_MapSymbol_C_SetNewScale, NewScale) == 0x000000, "Member 'WBP_ME_MapSymbol_C_SetNewScale::NewScale' has a wrong offset!");
-
-// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.SetSelected
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ME_MapSymbol_C_SetSelected final
-{
-public:
-	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_ME_MapSymbol_C_SetSelected) == 0x000001, "Wrong alignment on WBP_ME_MapSymbol_C_SetSelected");
-static_assert(sizeof(WBP_ME_MapSymbol_C_SetSelected) == 0x000001, "Wrong size on WBP_ME_MapSymbol_C_SetSelected");
-static_assert(offsetof(WBP_ME_MapSymbol_C_SetSelected, bIsSelected) == 0x000000, "Member 'WBP_ME_MapSymbol_C_SetSelected::bIsSelected' has a wrong offset!");
-
-// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.OnDragCancelled
-// 0x0078 (0x0078 - 0x0000)
-struct WBP_ME_MapSymbol_C_OnDragCancelled final
-{
-public:
-	struct FPointerEvent                          PointerEvent;                                      // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	class UDragDropOperation*                     Operation;                                         // 0x0070(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapSymbol_C_OnDragCancelled) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_OnDragCancelled");
-static_assert(sizeof(WBP_ME_MapSymbol_C_OnDragCancelled) == 0x000078, "Wrong size on WBP_ME_MapSymbol_C_OnDragCancelled");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnDragCancelled, PointerEvent) == 0x000000, "Member 'WBP_ME_MapSymbol_C_OnDragCancelled::PointerEvent' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnDragCancelled, Operation) == 0x000070, "Member 'WBP_ME_MapSymbol_C_OnDragCancelled::Operation' has a wrong offset!");
-
-// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.OnDragged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ME_MapSymbol_C_OnDragged final
-{
-public:
-	class UDragDropOperation*                     Operation;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapSymbol_C_OnDragged) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_OnDragged");
-static_assert(sizeof(WBP_ME_MapSymbol_C_OnDragged) == 0x000008, "Wrong size on WBP_ME_MapSymbol_C_OnDragged");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnDragged, Operation) == 0x000000, "Member 'WBP_ME_MapSymbol_C_OnDragged::Operation' has a wrong offset!");
-
-// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.BindDragDropOperation
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ME_MapSymbol_C_BindDragDropOperation final
-{
-public:
-	class UDragDropOperation*                     DragDropOp;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapSymbol_C_BindDragDropOperation) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_BindDragDropOperation");
-static_assert(sizeof(WBP_ME_MapSymbol_C_BindDragDropOperation) == 0x000008, "Wrong size on WBP_ME_MapSymbol_C_BindDragDropOperation");
-static_assert(offsetof(WBP_ME_MapSymbol_C_BindDragDropOperation, DragDropOp) == 0x000000, "Member 'WBP_ME_MapSymbol_C_BindDragDropOperation::DragDropOp' has a wrong offset!");
-
-// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.PositionSelf
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ME_MapSymbol_C_PositionSelf final
-{
-public:
-	class UOverlay*                               ParentOverlay;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapSymbol_C_PositionSelf) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_PositionSelf");
-static_assert(sizeof(WBP_ME_MapSymbol_C_PositionSelf) == 0x000008, "Wrong size on WBP_ME_MapSymbol_C_PositionSelf");
-static_assert(offsetof(WBP_ME_MapSymbol_C_PositionSelf, ParentOverlay) == 0x000000, "Member 'WBP_ME_MapSymbol_C_PositionSelf::ParentOverlay' has a wrong offset!");
-
-// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.OnDragDetected
-// 0x00B8 (0x00B8 - 0x0000)
-struct WBP_ME_MapSymbol_C_OnDragDetected final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	class UDragDropOperation*                     Operation;                                         // 0x00A8(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UHFDragDropOperation*                   CallFunc_CreateDragDropOperation_ReturnValue;      // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapSymbol_C_OnDragDetected) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_OnDragDetected");
-static_assert(sizeof(WBP_ME_MapSymbol_C_OnDragDetected) == 0x0000B8, "Wrong size on WBP_ME_MapSymbol_C_OnDragDetected");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnDragDetected, MyGeometry) == 0x000000, "Member 'WBP_ME_MapSymbol_C_OnDragDetected::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnDragDetected, PointerEvent) == 0x000038, "Member 'WBP_ME_MapSymbol_C_OnDragDetected::PointerEvent' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnDragDetected, Operation) == 0x0000A8, "Member 'WBP_ME_MapSymbol_C_OnDragDetected::Operation' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnDragDetected, CallFunc_CreateDragDropOperation_ReturnValue) == 0x0000B0, "Member 'WBP_ME_MapSymbol_C_OnDragDetected::CallFunc_CreateDragDropOperation_ReturnValue' has a wrong offset!");
-
-// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.OnMouseButtonDown
-// 0x0218 (0x0218 - 0x0000)
-struct WBP_ME_MapSymbol_C_OnMouseButtonDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_DetectDragIfPressed_ReturnValue;          // 0x0160(0x00B8)()
-};
-static_assert(alignof(WBP_ME_MapSymbol_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_OnMouseButtonDown");
-static_assert(sizeof(WBP_ME_MapSymbol_C_OnMouseButtonDown) == 0x000218, "Wrong size on WBP_ME_MapSymbol_C_OnMouseButtonDown");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonDown, ReturnValue) == 0x0000A8, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonDown, CallFunc_DetectDragIfPressed_ReturnValue) == 0x000160, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonDown::CallFunc_DetectDragIfPressed_ReturnValue' has a wrong offset!");
-
-// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.OnDrop
-// 0x00B8 (0x00B8 - 0x0000)
-struct WBP_ME_MapSymbol_C_OnDrop final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          PointerEvent;                                      // 0x0038(0x0070)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class UDragDropOperation*                     Operation;                                         // 0x00A8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ReturnValue;                                       // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_ME_MapSymbol_C_OnDrop) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_OnDrop");
-static_assert(sizeof(WBP_ME_MapSymbol_C_OnDrop) == 0x0000B8, "Wrong size on WBP_ME_MapSymbol_C_OnDrop");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnDrop, MyGeometry) == 0x000000, "Member 'WBP_ME_MapSymbol_C_OnDrop::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnDrop, PointerEvent) == 0x000038, "Member 'WBP_ME_MapSymbol_C_OnDrop::PointerEvent' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnDrop, Operation) == 0x0000A8, "Member 'WBP_ME_MapSymbol_C_OnDrop::Operation' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnDrop, ReturnValue) == 0x0000B0, "Member 'WBP_ME_MapSymbol_C_OnDrop::ReturnValue' has a wrong offset!");
-
-// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.OnMouseButtonUp
-// 0x02E0 (0x02E0 - 0x0000)
-struct WBP_ME_MapSymbol_C_OnMouseButtonUp final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0160(0x00B8)()
-	class UWBP_ME_MapAnnotator_C*                 CallFunc_GetParentWidgetOfClass_ReturnValue;       // 0x0218(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_221[0x7];                                      // 0x0221(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0228(0x00B8)()
-};
-static_assert(alignof(WBP_ME_MapSymbol_C_OnMouseButtonUp) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_OnMouseButtonUp");
-static_assert(sizeof(WBP_ME_MapSymbol_C_OnMouseButtonUp) == 0x0002E0, "Wrong size on WBP_ME_MapSymbol_C_OnMouseButtonUp");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonUp, MyGeometry) == 0x000000, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonUp::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonUp, MouseEvent) == 0x000038, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonUp::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonUp, ReturnValue) == 0x0000A8, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonUp::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonUp, CallFunc_Handled_ReturnValue) == 0x000160, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonUp::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonUp, CallFunc_GetParentWidgetOfClass_ReturnValue) == 0x000218, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonUp::CallFunc_GetParentWidgetOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonUp, CallFunc_IsValid_ReturnValue) == 0x000220, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonUp::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_OnMouseButtonUp, CallFunc_Unhandled_ReturnValue) == 0x000228, "Member 'WBP_ME_MapSymbol_C_OnMouseButtonUp::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-
-// Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.MakeMissionObjectiveTooltip
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip final
-{
-public:
-	class FText                                   TooltipTitle;                                      // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class UImage*                                 HoveredImageRef;                                   // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   OptionalText;                                      // 0x0020(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class UTexture2D*                             OptionalImage;                                     // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUserWidget*                            CreatedWidget;                                     // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Tooltip_MapSymbolObjectives_C*     CallFunc_Create_ReturnValue;                       // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0053(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0056(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0057(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x005B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x005D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x005E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip) == 0x000008, "Wrong alignment on WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip");
-static_assert(sizeof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip) == 0x000060, "Wrong size on WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, TooltipTitle) == 0x000000, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::TooltipTitle' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, HoveredImageRef) == 0x000018, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::HoveredImageRef' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, OptionalText) == 0x000020, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::OptionalText' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, OptionalImage) == 0x000038, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::OptionalImage' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CreatedWidget) == 0x000040, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CreatedWidget' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_Create_ReturnValue) == 0x000048, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_Not_PreBool_ReturnValue) == 0x000051, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_TextIsEmpty_ReturnValue) == 0x000052, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_BooleanOR_ReturnValue) == 0x000053, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, Temp_byte_Variable) == 0x000054, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_Not_PreBool_ReturnValue_1) == 0x000055, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_BooleanOR_ReturnValue_1) == 0x000056, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, Temp_byte_Variable_1) == 0x000057, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_IsEmpty_ReturnValue) == 0x000058, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_IsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_BooleanAND_ReturnValue) == 0x000059, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_BooleanAND_ReturnValue_1) == 0x00005A, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_Not_PreBool_ReturnValue_2) == 0x00005B, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, CallFunc_BooleanAND_ReturnValue_2) == 0x00005C, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, Temp_bool_Variable) == 0x00005D, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip, K2Node_Select_Default) == 0x00005E, "Member 'WBP_ME_MapSymbol_C_MakeMissionObjectiveTooltip::K2Node_Select_Default' has a wrong offset!");
 
 // Function WBP_ME_MapSymbol.WBP_ME_MapSymbol_C.IsInteractable
 // 0x0001 (0x0001 - 0x0000)

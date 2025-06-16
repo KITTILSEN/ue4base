@@ -303,7 +303,7 @@ static_assert(sizeof(UAkAcousticTextureSetComponent) == 0x000210, "Wrong size on
 
 // Class AkAudio.AkAmbientSound
 // 0x0040 (0x0260 - 0x0220)
-class AAkAmbientSound final : public AActor
+class AAkAmbientSound : public AActor
 {
 public:
 	class UAkAudioEvent*                          AkAudioEvent;                                      // 0x0220(0x0008)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)

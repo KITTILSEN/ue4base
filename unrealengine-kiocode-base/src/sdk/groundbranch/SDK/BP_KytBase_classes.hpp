@@ -51,12 +51,12 @@ public:
 	void OnInterrupted_57DFBDB84A18F4C71465C2BF15ACDA23(class FName NotifyName);
 	void OnNotifyBegin_57DFBDB84A18F4C71465C2BF15ACDA23(class FName NotifyName);
 	void OnNotifyEnd_57DFBDB84A18F4C71465C2BF15ACDA23(class FName NotifyName);
+	bool IsAnimationSupported(const class FString& AnimationName, const class UKytBlackboard* AnimationParameters);
 	void CheckUseDoor(bool* bDoorFound);
 	void MoveTowards();
 	void CheckUseLadder(bool* bLadderFound);
 	void MoveUp();
 	void MoveDown();
-	bool IsAnimationSupported(const class FString& AnimationName, const class UKytBlackboard* AnimationParameters);
 
 public:
 	static class UClass* StaticClass()

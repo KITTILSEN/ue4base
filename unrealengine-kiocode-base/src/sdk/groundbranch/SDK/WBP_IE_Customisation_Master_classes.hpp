@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UMG_classes.hpp"
 #include "FGBIECustomisationFilter_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "FGBIECustomisationHelper_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FGBIECustomisationHelper_structs.hpp"
+#include "UMG_classes.hpp"
 
 
 namespace SDK

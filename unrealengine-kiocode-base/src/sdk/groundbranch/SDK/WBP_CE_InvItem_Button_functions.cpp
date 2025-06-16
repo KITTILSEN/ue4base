@@ -893,10 +893,10 @@ struct FLinearColor UWBP_CE_InvItem_Button_C::IconHoverColor()
 // Function WBP_CE_InvItem_Button.WBP_CE_InvItem_Button_C.SetupItemFromJsonObj
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UVaRestJsonObject*                InJsonObj                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UVaRestJsonObject*                InJSonObj                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bUpdatePresets_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_CE_InvItem_Button_C::SetupItemFromJsonObj(class UVaRestJsonObject* InJsonObj, bool bUpdatePresets_0)
+void UWBP_CE_InvItem_Button_C::SetupItemFromJsonObj(class UVaRestJsonObject* InJSonObj, bool bUpdatePresets_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -905,7 +905,7 @@ void UWBP_CE_InvItem_Button_C::SetupItemFromJsonObj(class UVaRestJsonObject* InJ
 
 	Params::WBP_CE_InvItem_Button_C_SetupItemFromJsonObj Parms{};
 
-	Parms.InJsonObj = InJsonObj;
+	Parms.InJSonObj = InJSonObj;
 	Parms.bUpdatePresets_0 = bUpdatePresets_0;
 
 	UObject::ProcessEvent(Func, &Parms);

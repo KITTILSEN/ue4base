@@ -17,35 +17,29 @@
 namespace SDK
 {
 
-// Function WBP_Mission_Objectives.WBP_Mission_Objectives_C.ExecuteUbergraph_WBP_Mission_Objectives
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Mission_Objectives.WBP_Mission_Objectives_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Mission_Objectives_C::ExecuteUbergraph_WBP_Mission_Objectives(int32 EntryPoint)
+void UWBP_Mission_Objectives_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_Objectives_C", "ExecuteUbergraph_WBP_Mission_Objectives");
+		Func = Class->GetFunction("WBP_Mission_Objectives_C", "Construct");
 
-	Params::WBP_Mission_Objectives_C_ExecuteUbergraph_WBP_Mission_Objectives Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Mission_Objectives.WBP_Mission_Objectives_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Mission_Objectives.WBP_Mission_Objectives_C.UpdateVisibilityOfObjectiveLists
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Mission_Objectives_C::OnInitialized()
+void UWBP_Mission_Objectives_C::UpdateVisibilityOfObjectiveLists()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_Objectives_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Mission_Objectives_C", "UpdateVisibilityOfObjectiveLists");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -73,31 +67,37 @@ void UWBP_Mission_Objectives_C::AddCampaignMissionObjectives(const TArray<class 
 }
 
 
-// Function WBP_Mission_Objectives.WBP_Mission_Objectives_C.UpdateVisibilityOfObjectiveLists
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Mission_Objectives.WBP_Mission_Objectives_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Mission_Objectives_C::UpdateVisibilityOfObjectiveLists()
+void UWBP_Mission_Objectives_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_Objectives_C", "UpdateVisibilityOfObjectiveLists");
+		Func = Class->GetFunction("WBP_Mission_Objectives_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Mission_Objectives.WBP_Mission_Objectives_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Mission_Objectives.WBP_Mission_Objectives_C.ExecuteUbergraph_WBP_Mission_Objectives
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Mission_Objectives_C::Construct()
+void UWBP_Mission_Objectives_C::ExecuteUbergraph_WBP_Mission_Objectives(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_Objectives_C", "Construct");
+		Func = Class->GetFunction("WBP_Mission_Objectives_C", "ExecuteUbergraph_WBP_Mission_Objectives");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Mission_Objectives_C_ExecuteUbergraph_WBP_Mission_Objectives Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

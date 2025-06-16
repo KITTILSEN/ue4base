@@ -18,6 +18,17 @@
 namespace SDK::Params
 {
 
+// Function WBP_Tooltip_MapSymbolObjectives.WBP_Tooltip_MapSymbolObjectives_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Tooltip_MapSymbolObjectives_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_Tooltip_MapSymbolObjectives_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Tooltip_MapSymbolObjectives_C_PreConstruct");
+static_assert(sizeof(WBP_Tooltip_MapSymbolObjectives_C_PreConstruct) == 0x000001, "Wrong size on WBP_Tooltip_MapSymbolObjectives_C_PreConstruct");
+static_assert(offsetof(WBP_Tooltip_MapSymbolObjectives_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Tooltip_MapSymbolObjectives_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
 // Function WBP_Tooltip_MapSymbolObjectives.WBP_Tooltip_MapSymbolObjectives_C.ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives
 // 0x0188 (0x0188 - 0x0000)
 struct WBP_Tooltip_MapSymbolObjectives_C_ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives final
@@ -92,17 +103,6 @@ static_assert(offsetof(WBP_Tooltip_MapSymbolObjectives_C_ExecuteUbergraph_WBP_To
 static_assert(offsetof(WBP_Tooltip_MapSymbolObjectives_C_ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives, CallFunc_IsValid_ReturnValue) == 0x000163, "Member 'WBP_Tooltip_MapSymbolObjectives_C_ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Tooltip_MapSymbolObjectives_C_ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives, K2Node_Select_Default_2) == 0x000168, "Member 'WBP_Tooltip_MapSymbolObjectives_C_ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives::K2Node_Select_Default_2' has a wrong offset!");
 static_assert(offsetof(WBP_Tooltip_MapSymbolObjectives_C_ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives, K2Node_Select_Default_3) == 0x000180, "Member 'WBP_Tooltip_MapSymbolObjectives_C_ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives::K2Node_Select_Default_3' has a wrong offset!");
-
-// Function WBP_Tooltip_MapSymbolObjectives.WBP_Tooltip_MapSymbolObjectives_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Tooltip_MapSymbolObjectives_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_Tooltip_MapSymbolObjectives_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Tooltip_MapSymbolObjectives_C_PreConstruct");
-static_assert(sizeof(WBP_Tooltip_MapSymbolObjectives_C_PreConstruct) == 0x000001, "Wrong size on WBP_Tooltip_MapSymbolObjectives_C_PreConstruct");
-static_assert(offsetof(WBP_Tooltip_MapSymbolObjectives_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Tooltip_MapSymbolObjectives_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }
 

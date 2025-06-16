@@ -17,49 +17,35 @@
 namespace SDK
 {
 
-// Function WBP_CampaignNewsFeed.WBP_CampaignNewsFeed_C.ExecuteUbergraph_WBP_CampaignNewsFeed
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_CampaignNewsFeed.WBP_CampaignNewsFeed_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_CampaignNewsFeed_C::ExecuteUbergraph_WBP_CampaignNewsFeed(int32 EntryPoint)
+void UWBP_CampaignNewsFeed_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignNewsFeed_C", "ExecuteUbergraph_WBP_CampaignNewsFeed");
+		Func = Class->GetFunction("WBP_CampaignNewsFeed_C", "PreConstruct");
 
-	Params::WBP_CampaignNewsFeed_C_ExecuteUbergraph_WBP_CampaignNewsFeed Parms{};
+	Params::WBP_CampaignNewsFeed_C_PreConstruct Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CampaignNewsFeed.WBP_CampaignNewsFeed_C.PostNewsItem
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_CampaignNewsFeed.WBP_CampaignNewsFeed_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_CampaignNewsFeed_C::PostNewsItem()
+void UWBP_CampaignNewsFeed_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignNewsFeed_C", "PostNewsItem");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CampaignNewsFeed.WBP_CampaignNewsFeed_C.AdvanceDate
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CampaignNewsFeed_C::AdvanceDate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignNewsFeed_C", "AdvanceDate");
+		Func = Class->GetFunction("WBP_CampaignNewsFeed_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,35 +71,49 @@ void UWBP_CampaignNewsFeed_C::SetCurrentHotspot(class UGBHotspotDataAsset* NewHo
 }
 
 
-// Function WBP_CampaignNewsFeed.WBP_CampaignNewsFeed_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_CampaignNewsFeed.WBP_CampaignNewsFeed_C.AdvanceDate
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_CampaignNewsFeed_C::Construct()
+void UWBP_CampaignNewsFeed_C::AdvanceDate()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignNewsFeed_C", "Construct");
+		Func = Class->GetFunction("WBP_CampaignNewsFeed_C", "AdvanceDate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CampaignNewsFeed.WBP_CampaignNewsFeed_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_CampaignNewsFeed.WBP_CampaignNewsFeed_C.PostNewsItem
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_CampaignNewsFeed_C::PreConstruct(bool IsDesignTime)
+void UWBP_CampaignNewsFeed_C::PostNewsItem()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignNewsFeed_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_CampaignNewsFeed_C", "PostNewsItem");
 
-	Params::WBP_CampaignNewsFeed_C_PreConstruct Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsDesignTime = IsDesignTime;
+
+// Function WBP_CampaignNewsFeed.WBP_CampaignNewsFeed_C.ExecuteUbergraph_WBP_CampaignNewsFeed
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignNewsFeed_C::ExecuteUbergraph_WBP_CampaignNewsFeed(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CampaignNewsFeed_C", "ExecuteUbergraph_WBP_CampaignNewsFeed");
+
+	Params::WBP_CampaignNewsFeed_C_ExecuteUbergraph_WBP_CampaignNewsFeed Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

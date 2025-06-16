@@ -6,19 +6,35 @@
 
 namespace {
 
-	//bool IsValidCharacter(SDK::ABP_KytBadGuy_C* character) {
-	//	if (!character || Validity::IsBadPoint(character))	// From UObject
-	//		return false;
-	//	if (character->Flags & SDK::EObjectFlags::BeginDestroyed || character->Flags & SDK::EObjectFlags::FinishDestroyed)	// From AActor
-	//		return false;
-	//	if (character->bActorIsBeingDestroyed)
-	//		return false;
-	//	if (!character->bCanBeDamaged)
-	//		return false;
-	//	if (character->DeathState != SDK::EGBDeathState::NotDead)	// From AGBCharacter
-	//		return false;
-	//	return true;
-	//}
+	/*error: sometimes bonesocket or k2_getactorlocation
+	Assertion failed: !IsUnreachable() [File:E:/bfsdev_dev1035/Engine/Source/Runtime/CoreUObject/Private/UObject/ScriptCore.cpp]
+	[Line: 1850] BP_KytBadGuy_C /Game/GroundBranch/Maps/Depot/Depot.Depot:PersistentLevel.BP_KytBadGuy_C_2147423421 Function:
+	'/Script/Engine.Actor:K2_GetActorLocation'
+	unrealengine_kiocode_base!SDK::InSDKUtils::CallGameFunction<void
+	(__cdecl*)(SDK::UObject const *,SDK::UFunction *,void *),SDK::UObject const *,SDK::UFunction * &,void * &>()
+	[C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Basic.hpp:59]
+	unrealengine_kiocode_base!SDK::UObject::ProcessEvent()
+	[C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\CoreUObject_classes.hpp:67]
+	unrealengine_kiocode_base!SDK::AActor::K2_GetActorLocation()
+	[C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_functions.cpp:3337]
+	unrealengine_kiocode_base!`anonymous namespace'::GetSafeActorLocation()
+	[C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\features\esp.cpp:109]
+	unrealengine_kiocode_base!ESP::RenderSnapline() [C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\features\esp.cpp:156]
+	unrealengine_kiocode_base!MainLoop::Update() [C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\features\main_loop.cpp:414]
+	unrealengine_kiocode_base!GUI::hkPresent() [C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\features\core.cpp:154]
+	unrealengine_kiocode_base!GUI::hkPresentWrapper() [C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\gui\core\gui.h:18]
+	GroundBranch_Win64_Shipping
+	--
+		class ABP_KytBadGuy_C -> class ABP_KytBase_C -> class ABP_Character_C -> class AGBCharacter -> class ACharacter -> class APawn -> class AActor
+		ABP_KytBadGuy_C = enemy
+		ABP_Character_Blufor_C = friendly
+	AActor->Fields:
+		->bCanBeDamaged
+		->bActorIsBeingDestroyed
+		->DeathState != SDK::EGBDeathState::NotDead
+		->Health
+		->bIsDead
+	*/
 
 	bool IsValidPawn(SDK::ACharacter* pawn)
 	{
@@ -122,6 +138,7 @@ namespace {
 		//std::cout << "Valid bone index: " << boneIndex << " in mesh with " << numBones << " bones." << std::endl;
 		return boneIndex < numBones;
 	}
+
 	bool GetSafeBoneLocation(SDK::USkeletalMeshComponent* mesh, int boneIndex, SDK::FVector& outLocation) {
 		if (!IsValidBone(mesh, boneIndex))
 		{
@@ -162,48 +179,6 @@ namespace {
 		
 		
 	}
-	//bool GetSafeBoneLocation(SDK::USkeletalMeshComponent* mesh, int boneIndex, SDK::FVector& outLocation) {
-	//	if (!mesh || Validity::IsBadPoint(mesh) || !IsValidBone(mesh, boneIndex))
-	//		return false;
-	//	try {
-	//		// Follow the original working pattern but with safety checks
-	//		SDK::FName boneName = mesh->GetBoneName(boneIndex);
-	//		if (Validity::IsBadPoint(&boneName))
-	//			return false;
-	//		// Get socket location directly like in the original code
-	//		outLocation = mesh->GetSocketLocation(boneName);
-	//		if (outLocation.IsZero())
-	//			return false;
-	//		return true;
-	//	}
-	//	catch (...) {
-	//		return false;
-	//	}
-	//}
-
-			/* error: sometimes bonesocket or k2_getactorlocation
-			Assertion failed: !IsUnreachable() [File:E:/bfsdev_dev1035/Engine/Source/Runtime/CoreUObject/Private/UObject/ScriptCore.cpp]
-			[Line: 1850] BP_KytBadGuy_C /Game/GroundBranch/Maps/Depot/Depot.Depot:PersistentLevel.BP_KytBadGuy_C_2147423421 Function:
-			'/Script/Engine.Actor:K2_GetActorLocation'
-			unrealengine_kiocode_base!SDK::InSDKUtils::CallGameFunction<void
-			(__cdecl*)(SDK::UObject const *,SDK::UFunction *,void *),SDK::UObject const *,SDK::UFunction * &,void * &>()
-			[C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Basic.hpp:59]
-			unrealengine_kiocode_base!SDK::UObject::ProcessEvent()
-			[C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\CoreUObject_classes.hpp:67]
-			unrealengine_kiocode_base!SDK::AActor::K2_GetActorLocation()
-			[C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\sdk\groundbranch\SDK\Engine_functions.cpp:3337]
-			unrealengine_kiocode_base!`anonymous namespace'::GetSafeActorLocation()
-			[C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\features\esp.cpp:109]
-			unrealengine_kiocode_base!ESP::RenderSnapline() [C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\features\esp.cpp:156]
-			unrealengine_kiocode_base!MainLoop::Update() [C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\features\main_loop.cpp:414]
-			unrealengine_kiocode_base!GUI::hkPresent() [C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\features\core.cpp:154]
-			unrealengine_kiocode_base!GUI::hkPresentWrapper() [C:\Users\kittilsen\source\repos\ue4base\unrealengine-kiocode-base\src\gui\core\gui.h:18]
-			GroundBranch_Win64_Shipping
-			--
-			 class ABP_KytBadGuy_C -> class ABP_KytBase_C -> class ABP_Character_C -> class AGBCharacter -> class ACharacter -> class APawn -> class AActor
-			 ABP_KytBadGuy_C = enemy
-			 ABP_Character_Blufor_C = friendly
-			*/
 
 	SDK::FVector GetSafeActorLocation(SDK::ACharacter* pawn) {
 		if (!pawn || Validity::IsBadPoint(pawn))
@@ -232,7 +207,281 @@ namespace {
 	}
 }
 
+bool ESP::ProjectWithScopeAwareness(const SDK::FVector& WorldPosition, SDK::FVector2D* out, bool isRelative)
+{
+	if (IsAiming() && HasScopeAttached()) {
+		return ProjectWorldToScreenScoped(WorldPosition, out, isRelative);
+	}
+	return Config::m_pMyController->ProjectWorldLocationToScreen(WorldPosition, out, isRelative);
+}
 
+bool ESP::ProjectWorldToScreenScoped(const SDK::FVector& WorldPosition, SDK::FVector2D* out, bool isRelative)
+{
+	if (!Config::m_pMyController || !Config::m_pMyPawn)
+		return false;
+
+	SDK::AActor* weapon = GetCurrentWeapon();
+	if (!weapon) return false;
+
+	SDK::UActorComponent* sight = GetWeaponSight(weapon);
+	if (!sight) return false;
+
+	float magnification = GetSightMagnification(sight);
+	float sightFOV = GetSightFOV(sight);
+
+	if (magnification <= 1.0f || sightFOV <= 0.0f)
+		return Config::m_pMyController->ProjectWorldLocationToScreen(WorldPosition, out, isRelative);
+
+	SDK::FVector weaponLocation = weapon->K2_GetActorLocation();
+	SDK::FVector weaponForward = GetWeaponForwardVector(weapon);
+
+	weaponForward = weaponForward * magnification;
+	SDK::FVector scopedViewLocation = weaponLocation + GetSightOffset(sight) + weaponForward;
+
+	float adjustedFOV = (sightFOV * magnification) / magnification;
+
+	return CustomProjection(WorldPosition, out, scopedViewLocation, adjustedFOV, isRelative);
+}
+
+bool ESP::CustomProjection(const SDK::FVector& worldPos, SDK::FVector2D* out,
+	const SDK::FVector& viewLocation, float fov, bool isRelative)
+{
+	auto cameraManager = Config::m_pMyController->PlayerCameraManager;
+	if (!cameraManager) return false;
+
+	SDK::FRotator viewRotation = cameraManager->GetCameraRotation();
+
+	// Convert rotation to direction vectors
+	float pitch = viewRotation.Pitch * (3.14159f / 180.0f);
+	float yaw = viewRotation.Yaw * (3.14159f / 180.0f);
+
+	SDK::FVector forward = {
+		cos(pitch) * cos(yaw),
+		cos(pitch) * sin(yaw),
+		sin(pitch)
+	};
+
+	SDK::FVector right = {
+		cos(yaw + 3.14159f / 2.0f),
+		sin(yaw + 3.14159f / 2.0f),
+		0.0f
+	};
+
+	SDK::FVector up = {
+		-sin(pitch) * cos(yaw),
+		-sin(pitch) * sin(yaw),
+		cos(pitch)
+	};
+
+	// Transform to view space
+	SDK::FVector delta = worldPos - viewLocation;
+	float deltaForward = delta.X * forward.X + delta.Y * forward.Y + delta.Z * forward.Z;
+
+	if (deltaForward <= 0.1f) return false; // Behind camera
+
+	float deltaRight = delta.X * right.X + delta.Y * right.Y + delta.Z * right.Z;
+	float deltaUp = delta.X * up.X + delta.Y * up.Y + delta.Z * up.Z;
+
+	// Project to screen
+	float fovRad = fov * (3.14159f / 180.0f);
+	float aspectRatio = Config::System::m_ScreenSize.X / Config::System::m_ScreenSize.Y;
+
+	float screenX = (deltaRight / deltaForward) / tan(fovRad / 2.0f);
+	float screenY = (deltaUp / deltaForward) / tan(fovRad / 2.0f) * aspectRatio;
+
+	// Convert to screen coordinates
+	if (isRelative) {
+		out->X = (screenX + 1.0f) * 0.5f;
+		out->Y = (1.0f - screenY) * 0.5f;
+		return (out->X >= 0.0f && out->X <= 1.0f && out->Y >= 0.0f && out->Y <= 1.0f);
+	}
+	else {
+		out->X = (screenX + 1.0f) * 0.5f * Config::System::m_ScreenSize.X;
+		out->Y = (1.0f - screenY) * 0.5f * Config::System::m_ScreenSize.Y;
+		return (out->X >= 0.0f && out->X <= Config::System::m_ScreenSize.X &&
+			out->Y >= 0.0f && out->Y <= Config::System::m_ScreenSize.Y);
+	}
+}
+
+bool ESP::IsAiming() {
+	auto* gbChar = static_cast<SDK::AGBCharacter*>(Config::m_pMyPawn);
+	if (!gbChar || !gbChar->Class || !gbChar->Class->IsA(SDK::AGBCharacter::StaticClass()))
+		return false;
+	if (gbChar->IsEngaged()) {
+		std::cout << "Weapon is engaged." << std::endl;
+		return true;
+	}
+	return false;
+	/*		if the 'IsEngaged()' bool doesnt work, use this commented code instead
+		if (weapon->IsA(SDK::AGBFirearm::StaticClass())) {
+			auto* stance = static_cast<SDK::AGBFirearm*>(weapon);
+			if (stance->WeaponPosition == SDK::EGBWeaponPosition::Engaged) {
+				return true;
+		}
+	*/
+}
+
+bool ESP::HasScopeAttached() {
+	SDK::AActor* weapon = GetCurrentWeapon();
+	if (!weapon) return false;
+
+	SDK::UActorComponent* sight = GetWeaponSight(weapon);
+	if (!sight) return false;
+
+	if (!sight->IsA(SDK::UGBSightComponent::StaticClass())) {
+		return false;
+	}
+	auto* sightComp = static_cast<SDK::UGBSightComponent*>(sight);
+	return (sightComp->SightType == SDK::ESightType::Optical);
+
+	//return false;
+/*
+SDK::UGBSightComponent* sceneComponent = static_cast<SDK::UGBSightComponent*>(sight);
+	if (!sceneComponent) return false;
+	if (sceneComponent->SightType == SDK::ESightType::Optical) {
+		return true;
+(sdk//groundbranch_structs.hpp) Enum GroundBranch.ESightType
+enum class ESightType : uint8
+{
+	FailSafe		= 0,
+	IronSight		= 1,
+	RedDot			= 2,
+	Optical			= 3,	// -> magnification and separate w2s projection (scope)
+	PostModifier	= 4,
+	PreModifier		= 5,
+	ESightType_MAX	= 6,
+};
+*/
+}
+
+SDK::AActor* ESP::GetCurrentWeapon() {
+	SDK::AGBCharacter* gbChar = static_cast<SDK::AGBCharacter*>(Config::m_pMyPawn);
+	if (!gbChar) return nullptr;
+	return gbChar->GetEquipped(SDK::EHand::Right);
+}
+
+SDK::UActorComponent* ESP::GetWeaponSight(SDK::AActor* weapon) {
+	if (!weapon) {
+		std::cerr << "Error: Weapon is null!" << std::endl;
+		return nullptr;
+	}
+
+	/*auto* gbChar = static_cast<SDK::AGBCharacter*>(Config::m_pMyPawn);
+	if (!gbChar) {
+		std::cerr << "Error: m_pMyPawn is not an AGBCharacter!" << std::endl;
+		return nullptr;
+	}
+	auto* weapon = gbChar->GetEquipped(SDK::EHand::Right);
+	if (!weapon) {
+		return nullptr;
+	}*/
+
+	// Try both possible sight component class names
+	static auto* SightClass = SDK::UClass::FindClass("GroundBranch.GBSightComponent");
+	if (!SightClass) {
+		SightClass = SDK::UClass::FindClass("GroundBranch.GBWeaponSightComponent");
+	}
+	if (!SightClass) {
+		std::cerr << "Error: Could not find sight component class!" << std::endl;
+		return nullptr;
+	}
+
+	// Get the sight component from the weapon
+	auto* sight = weapon->GetComponentByClass(SightClass);
+	if (!sight) {
+		std::cerr << "Error: Weapon has no sight component!" << std::endl;
+	}
+	return sight;
+
+	/*
+	class AGBCharacter : public ACharacter
+	{
+	public:
+		class AGBInvItem*                             EquippedRight;
+	public:
+		class AGBInvItem* GetEquipped(EHand TargetHand) const;
+	class UGBSightComponent* AGBInvItem::GetCurrentSight() const
+	*/
+}
+
+float ESP::GetSightMagnification(SDK::UActorComponent* sight) {
+	if (!sight) {
+		std::cerr << "Error: Sight component is null!" << std::endl;
+		return 1.0f; // Default magnification
+	}
+	// Check if sight is of type GBSightComponent
+	if (sight->IsA(SDK::UGBSightComponent::StaticClass())) {
+		auto* sightComp = static_cast<SDK::UGBSightComponent*>(sight);
+		return sightComp->GetMagnificationLevel();
+	}
+	return 1.0f;
+
+	/*
+		float AGBFirearm::GetCurrentSightMagnification() const
+		{
+			static class UFunction* Func = nullptr;
+
+			if (Func == nullptr)
+				Func = Class->GetFunction("GBFirearm", "GetCurrentSightMagnification");
+
+			Params::GBFirearm_GetCurrentSightMagnification Parms{};
+
+			auto Flgs = Func->FunctionFlags;
+			Func->FunctionFlags |= 0x400;
+
+			UObject::ProcessEvent(Func, &Parms);
+
+			Func->FunctionFlags = Flgs;
+
+			return Parms.ReturnValue;
+		}
+		*/
+		// float GetCurrentSightMagnification() const;
+		// float AGBFirearm::GetCurrentSightMagnification() const
+		// struct GBFirearm_GetCurrentSightMagnification final
+		// struct GBSightComponent_GetMagnificationLevel
+		// float UGBSightComponent::GetMagnificationLevel()
+}
+
+float ESP::GetSightFOV(SDK::UActorComponent* sight) {
+	if (!sight) {
+		std::cerr << "Error: Sight component is null!" << std::endl;
+		return 90.0f;
+	}
+	if (sight->IsA(SDK::UGBSightComponent::StaticClass())) {
+		SDK::UGBSightComponent* sightComp = static_cast<SDK::UGBSightComponent*>(sight);
+		return sightComp->GetFOV();
+	}
+	return 90.0f;
+}
+
+SDK::FVector ESP::GetSightOffset(SDK::UActorComponent* sight) {
+	if (!sight) {
+		std::cerr << "Error: Sight component is null!" << std::endl;
+		return { 0,0,0 };
+	}
+	if (sight->IsA(SDK::UGBSightComponent::StaticClass())) {
+		SDK::UGBSightComponent* sightComp = static_cast<SDK::UGBSightComponent*>(sight);
+		return sightComp->SightLineInfo.SightLocationRelativeToFirearm;
+	}
+	return { 0,0,0 };
+}
+
+SDK::FVector ESP::GetWeaponForwardVector(SDK::AActor* weapon) { // probably right vector if forward doesnt work
+	if (!weapon) return { 1,0,0 };
+	if (weapon->IsA(SDK::AGBFirearm::StaticClass())) {
+		SDK::AGBFirearm* firearm = static_cast<SDK::AGBFirearm*>(weapon);
+		return firearm->GetActorForwardVector();
+	}
+	else if (weapon->IsA(SDK::AGBInvItem::StaticClass())) {
+		SDK::AGBInvItem* invItem = static_cast<SDK::AGBInvItem*>(weapon);
+		return invItem->GetActorForwardVector();
+	}
+	else {
+		std::cerr << "Error: Unsupported weapon type!" << std::endl;
+		return weapon->GetActorForwardVector();
+	}
+}
 
 // skeleton init-main_loop.cpp:486
 void ESP::RenderSkeleton(SDK::ACharacter* pawn, ImColor color) {
@@ -256,10 +505,15 @@ void ESP::RenderSkeleton(SDK::ACharacter* pawn, ImColor color) {
 			}
 
 			SDK::FVector2D boneScreen, prevBoneScreen;
-			if (!Config::m_pMyController->ProjectWorldLocationToScreen(boneLoc1, &boneScreen, false) ||
-				!Config::m_pMyController->ProjectWorldLocationToScreen(boneLoc2, &prevBoneScreen, false)) {
+			if (!ProjectWithScopeAwareness(boneLoc1, &boneScreen, false) ||
+				!ProjectWithScopeAwareness(boneLoc2, &prevBoneScreen, false)) {
 				continue;
 			}
+
+			/*if (!Config::m_pMyController->ProjectWorldLocationToScreen(boneLoc1, &boneScreen, false) ||
+				!Config::m_pMyController->ProjectWorldLocationToScreen(boneLoc2, &prevBoneScreen, false)) {
+				continue;
+			}*/
 
 			if (pawn == Config::m_pCurrentTarget)
 				color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
@@ -454,7 +708,6 @@ void ESP::RenderSnapline(SDK::ACharacter* pawn, ImColor color) { // double check
 		return;
 	}
 
-	// Use safe wrapper instead of direct call
 	SDK::FVector pawnLoc = GetSafeActorLocation(pawn);
 	static auto lastPawnLocPrint = std::chrono::steady_clock::now();
 	auto now3 = std::chrono::steady_clock::now();
@@ -469,11 +722,17 @@ void ESP::RenderSnapline(SDK::ACharacter* pawn, ImColor color) { // double check
 	}
 
 	SDK::FVector2D pawnScreen;
-	if (!Config::m_pMyController->ProjectWorldLocationToScreen(pawnLoc, &pawnScreen, false))
+	if (!ProjectWithScopeAwareness(pawnLoc, &pawnScreen, false))
+	{
+		std::cerr << "snaplines-pawn projection failed: " << pawn << std::endl;
+		return;
+	}
+
+	/*if (!Config::m_pMyController->ProjectWorldLocationToScreen(pawnLoc, &pawnScreen, false))
 	{
 		std::cerr << "pawn projection failed: " << pawn << std::endl;
 		return;
-	}
+	}*/
 
 	ImVec2 origin;
 	switch (Config::m_nPlayersSnaplineType) {

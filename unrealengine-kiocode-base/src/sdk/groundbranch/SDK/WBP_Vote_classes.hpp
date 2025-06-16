@@ -52,20 +52,20 @@ public:
 	class FString                                 UnknownPlayer;                                     // 0x0378(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Vote(int32 EntryPoint);
-	void AddMap();
-	void AddReason();
-	void AddTargetPlayerText();
-	void SetTexts();
-	void SetTimer();
-	void VoteTimer();
-	void VoteEnded(bool bPassed_0);
-	void Construct();
-	class FText GetVotingTimeLeft();
-	class FText GetVotesYes();
-	class FText GetVotesNo();
-	void GetMapAndOptions(class FString* Combined);
 	void Parse_Mission_Option(const class FString& OptionString, class FString* Parameter);
+	void GetMapAndOptions(class FString* Combined);
+	class FText GetVotesNo();
+	class FText GetVotesYes();
+	class FText GetVotingTimeLeft();
+	void Construct();
+	void VoteEnded(bool bPassed_0);
+	void VoteTimer();
+	void SetTimer();
+	void SetTexts();
+	void AddTargetPlayerText();
+	void AddReason();
+	void AddMap();
+	void ExecuteUbergraph_WBP_Vote(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

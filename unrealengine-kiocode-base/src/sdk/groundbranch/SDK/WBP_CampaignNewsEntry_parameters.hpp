@@ -16,6 +16,17 @@
 namespace SDK::Params
 {
 
+// Function WBP_CampaignNewsEntry.WBP_CampaignNewsEntry_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignNewsEntry_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_CampaignNewsEntry_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CampaignNewsEntry_C_PreConstruct");
+static_assert(sizeof(WBP_CampaignNewsEntry_C_PreConstruct) == 0x000001, "Wrong size on WBP_CampaignNewsEntry_C_PreConstruct");
+static_assert(offsetof(WBP_CampaignNewsEntry_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CampaignNewsEntry_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
 // Function WBP_CampaignNewsEntry.WBP_CampaignNewsEntry_C.ExecuteUbergraph_WBP_CampaignNewsEntry
 // 0x0270 (0x0270 - 0x0000)
 struct WBP_CampaignNewsEntry_C_ExecuteUbergraph_WBP_CampaignNewsEntry final
@@ -77,17 +88,6 @@ static_assert(offsetof(WBP_CampaignNewsEntry_C_ExecuteUbergraph_WBP_CampaignNews
 static_assert(offsetof(WBP_CampaignNewsEntry_C_ExecuteUbergraph_WBP_CampaignNewsEntry, K2Node_Event_IsDesignTime) == 0x000240, "Member 'WBP_CampaignNewsEntry_C_ExecuteUbergraph_WBP_CampaignNewsEntry::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(WBP_CampaignNewsEntry_C_ExecuteUbergraph_WBP_CampaignNewsEntry, K2Node_MakeArray_Array) == 0x000248, "Member 'WBP_CampaignNewsEntry_C_ExecuteUbergraph_WBP_CampaignNewsEntry::K2Node_MakeArray_Array' has a wrong offset!");
 static_assert(offsetof(WBP_CampaignNewsEntry_C_ExecuteUbergraph_WBP_CampaignNewsEntry, CallFunc_Format_ReturnValue) == 0x000258, "Member 'WBP_CampaignNewsEntry_C_ExecuteUbergraph_WBP_CampaignNewsEntry::CallFunc_Format_ReturnValue' has a wrong offset!");
-
-// Function WBP_CampaignNewsEntry.WBP_CampaignNewsEntry_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignNewsEntry_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_CampaignNewsEntry_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_CampaignNewsEntry_C_PreConstruct");
-static_assert(sizeof(WBP_CampaignNewsEntry_C_PreConstruct) == 0x000001, "Wrong size on WBP_CampaignNewsEntry_C_PreConstruct");
-static_assert(offsetof(WBP_CampaignNewsEntry_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_CampaignNewsEntry_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }
 

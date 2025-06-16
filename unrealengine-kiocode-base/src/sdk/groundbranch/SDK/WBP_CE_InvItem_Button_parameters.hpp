@@ -788,7 +788,7 @@ static_assert(offsetof(WBP_CE_InvItem_Button_C_IconHoverColor, CallFunc_IsHovere
 struct WBP_CE_InvItem_Button_C_SetupItemFromJsonObj final
 {
 public:
-	class UVaRestJsonObject*                      InJsonObj;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UVaRestJsonObject*                      InJSonObj;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bUpdatePresets_0;                                  // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVaRestJsonObject*                      LocalItemBuildJsonObj;                             // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -815,7 +815,7 @@ public:
 };
 static_assert(alignof(WBP_CE_InvItem_Button_C_SetupItemFromJsonObj) == 0x000008, "Wrong alignment on WBP_CE_InvItem_Button_C_SetupItemFromJsonObj");
 static_assert(sizeof(WBP_CE_InvItem_Button_C_SetupItemFromJsonObj) == 0x0000F0, "Wrong size on WBP_CE_InvItem_Button_C_SetupItemFromJsonObj");
-static_assert(offsetof(WBP_CE_InvItem_Button_C_SetupItemFromJsonObj, InJsonObj) == 0x000000, "Member 'WBP_CE_InvItem_Button_C_SetupItemFromJsonObj::InJsonObj' has a wrong offset!");
+static_assert(offsetof(WBP_CE_InvItem_Button_C_SetupItemFromJsonObj, InJSonObj) == 0x000000, "Member 'WBP_CE_InvItem_Button_C_SetupItemFromJsonObj::InJSonObj' has a wrong offset!");
 static_assert(offsetof(WBP_CE_InvItem_Button_C_SetupItemFromJsonObj, bUpdatePresets_0) == 0x000008, "Member 'WBP_CE_InvItem_Button_C_SetupItemFromJsonObj::bUpdatePresets_0' has a wrong offset!");
 static_assert(offsetof(WBP_CE_InvItem_Button_C_SetupItemFromJsonObj, LocalItemBuildJsonObj) == 0x000010, "Member 'WBP_CE_InvItem_Button_C_SetupItemFromJsonObj::LocalItemBuildJsonObj' has a wrong offset!");
 static_assert(offsetof(WBP_CE_InvItem_Button_C_SetupItemFromJsonObj, LocalItemBuildFilename) == 0x000018, "Member 'WBP_CE_InvItem_Button_C_SetupItemFromJsonObj::LocalItemBuildFilename' has a wrong offset!");

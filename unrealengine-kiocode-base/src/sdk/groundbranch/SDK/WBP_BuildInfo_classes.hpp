@@ -29,8 +29,8 @@ public:
 	class UTextBlock*                             Version;                                           // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_BuildInfo(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_BuildInfo(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

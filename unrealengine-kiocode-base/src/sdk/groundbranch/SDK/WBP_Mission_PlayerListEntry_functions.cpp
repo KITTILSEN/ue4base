@@ -17,21 +17,35 @@
 namespace SDK
 {
 
-// Function WBP_Mission_PlayerListEntry.WBP_Mission_PlayerListEntry_C.ExecuteUbergraph_WBP_Mission_PlayerListEntry
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Mission_PlayerListEntry.WBP_Mission_PlayerListEntry_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Mission_PlayerListEntry_C::ExecuteUbergraph_WBP_Mission_PlayerListEntry(int32 EntryPoint)
+void UWBP_Mission_PlayerListEntry_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_PlayerListEntry_C", "ExecuteUbergraph_WBP_Mission_PlayerListEntry");
+		Func = Class->GetFunction("WBP_Mission_PlayerListEntry_C", "Construct");
 
-	Params::WBP_Mission_PlayerListEntry_C_ExecuteUbergraph_WBP_Mission_PlayerListEntry Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_Mission_PlayerListEntry.WBP_Mission_PlayerListEntry_C.OnReplicatedPlayerStatsUpdated_Event_0
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AGBPlayerState*                   PlayerState_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Mission_PlayerListEntry_C::OnReplicatedPlayerStatsUpdated_Event_0(class AGBPlayerState* PlayerState_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Mission_PlayerListEntry_C", "OnReplicatedPlayerStatsUpdated_Event_0");
+
+	Params::WBP_Mission_PlayerListEntry_C_OnReplicatedPlayerStatsUpdated_Event_0 Parms{};
+
+	Parms.PlayerState_0 = PlayerState_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,37 +71,23 @@ void UWBP_Mission_PlayerListEntry_C::UpdateStatus(const class FString& StatusKey
 }
 
 
-// Function WBP_Mission_PlayerListEntry.WBP_Mission_PlayerListEntry_C.OnReplicatedPlayerStatsUpdated_Event_0
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Mission_PlayerListEntry.WBP_Mission_PlayerListEntry_C.ExecuteUbergraph_WBP_Mission_PlayerListEntry
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class AGBPlayerState*                   PlayerState_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Mission_PlayerListEntry_C::OnReplicatedPlayerStatsUpdated_Event_0(class AGBPlayerState* PlayerState_0)
+void UWBP_Mission_PlayerListEntry_C::ExecuteUbergraph_WBP_Mission_PlayerListEntry(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_PlayerListEntry_C", "OnReplicatedPlayerStatsUpdated_Event_0");
+		Func = Class->GetFunction("WBP_Mission_PlayerListEntry_C", "ExecuteUbergraph_WBP_Mission_PlayerListEntry");
 
-	Params::WBP_Mission_PlayerListEntry_C_OnReplicatedPlayerStatsUpdated_Event_0 Parms{};
+	Params::WBP_Mission_PlayerListEntry_C_ExecuteUbergraph_WBP_Mission_PlayerListEntry Parms{};
 
-	Parms.PlayerState_0 = PlayerState_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Mission_PlayerListEntry.WBP_Mission_PlayerListEntry_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Mission_PlayerListEntry_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_PlayerListEntry_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

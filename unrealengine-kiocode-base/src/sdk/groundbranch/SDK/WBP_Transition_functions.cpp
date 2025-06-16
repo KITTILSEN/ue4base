@@ -17,23 +17,45 @@
 namespace SDK
 {
 
-// Function WBP_Transition.WBP_Transition_C.ExecuteUbergraph_WBP_Transition
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Transition.WBP_Transition_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Transition_C::ExecuteUbergraph_WBP_Transition(int32 EntryPoint)
+void UWBP_Transition_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Transition_C", "ExecuteUbergraph_WBP_Transition");
+		Func = Class->GetFunction("WBP_Transition_C", "Construct");
 
-	Params::WBP_Transition_C_ExecuteUbergraph_WBP_Transition Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_Transition.WBP_Transition_C.ClearTransitions
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Transition_C::ClearTransitions()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Transition_C", "ClearTransitions");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Transition.WBP_Transition_C.Hide
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Transition_C::Hide()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Transition_C", "Hide");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,45 +79,23 @@ void UWBP_Transition_C::SetMessageText(const class FText& InText)
 }
 
 
-// Function WBP_Transition.WBP_Transition_C.Hide
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Transition.WBP_Transition_C.ExecuteUbergraph_WBP_Transition
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Transition_C::Hide()
+void UWBP_Transition_C::ExecuteUbergraph_WBP_Transition(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Transition_C", "Hide");
+		Func = Class->GetFunction("WBP_Transition_C", "ExecuteUbergraph_WBP_Transition");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_Transition_C_ExecuteUbergraph_WBP_Transition Parms{};
 
+	Parms.EntryPoint = EntryPoint;
 
-// Function WBP_Transition.WBP_Transition_C.ClearTransitions
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Transition_C::ClearTransitions()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Transition_C", "ClearTransitions");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Transition.WBP_Transition_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Transition_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Transition_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -36,12 +36,12 @@ public:
 	float                                         FadeInDelay;                                       // 0x02B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CampaignTextBox(int32 EntryPoint);
-	void SetBoxTitle(const class FText& NewBoxTitle);
-	void ClearChildItems(bool bCloseWindowImmediately);
-	void AddChildItem(class UUserWidget* Widget);
-	void Construct();
 	void PreConstruct(bool IsDesignTime);
+	void Construct();
+	void AddChildItem(class UUserWidget* Widget);
+	void ClearChildItems(bool bCloseWindowImmediately);
+	void SetBoxTitle(const class FText& NewBoxTitle);
+	void ExecuteUbergraph_WBP_CampaignTextBox(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

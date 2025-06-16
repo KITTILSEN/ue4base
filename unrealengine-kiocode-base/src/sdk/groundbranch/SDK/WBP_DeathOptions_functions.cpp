@@ -17,221 +17,45 @@
 namespace SDK
 {
 
-// Function WBP_DeathOptions.WBP_DeathOptions_C.ExecuteUbergraph_WBP_DeathOptions
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_DeathOptions.WBP_DeathOptions_C.AnyLiving
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class AGBPlayerState*>&          Array                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool*                                   bOutSomeoneIsAlive                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_DeathOptions_C::ExecuteUbergraph_WBP_DeathOptions(int32 EntryPoint)
+void UWBP_DeathOptions_C::AnyLiving(TArray<class AGBPlayerState*>& Array, bool* bOutSomeoneIsAlive)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DeathOptions_C", "ExecuteUbergraph_WBP_DeathOptions");
+		Func = Class->GetFunction("WBP_DeathOptions_C", "AnyLiving");
 
-	Params::WBP_DeathOptions_C_ExecuteUbergraph_WBP_DeathOptions Parms{};
+	Params::WBP_DeathOptions_C_AnyLiving Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Array = std::move(Array);
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Array = std::move(Parms.Array);
+
+	if (bOutSomeoneIsAlive != nullptr)
+		*bOutSomeoneIsAlive = Parms.bOutSomeoneIsAlive;
 }
 
 
-// Function WBP_DeathOptions.WBP_DeathOptions_C.EnableTooltips
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_DeathOptions_C::EnableTooltips()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DeathOptions_C", "EnableTooltips");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.OnPlayerControllerStateChanged_Event_0
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DeathOptions_C::OnPlayerControllerStateChanged_Event_0(class FName OldState, class FName NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DeathOptions_C", "OnPlayerControllerStateChanged_Event_0");
-
-	Params::WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0 Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.BindToPlayerControllerState
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_DeathOptions_C::BindToPlayerControllerState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DeathOptions_C", "BindToPlayerControllerState");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.ValidateSpectateButton
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_DeathOptions_C::ValidateSpectateButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DeathOptions_C", "ValidateSpectateButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.ValidateReadyRoomButton
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_DeathOptions_C::ValidateReadyRoomButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DeathOptions_C", "ValidateReadyRoomButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.ValidateRespawnButton
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_DeathOptions_C::ValidateRespawnButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DeathOptions_C", "ValidateRespawnButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.Close
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_DeathOptions_C::Close()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DeathOptions_C", "Close");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.BndEvt__Button_ReadyRoom_K2Node_ComponentBoundEvent_710_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_DeathOptions_C::BndEvt__Button_ReadyRoom_K2Node_ComponentBoundEvent_710_OnButtonClickedEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DeathOptions_C", "BndEvt__Button_ReadyRoom_K2Node_ComponentBoundEvent_710_OnButtonClickedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.BndEvt__Button_Spectate_K2Node_ComponentBoundEvent_690_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_DeathOptions_C::BndEvt__Button_Spectate_K2Node_ComponentBoundEvent_690_OnButtonClickedEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DeathOptions_C", "BndEvt__Button_Spectate_K2Node_ComponentBoundEvent_690_OnButtonClickedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.BndEvt__Button_Respawn_K2Node_ComponentBoundEvent_1012_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_DeathOptions_C::BndEvt__Button_Respawn_K2Node_ComponentBoundEvent_1012_OnButtonClickedEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DeathOptions_C", "BndEvt__Button_Respawn_K2Node_ComponentBoundEvent_1012_OnButtonClickedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_DeathOptions_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DeathOptions_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.GetRespawnVisibility
+// Function WBP_DeathOptions.WBP_DeathOptions_C.Get_TextBlock_Respawn_ColorAndOpacity_0
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// ESlateVisibility                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSlateColor                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-ESlateVisibility UWBP_DeathOptions_C::GetRespawnVisibility()
+struct FSlateColor UWBP_DeathOptions_C::Get_TextBlock_Respawn_ColorAndOpacity_0()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DeathOptions_C", "GetRespawnVisibility");
+		Func = Class->GetFunction("WBP_DeathOptions_C", "Get_TextBlock_Respawn_ColorAndOpacity_0");
 
-	Params::WBP_DeathOptions_C_GetRespawnVisibility Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_DeathOptions.WBP_DeathOptions_C.GetRespawnText
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-class FText UWBP_DeathOptions_C::GetRespawnText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DeathOptions_C", "GetRespawnText");
-
-	Params::WBP_DeathOptions_C_GetRespawnText Parms{};
+	Params::WBP_DeathOptions_C_Get_TextBlock_Respawn_ColorAndOpacity_0 Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -259,19 +83,19 @@ bool UWBP_DeathOptions_C::GetRespawnIsEnabled()
 }
 
 
-// Function WBP_DeathOptions.WBP_DeathOptions_C.Get_TextBlock_Respawn_ColorAndOpacity_0
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_DeathOptions.WBP_DeathOptions_C.GetRespawnText
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FSlateColor                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-struct FSlateColor UWBP_DeathOptions_C::Get_TextBlock_Respawn_ColorAndOpacity_0()
+class FText UWBP_DeathOptions_C::GetRespawnText()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DeathOptions_C", "Get_TextBlock_Respawn_ColorAndOpacity_0");
+		Func = Class->GetFunction("WBP_DeathOptions_C", "GetRespawnText");
 
-	Params::WBP_DeathOptions_C_Get_TextBlock_Respawn_ColorAndOpacity_0 Parms{};
+	Params::WBP_DeathOptions_C_GetRespawnText Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -279,29 +103,205 @@ struct FSlateColor UWBP_DeathOptions_C::Get_TextBlock_Respawn_ColorAndOpacity_0(
 }
 
 
-// Function WBP_DeathOptions.WBP_DeathOptions_C.AnyLiving
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_DeathOptions.WBP_DeathOptions_C.GetRespawnVisibility
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// TArray<class AGBPlayerState*>&          Array                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool*                                   bOutSomeoneIsAlive                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// ESlateVisibility                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DeathOptions_C::AnyLiving(TArray<class AGBPlayerState*>& Array, bool* bOutSomeoneIsAlive)
+ESlateVisibility UWBP_DeathOptions_C::GetRespawnVisibility()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DeathOptions_C", "AnyLiving");
+		Func = Class->GetFunction("WBP_DeathOptions_C", "GetRespawnVisibility");
 
-	Params::WBP_DeathOptions_C_AnyLiving Parms{};
-
-	Parms.Array = std::move(Array);
+	Params::WBP_DeathOptions_C_GetRespawnVisibility Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	Array = std::move(Parms.Array);
+	return Parms.ReturnValue;
+}
 
-	if (bOutSomeoneIsAlive != nullptr)
-		*bOutSomeoneIsAlive = Parms.bOutSomeoneIsAlive;
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_DeathOptions_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DeathOptions_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.BndEvt__Button_Respawn_K2Node_ComponentBoundEvent_1012_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_DeathOptions_C::BndEvt__Button_Respawn_K2Node_ComponentBoundEvent_1012_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DeathOptions_C", "BndEvt__Button_Respawn_K2Node_ComponentBoundEvent_1012_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.BndEvt__Button_Spectate_K2Node_ComponentBoundEvent_690_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_DeathOptions_C::BndEvt__Button_Spectate_K2Node_ComponentBoundEvent_690_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DeathOptions_C", "BndEvt__Button_Spectate_K2Node_ComponentBoundEvent_690_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.BndEvt__Button_ReadyRoom_K2Node_ComponentBoundEvent_710_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_DeathOptions_C::BndEvt__Button_ReadyRoom_K2Node_ComponentBoundEvent_710_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DeathOptions_C", "BndEvt__Button_ReadyRoom_K2Node_ComponentBoundEvent_710_OnButtonClickedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.Close
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_DeathOptions_C::Close()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DeathOptions_C", "Close");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.ValidateRespawnButton
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_DeathOptions_C::ValidateRespawnButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DeathOptions_C", "ValidateRespawnButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.ValidateReadyRoomButton
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_DeathOptions_C::ValidateReadyRoomButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DeathOptions_C", "ValidateReadyRoomButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.ValidateSpectateButton
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_DeathOptions_C::ValidateSpectateButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DeathOptions_C", "ValidateSpectateButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.BindToPlayerControllerState
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_DeathOptions_C::BindToPlayerControllerState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DeathOptions_C", "BindToPlayerControllerState");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.OnPlayerControllerStateChanged_Event_0
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DeathOptions_C::OnPlayerControllerStateChanged_Event_0(class FName OldState, class FName NewState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DeathOptions_C", "OnPlayerControllerStateChanged_Event_0");
+
+	Params::WBP_DeathOptions_C_OnPlayerControllerStateChanged_Event_0 Parms{};
+
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.EnableTooltips
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_DeathOptions_C::EnableTooltips()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DeathOptions_C", "EnableTooltips");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DeathOptions.WBP_DeathOptions_C.ExecuteUbergraph_WBP_DeathOptions
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DeathOptions_C::ExecuteUbergraph_WBP_DeathOptions(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DeathOptions_C", "ExecuteUbergraph_WBP_DeathOptions");
+
+	Params::WBP_DeathOptions_C_ExecuteUbergraph_WBP_DeathOptions Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

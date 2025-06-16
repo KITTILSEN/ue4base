@@ -48,9 +48,9 @@ public:
 	class UTexture2D*                             OptionalImage;                                     // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives(int32 EntryPoint);
-	void Construct();
 	void PreConstruct(bool IsDesignTime);
+	void Construct();
+	void ExecuteUbergraph_WBP_Tooltip_MapSymbolObjectives(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

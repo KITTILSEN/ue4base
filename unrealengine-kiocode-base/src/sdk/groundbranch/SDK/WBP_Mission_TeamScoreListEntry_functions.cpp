@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_Mission_TeamScoreListEntry.WBP_Mission_TeamScoreListEntry_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Mission_TeamScoreListEntry_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Mission_TeamScoreListEntry_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Mission_TeamScoreListEntry.WBP_Mission_TeamScoreListEntry_C.ExecuteUbergraph_WBP_Mission_TeamScoreListEntry
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -34,20 +48,6 @@ void UWBP_Mission_TeamScoreListEntry_C::ExecuteUbergraph_WBP_Mission_TeamScoreLi
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Mission_TeamScoreListEntry.WBP_Mission_TeamScoreListEntry_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Mission_TeamScoreListEntry_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mission_TeamScoreListEntry_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

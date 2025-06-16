@@ -17,41 +17,55 @@
 namespace SDK
 {
 
-// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.ExecuteUbergraph_WBP_CampaignTextBox
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_CampaignTextBox_C::ExecuteUbergraph_WBP_CampaignTextBox(int32 EntryPoint)
+void UWBP_CampaignTextBox_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignTextBox_C", "ExecuteUbergraph_WBP_CampaignTextBox");
+		Func = Class->GetFunction("WBP_CampaignTextBox_C", "PreConstruct");
 
-	Params::WBP_CampaignTextBox_C_ExecuteUbergraph_WBP_CampaignTextBox Parms{};
+	Params::WBP_CampaignTextBox_C_PreConstruct Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.SetBoxTitle
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      NewBoxTitle                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_CampaignTextBox_C::SetBoxTitle(const class FText& NewBoxTitle)
+void UWBP_CampaignTextBox_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignTextBox_C", "SetBoxTitle");
+		Func = Class->GetFunction("WBP_CampaignTextBox_C", "Construct");
 
-	Params::WBP_CampaignTextBox_C_SetBoxTitle Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.NewBoxTitle = std::move(NewBoxTitle);
+
+// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.AddChildItem
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignTextBox_C::AddChildItem(class UUserWidget* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CampaignTextBox_C", "AddChildItem");
+
+	Params::WBP_CampaignTextBox_C_AddChildItem Parms{};
+
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -77,55 +91,41 @@ void UWBP_CampaignTextBox_C::ClearChildItems(bool bCloseWindowImmediately)
 }
 
 
-// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.AddChildItem
+// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.SetBoxTitle
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      NewBoxTitle                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_CampaignTextBox_C::AddChildItem(class UUserWidget* Widget)
+void UWBP_CampaignTextBox_C::SetBoxTitle(const class FText& NewBoxTitle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignTextBox_C", "AddChildItem");
+		Func = Class->GetFunction("WBP_CampaignTextBox_C", "SetBoxTitle");
 
-	Params::WBP_CampaignTextBox_C_AddChildItem Parms{};
+	Params::WBP_CampaignTextBox_C_SetBoxTitle Parms{};
 
-	Parms.Widget = Widget;
+	Parms.NewBoxTitle = std::move(NewBoxTitle);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_CampaignTextBox_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignTextBox_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_CampaignTextBox.WBP_CampaignTextBox_C.ExecuteUbergraph_WBP_CampaignTextBox
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignTextBox_C::PreConstruct(bool IsDesignTime)
+void UWBP_CampaignTextBox_C::ExecuteUbergraph_WBP_CampaignTextBox(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignTextBox_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_CampaignTextBox_C", "ExecuteUbergraph_WBP_CampaignTextBox");
 
-	Params::WBP_CampaignTextBox_C_PreConstruct Parms{};
+	Params::WBP_CampaignTextBox_C_ExecuteUbergraph_WBP_CampaignTextBox Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -41,12 +41,12 @@ public:
 	int32                                         IndexToDelete;                                     // 0x02C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CampaignNewsFeed(int32 EntryPoint);
-	void PostNewsItem();
-	void AdvanceDate();
-	void SetCurrentHotspot(class UGBHotspotDataAsset* NewHotspotRef);
-	void Construct();
 	void PreConstruct(bool IsDesignTime);
+	void Construct();
+	void SetCurrentHotspot(class UGBHotspotDataAsset* NewHotspotRef);
+	void AdvanceDate();
+	void PostNewsItem();
+	void ExecuteUbergraph_WBP_CampaignNewsFeed(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

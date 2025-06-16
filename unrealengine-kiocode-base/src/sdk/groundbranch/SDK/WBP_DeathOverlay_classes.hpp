@@ -28,16 +28,16 @@ public:
 	class UWBP_TeamKillOptions_C*                 WBP_TeamKillOptions;                               // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_DeathOverlay(int32 EntryPoint);
-	void OnShowTransitionScreen_Event_0(class AGBPlayerController* PlayerController);
-	void ShowTeamKillOptions();
-	void EnableDeathOptions();
-	void Close();
-	void Construct();
-	struct FEventReply OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
-	struct FEventReply OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
-	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	struct FEventReply OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	struct FEventReply OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	void Construct();
+	void Close();
+	void EnableDeathOptions();
+	void ShowTeamKillOptions();
+	void OnShowTransitionScreen_Event_0(class AGBPlayerController* PlayerController);
+	void ExecuteUbergraph_WBP_DeathOverlay(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

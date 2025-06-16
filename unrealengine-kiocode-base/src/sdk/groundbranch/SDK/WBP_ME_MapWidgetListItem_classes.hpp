@@ -35,14 +35,14 @@ public:
 	class UWBP_ME_MapAnnotator_C*                 MapAnnotatorWidgetRef;                             // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_ME_MapWidgetListItem(int32 EntryPoint);
 	void DragCancelled(class UDragDropOperation* Operation);
-	void BindDragDropOperation(class UDragDropOperation* DragDropOp);
-	void Construct();
-	void OnLoaded_CCEA74F146EB214E46A765B498F9C9A3(class UObject* Loaded);
-	void OnDragDetected(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation** Operation);
-	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void ExecuteUbergraph_WBP_ME_MapWidgetListItem(int32 EntryPoint);
 	struct FLinearColor GetBrushColor_0();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnDragDetected(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation** Operation);
+	void OnLoaded_CCEA74F146EB214E46A765B498F9C9A3(class UObject* Loaded);
+	void Construct();
+	void BindDragDropOperation(class UDragDropOperation* DragDropOp);
 
 public:
 	static class UClass* StaticClass()

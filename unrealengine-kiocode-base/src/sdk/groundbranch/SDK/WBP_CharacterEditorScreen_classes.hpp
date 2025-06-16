@@ -33,12 +33,12 @@ public:
 	class FText                                   SaveFailedMessage;                                 // 0x02D0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_CharacterEditorScreen(int32 EntryPoint);
-	void Close();
-	void BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_2_CancelClicked__DelegateSignature();
-	void BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature(class UVaRestJsonObject* JsonObj);
-	void Setup();
 	struct FEventReply OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	void Setup();
+	void BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_1_OkClicked__DelegateSignature(class UVaRestJsonObject* JsonObj);
+	void BndEvt__WBP_CharacterEditor_NEW_K2Node_ComponentBoundEvent_2_CancelClicked__DelegateSignature();
+	void Close();
+	void ExecuteUbergraph_WBP_CharacterEditorScreen(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

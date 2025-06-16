@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_CampaignNewsEntry.WBP_CampaignNewsEntry_C.ExecuteUbergraph_WBP_CampaignNewsEntry
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CampaignNewsEntry.WBP_CampaignNewsEntry_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_CampaignNewsEntry_C::ExecuteUbergraph_WBP_CampaignNewsEntry(int32 EntryPoint)
+void UWBP_CampaignNewsEntry_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignNewsEntry_C", "ExecuteUbergraph_WBP_CampaignNewsEntry");
+		Func = Class->GetFunction("WBP_CampaignNewsEntry_C", "Construct");
 
-	Params::WBP_CampaignNewsEntry_C_ExecuteUbergraph_WBP_CampaignNewsEntry Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,17 +51,23 @@ void UWBP_CampaignNewsEntry_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_CampaignNewsEntry.WBP_CampaignNewsEntry_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_CampaignNewsEntry.WBP_CampaignNewsEntry_C.ExecuteUbergraph_WBP_CampaignNewsEntry
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignNewsEntry_C::Construct()
+void UWBP_CampaignNewsEntry_C::ExecuteUbergraph_WBP_CampaignNewsEntry(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignNewsEntry_C", "Construct");
+		Func = Class->GetFunction("WBP_CampaignNewsEntry_C", "ExecuteUbergraph_WBP_CampaignNewsEntry");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_CampaignNewsEntry_C_ExecuteUbergraph_WBP_CampaignNewsEntry Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

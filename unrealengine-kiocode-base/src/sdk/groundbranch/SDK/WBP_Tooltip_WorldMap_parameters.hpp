@@ -17,6 +17,17 @@
 namespace SDK::Params
 {
 
+// Function WBP_Tooltip_WorldMap.WBP_Tooltip_WorldMap_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Tooltip_WorldMap_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_Tooltip_WorldMap_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Tooltip_WorldMap_C_PreConstruct");
+static_assert(sizeof(WBP_Tooltip_WorldMap_C_PreConstruct) == 0x000001, "Wrong size on WBP_Tooltip_WorldMap_C_PreConstruct");
+static_assert(offsetof(WBP_Tooltip_WorldMap_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Tooltip_WorldMap_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
 // Function WBP_Tooltip_WorldMap.WBP_Tooltip_WorldMap_C.ExecuteUbergraph_WBP_Tooltip_WorldMap
 // 0x0160 (0x0160 - 0x0000)
 struct WBP_Tooltip_WorldMap_C_ExecuteUbergraph_WBP_Tooltip_WorldMap final
@@ -74,17 +85,6 @@ static_assert(offsetof(WBP_Tooltip_WorldMap_C_ExecuteUbergraph_WBP_Tooltip_World
 static_assert(offsetof(WBP_Tooltip_WorldMap_C_ExecuteUbergraph_WBP_Tooltip_WorldMap, K2Node_MakeArray_Array_1) == 0x000120, "Member 'WBP_Tooltip_WorldMap_C_ExecuteUbergraph_WBP_Tooltip_WorldMap::K2Node_MakeArray_Array_1' has a wrong offset!");
 static_assert(offsetof(WBP_Tooltip_WorldMap_C_ExecuteUbergraph_WBP_Tooltip_WorldMap, CallFunc_Format_ReturnValue) == 0x000130, "Member 'WBP_Tooltip_WorldMap_C_ExecuteUbergraph_WBP_Tooltip_WorldMap::CallFunc_Format_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_Tooltip_WorldMap_C_ExecuteUbergraph_WBP_Tooltip_WorldMap, CallFunc_Format_ReturnValue_1) == 0x000148, "Member 'WBP_Tooltip_WorldMap_C_ExecuteUbergraph_WBP_Tooltip_WorldMap::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_Tooltip_WorldMap.WBP_Tooltip_WorldMap_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Tooltip_WorldMap_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_Tooltip_WorldMap_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_Tooltip_WorldMap_C_PreConstruct");
-static_assert(sizeof(WBP_Tooltip_WorldMap_C_PreConstruct) == 0x000001, "Wrong size on WBP_Tooltip_WorldMap_C_PreConstruct");
-static_assert(offsetof(WBP_Tooltip_WorldMap_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_Tooltip_WorldMap_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }
 

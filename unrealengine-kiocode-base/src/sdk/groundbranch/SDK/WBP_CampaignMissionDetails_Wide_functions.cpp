@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_CampaignMissionDetails_Wide.WBP_CampaignMissionDetails_Wide_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_CampaignMissionDetails_Wide_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CampaignMissionDetails_Wide_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_CampaignMissionDetails_Wide.WBP_CampaignMissionDetails_Wide_C.ExecuteUbergraph_WBP_CampaignMissionDetails_Wide
 // (Final, UbergraphFunction)
 // Parameters:
@@ -34,20 +48,6 @@ void UWBP_CampaignMissionDetails_Wide_C::ExecuteUbergraph_WBP_CampaignMissionDet
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignMissionDetails_Wide.WBP_CampaignMissionDetails_Wide_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_CampaignMissionDetails_Wide_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignMissionDetails_Wide_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

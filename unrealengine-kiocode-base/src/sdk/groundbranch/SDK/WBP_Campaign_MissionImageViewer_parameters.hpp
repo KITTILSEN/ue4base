@@ -19,6 +19,238 @@
 namespace SDK::Params
 {
 
+// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.IsMapImage
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_Campaign_MissionImageViewer_C_IsMapImage final
+{
+public:
+	struct FGBMissionImage                        InMissionImage;                                    // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          bIsMapImage;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_StartsWith_ReturnValue;                   // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_Campaign_MissionImageViewer_C_IsMapImage) == 0x000008, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_IsMapImage");
+static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_IsMapImage) == 0x000030, "Wrong size on WBP_Campaign_MissionImageViewer_C_IsMapImage");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_IsMapImage, InMissionImage) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_IsMapImage::InMissionImage' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_IsMapImage, bIsMapImage) == 0x000028, "Member 'WBP_Campaign_MissionImageViewer_C_IsMapImage::bIsMapImage' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_IsMapImage, CallFunc_StartsWith_ReturnValue) == 0x000029, "Member 'WBP_Campaign_MissionImageViewer_C_IsMapImage::CallFunc_StartsWith_ReturnValue' has a wrong offset!");
+
+// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.ClampMapTranslationToAvailableSize
+// 0x00B0 (0x00B0 - 0x0000)
+struct WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize final
+{
+public:
+	struct FVector2D                              DesiredTranslation;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              ClampedTranslation;                                // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_X;                          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_Y;                          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_X_1;                        // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_Y_1;                        // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Temp_struct_Variable;                              // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              CallFunc_GetCachedGeometry_ReturnValue;            // 0x002C(0x0038)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FVector2D                              CallFunc_BreakGeometry_OutPosition;                // 0x0064(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_BreakGeometry_OutAbsolutePosition;        // 0x006C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_BreakGeometry_OutSize;                    // 0x0074(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakGeometry_OutScale;                   // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_3;        // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_4;        // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              K2Node_Select_Default;                             // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize) == 0x000004, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize");
+static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize) == 0x0000B0, "Wrong size on WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, DesiredTranslation) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::DesiredTranslation' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, ClampedTranslation) == 0x000008, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::ClampedTranslation' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_BreakVector2D_X) == 0x000010, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_BreakVector2D_X' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_BreakVector2D_Y) == 0x000014, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_BreakVector2D_Y' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_BreakVector2D_X_1) == 0x000018, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_BreakVector2D_X_1' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_BreakVector2D_Y_1) == 0x00001C, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_BreakVector2D_Y_1' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, Temp_bool_Variable) == 0x000020, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, Temp_struct_Variable) == 0x000024, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::Temp_struct_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_GetCachedGeometry_ReturnValue) == 0x00002C, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_GetCachedGeometry_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_BreakGeometry_OutPosition) == 0x000064, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_BreakGeometry_OutPosition' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_BreakGeometry_OutAbsolutePosition) == 0x00006C, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_BreakGeometry_OutAbsolutePosition' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_BreakGeometry_OutSize) == 0x000074, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_BreakGeometry_OutSize' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_BreakGeometry_OutScale) == 0x00007C, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_BreakGeometry_OutScale' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x000080, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000084, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000088, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x00008C, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x000090, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000094, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x000098, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_FClamp_ReturnValue) == 0x00009C, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_MakeVector2D_ReturnValue) == 0x0000A0, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, K2Node_Select_Default) == 0x0000A8, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.OnMouseMove
+// 0x03B8 (0x03B8 - 0x0000)
+struct WBP_Campaign_MissionImageViewer_C_OnMouseMove final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FVector2D                              CallFunc_PointerEvent_GetCursorDelta_ReturnValue;  // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue; // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_VSize2DSquared_ReturnValue;               // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue;         // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_181[0x3];                                      // 0x0181(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation; // 0x0184(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18C[0x4];                                      // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0190(0x00B8)()
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0248(0x00B8)()
+	struct FEventReply                            CallFunc_Handled_ReturnValue_1;                    // 0x0300(0x00B8)()
+};
+static_assert(alignof(WBP_Campaign_MissionImageViewer_C_OnMouseMove) == 0x000008, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_OnMouseMove");
+static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_OnMouseMove) == 0x0003B8, "Wrong size on WBP_Campaign_MissionImageViewer_C_OnMouseMove");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, MyGeometry) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, MouseEvent) == 0x000038, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::MouseEvent' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, ReturnValue) == 0x0000A8, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_PointerEvent_GetCursorDelta_ReturnValue) == 0x000160, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_PointerEvent_GetCursorDelta_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue) == 0x000168, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_VSize2DSquared_ReturnValue) == 0x00016C, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_VSize2DSquared_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_Multiply_Vector2DFloat_ReturnValue) == 0x000170, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_Multiply_Vector2DFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_Add_Vector2DVector2D_ReturnValue) == 0x000178, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_Add_Vector2DVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000180, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation) == 0x000184, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_Unhandled_ReturnValue) == 0x000190, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_Handled_ReturnValue) == 0x000248, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_Handled_ReturnValue_1) == 0x000300, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_Handled_ReturnValue_1' has a wrong offset!");
+
+// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.OnMouseWheel
+// 0x0238 (0x0238 - 0x0000)
+struct WBP_Campaign_MissionImageViewer_C_OnMouseWheel final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
+	float                                         LastMapZoom;                                       // 0x0160(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_PointerEvent_GetWheelDelta_ReturnValue;   // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation; // 0x016C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0178(0x00B8)()
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel) == 0x000008, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_OnMouseWheel");
+static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel) == 0x000238, "Wrong size on WBP_Campaign_MissionImageViewer_C_OnMouseWheel");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, MyGeometry) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::MyGeometry' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, MouseEvent) == 0x000038, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::MouseEvent' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, ReturnValue) == 0x0000A8, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, LastMapZoom) == 0x000160, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::LastMapZoom' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, CallFunc_PointerEvent_GetWheelDelta_ReturnValue) == 0x000164, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::CallFunc_PointerEvent_GetWheelDelta_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x000168, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation) == 0x00016C, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000174, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, CallFunc_Handled_ReturnValue) == 0x000178, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::CallFunc_Handled_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, CallFunc_Add_FloatFloat_ReturnValue) == 0x000230, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, CallFunc_FClamp_ReturnValue) == 0x000234, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+
+// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.IsHoveringOnMap
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap final
+{
+public:
+	bool                                          bIsHoveringOnMap;                                  // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap) == 0x000001, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap");
+static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap) == 0x000002, "Wrong size on WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap, bIsHoveringOnMap) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap::bIsHoveringOnMap' has a wrong offset!");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap, CallFunc_IsHovered_ReturnValue) == 0x000001, "Member 'WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap::CallFunc_IsHovered_ReturnValue' has a wrong offset!");
+
+// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.SetNewTabIndex
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Campaign_MissionImageViewer_C_SetNewTabIndex final
+{
+public:
+	int32                                         NewTabIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Campaign_MissionImageViewer_C_SetNewTabIndex) == 0x000004, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_SetNewTabIndex");
+static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_SetNewTabIndex) == 0x000004, "Wrong size on WBP_Campaign_MissionImageViewer_C_SetNewTabIndex");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_SetNewTabIndex, NewTabIndex) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_SetNewTabIndex::NewTabIndex' has a wrong offset!");
+
+// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.DisplayImage
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Campaign_MissionImageViewer_C_DisplayImage final
+{
+public:
+	int32                                         ImageIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Campaign_MissionImageViewer_C_DisplayImage) == 0x000004, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_DisplayImage");
+static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_DisplayImage) == 0x000004, "Wrong size on WBP_Campaign_MissionImageViewer_C_DisplayImage");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_DisplayImage, ImageIndex) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_DisplayImage::ImageIndex' has a wrong offset!");
+
+// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.SetImage
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Campaign_MissionImageViewer_C_SetImage final
+{
+public:
+	class UTexture2D*                             ImageTexture;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Campaign_MissionImageViewer_C_SetImage) == 0x000008, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_SetImage");
+static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_SetImage) == 0x000008, "Wrong size on WBP_Campaign_MissionImageViewer_C_SetImage");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_SetImage, ImageTexture) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_SetImage::ImageTexture' has a wrong offset!");
+
+// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.ChangeImageVisibility
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Campaign_MissionImageViewer_C_ChangeImageVisibility final
+{
+public:
+	bool                                          bShowImage;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_Campaign_MissionImageViewer_C_ChangeImageVisibility) == 0x000001, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_ChangeImageVisibility");
+static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_ChangeImageVisibility) == 0x000001, "Wrong size on WBP_Campaign_MissionImageViewer_C_ChangeImageVisibility");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ChangeImageVisibility, bShowImage) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_ChangeImageVisibility::bShowImage' has a wrong offset!");
+
+// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.SetNewMissionImageList
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Campaign_MissionImageViewer_C_SetNewMissionImageList final
+{
+public:
+	TArray<struct FGBMissionImage>                MissionImageList_0;                                // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+static_assert(alignof(WBP_Campaign_MissionImageViewer_C_SetNewMissionImageList) == 0x000008, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_SetNewMissionImageList");
+static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_SetNewMissionImageList) == 0x000010, "Wrong size on WBP_Campaign_MissionImageViewer_C_SetNewMissionImageList");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_SetNewMissionImageList, MissionImageList_0) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_SetNewMissionImageList::MissionImageList_0' has a wrong offset!");
+
+// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.LoadInGameMap
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Campaign_MissionImageViewer_C_LoadInGameMap final
+{
+public:
+	class FString                                 Filename;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Campaign_MissionImageViewer_C_LoadInGameMap) == 0x000008, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_LoadInGameMap");
+static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_LoadInGameMap) == 0x000010, "Wrong size on WBP_Campaign_MissionImageViewer_C_LoadInGameMap");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_LoadInGameMap, Filename) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_LoadInGameMap::Filename' has a wrong offset!");
+
+// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.SetNewMissionMapMarkers
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Campaign_MissionImageViewer_C_SetNewMissionMapMarkers final
+{
+public:
+	TArray<struct FGBMapMarker>                   MapMarkerList;                                     // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+static_assert(alignof(WBP_Campaign_MissionImageViewer_C_SetNewMissionMapMarkers) == 0x000008, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_SetNewMissionMapMarkers");
+static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_SetNewMissionMapMarkers) == 0x000010, "Wrong size on WBP_Campaign_MissionImageViewer_C_SetNewMissionMapMarkers");
+static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_SetNewMissionMapMarkers, MapMarkerList) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_SetNewMissionMapMarkers::MapMarkerList' has a wrong offset!");
+
 // Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.ExecuteUbergraph_WBP_Campaign_MissionImageViewer
 // 0x0220 (0x0220 - 0x0000)
 struct WBP_Campaign_MissionImageViewer_C_ExecuteUbergraph_WBP_Campaign_MissionImageViewer final
@@ -220,238 +452,6 @@ static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ExecuteUbergraph_WBP_Ca
 static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ExecuteUbergraph_WBP_Campaign_MissionImageViewer, CallFunc_Array_Get_Item_3) == 0x000214, "Member 'WBP_Campaign_MissionImageViewer_C_ExecuteUbergraph_WBP_Campaign_MissionImageViewer::CallFunc_Array_Get_Item_3' has a wrong offset!");
 static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ExecuteUbergraph_WBP_Campaign_MissionImageViewer, CallFunc_Array_Get_Item_4) == 0x000218, "Member 'WBP_Campaign_MissionImageViewer_C_ExecuteUbergraph_WBP_Campaign_MissionImageViewer::CallFunc_Array_Get_Item_4' has a wrong offset!");
 static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ExecuteUbergraph_WBP_Campaign_MissionImageViewer, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00021C, "Member 'WBP_Campaign_MissionImageViewer_C_ExecuteUbergraph_WBP_Campaign_MissionImageViewer::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-
-// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.SetNewMissionMapMarkers
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Campaign_MissionImageViewer_C_SetNewMissionMapMarkers final
-{
-public:
-	TArray<struct FGBMapMarker>                   MapMarkerList;                                     // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(WBP_Campaign_MissionImageViewer_C_SetNewMissionMapMarkers) == 0x000008, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_SetNewMissionMapMarkers");
-static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_SetNewMissionMapMarkers) == 0x000010, "Wrong size on WBP_Campaign_MissionImageViewer_C_SetNewMissionMapMarkers");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_SetNewMissionMapMarkers, MapMarkerList) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_SetNewMissionMapMarkers::MapMarkerList' has a wrong offset!");
-
-// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.LoadInGameMap
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Campaign_MissionImageViewer_C_LoadInGameMap final
-{
-public:
-	class FString                                 Filename;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Campaign_MissionImageViewer_C_LoadInGameMap) == 0x000008, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_LoadInGameMap");
-static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_LoadInGameMap) == 0x000010, "Wrong size on WBP_Campaign_MissionImageViewer_C_LoadInGameMap");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_LoadInGameMap, Filename) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_LoadInGameMap::Filename' has a wrong offset!");
-
-// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.SetNewMissionImageList
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Campaign_MissionImageViewer_C_SetNewMissionImageList final
-{
-public:
-	TArray<struct FGBMissionImage>                MissionImageList_0;                                // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-static_assert(alignof(WBP_Campaign_MissionImageViewer_C_SetNewMissionImageList) == 0x000008, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_SetNewMissionImageList");
-static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_SetNewMissionImageList) == 0x000010, "Wrong size on WBP_Campaign_MissionImageViewer_C_SetNewMissionImageList");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_SetNewMissionImageList, MissionImageList_0) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_SetNewMissionImageList::MissionImageList_0' has a wrong offset!");
-
-// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.ChangeImageVisibility
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Campaign_MissionImageViewer_C_ChangeImageVisibility final
-{
-public:
-	bool                                          bShowImage;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_Campaign_MissionImageViewer_C_ChangeImageVisibility) == 0x000001, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_ChangeImageVisibility");
-static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_ChangeImageVisibility) == 0x000001, "Wrong size on WBP_Campaign_MissionImageViewer_C_ChangeImageVisibility");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ChangeImageVisibility, bShowImage) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_ChangeImageVisibility::bShowImage' has a wrong offset!");
-
-// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.SetImage
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Campaign_MissionImageViewer_C_SetImage final
-{
-public:
-	class UTexture2D*                             ImageTexture;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Campaign_MissionImageViewer_C_SetImage) == 0x000008, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_SetImage");
-static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_SetImage) == 0x000008, "Wrong size on WBP_Campaign_MissionImageViewer_C_SetImage");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_SetImage, ImageTexture) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_SetImage::ImageTexture' has a wrong offset!");
-
-// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.DisplayImage
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Campaign_MissionImageViewer_C_DisplayImage final
-{
-public:
-	int32                                         ImageIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Campaign_MissionImageViewer_C_DisplayImage) == 0x000004, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_DisplayImage");
-static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_DisplayImage) == 0x000004, "Wrong size on WBP_Campaign_MissionImageViewer_C_DisplayImage");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_DisplayImage, ImageIndex) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_DisplayImage::ImageIndex' has a wrong offset!");
-
-// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.SetNewTabIndex
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Campaign_MissionImageViewer_C_SetNewTabIndex final
-{
-public:
-	int32                                         NewTabIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Campaign_MissionImageViewer_C_SetNewTabIndex) == 0x000004, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_SetNewTabIndex");
-static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_SetNewTabIndex) == 0x000004, "Wrong size on WBP_Campaign_MissionImageViewer_C_SetNewTabIndex");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_SetNewTabIndex, NewTabIndex) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_SetNewTabIndex::NewTabIndex' has a wrong offset!");
-
-// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.IsHoveringOnMap
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap final
-{
-public:
-	bool                                          bIsHoveringOnMap;                                  // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap) == 0x000001, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap");
-static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap) == 0x000002, "Wrong size on WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap, bIsHoveringOnMap) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap::bIsHoveringOnMap' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap, CallFunc_IsHovered_ReturnValue) == 0x000001, "Member 'WBP_Campaign_MissionImageViewer_C_IsHoveringOnMap::CallFunc_IsHovered_ReturnValue' has a wrong offset!");
-
-// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.OnMouseWheel
-// 0x0238 (0x0238 - 0x0000)
-struct WBP_Campaign_MissionImageViewer_C_OnMouseWheel final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
-	float                                         LastMapZoom;                                       // 0x0160(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_PointerEvent_GetWheelDelta_ReturnValue;   // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation; // 0x016C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0178(0x00B8)()
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0234(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel) == 0x000008, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_OnMouseWheel");
-static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel) == 0x000238, "Wrong size on WBP_Campaign_MissionImageViewer_C_OnMouseWheel");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, MyGeometry) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, MouseEvent) == 0x000038, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, ReturnValue) == 0x0000A8, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, LastMapZoom) == 0x000160, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::LastMapZoom' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, CallFunc_PointerEvent_GetWheelDelta_ReturnValue) == 0x000164, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::CallFunc_PointerEvent_GetWheelDelta_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x000168, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation) == 0x00016C, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000174, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, CallFunc_Handled_ReturnValue) == 0x000178, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, CallFunc_Add_FloatFloat_ReturnValue) == 0x000230, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseWheel, CallFunc_FClamp_ReturnValue) == 0x000234, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseWheel::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-
-// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.OnMouseMove
-// 0x03B8 (0x03B8 - 0x0000)
-struct WBP_Campaign_MissionImageViewer_C_OnMouseMove final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FVector2D                              CallFunc_PointerEvent_GetCursorDelta_ReturnValue;  // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue; // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_VSize2DSquared_ReturnValue;               // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Add_Vector2DVector2D_ReturnValue;         // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_181[0x3];                                      // 0x0181(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation; // 0x0184(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_18C[0x4];                                      // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0190(0x00B8)()
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0248(0x00B8)()
-	struct FEventReply                            CallFunc_Handled_ReturnValue_1;                    // 0x0300(0x00B8)()
-};
-static_assert(alignof(WBP_Campaign_MissionImageViewer_C_OnMouseMove) == 0x000008, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_OnMouseMove");
-static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_OnMouseMove) == 0x0003B8, "Wrong size on WBP_Campaign_MissionImageViewer_C_OnMouseMove");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, MyGeometry) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, MouseEvent) == 0x000038, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::MouseEvent' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, ReturnValue) == 0x0000A8, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_PointerEvent_GetCursorDelta_ReturnValue) == 0x000160, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_PointerEvent_GetCursorDelta_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue) == 0x000168, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_VSize2DSquared_ReturnValue) == 0x00016C, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_VSize2DSquared_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_Multiply_Vector2DFloat_ReturnValue) == 0x000170, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_Multiply_Vector2DFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_Add_Vector2DVector2D_ReturnValue) == 0x000178, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_Add_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000180, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation) == 0x000184, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_ClampMapTranslationToAvailableSize_ClampedTranslation' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_Unhandled_ReturnValue) == 0x000190, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_Handled_ReturnValue) == 0x000248, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_OnMouseMove, CallFunc_Handled_ReturnValue_1) == 0x000300, "Member 'WBP_Campaign_MissionImageViewer_C_OnMouseMove::CallFunc_Handled_ReturnValue_1' has a wrong offset!");
-
-// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.ClampMapTranslationToAvailableSize
-// 0x00B0 (0x00B0 - 0x0000)
-struct WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize final
-{
-public:
-	struct FVector2D                              DesiredTranslation;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              ClampedTranslation;                                // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X;                          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y;                          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X_1;                        // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y_1;                        // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Temp_struct_Variable;                              // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              CallFunc_GetCachedGeometry_ReturnValue;            // 0x002C(0x0038)(ConstParm, IsPlainOldData, NoDestructor)
-	struct FVector2D                              CallFunc_BreakGeometry_OutPosition;                // 0x0064(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_BreakGeometry_OutAbsolutePosition;        // 0x006C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_BreakGeometry_OutSize;                    // 0x0074(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakGeometry_OutScale;                   // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_3;        // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_4;        // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              K2Node_Select_Default;                             // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize) == 0x000004, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize");
-static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize) == 0x0000B0, "Wrong size on WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, DesiredTranslation) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::DesiredTranslation' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, ClampedTranslation) == 0x000008, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::ClampedTranslation' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_BreakVector2D_X) == 0x000010, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_BreakVector2D_Y) == 0x000014, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_BreakVector2D_X_1) == 0x000018, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_BreakVector2D_X_1' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_BreakVector2D_Y_1) == 0x00001C, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_BreakVector2D_Y_1' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, Temp_bool_Variable) == 0x000020, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, Temp_struct_Variable) == 0x000024, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_GetCachedGeometry_ReturnValue) == 0x00002C, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_GetCachedGeometry_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_BreakGeometry_OutPosition) == 0x000064, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_BreakGeometry_OutPosition' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_BreakGeometry_OutAbsolutePosition) == 0x00006C, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_BreakGeometry_OutAbsolutePosition' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_BreakGeometry_OutSize) == 0x000074, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_BreakGeometry_OutSize' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_BreakGeometry_OutScale) == 0x00007C, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_BreakGeometry_OutScale' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x000080, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000084, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000088, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x00008C, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x000090, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000094, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x000098, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_FClamp_ReturnValue) == 0x00009C, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, CallFunc_MakeVector2D_ReturnValue) == 0x0000A0, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize, K2Node_Select_Default) == 0x0000A8, "Member 'WBP_Campaign_MissionImageViewer_C_ClampMapTranslationToAvailableSize::K2Node_Select_Default' has a wrong offset!");
-
-// Function WBP_Campaign_MissionImageViewer.WBP_Campaign_MissionImageViewer_C.IsMapImage
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_Campaign_MissionImageViewer_C_IsMapImage final
-{
-public:
-	struct FGBMissionImage                        InMissionImage;                                    // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          bIsMapImage;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_StartsWith_ReturnValue;                   // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_Campaign_MissionImageViewer_C_IsMapImage) == 0x000008, "Wrong alignment on WBP_Campaign_MissionImageViewer_C_IsMapImage");
-static_assert(sizeof(WBP_Campaign_MissionImageViewer_C_IsMapImage) == 0x000030, "Wrong size on WBP_Campaign_MissionImageViewer_C_IsMapImage");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_IsMapImage, InMissionImage) == 0x000000, "Member 'WBP_Campaign_MissionImageViewer_C_IsMapImage::InMissionImage' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_IsMapImage, bIsMapImage) == 0x000028, "Member 'WBP_Campaign_MissionImageViewer_C_IsMapImage::bIsMapImage' has a wrong offset!");
-static_assert(offsetof(WBP_Campaign_MissionImageViewer_C_IsMapImage, CallFunc_StartsWith_ReturnValue) == 0x000029, "Member 'WBP_Campaign_MissionImageViewer_C_IsMapImage::CallFunc_StartsWith_ReturnValue' has a wrong offset!");
 
 }
 

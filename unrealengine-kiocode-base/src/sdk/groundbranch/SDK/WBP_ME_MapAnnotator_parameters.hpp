@@ -11,15 +11,596 @@
 #include "Basic.hpp"
 
 #include "GroundBranch_structs.hpp"
+#include "FMEMapSymbols_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "FMEMapSymbols_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0
+// 0x0003 (0x0003 - 0x0000)
+struct WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0 final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsEditor_ReturnValue;                     // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0) == 0x000001, "Wrong alignment on WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0) == 0x000003, "Wrong size on WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0, ReturnValue) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0, CallFunc_IsEditor_ReturnValue) == 0x000001, "Member 'WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0::CallFunc_IsEditor_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0, CallFunc_Not_PreBool_ReturnValue) == 0x000002, "Member 'WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetObjectiveInfoFromObjectiveSoftRef
+// 0x0070 (0x0070 - 0x0000)
+struct WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef final
+{
+public:
+	TSoftObjectPtr<class AGBMissionObjective>     MissionObjectiveSoftRef;                           // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          bIsPrimary;                                        // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 ObjectiveTitle;                                    // 0x0030(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AGBMissionObjective*                    K2Node_DynamicCast_AsGBMission_Objective;          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetObjectiveTitle_ReturnValue;            // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetIsPrimaryObjective_ReturnValue;        // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef) == 0x000070, "Wrong size on WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, MissionObjectiveSoftRef) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::MissionObjectiveSoftRef' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, bIsPrimary) == 0x000028, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::bIsPrimary' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, ObjectiveTitle) == 0x000030, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::ObjectiveTitle' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x000040, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, K2Node_DynamicCast_AsGBMission_Objective) == 0x000048, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::K2Node_DynamicCast_AsGBMission_Objective' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, CallFunc_IsValid_ReturnValue) == 0x000051, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, CallFunc_GetObjectiveTitle_ReturnValue) == 0x000058, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::CallFunc_GetObjectiveTitle_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, CallFunc_GetIsPrimaryObjective_ReturnValue) == 0x000068, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::CallFunc_GetIsPrimaryObjective_ReturnValue' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetFilenameForImageNumber
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_ME_MapAnnotator_C_GetFilenameForImageNumber final
+{
+public:
+	int32                                         ImageNumber;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Filename;                                          // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetImageListIndexForPhotoNumber_ImageListIndex; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGBMissionImage                        CallFunc_Array_Get_Item;                           // 0x0020(0x0028)()
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_GetFilenameForImageNumber) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_GetFilenameForImageNumber");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_GetFilenameForImageNumber) == 0x000050, "Wrong size on WBP_ME_MapAnnotator_C_GetFilenameForImageNumber");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetFilenameForImageNumber, ImageNumber) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetFilenameForImageNumber::ImageNumber' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetFilenameForImageNumber, Filename) == 0x000008, "Member 'WBP_ME_MapAnnotator_C_GetFilenameForImageNumber::Filename' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetFilenameForImageNumber, CallFunc_GetImageListIndexForPhotoNumber_ImageListIndex) == 0x000018, "Member 'WBP_ME_MapAnnotator_C_GetFilenameForImageNumber::CallFunc_GetImageListIndexForPhotoNumber_ImageListIndex' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetFilenameForImageNumber, CallFunc_Array_Get_Item) == 0x000020, "Member 'WBP_ME_MapAnnotator_C_GetFilenameForImageNumber::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetFilenameForImageNumber, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000048, "Member 'WBP_ME_MapAnnotator_C_GetFilenameForImageNumber::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetImageListIndexForPhotoNumber
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber final
+{
+public:
+	int32                                         PhotoNumber;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ImageListIndex;                                    // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGBMissionImage                        CallFunc_Array_Get_Item;                           // 0x0018(0x0028)()
+	int32                                         CallFunc_Array_Get_Item_1;                         // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsMapImage_bIsMapImage;                   // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_47[0x1];                                       // 0x0047(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber) == 0x000050, "Wrong size on WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, PhotoNumber) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::PhotoNumber' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, ImageListIndex) == 0x000004, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::ImageListIndex' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_Array_Get_Item_1) == 0x000040, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_Array_Get_Item_1' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_IsMapImage_bIsMapImage) == 0x000044, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_IsMapImage_bIsMapImage' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000045, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_Not_PreBool_ReturnValue) == 0x000046, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_Array_Length_ReturnValue) == 0x000048, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_BooleanAND_ReturnValue) == 0x00004C, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_Less_IntInt_ReturnValue) == 0x00004D, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.IsMapImage
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_ME_MapAnnotator_C_IsMapImage final
+{
+public:
+	struct FGBMissionImage                        InMissionImage;                                    // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          bIsMapImage;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_StartsWith_ReturnValue;                   // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_IsMapImage) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_IsMapImage");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_IsMapImage) == 0x000030, "Wrong size on WBP_ME_MapAnnotator_C_IsMapImage");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_IsMapImage, InMissionImage) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_IsMapImage::InMissionImage' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_IsMapImage, bIsMapImage) == 0x000028, "Member 'WBP_ME_MapAnnotator_C_IsMapImage::bIsMapImage' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_IsMapImage, CallFunc_StartsWith_ReturnValue) == 0x000029, "Member 'WBP_ME_MapAnnotator_C_IsMapImage::CallFunc_StartsWith_ReturnValue' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetLinkedObjectiveFromComboBox
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox final
+{
+public:
+	TSoftObjectPtr<class AGBMissionObjective>     LinkedObjectiveRef;                                // 0x0000(0x0028)(Parm, OutParm, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBMissionObjective*                    CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class AGBMissionObjective>     CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x0038(0x0028)(UObjectWrapper, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox) == 0x000060, "Wrong size on WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox, LinkedObjectiveRef) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox::LinkedObjectiveRef' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox, CallFunc_Subtract_IntInt_ReturnValue) == 0x000028, "Member 'WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox, CallFunc_Array_Get_Item) == 0x000030, "Member 'WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue) == 0x000038, "Member 'WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.Get_CheckBox_EditExistingMarker_ToolTipWidget_0
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetMapMarkerRenderTranslationFromScreenPosition
+// 0x0090 (0x0090 - 0x0000)
+struct WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition final
+{
+public:
+	struct FVector2D                              ScreenPosition;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              RenderTranslation;                                 // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bWasOutOfRange;                                    // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGeometry                              CallFunc_GetPaintSpaceGeometry_ReturnValue;        // 0x0014(0x0038)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FVector2D                              CallFunc_BreakGeometry_OutPosition;                // 0x004C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_BreakGeometry_OutAbsolutePosition;        // 0x0054(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_BreakGeometry_OutSize;                    // 0x005C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakGeometry_OutScale;                   // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue;    // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Divide_Vector2DVector2D_ReturnValue;      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_ClampAxes2D_ReturnValue;                  // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_X;                          // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector2D_Y;                          // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue_1;            // 0x008A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x008B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x008D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x008E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition) == 0x000004, "Wrong alignment on WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition) == 0x000090, "Wrong size on WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, ScreenPosition) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::ScreenPosition' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, RenderTranslation) == 0x000008, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::RenderTranslation' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, bWasOutOfRange) == 0x000010, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::bWasOutOfRange' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_GetPaintSpaceGeometry_ReturnValue) == 0x000014, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_GetPaintSpaceGeometry_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BreakGeometry_OutPosition) == 0x00004C, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BreakGeometry_OutPosition' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BreakGeometry_OutAbsolutePosition) == 0x000054, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BreakGeometry_OutAbsolutePosition' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BreakGeometry_OutSize) == 0x00005C, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BreakGeometry_OutSize' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BreakGeometry_OutScale) == 0x000064, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BreakGeometry_OutScale' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_Subtract_Vector2DVector2D_ReturnValue) == 0x000068, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_Subtract_Vector2DVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_Divide_Vector2DVector2D_ReturnValue) == 0x000070, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_Divide_Vector2DVector2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_ClampAxes2D_ReturnValue) == 0x000078, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_ClampAxes2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BreakVector2D_X) == 0x000080, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BreakVector2D_X' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BreakVector2D_Y) == 0x000084, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BreakVector2D_Y' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_Less_FloatFloat_ReturnValue) == 0x000088, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000089, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_Less_FloatFloat_ReturnValue_1) == 0x00008A, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_Less_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x00008B, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BooleanOR_ReturnValue) == 0x00008C, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BooleanOR_ReturnValue_1) == 0x00008D, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BooleanOR_ReturnValue_2) == 0x00008E, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.Get_Image_WarnMap_ToolTipWidget_0
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)(ConstParm)
+	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0) == 0x000028, "Wrong size on WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0, Temp_text_Variable) == 0x000008, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000020, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.Get_Image_WarnMap_Visibility_0
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0 final
+{
+public:
+	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_1;            // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0) == 0x000001, "Wrong alignment on WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0) == 0x000008, "Wrong size on WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0, ReturnValue) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0, Temp_bool_Variable) == 0x000001, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0, Temp_byte_Variable) == 0x000002, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000004, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x000005, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0, CallFunc_BooleanAND_ReturnValue) == 0x000006, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0, K2Node_Select_Default) == 0x000007, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetComboBoxIndexForLinkedObjectiveRef
+// 0x00D8 (0x00D8 - 0x0000)
+struct WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef final
+{
+public:
+	TSoftObjectPtr<class AGBMissionObjective>     LinkedObjectiveRef;                                // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	int32                                         ComboBoxIndex;                                     // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class AGBMissionObjective>     UpdatedRef;                                        // 0x0030(0x0028)(Parm, OutParm, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_SoftObjectReferenceToString_ReturnValue; // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGBMissionObjective*                    CallFunc_Array_Get_Item;                           // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class AGBMissionObjective>     CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x0090(0x0028)(UObjectWrapper, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_SoftObjectReferenceToString_ReturnValue_1; // 0x00C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_StriStri_ReturnValue;          // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef) == 0x0000D8, "Wrong size on WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, LinkedObjectiveRef) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::LinkedObjectiveRef' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, ComboBoxIndex) == 0x000028, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::ComboBoxIndex' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, UpdatedRef) == 0x000030, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::UpdatedRef' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, Temp_int_Array_Index_Variable) == 0x000058, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_Conv_SoftObjectReferenceToString_ReturnValue) == 0x000060, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_Conv_SoftObjectReferenceToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_Add_IntInt_ReturnValue) == 0x000070, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, Temp_int_Loop_Counter_Variable) == 0x000074, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_Add_IntInt_ReturnValue_1) == 0x000078, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_Array_Get_Item) == 0x000080, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_Array_Length_ReturnValue) == 0x000088, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue) == 0x000090, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_Less_IntInt_ReturnValue) == 0x0000B8, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_Conv_SoftObjectReferenceToString_ReturnValue_1) == 0x0000C0, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_Conv_SoftObjectReferenceToString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_EqualEqual_StriStri_ReturnValue) == 0x0000D0, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_EqualEqual_StriStri_ReturnValue' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetToolTipWidget_0
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_ME_MapAnnotator_C_GetToolTipWidget_0 final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)(ConstParm)
+	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_GetToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_GetToolTipWidget_0");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_GetToolTipWidget_0) == 0x000028, "Wrong size on WBP_ME_MapAnnotator_C_GetToolTipWidget_0");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetToolTipWidget_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetToolTipWidget_0, Temp_text_Variable) == 0x000008, "Member 'WBP_ME_MapAnnotator_C_GetToolTipWidget_0::Temp_text_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000020, "Member 'WBP_ME_MapAnnotator_C_GetToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetVisibility_0
+// 0x0006 (0x0006 - 0x0000)
+struct WBP_ME_MapAnnotator_C_GetVisibility_0 final
+{
+public:
+	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_GetVisibility_0) == 0x000001, "Wrong alignment on WBP_ME_MapAnnotator_C_GetVisibility_0");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_GetVisibility_0) == 0x000006, "Wrong size on WBP_ME_MapAnnotator_C_GetVisibility_0");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetVisibility_0, ReturnValue) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetVisibility_0::ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetVisibility_0, Temp_bool_Variable) == 0x000001, "Member 'WBP_ME_MapAnnotator_C_GetVisibility_0::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetVisibility_0, Temp_byte_Variable) == 0x000002, "Member 'WBP_ME_MapAnnotator_C_GetVisibility_0::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetVisibility_0, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_ME_MapAnnotator_C_GetVisibility_0::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetVisibility_0, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000004, "Member 'WBP_ME_MapAnnotator_C_GetVisibility_0::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetVisibility_0, K2Node_Select_Default) == 0x000005, "Member 'WBP_ME_MapAnnotator_C_GetVisibility_0::K2Node_Select_Default' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.OnLoaded_46AAD6A842FE33F224B5EBAB9042543C
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ME_MapAnnotator_C_OnLoaded_46AAD6A842FE33F224B5EBAB9042543C final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_OnLoaded_46AAD6A842FE33F224B5EBAB9042543C) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_OnLoaded_46AAD6A842FE33F224B5EBAB9042543C");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_OnLoaded_46AAD6A842FE33F224B5EBAB9042543C) == 0x000008, "Wrong size on WBP_ME_MapAnnotator_C_OnLoaded_46AAD6A842FE33F224B5EBAB9042543C");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_OnLoaded_46AAD6A842FE33F224B5EBAB9042543C, Loaded) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_OnLoaded_46AAD6A842FE33F224B5EBAB9042543C::Loaded' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.DisplayImage
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_ME_MapAnnotator_C_DisplayImage final
+{
+public:
+	int32                                         ImageIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_DisplayImage) == 0x000004, "Wrong alignment on WBP_ME_MapAnnotator_C_DisplayImage");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_DisplayImage) == 0x000004, "Wrong size on WBP_ME_MapAnnotator_C_DisplayImage");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_DisplayImage, ImageIndex) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_DisplayImage::ImageIndex' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_MapList_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_MapList_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_MapList_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature) == 0x000004, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_MapList_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_MapList_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature) == 0x000004, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_MapList_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_MapList_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature, Index_0) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_MapList_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature::Index_0' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_Team_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_Team_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_Team_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature) == 0x000004, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_Team_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_Team_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature) == 0x000004, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_Team_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_Team_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature, Index_0) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_Team_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature::Index_0' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.DragEventFinished
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_ME_MapAnnotator_C_DragEventFinished final
+{
+public:
+	TSoftClassPtr<class UClass>                   WidgetClassRef;                                    // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FVector2D                              ViewportCoordinates;                               // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_DragEventFinished) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_DragEventFinished");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_DragEventFinished) == 0x000030, "Wrong size on WBP_ME_MapAnnotator_C_DragEventFinished");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_DragEventFinished, WidgetClassRef) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_DragEventFinished::WidgetClassRef' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_DragEventFinished, ViewportCoordinates) == 0x000028, "Member 'WBP_ME_MapAnnotator_C_DragEventFinished::ViewportCoordinates' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_LinkedObjective_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_LinkedObjective_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_LinkedObjective_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature) == 0x000004, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_LinkedObjective_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_LinkedObjective_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature) == 0x000004, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_LinkedObjective_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_LinkedObjective_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature, Index_0) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_LinkedObjective_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature::Index_0' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.SpawnMapWidget
+// 0x00B8 (0x00B8 - 0x0000)
+struct WBP_ME_MapAnnotator_C_SpawnMapWidget final
+{
+public:
+	struct FGBMapMarker                           MapMarkerInfo;                                     // 0x0000(0x00B0)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         MapWidgetIndex;                                    // 0x00B0(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_SpawnMapWidget) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_SpawnMapWidget");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_SpawnMapWidget) == 0x0000B8, "Wrong size on WBP_ME_MapAnnotator_C_SpawnMapWidget");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_SpawnMapWidget, MapMarkerInfo) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_SpawnMapWidget::MapMarkerInfo' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_SpawnMapWidget, MapWidgetIndex) == 0x0000B0, "Member 'WBP_ME_MapAnnotator_C_SpawnMapWidget::MapWidgetIndex' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.OnDraggingExistingMapWidget
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget final
+{
+public:
+	class UWBP_ME_MapSymbol_C*                    MapWidget;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              ViewportCoordinates;                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MapWidgetIndex;                                    // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget) == 0x000018, "Wrong size on WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget, MapWidget) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget::MapWidget' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget, ViewportCoordinates) == 0x000008, "Member 'WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget::ViewportCoordinates' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget, MapWidgetIndex) == 0x000010, "Member 'WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget::MapWidgetIndex' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.MapSymbolClicked
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ME_MapAnnotator_C_MapSymbolClicked final
+{
+public:
+	class UWBP_ME_MapSymbol_C*                    MapWidget;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_MapSymbolClicked) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_MapSymbolClicked");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_MapSymbolClicked) == 0x000008, "Wrong size on WBP_ME_MapAnnotator_C_MapSymbolClicked");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_MapSymbolClicked, MapWidget) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_MapSymbolClicked::MapWidget' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.OnClickedOkUserTextInput
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ME_MapAnnotator_C_OnClickedOkUserTextInput final
+{
+public:
+	class FString                                 Filename;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_OnClickedOkUserTextInput) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_OnClickedOkUserTextInput");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_OnClickedOkUserTextInput) == 0x000010, "Wrong size on WBP_ME_MapAnnotator_C_OnClickedOkUserTextInput");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_OnClickedOkUserTextInput, Filename) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_OnClickedOkUserTextInput::Filename' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.MapMarkerPropertiesUpdated
+// 0x00B8 (0x00B8 - 0x0000)
+struct WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated final
+{
+public:
+	int32                                         MapMarkerIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGBMapMarker                           NewMapMarkerInfo;                                  // 0x0008(0x00B0)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated) == 0x0000B8, "Wrong size on WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated, MapMarkerIndex) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated::MapMarkerIndex' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated, NewMapMarkerInfo) == 0x000008, "Member 'WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated::NewMapMarkerInfo' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetUserTextInput
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ME_MapAnnotator_C_GetUserTextInput final
+{
+public:
+	class FString                                 InitialText;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_GetUserTextInput) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_GetUserTextInput");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_GetUserTextInput) == 0x000010, "Wrong size on WBP_ME_MapAnnotator_C_GetUserTextInput");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_GetUserTextInput, InitialText) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetUserTextInput::InitialText' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_CheckBox_CreateNewMarker_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_CreateNewMarker_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature final
+{
+public:
+	bool                                          bIsChecked;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_CreateNewMarker_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_CreateNewMarker_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_CreateNewMarker_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_CreateNewMarker_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_CreateNewMarker_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature, bIsChecked) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_CreateNewMarker_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature::bIsChecked' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_CheckBox_EditExistingMarker_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_EditExistingMarker_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature final
+{
+public:
+	bool                                          bIsChecked;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_EditExistingMarker_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_EditExistingMarker_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_EditExistingMarker_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_EditExistingMarker_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_EditExistingMarker_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature, bIsChecked) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_EditExistingMarker_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature::bIsChecked' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.SetSelectedMapSymbol
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ME_MapAnnotator_C_SetSelectedMapSymbol final
+{
+public:
+	class UWBP_ME_MapSymbol_C*                    SelectedMapSymbol;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_SetSelectedMapSymbol) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_SetSelectedMapSymbol");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_SetSelectedMapSymbol) == 0x000008, "Wrong size on WBP_ME_MapAnnotator_C_SetSelectedMapSymbol");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_SetSelectedMapSymbol, SelectedMapSymbol) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_SetSelectedMapSymbol::SelectedMapSymbol' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature) == 0x000020, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature, Text) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature::Text' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature, CommitMethod) == 0x000018, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature::CommitMethod' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.ReadPropertiesFromWidget
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_ME_MapAnnotator_C_ReadPropertiesFromWidget final
+{
+public:
+	int32                                         WidgetIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_ReadPropertiesFromWidget) == 0x000004, "Wrong alignment on WBP_ME_MapAnnotator_C_ReadPropertiesFromWidget");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_ReadPropertiesFromWidget) == 0x000004, "Wrong size on WBP_ME_MapAnnotator_C_ReadPropertiesFromWidget");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_ReadPropertiesFromWidget, WidgetIndex) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_ReadPropertiesFromWidget::WidgetIndex' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature) == 0x000020, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature, Text) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature::Text' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature, CommitMethod) == 0x000018, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature::CommitMethod' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature) == 0x000020, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature, Text) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature::Text' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature, CommitMethod) == 0x000018, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature::CommitMethod' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.StorePhotoFilename
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ME_MapAnnotator_C_StorePhotoFilename final
+{
+public:
+	int32                                         PhotoNumber;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MapMarkerIndex;                                    // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_StorePhotoFilename) == 0x000004, "Wrong alignment on WBP_ME_MapAnnotator_C_StorePhotoFilename");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_StorePhotoFilename) == 0x000008, "Wrong size on WBP_ME_MapAnnotator_C_StorePhotoFilename");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_StorePhotoFilename, PhotoNumber) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_StorePhotoFilename::PhotoNumber' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_StorePhotoFilename, MapMarkerIndex) == 0x000004, "Member 'WBP_ME_MapAnnotator_C_StorePhotoFilename::MapMarkerIndex' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature) == 0x000020, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature, Text) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature::Text' has a wrong offset!");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature, CommitMethod) == 0x000018, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature::CommitMethod' has a wrong offset!");
+
+// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.OnClickedOkUserFloatInput
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ME_MapAnnotator_C_OnClickedOkUserFloatInput final
+{
+public:
+	class FString                                 Filename;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ME_MapAnnotator_C_OnClickedOkUserFloatInput) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_OnClickedOkUserFloatInput");
+static_assert(sizeof(WBP_ME_MapAnnotator_C_OnClickedOkUserFloatInput) == 0x000010, "Wrong size on WBP_ME_MapAnnotator_C_OnClickedOkUserFloatInput");
+static_assert(offsetof(WBP_ME_MapAnnotator_C_OnClickedOkUserFloatInput, Filename) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_OnClickedOkUserFloatInput::Filename' has a wrong offset!");
 
 // Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.ExecuteUbergraph_WBP_ME_MapAnnotator
 // 0x1EF0 (0x1EF0 - 0x0000)
@@ -768,587 +1349,6 @@ static_assert(offsetof(WBP_ME_MapAnnotator_C_ExecuteUbergraph_WBP_ME_MapAnnotato
 static_assert(offsetof(WBP_ME_MapAnnotator_C_ExecuteUbergraph_WBP_ME_MapAnnotator, CallFunc_Subtract_IntInt_ReturnValue_3) == 0x001ED8, "Member 'WBP_ME_MapAnnotator_C_ExecuteUbergraph_WBP_ME_MapAnnotator::CallFunc_Subtract_IntInt_ReturnValue_3' has a wrong offset!");
 static_assert(offsetof(WBP_ME_MapAnnotator_C_ExecuteUbergraph_WBP_ME_MapAnnotator, CallFunc_Max_ReturnValue) == 0x001EDC, "Member 'WBP_ME_MapAnnotator_C_ExecuteUbergraph_WBP_ME_MapAnnotator::CallFunc_Max_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_ME_MapAnnotator_C_ExecuteUbergraph_WBP_ME_MapAnnotator, K2Node_CreateDelegate_OutputDelegate_2) == 0x001EE0, "Member 'WBP_ME_MapAnnotator_C_ExecuteUbergraph_WBP_ME_MapAnnotator::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.OnClickedOkUserFloatInput
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ME_MapAnnotator_C_OnClickedOkUserFloatInput final
-{
-public:
-	class FString                                 Filename;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_OnClickedOkUserFloatInput) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_OnClickedOkUserFloatInput");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_OnClickedOkUserFloatInput) == 0x000010, "Wrong size on WBP_ME_MapAnnotator_C_OnClickedOkUserFloatInput");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_OnClickedOkUserFloatInput, Filename) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_OnClickedOkUserFloatInput::Filename' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.StorePhotoFilename
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ME_MapAnnotator_C_StorePhotoFilename final
-{
-public:
-	int32                                         PhotoNumber;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         MapMarkerIndex;                                    // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_StorePhotoFilename) == 0x000004, "Wrong alignment on WBP_ME_MapAnnotator_C_StorePhotoFilename");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_StorePhotoFilename) == 0x000008, "Wrong size on WBP_ME_MapAnnotator_C_StorePhotoFilename");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_StorePhotoFilename, PhotoNumber) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_StorePhotoFilename::PhotoNumber' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_StorePhotoFilename, MapMarkerIndex) == 0x000004, "Member 'WBP_ME_MapAnnotator_C_StorePhotoFilename::MapMarkerIndex' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature) == 0x000020, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature, Text) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature::Text' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature, CommitMethod) == 0x000018, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerNumber_K2Node_ComponentBoundEvent_11_OnEditableTextCommittedEvent__DelegateSignature::CommitMethod' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature) == 0x000020, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature, Text) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature::Text' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature, CommitMethod) == 0x000018, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerRotation_K2Node_ComponentBoundEvent_9_OnEditableTextCommittedEvent__DelegateSignature::CommitMethod' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature) == 0x000020, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature, Text) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature::Text' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature, CommitMethod) == 0x000018, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerScale_K2Node_ComponentBoundEvent_8_OnEditableTextCommittedEvent__DelegateSignature::CommitMethod' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.ReadPropertiesFromWidget
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_ME_MapAnnotator_C_ReadPropertiesFromWidget final
-{
-public:
-	int32                                         WidgetIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_ReadPropertiesFromWidget) == 0x000004, "Wrong alignment on WBP_ME_MapAnnotator_C_ReadPropertiesFromWidget");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_ReadPropertiesFromWidget) == 0x000004, "Wrong size on WBP_ME_MapAnnotator_C_ReadPropertiesFromWidget");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_ReadPropertiesFromWidget, WidgetIndex) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_ReadPropertiesFromWidget::WidgetIndex' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature) == 0x000020, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature, Text) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature::Text' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature, CommitMethod) == 0x000018, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_EditableText_MarkerText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature::CommitMethod' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.SetSelectedMapSymbol
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ME_MapAnnotator_C_SetSelectedMapSymbol final
-{
-public:
-	class UWBP_ME_MapSymbol_C*                    SelectedMapSymbol;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_SetSelectedMapSymbol) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_SetSelectedMapSymbol");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_SetSelectedMapSymbol) == 0x000008, "Wrong size on WBP_ME_MapAnnotator_C_SetSelectedMapSymbol");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_SetSelectedMapSymbol, SelectedMapSymbol) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_SetSelectedMapSymbol::SelectedMapSymbol' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_CheckBox_EditExistingMarker_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_EditExistingMarker_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature final
-{
-public:
-	bool                                          bIsChecked;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_EditExistingMarker_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_EditExistingMarker_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_EditExistingMarker_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_EditExistingMarker_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_EditExistingMarker_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature, bIsChecked) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_EditExistingMarker_K2Node_ComponentBoundEvent_6_OnCheckBoxComponentStateChanged__DelegateSignature::bIsChecked' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_CheckBox_CreateNewMarker_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_CreateNewMarker_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature final
-{
-public:
-	bool                                          bIsChecked;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_CreateNewMarker_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_CreateNewMarker_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_CreateNewMarker_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature) == 0x000001, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_CreateNewMarker_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_CreateNewMarker_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature, bIsChecked) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_CheckBox_CreateNewMarker_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature::bIsChecked' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.MapMarkerPropertiesUpdated
-// 0x00B8 (0x00B8 - 0x0000)
-struct WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated final
-{
-public:
-	int32                                         MapMarkerIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGBMapMarker                           NewMapMarkerInfo;                                  // 0x0008(0x00B0)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated) == 0x0000B8, "Wrong size on WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated, MapMarkerIndex) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated::MapMarkerIndex' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated, NewMapMarkerInfo) == 0x000008, "Member 'WBP_ME_MapAnnotator_C_MapMarkerPropertiesUpdated::NewMapMarkerInfo' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.OnClickedOkUserTextInput
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ME_MapAnnotator_C_OnClickedOkUserTextInput final
-{
-public:
-	class FString                                 Filename;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_OnClickedOkUserTextInput) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_OnClickedOkUserTextInput");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_OnClickedOkUserTextInput) == 0x000010, "Wrong size on WBP_ME_MapAnnotator_C_OnClickedOkUserTextInput");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_OnClickedOkUserTextInput, Filename) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_OnClickedOkUserTextInput::Filename' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetUserTextInput
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ME_MapAnnotator_C_GetUserTextInput final
-{
-public:
-	class FString                                 InitialText;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_GetUserTextInput) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_GetUserTextInput");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_GetUserTextInput) == 0x000010, "Wrong size on WBP_ME_MapAnnotator_C_GetUserTextInput");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetUserTextInput, InitialText) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetUserTextInput::InitialText' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.MapSymbolClicked
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ME_MapAnnotator_C_MapSymbolClicked final
-{
-public:
-	class UWBP_ME_MapSymbol_C*                    MapWidget;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_MapSymbolClicked) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_MapSymbolClicked");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_MapSymbolClicked) == 0x000008, "Wrong size on WBP_ME_MapAnnotator_C_MapSymbolClicked");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_MapSymbolClicked, MapWidget) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_MapSymbolClicked::MapWidget' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.OnDraggingExistingMapWidget
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget final
-{
-public:
-	class UWBP_ME_MapSymbol_C*                    MapWidget;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              ViewportCoordinates;                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         MapWidgetIndex;                                    // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget) == 0x000018, "Wrong size on WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget, MapWidget) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget::MapWidget' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget, ViewportCoordinates) == 0x000008, "Member 'WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget::ViewportCoordinates' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget, MapWidgetIndex) == 0x000010, "Member 'WBP_ME_MapAnnotator_C_OnDraggingExistingMapWidget::MapWidgetIndex' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.SpawnMapWidget
-// 0x00B8 (0x00B8 - 0x0000)
-struct WBP_ME_MapAnnotator_C_SpawnMapWidget final
-{
-public:
-	struct FGBMapMarker                           MapMarkerInfo;                                     // 0x0000(0x00B0)(BlueprintVisible, BlueprintReadOnly, Parm)
-	int32                                         MapWidgetIndex;                                    // 0x00B0(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_SpawnMapWidget) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_SpawnMapWidget");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_SpawnMapWidget) == 0x0000B8, "Wrong size on WBP_ME_MapAnnotator_C_SpawnMapWidget");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_SpawnMapWidget, MapMarkerInfo) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_SpawnMapWidget::MapMarkerInfo' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_SpawnMapWidget, MapWidgetIndex) == 0x0000B0, "Member 'WBP_ME_MapAnnotator_C_SpawnMapWidget::MapWidgetIndex' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_LinkedObjective_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_LinkedObjective_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_LinkedObjective_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature) == 0x000004, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_LinkedObjective_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_LinkedObjective_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature) == 0x000004, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_LinkedObjective_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_LinkedObjective_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature, Index_0) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_LinkedObjective_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature::Index_0' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.DragEventFinished
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_ME_MapAnnotator_C_DragEventFinished final
-{
-public:
-	TSoftClassPtr<class UClass>                   WidgetClassRef;                                    // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	struct FVector2D                              ViewportCoordinates;                               // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_DragEventFinished) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_DragEventFinished");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_DragEventFinished) == 0x000030, "Wrong size on WBP_ME_MapAnnotator_C_DragEventFinished");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_DragEventFinished, WidgetClassRef) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_DragEventFinished::WidgetClassRef' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_DragEventFinished, ViewportCoordinates) == 0x000028, "Member 'WBP_ME_MapAnnotator_C_DragEventFinished::ViewportCoordinates' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_Team_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_Team_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_Team_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature) == 0x000004, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_Team_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_Team_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature) == 0x000004, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_Team_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_Team_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature, Index_0) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_Team_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature::Index_0' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_MapList_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_MapList_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_MapList_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature) == 0x000004, "Wrong alignment on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_MapList_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_MapList_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature) == 0x000004, "Wrong size on WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_MapList_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_MapList_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature, Index_0) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_BndEvt__WBP_ME_MapAnnotator_WBP_ComboBox_MapList_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature::Index_0' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.DisplayImage
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_ME_MapAnnotator_C_DisplayImage final
-{
-public:
-	int32                                         ImageIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_DisplayImage) == 0x000004, "Wrong alignment on WBP_ME_MapAnnotator_C_DisplayImage");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_DisplayImage) == 0x000004, "Wrong size on WBP_ME_MapAnnotator_C_DisplayImage");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_DisplayImage, ImageIndex) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_DisplayImage::ImageIndex' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.OnLoaded_46AAD6A842FE33F224B5EBAB9042543C
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ME_MapAnnotator_C_OnLoaded_46AAD6A842FE33F224B5EBAB9042543C final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_OnLoaded_46AAD6A842FE33F224B5EBAB9042543C) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_OnLoaded_46AAD6A842FE33F224B5EBAB9042543C");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_OnLoaded_46AAD6A842FE33F224B5EBAB9042543C) == 0x000008, "Wrong size on WBP_ME_MapAnnotator_C_OnLoaded_46AAD6A842FE33F224B5EBAB9042543C");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_OnLoaded_46AAD6A842FE33F224B5EBAB9042543C, Loaded) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_OnLoaded_46AAD6A842FE33F224B5EBAB9042543C::Loaded' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetVisibility_0
-// 0x0006 (0x0006 - 0x0000)
-struct WBP_ME_MapAnnotator_C_GetVisibility_0 final
-{
-public:
-	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_GetVisibility_0) == 0x000001, "Wrong alignment on WBP_ME_MapAnnotator_C_GetVisibility_0");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_GetVisibility_0) == 0x000006, "Wrong size on WBP_ME_MapAnnotator_C_GetVisibility_0");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetVisibility_0, ReturnValue) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetVisibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetVisibility_0, Temp_bool_Variable) == 0x000001, "Member 'WBP_ME_MapAnnotator_C_GetVisibility_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetVisibility_0, Temp_byte_Variable) == 0x000002, "Member 'WBP_ME_MapAnnotator_C_GetVisibility_0::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetVisibility_0, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_ME_MapAnnotator_C_GetVisibility_0::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetVisibility_0, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000004, "Member 'WBP_ME_MapAnnotator_C_GetVisibility_0::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetVisibility_0, K2Node_Select_Default) == 0x000005, "Member 'WBP_ME_MapAnnotator_C_GetVisibility_0::K2Node_Select_Default' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetToolTipWidget_0
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_ME_MapAnnotator_C_GetToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)(ConstParm)
-	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_GetToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_GetToolTipWidget_0");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_GetToolTipWidget_0) == 0x000028, "Wrong size on WBP_ME_MapAnnotator_C_GetToolTipWidget_0");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetToolTipWidget_0, Temp_text_Variable) == 0x000008, "Member 'WBP_ME_MapAnnotator_C_GetToolTipWidget_0::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000020, "Member 'WBP_ME_MapAnnotator_C_GetToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.Get_Image_WarnMap_Visibility_0
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0 final
-{
-public:
-	ESlateVisibility                              ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_1;            // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0) == 0x000001, "Wrong alignment on WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0) == 0x000008, "Wrong size on WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0, ReturnValue) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0, Temp_bool_Variable) == 0x000001, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0, Temp_byte_Variable) == 0x000002, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0, Temp_byte_Variable_1) == 0x000003, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000004, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x000005, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0, CallFunc_BooleanAND_ReturnValue) == 0x000006, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0, K2Node_Select_Default) == 0x000007, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_Visibility_0::K2Node_Select_Default' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.Get_Image_WarnMap_ToolTipWidget_0
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)(ConstParm)
-	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0) == 0x000028, "Wrong size on WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0, Temp_text_Variable) == 0x000008, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000020, "Member 'WBP_ME_MapAnnotator_C_Get_Image_WarnMap_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetMapMarkerRenderTranslationFromScreenPosition
-// 0x0090 (0x0090 - 0x0000)
-struct WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition final
-{
-public:
-	struct FVector2D                              ScreenPosition;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              RenderTranslation;                                 // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bWasOutOfRange;                                    // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometry                              CallFunc_GetPaintSpaceGeometry_ReturnValue;        // 0x0014(0x0038)(ConstParm, IsPlainOldData, NoDestructor)
-	struct FVector2D                              CallFunc_BreakGeometry_OutPosition;                // 0x004C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_BreakGeometry_OutAbsolutePosition;        // 0x0054(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_BreakGeometry_OutSize;                    // 0x005C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakGeometry_OutScale;                   // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Subtract_Vector2DVector2D_ReturnValue;    // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Divide_Vector2DVector2D_ReturnValue;      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_ClampAxes2D_ReturnValue;                  // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X;                          // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y;                          // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue_1;            // 0x008A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x008B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x008D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x008E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition) == 0x000004, "Wrong alignment on WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition) == 0x000090, "Wrong size on WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, ScreenPosition) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::ScreenPosition' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, RenderTranslation) == 0x000008, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::RenderTranslation' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, bWasOutOfRange) == 0x000010, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::bWasOutOfRange' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_GetPaintSpaceGeometry_ReturnValue) == 0x000014, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_GetPaintSpaceGeometry_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BreakGeometry_OutPosition) == 0x00004C, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BreakGeometry_OutPosition' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BreakGeometry_OutAbsolutePosition) == 0x000054, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BreakGeometry_OutAbsolutePosition' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BreakGeometry_OutSize) == 0x00005C, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BreakGeometry_OutSize' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BreakGeometry_OutScale) == 0x000064, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BreakGeometry_OutScale' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_Subtract_Vector2DVector2D_ReturnValue) == 0x000068, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_Subtract_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_Divide_Vector2DVector2D_ReturnValue) == 0x000070, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_Divide_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_ClampAxes2D_ReturnValue) == 0x000078, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_ClampAxes2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BreakVector2D_X) == 0x000080, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BreakVector2D_Y) == 0x000084, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_Less_FloatFloat_ReturnValue) == 0x000088, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000089, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_Less_FloatFloat_ReturnValue_1) == 0x00008A, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_Less_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x00008B, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BooleanOR_ReturnValue) == 0x00008C, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BooleanOR_ReturnValue_1) == 0x00008D, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition, CallFunc_BooleanOR_ReturnValue_2) == 0x00008E, "Member 'WBP_ME_MapAnnotator_C_GetMapMarkerRenderTranslationFromScreenPosition::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.Get_CheckBox_EditExistingMarker_ToolTipWidget_0
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0 final
-{
-public:
-	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0) == 0x000010, "Wrong size on WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0, ReturnValue) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0, CallFunc_Create_ReturnValue) == 0x000008, "Member 'WBP_ME_MapAnnotator_C_Get_CheckBox_EditExistingMarker_ToolTipWidget_0::CallFunc_Create_ReturnValue' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetLinkedObjectiveFromComboBox
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox final
-{
-public:
-	TSoftObjectPtr<class AGBMissionObjective>     LinkedObjectiveRef;                                // 0x0000(0x0028)(Parm, OutParm, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGBMissionObjective*                    CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TSoftObjectPtr<class AGBMissionObjective>     CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x0038(0x0028)(UObjectWrapper, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox) == 0x000060, "Wrong size on WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox, LinkedObjectiveRef) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox::LinkedObjectiveRef' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox, CallFunc_Subtract_IntInt_ReturnValue) == 0x000028, "Member 'WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox, CallFunc_Array_Get_Item) == 0x000030, "Member 'WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue) == 0x000038, "Member 'WBP_ME_MapAnnotator_C_GetLinkedObjectiveFromComboBox::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetComboBoxIndexForLinkedObjectiveRef
-// 0x00D8 (0x00D8 - 0x0000)
-struct WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef final
-{
-public:
-	TSoftObjectPtr<class AGBMissionObjective>     LinkedObjectiveRef;                                // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	int32                                         ComboBoxIndex;                                     // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class AGBMissionObjective>     UpdatedRef;                                        // 0x0030(0x0028)(Parm, OutParm, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_SoftObjectReferenceToString_ReturnValue; // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGBMissionObjective*                    CallFunc_Array_Get_Item;                           // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class AGBMissionObjective>     CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x0090(0x0028)(UObjectWrapper, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_SoftObjectReferenceToString_ReturnValue_1; // 0x00C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_StriStri_ReturnValue;          // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef) == 0x0000D8, "Wrong size on WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, LinkedObjectiveRef) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::LinkedObjectiveRef' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, ComboBoxIndex) == 0x000028, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::ComboBoxIndex' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, UpdatedRef) == 0x000030, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::UpdatedRef' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, Temp_int_Array_Index_Variable) == 0x000058, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_Conv_SoftObjectReferenceToString_ReturnValue) == 0x000060, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_Conv_SoftObjectReferenceToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_Add_IntInt_ReturnValue) == 0x000070, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, Temp_int_Loop_Counter_Variable) == 0x000074, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_Add_IntInt_ReturnValue_1) == 0x000078, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_Array_Get_Item) == 0x000080, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_Array_Length_ReturnValue) == 0x000088, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue) == 0x000090, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_Less_IntInt_ReturnValue) == 0x0000B8, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_Conv_SoftObjectReferenceToString_ReturnValue_1) == 0x0000C0, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_Conv_SoftObjectReferenceToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef, CallFunc_EqualEqual_StriStri_ReturnValue) == 0x0000D0, "Member 'WBP_ME_MapAnnotator_C_GetComboBoxIndexForLinkedObjectiveRef::CallFunc_EqualEqual_StriStri_ReturnValue' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.IsMapImage
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_ME_MapAnnotator_C_IsMapImage final
-{
-public:
-	struct FGBMissionImage                        InMissionImage;                                    // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          bIsMapImage;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_StartsWith_ReturnValue;                   // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_IsMapImage) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_IsMapImage");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_IsMapImage) == 0x000030, "Wrong size on WBP_ME_MapAnnotator_C_IsMapImage");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_IsMapImage, InMissionImage) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_IsMapImage::InMissionImage' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_IsMapImage, bIsMapImage) == 0x000028, "Member 'WBP_ME_MapAnnotator_C_IsMapImage::bIsMapImage' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_IsMapImage, CallFunc_StartsWith_ReturnValue) == 0x000029, "Member 'WBP_ME_MapAnnotator_C_IsMapImage::CallFunc_StartsWith_ReturnValue' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetImageListIndexForPhotoNumber
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber final
-{
-public:
-	int32                                         PhotoNumber;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ImageListIndex;                                    // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGBMissionImage                        CallFunc_Array_Get_Item;                           // 0x0018(0x0028)()
-	int32                                         CallFunc_Array_Get_Item_1;                         // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsMapImage_bIsMapImage;                   // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_47[0x1];                                       // 0x0047(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber) == 0x000050, "Wrong size on WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, PhotoNumber) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::PhotoNumber' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, ImageListIndex) == 0x000004, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::ImageListIndex' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, Temp_int_Array_Index_Variable) == 0x000008, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_Array_Get_Item) == 0x000018, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_Array_Get_Item_1) == 0x000040, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_IsMapImage_bIsMapImage) == 0x000044, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_IsMapImage_bIsMapImage' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000045, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_Not_PreBool_ReturnValue) == 0x000046, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_Array_Length_ReturnValue) == 0x000048, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_BooleanAND_ReturnValue) == 0x00004C, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber, CallFunc_Less_IntInt_ReturnValue) == 0x00004D, "Member 'WBP_ME_MapAnnotator_C_GetImageListIndexForPhotoNumber::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetFilenameForImageNumber
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_ME_MapAnnotator_C_GetFilenameForImageNumber final
-{
-public:
-	int32                                         ImageNumber;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Filename;                                          // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetImageListIndexForPhotoNumber_ImageListIndex; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGBMissionImage                        CallFunc_Array_Get_Item;                           // 0x0020(0x0028)()
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_GetFilenameForImageNumber) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_GetFilenameForImageNumber");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_GetFilenameForImageNumber) == 0x000050, "Wrong size on WBP_ME_MapAnnotator_C_GetFilenameForImageNumber");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetFilenameForImageNumber, ImageNumber) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetFilenameForImageNumber::ImageNumber' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetFilenameForImageNumber, Filename) == 0x000008, "Member 'WBP_ME_MapAnnotator_C_GetFilenameForImageNumber::Filename' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetFilenameForImageNumber, CallFunc_GetImageListIndexForPhotoNumber_ImageListIndex) == 0x000018, "Member 'WBP_ME_MapAnnotator_C_GetFilenameForImageNumber::CallFunc_GetImageListIndexForPhotoNumber_ImageListIndex' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetFilenameForImageNumber, CallFunc_Array_Get_Item) == 0x000020, "Member 'WBP_ME_MapAnnotator_C_GetFilenameForImageNumber::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetFilenameForImageNumber, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000048, "Member 'WBP_ME_MapAnnotator_C_GetFilenameForImageNumber::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.GetObjectiveInfoFromObjectiveSoftRef
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef final
-{
-public:
-	TSoftObjectPtr<class AGBMissionObjective>     MissionObjectiveSoftRef;                           // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                          bIsPrimary;                                        // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 ObjectiveTitle;                                    // 0x0030(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AGBMissionObjective*                    K2Node_DynamicCast_AsGBMission_Objective;          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetObjectiveTitle_ReturnValue;            // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetIsPrimaryObjective_ReturnValue;        // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef) == 0x000008, "Wrong alignment on WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef) == 0x000070, "Wrong size on WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, MissionObjectiveSoftRef) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::MissionObjectiveSoftRef' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, bIsPrimary) == 0x000028, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::bIsPrimary' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, ObjectiveTitle) == 0x000030, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::ObjectiveTitle' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue) == 0x000040, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, K2Node_DynamicCast_AsGBMission_Objective) == 0x000048, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::K2Node_DynamicCast_AsGBMission_Objective' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, CallFunc_IsValid_ReturnValue) == 0x000051, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, CallFunc_GetObjectiveTitle_ReturnValue) == 0x000058, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::CallFunc_GetObjectiveTitle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef, CallFunc_GetIsPrimaryObjective_ReturnValue) == 0x000068, "Member 'WBP_ME_MapAnnotator_C_GetObjectiveInfoFromObjectiveSoftRef::CallFunc_GetIsPrimaryObjective_ReturnValue' has a wrong offset!");
-
-// Function WBP_ME_MapAnnotator.WBP_ME_MapAnnotator_C.Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0
-// 0x0003 (0x0003 - 0x0000)
-struct WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0 final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsEditor_ReturnValue;                     // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0) == 0x000001, "Wrong alignment on WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0");
-static_assert(sizeof(WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0) == 0x000003, "Wrong size on WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0, ReturnValue) == 0x000000, "Member 'WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0, CallFunc_IsEditor_ReturnValue) == 0x000001, "Member 'WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0::CallFunc_IsEditor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0, CallFunc_Not_PreBool_ReturnValue) == 0x000002, "Member 'WBP_ME_MapAnnotator_C_Get_WBP_ComboBox_LinkedObjective_bIsEnabled_0::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 }
 
